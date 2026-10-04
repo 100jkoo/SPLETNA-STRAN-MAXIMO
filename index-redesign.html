@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Maximo Tekstil | Premium Workwear Fabrics & Technical Textiles</title>
+<meta name="description" content="Premium technical fabrics for workwear, flame-retardant, high-visibility, CORDURA®, and specialty textiles. EU stock in Slovenia, custom colors from 300 m.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#1E2A44;
+  --ink-2:#2E3D5E;
+  --paper:#FBFBF9;
+  --warp:#F5F5F2;
+  --line:#E0E2E6;
+  --muted:#6B7280;
+  --signal:#F26B1D;
+  --khaki:#8C7B5A;
+  --font:"Archivo", "Helvetica Neue", Arial, sans-serif;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-behavior:smooth;scroll-padding-top:calc(72px + env(safe-area-inset-top,0px))}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--font);font-size:17px;line-height:1.6;font-variation-settings:"wdth" 100}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+:focus-visible{outline:3px solid var(--signal);outline-offset:3px}
+.wrap{max-width:1200px;margin:0 auto;padding:0 24px}
+
+/* Header */
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:10;background:rgba(251,251,249,.98);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:72px}
+.logo{font-weight:800;font-size:20px;letter-spacing:-.01em;text-decoration:none;font-variation-settings:"wdth" 112;display:flex;align-items:center;height:44px}
+.logo span{font-weight:400;color:var(--muted);margin-left:6px}
+.nav ul{display:flex;gap:32px;list-style:none;margin:0;padding:0}
+.nav ul a{text-decoration:none;font-size:15px;font-weight:500;display:inline-flex;align-items:center;height:44px;position:relative}
+.nav ul a::after{content:"";position:absolute;bottom:-1px;left:0;right:0;height:2px;background:var(--signal);transform:scaleX(0);transform-origin:right;transition:transform .3s cubic-bezier(.16,1,.3,1)}
+.nav ul a:hover::after{transform:scaleX(1);transform-origin:left}
+.btn{display:inline-flex;align-items:center;justify-content:center;background:var(--ink);color:var(--paper);text-decoration:none;font-weight:600;font-size:14px;padding:11px 20px;border-radius:3px;border:0;cursor:pointer;font-family:inherit;height:44px;min-height:44px;transition:all .2s cubic-bezier(.16,1,.3,1)}
+.btn:hover{background:var(--signal);transform:translateY(-1px)}
+.btn:active{transform:translateY(0);opacity:.95}
+.btn.ghost{background:transparent;color:var(--ink);box-shadow:inset 0 0 0 1.5px var(--ink)}
+.btn.ghost:hover{background:var(--ink);color:var(--paper)}
+.menu-btn{display:none;background:none;border:1.5px solid var(--ink);border-radius:3px;padding:8px 12px;font-family:inherit;font-weight:600;font-size:14px;color:var(--ink);cursor:pointer;height:44px;min-height:44px}
+
+/* Hero Section - Redesigned */
+.hero{padding:0;overflow:hidden;background:linear-gradient(135deg,#f5f5f2 0%,#ffffff 100%);position:relative}
+.hero .wrap{display:grid;grid-template-columns:1fr 1.1fr;gap:56px;align-items:center;padding:80px 24px}
+.hero h1{font-size:clamp(48px,7vw,80px);line-height:.95;font-weight:800;letter-spacing:-.02em;margin:0 0 20px;font-variation-settings:"wdth" 72;color:var(--ink)}
+.hero .lead{font-size:18px;color:var(--ink-2);max-width:40em;margin:0 0 32px;line-height:1.7}
+.hero .ctas{display:flex;gap:12px;flex-wrap:wrap;align-items:center}
+.hero .secondary{font-size:15px;color:var(--muted);font-weight:500;display:inline-flex;align-items:center;height:44px}
+
+/* Hero Visual - Fabric Showcase Grid */
+.hero-visual{display:grid;grid-template-columns:1fr 1fr;gap:12px;aspect-ratio:1/1.1}
+.fabric-hero{border-radius:4px;overflow:hidden;box-shadow:0 20px 60px rgba(30,42,68,.15);background:#ddd;position:relative;background-size:cover;background-position:center}
+.fabric-hero.large{grid-column:1/-1;aspect-ratio:16/9}
+.fabric-hero img{width:100%;height:100%;object-fit:cover}
+
+/* Facts Strip */
+.facts{background:var(--warp);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.facts .wrap{display:grid;grid-template-columns:repeat(3,1fr);gap:0}
+.fact{padding:32px 32px;text-align:center;border-right:1px solid var(--line)}
+.fact:last-child{border-right:0}
+.fact b{display:block;font-size:28px;font-weight:800;font-variation-settings:"wdth" 85;margin-bottom:6px;color:var(--signal)}
+.fact span{font-size:14px;color:var(--muted);font-weight:500}
+
+/* Sections */
+section{padding:96px 0;border-top:1px solid var(--line)}
+section:first-of-type{border-top:0}
+.sec-head{display:grid;grid-template-columns:1fr 1.2fr;gap:56px;align-items:end;margin-bottom:56px}
+h2{font-size:clamp(36px,5vw,56px);line-height:1;font-weight:800;letter-spacing:-.015em;margin:0;font-variation-settings:"wdth" 75;color:var(--ink)}
+.sec-head p{margin:0;color:var(--ink-2);max-width:44em;font-size:16px;line-height:1.8}
+
+/* Product Cards - Redesigned Grid */
+.products-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:20px;margin-top:48px}
+.product-card{border:1px solid var(--line);border-radius:4px;overflow:hidden;background:#fff;display:flex;flex-direction:column;transition:all .3s cubic-bezier(.16,1,.3,1)}
+.product-card:hover{border-color:var(--ink);box-shadow:0 12px 32px rgba(30,42,68,.12);transform:translateY(-4px)}
+.product-card-image{aspect-ratio:4/5;background:#f0f0f0;overflow:hidden;position:relative}
+.product-card-image img{width:100%;height:100%;object-fit:cover;transition:transform .3s ease}
+.product-card:hover .product-card-image img{transform:scale(1.04)}
+.product-card-body{padding:20px;display:flex;flex-direction:column;flex:1}
+.product-card h3{margin:0 0 4px;font-size:20px;font-weight:800;font-variation-settings:"wdth" 80;letter-spacing:-.005em;color:var(--ink);line-height:1.2}
+.product-card .category{font-size:13px;color:var(--muted);margin-bottom:12px;font-weight:600;text-transform:uppercase;letter-spacing:.05em}
+.product-specs{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:14px 0;font-size:13px}
+.product-specs dt{color:var(--muted);font-weight:500}
+.product-specs dd{margin:0;font-weight:700;color:var(--ink)}
+.product-card-cta{margin-top:auto;padding-top:14px;border-top:1px solid var(--line)}
+.product-card-cta a{font-size:14px;font-weight:600;color:var(--muted);text-decoration:underline;text-underline-offset:3px;transition:color .2s}
+.product-card-cta a:hover{color:var(--signal)}
+
+/* Feature Grid - 3 columns */
+.features-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:40px;margin-top:48px}
+.feature-item{display:flex;flex-direction:column}
+.feature-item .num{font-size:32px;font-weight:800;color:var(--signal);margin-bottom:8px;font-variation-settings:"wdth" 85}
+.feature-item h3{font-size:20px;font-weight:800;margin:0 0 12px;color:var(--ink);font-variation-settings:"wdth" 80}
+.feature-item p{margin:0;color:var(--ink-2);font-size:15px;line-height:1.8}
+
+/* Dark Section */
+.dark-section{background:var(--ink);color:#E5EAF2;padding:96px 0}
+.dark-section h2{color:#E5EAF2}
+.dark-section .sec-head p{color:#C0C9D9}
+.dark-section a{color:#E5EAF2}
+.dark-section a:hover{color:var(--signal)}
+
+/* Footer */
+footer{background:var(--ink);color:#9CA3AF;font-size:13px;padding:48px 0 24px;border-top:1px solid rgba(255,255,255,.1)}
+footer .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:40px;margin-bottom:32px}
+footer h4{color:#E5EAF2;font-size:14px;font-weight:700;margin:0 0 12px;text-transform:uppercase;letter-spacing:.05em}
+footer ul{list-style:none;margin:0;padding:0}
+footer ul li{margin-bottom:8px}
+footer ul a{color:#9CA3AF;text-decoration:none;transition:color .2s}
+footer ul a:hover{color:var(--signal)}
+.footer-bottom{display:flex;justify-content:space-between;align-items:center;padding-top:24px;border-top:1px solid rgba(255,255,255,.1)}
+
+/* CTA Section */
+.cta-section{background:linear-gradient(135deg,var(--ink) 0%,#2a3754 100%);color:#E5EAF2;padding:80px 0;text-align:center}
+.cta-section h2{color:#E5EAF2;margin-bottom:20px}
+.cta-section p{font-size:18px;margin:0 auto 32px;max-width:50em;line-height:1.7;color:#C0C9D9}
+
+/* Responsive */
+@media (max-width:900px){
+  .hero .wrap{grid-template-columns:1fr;gap:40px;padding:60px 24px}
+  .hero-visual{grid-template-columns:1fr;gap:12px}
+  .facts .wrap{grid-template-columns:1fr 1fr 1fr}
+  .fact{border-right:0;padding:24px}
+  .fact:nth-child(3n){border-right:0}
+  .sec-head{grid-template-columns:1fr;gap:24px}
+  .features-grid{grid-template-columns:1fr 1fr}
+  .products-grid{grid-template-columns:repeat(auto-fill,minmax(250px,1fr))}
+  .nav ul{display:none}
+  .nav ul.open{display:flex;position:absolute;top:72px;left:0;right:0;flex-direction:column;gap:0;background:var(--paper);border-bottom:1px solid var(--line)}
+  .nav ul.open li{border-bottom:1px solid var(--line)}
+  .nav ul.open a{display:block;padding:14px 24px}
+  .menu-btn{display:block}
+  section{padding:72px 0}
+}
+@media (max-width:640px){
+  .hero .wrap{padding:48px 24px}
+  .hero h1{font-size:clamp(32px,7vw,48px)}
+  .facts .wrap{grid-template-columns:1fr}
+  .fact{padding:20px;border-right:0;border-bottom:1px solid var(--line)}
+  .fact:last-child{border-bottom:0}
+  .features-grid{grid-template-columns:1fr}
+  .products-grid{grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:12px}
+  .product-card-body{padding:12px}
+  .product-card h3{font-size:16px}
+  footer .wrap{grid-template-columns:1fr 1fr;gap:24px}
+}
+</style>
+</head>
+<body>
+
+<!-- Header -->
+<header>
+  <nav class="wrap nav">
+    <a href="/" class="logo">Maximo<span>Tekstil</span></a>
+    <ul>
+      <li><a href="#fabrics">Fabrics</a></li>
+      <li><a href="#features">Why Us</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="menu-btn" onclick="this.nextElementSibling.classList.toggle('open')">Menu</button>
+    <a href="#catalog" class="btn">Browse Catalog</a>
+  </nav>
+</header>
+
+<!-- Hero Section -->
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <h1>Technical Fabrics<br>Built for Performance</h1>
+      <p class="lead">Premium textiles for workwear, flame-retardant, high-visibility, CORDURA®, and specialized applications. EU stock in Slovenia. Custom colors from 300m.</p>
+      <div class="ctas">
+        <a href="#catalog" class="btn">Explore Fabrics</a>
+        <a href="#contact" class="btn ghost">Get Quote</a>
+      </div>
+      <p class="secondary">✓ EU Warehouse • Next-day shipping • ISO 9001 & OEKO-TEX certified</p>
+    </div>
+    <div class="hero-visual">
+      <div class="fabric-hero" style="background:#8C7B5A url('data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect fill=%22%238C7B5A%22 width=%22100%22 height=%22100%22/><rect fill=%22rgba(0,0,0,.08)%22 width=%221%22 height=%22100%22/></svg>');background-size:4px 4px;">
+        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 500'%3E%3Crect fill='%238C7B5A' width='400' height='500'/%3E%3Cpattern id='p' x='0' y='0' width='4' height='4' patternUnits='userSpaceOnUse'%3E%3Crect fill='%238C7B5A' width='4' height='4'/%3E%3Crect fill='rgba(0,0,0,.1)' x='0' y='0' width='1' height='4'/%3E%3C/pattern%3E%3Crect fill='url(%23p)' width='400' height='500'/%3E%3C/svg%3E" alt="Premium fabric swatch - khaki">
+      </div>
+      <div class="fabric-hero" style="background:#E6E8EB url('data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><circle cx=%2250%22 cy=%2250%22 r=%221%22 fill=%22rgba(0,0,0,.15)%22/></svg>');background-size:6px 6px;">
+        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 250'%3E%3Crect fill='%23E6E8EB' width='200' height='250'/%3E%3Cg fill='%23D0D5DC'%3E%3Crect x='0' y='0' width='2' height='250'/%3E%3Crect x='10' y='0' width='2' height='250'/%3E%3Crect x='20' y='0' width='2' height='250'/%3E%3Crect x='30' y='0' width='2' height='250'/%3E%3Crect x='40' y='0' width='2' height='250'/%3E%3Crect x='50' y='0' width='2' height='250'/%3E%3C/g%3E%3C/svg%3E" alt="Premium fabric swatch - light grey">
+      </div>
+      <div class="fabric-hero large" style="background:#F26B1D;">
+        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 400'%3E%3Crect fill='%23F26B1D' width='800' height='400'/%3E%3Cpattern id='weave' x='0' y='0' width='8' height='8' patternUnits='userSpaceOnUse'%3E%3Cpath d='M0,0 Q4,0 4,4 T8,8' stroke='rgba(255,255,255,.2)' fill='none' stroke-width='0.5'/%3E%3C/pattern%3E%3Crect fill='url(%23weave)' width='800' height='400'/%3E%3C/svg%3E" alt="Premium fabric swatch - orange">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Facts Strip -->
+<section class="facts">
+  <div class="wrap">
+    <div class="fact">
+      <b>200+</b>
+      <span>Premium Fabrics in Stock</span>
+    </div>
+    <div class="fact">
+      <b>30+</b>
+      <span>Years Industry Experience</span>
+    </div>
+    <div class="fact">
+      <b>EU</b>
+      <span>Warehouse in Slovenia</span>
+    </div>
+  </div>
+</section>
+
+<!-- Featured Fabrics -->
+<section class="wrap" id="fabrics">
+  <div class="sec-head">
+    <h2>Featured Collections</h2>
+    <p>Explore our most popular fabric ranges across workwear, protection, and technical applications.</p>
+  </div>
+  <div class="products-grid">
+    <div class="product-card">
+      <div class="product-card-image" style="background:#5E6B5A">
+        <svg viewBox="0 0 300 400" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:100%">
+          <rect fill="#5E6B5A" width="300" height="400"/>
+          <pattern id="canvas" x="0" y="0" width="10" height="10" patternUnits="userSpaceOnUse">
+            <rect fill="#5E6B5A" width="10" height="10"/>
+            <line x1="0" y1="0" x2="10" y2="10" stroke="rgba(0,0,0,.1)" stroke-width="0.5"/>
+          </pattern>
+          <rect fill="url(#canvas)" width="300" height="400"/>
+        </svg>
+      </div>
+      <div class="product-card-body">
+        <div class="product-card-category">
+          <span class="category">Workwear</span>
+        </div>
+        <h3>Canvas Pro</h3>
+        <dl class="product-specs">
+          <dt>Weight</dt><dd>320 gsm</dd>
+          <dt>Comp.</dt><dd>100% CO</dd>
+        </dl>
+        <p style="font-size:14px;color:var(--ink-2);margin:8px 0 0;flex:1">Durable heavy-duty canvas perfect for industrial workwear and protective garments.</p>
+        <div class="product-card-cta">
+          <a href="#contact">Ask for Sample →</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <div class="product-card-image" style="background:#F26B1D">
+        <svg viewBox="0 0 300 400" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:100%">
+          <rect fill="#F26B1D" width="300" height="400"/>
+          <pattern id="twill" x="0" y="0" width="4" height="4" patternUnits="userSpaceOnUse">
+            <line x1="0" y1="4" x2="4" y2="0" stroke="rgba(255,255,255,.15)" stroke-width="0.5"/>
+          </pattern>
+          <rect fill="url(#twill)" width="300" height="400"/>
+        </svg>
+      </div>
+      <div class="product-card-body">
+        <div class="product-card-category">
+          <span class="category">High-Visibility</span>
+        </div>
+        <h3>Hi-Vis Signal</h3>
+        <dl class="product-specs">
+          <dt>Weight</dt><dd>200 gsm</dd>
+          <dt>Comp.</dt><dd>67% CO / 33% PES</dd>
+        </dl>
+        <p style="font-size:14px;color:var(--ink-2);margin:8px 0 0;flex:1">EN 20471 compliant. Bright orange-yellow with reflective properties for maximum visibility.</p>
+        <div class="product-card-cta">
+          <a href="#contact">Ask for Sample →</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <div class="product-card-image" style="background:#26324F">
+        <svg viewBox="0 0 300 400" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:100%">
+          <rect fill="#26324F" width="300" height="400"/>
+          <pattern id="ripstop" x="0" y="0" width="8" height="8" patternUnits="userSpaceOnUse">
+            <rect fill="#26324F" width="8" height="8"/>
+            <line x1="0" y1="0" x2="8" y2="0" stroke="rgba(255,255,255,.1)" stroke-width="0.5"/>
+            <line x1="0" y1="0" x2="0" y2="8" stroke="rgba(255,255,255,.1)" stroke-width="0.5"/>
+          </pattern>
+          <rect fill="url(#ripstop)" width="300" height="400"/>
+        </svg>
+      </div>
+      <div class="product-card-body">
+        <div class="product-card-category">
+          <span class="category">CORDURA®</span>
+        </div>
+        <h3>CORDURA Elite</h3>
+        <dl class="product-specs">
+          <dt>Weight</dt><dd>320 gsm</dd>
+          <dt>Comp.</dt><dd>100% CORDURA®</dd>
+        </dl>
+        <p style="font-size:14px;color:var(--ink-2);margin:8px 0 0;flex:1">Ultra-durable CORDURA® nylon for heavy-duty applications and outdoor gear.</p>
+        <div class="product-card-cta">
+          <a href="#contact">Ask for Sample →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div style="text-align:center;margin-top:48px">
+    <a href="#catalog" class="btn">View All Fabrics (200+) →</a>
+  </div>
+</section>
+
+<!-- Why Choose Us -->
+<section id="features">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>Why Maximo</h2>
+      <p>We deliver premium technical fabrics with the expertise and infrastructure to support your production from prototype to scale.</p>
+    </div>
+    <div class="features-grid">
+      <div class="feature-item">
+        <div class="num">1</div>
+        <h3>EU Stock</h3>
+        <p>Warehouse in Slovenia with 200+ fabrics ready to ship. No long lead times, next-day delivery available.</p>
+      </div>
+      <div class="feature-item">
+        <div class="num">2</div>
+        <h3>Custom Colors</h3>
+        <p>Minimum order 300m for custom dyeing. Trusted by Europe's leading workwear and outdoor brands.</p>
+      </div>
+      <div class="feature-item">
+        <div class="num">3</div>
+        <h3>Certified Quality</h3>
+        <p>ISO 9001 & OEKO-TEX certified. Full technical documentation and compliance for regulated industries.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Dark CTA Section -->
+<section class="dark-section cta-section">
+  <div class="wrap">
+    <h2>Ready to Source Premium Fabrics?</h2>
+    <p>Connect with our team to discuss your requirements, request samples, or explore custom solutions.</p>
+    <a href="#contact" class="btn">Get in Touch</a>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section class="wrap" id="contact">
+  <div class="sec-head">
+    <h2>Get in Touch</h2>
+    <p>Have questions about our fabrics or need a custom quote? Our team is here to help.</p>
+  </div>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:56px;max-width:900px;margin-top:48px">
+    <div>
+      <h3 style="font-size:20px;font-weight:800;margin:0 0 20px">Contact Info</h3>
+      <address style="font-style:normal;line-height:2;color:var(--ink-2)">
+        <strong>Maximo Tekstil d.o.o.</strong><br>
+        Slovenska cesta 99<br>
+        1000 Ljubljana, Slovenia<br><br>
+        <strong>Phone:</strong> <a href="tel:+38614123456" style="color:var(--signal);font-weight:600">+386 1 4123 456</a><br>
+        <strong>Email:</strong> <a href="mailto:info@maximo.si" style="color:var(--signal);font-weight:600">info@maximo.si</a>
+      </address>
+      <div style="margin-top:32px">
+        <h4 style="font-size:14px;color:var(--muted);margin:0 0 12px;text-transform:uppercase;letter-spacing:.05em;font-weight:700">Certifications</h4>
+        <p style="margin:0;font-size:13px">✓ ISO 9001:2015<br>✓ OEKO-TEX Certified<br>✓ CORDURA® Licensed</p>
+      </div>
+    </div>
+    <form style="display:grid;gap:14px">
+      <div>
+        <label for="name" style="display:block;font-size:14px;font-weight:600;margin-bottom:6px;color:var(--ink)">Name</label>
+        <input type="text" id="name" name="name" required style="width:100%;padding:12px;border:1.5px solid var(--line);border-radius:3px;font-family:inherit;font-size:16px;color:var(--ink)">
+      </div>
+      <div>
+        <label for="email" style="display:block;font-size:14px;font-weight:600;margin-bottom:6px;color:var(--ink)">Email</label>
+        <input type="email" id="email" name="email" required style="width:100%;padding:12px;border:1.5px solid var(--line);border-radius:3px;font-family:inherit;font-size:16px;color:var(--ink)">
+      </div>
+      <div>
+        <label for="message" style="display:block;font-size:14px;font-weight:600;margin-bottom:6px;color:var(--ink)">Message</label>
+        <textarea id="message" name="message" required style="width:100%;padding:12px;border:1.5px solid var(--line);border-radius:3px;font-family:inherit;font-size:16px;color:var(--ink);min-height:120px;resize:vertical"></textarea>
+      </div>
+      <button type="submit" class="btn" style="margin-top:8px">Send Message</button>
+    </form>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <div class="wrap">
+    <div>
+      <h4>Company</h4>
+      <ul>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#sustainability">Sustainability</a></li>
+        <li><a href="#careers">Careers</a></li>
+        <li><a href="#blog">Blog</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Products</h4>
+      <ul>
+        <li><a href="#catalog">All Fabrics</a></li>
+        <li><a href="#workwear">Workwear</a></li>
+        <li><a href="#fire-retardant">Flame-Retardant</a></li>
+        <li><a href="#outdoor">Outdoor</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Support</h4>
+      <ul>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#samples">Request Samples</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#guides">Guides</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Legal</h4>
+      <ul>
+        <li><a href="#privacy">Privacy Policy</a></li>
+        <li><a href="#terms">Terms of Service</a></li>
+        <li><a href="#cookies">Cookie Policy</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom wrap">
+    <p style="margin:0">© 2024 Maximo Tekstil d.o.o. All rights reserved.</p>
+    <div style="display:flex;gap:20px">
+      <a href="#linkedin" style="color:#9CA3AF">LinkedIn</a>
+      <a href="#instagram" style="color:#9CA3AF">Instagram</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function(e){
+    const href = this.getAttribute('href');
+    if(href !== '#' && href !== '#contact' && href !== '#catalog'){
+      e.preventDefault();
+      const target = document.querySelector(href);
+      if(target) target.scrollIntoView({behavior:'smooth'});
+    }
+  });
+});
+</script>
+
+</body>
+</html>
