@@ -56,6 +56,14 @@ var MX_NEWSLETTER_EMAIL='maximo1@siol.net';
   hd.addEventListener('focusout',function(e){if(openItem&&e.relatedTarget&&!openItem.contains(e.relatedTarget))closeAll()});
   hd.querySelectorAll('.mx-panel a').forEach(function(a){a.addEventListener('click',function(){setTimeout(closeAll,0)})});
 
+  /* language switcher */
+  (function(){
+    var lb=hd.querySelector('.mx-lang-b');if(!lb)return;
+    function setL(on){lb.setAttribute('aria-expanded',on?'true':'false')}
+    lb.addEventListener('click',function(e){e.stopPropagation();setL(lb.getAttribute('aria-expanded')!=='true')});
+    document.addEventListener('click',function(e){if(!lb.parentNode.contains(e.target))setL(false)});
+    document.addEventListener('keydown',function(e){if(e.key==='Escape'){setL(false)}});
+  })();
   /* mobile drawer */
   var burger=hd.querySelector('.mx-burger'),drawer=document.getElementById('mx-drawer');
   function drawerOn(){return drawer&&drawer.classList.contains('is-on')}

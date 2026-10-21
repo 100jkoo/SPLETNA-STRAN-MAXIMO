@@ -16,6 +16,30 @@ Statična spletna stran podjetja Maximo Tekstil (delovne in zaščitne tkanine):
 | `sitemap.xml`, `robots.txt` | SEO |
 | `maximo-tekstil-site.zip` | Pripravljen paket za objavo |
 
+## Jeziki
+
+Stran je v šestih jezikih. Angleščina je glavna različica v korenu repozitorija, prevodi so v mapah:
+
+| Jezik | Mapa |
+| --- | --- |
+| English | `/` (koren) |
+| Slovenščina | `sl/` |
+| Hrvatski | `hr/` |
+| Magyar | `hu/` |
+| Italiano | `it/` |
+| Deutsch (Avstrija) | `de/` |
+
+Mape `sl/ hr/ hu/ it/ de/` in datoteke `assets/site.<jezik>.js` ter `sitemap.xml` so **ustvarjene samodejno**, zato jih ne urejaj ročno.
+
+### Kako spremeniš besedilo
+
+1. Spremeni angleško stran v korenu (npr. `index.html`).
+2. Če si dodal ali spremenil besedilo, zaženi `python3 i18n/extract.py` in `python3 i18n/todo.py`. Novi angleški nizi se dodajo na konec `i18n/todo.json`.
+3. Prevode dodaj v `i18n/chunks/NNN.json` (po vrsti: sl, hr, hu, it, de) in zaženi `python3 i18n/merge.py`.
+4. Zaženi `python3 i18n/build.py` in prevedene strani se znova ustvarijo.
+
+Neprevedeno besedilo ostane v angleščini. Pravni besedili (`terms.html`, `privacy.html`) naj pregleda odvetnik.
+
 ## Ogled lokalno
 
 ```bash

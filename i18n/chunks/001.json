@@ -1,0 +1,632 @@
+{
+"80": [
+"Mesečna e-novica",
+"Mjesečni newsletter",
+"Havi hírlevél",
+"Newsletter mensile",
+"Monatlicher Newsletter"
+],
+"81": [
+"Večnormne in FR",
+"Multinorm i FR",
+"Többnormás és FR",
+"Multinorma e FR",
+"Multinorm & FR"
+],
+"82": [
+"Večnormne in FR Proban®",
+"Multinorm i FR Proban®",
+"Többnormás és FR Proban®",
+"Multinorma e FR Proban®",
+"Multinorm & FR Proban®"
+],
+"83": [
+"Večnormna FR Proban®",
+"Multinorm FR Proban®",
+"Többnormás FR Proban®",
+"Multinorma FR Proban®",
+"Multinorm-FR Proban®"
+],
+"84": [
+"Večnormna FR elastična",
+"Multinorm FR rastezljiva",
+"Többnormás FR sztreccs",
+"Multinorma FR elasticizzata",
+"Multinorm-FR-Stretch"
+],
+"85": [
+"Večnormna delovna oblačila: katere standarde zahteva vaše delo?",
+"Multinorm radna odjeća: koje norme zahtijeva vaš posao?",
+"Többnormás munkaruha: milyen szabványokra van szüksége a munkájához?",
+"Abbigliamento da lavoro multinorma: quali norme richiede il vostro lavoro?",
+"Multinorm-Arbeitskleidung: Welche Normen braucht Ihre Tätigkeit?"
+],
+"86": [
+"Nove tkanine, novosti iz zaloge in ponudbe. Enkrat na mesec.",
+"Nove tkanine, novosti iz skladišta i ponude. Jednom mjesečno.",
+"Új anyagok, készletfrissítések és ajánlatok. Havonta egyszer.",
+"Nuovi tessuti, aggiornamenti di magazzino e offerte. Una volta al mese.",
+"Neue Stoffe, Lageraktualisierungen und Angebote. Einmal im Monat."
+],
+"87": [
+"Nove tkanine, novosti iz zaloge in ponudbe.<1/>Enkrat na mesec, naravnost v vaš nabiralnik.",
+"Nove tkanine, novosti iz skladišta i ponude.<1/>Jednom mjesečno, izravno u vaš inbox.",
+"Új anyagok, készletfrissítések és ajánlatok.<1/>Havonta egyszer, közvetlenül a postaládájába.",
+"Nuovi tessuti, aggiornamenti di magazzino e offerte.<1/>Una volta al mese, direttamente nella vostra casella di posta.",
+"Neue Stoffe, Lageraktualisierungen und Angebote.<1/>Einmal im Monat, direkt in Ihr Postfach."
+],
+"88": [
+"E-novice",
+"Newsletter",
+"Hírlevél",
+"Newsletter",
+"Newsletter"
+],
+"89": [
+"Niste prepričani, katera vezava? <1>Preberite vodnik po vezavah</1>",
+"Niste sigurni koji vez? <1>Pročitajte vodič kroz vezove</1>",
+"Nem biztos a szövésben? <1>Olvassa el a szövésismertetőt</1>",
+"Non sapete quale armatura scegliere? <1>Leggete la guida alle armature</1>",
+"Unsicher, welche Bindung? <1>Lesen Sie den Bindungsratgeber</1>"
+],
+"90": [
+"OEKO-TEX® Standard 100",
+"OEKO-TEX® Standard 100",
+"OEKO-TEX® Standard 100",
+"OEKO-TEX® Standard 100",
+"OEKO-TEX® Standard 100"
+],
+"91": [
+"Pisarna +386 1 562 {N}",
+"Ured +386 1 562 {N}",
+"Iroda +386 1 562 {N}",
+"Ufficio +386 1 562 {N}",
+"Büro +386 1 562 {N}"
+],
+"92": [
+"Na zalogi",
+"Na skladištu",
+"Raktáron",
+"In magazzino",
+"Auf Lager"
+],
+"93": [
+"Barvna kartica zaloge",
+"Karta boja skladišta",
+"Raktári színkártya",
+"Cartella colori del magazzino",
+"Farbkarte Lagerware"
+],
+"94": [
+"Odpri barvno kartico →",
+"Otvori kartu boja →",
+"Színkártya megnyitása →",
+"Apri la cartella colori →",
+"Farbkarte öffnen →"
+],
+"95": [
+"Odpri meni",
+"Otvori izbornik",
+"Menü megnyitása",
+"Apri il menu",
+"Menü öffnen"
+],
+"96": [
+"Odprite barvno kartico →",
+"Otvorite kartu boja →",
+"Nyissa meg a színkártyát →",
+"Aprite la cartella colori →",
+"Farbkarte öffnen →"
+],
+"97": [
+"Organski bombaž",
+"Organski pamuk",
+"Bio pamut",
+"Cotone biologico",
+"Bio-Baumwolle"
+],
+"98": [
+"Naš proizvodni referenčni seznam. Začnite pri poljubnem artiklu, mi pa prilagodimo sestavo, težo, barvo in apreturo.",
+"Naš proizvodni referentni popis. Krenite od bilo kojeg artikla, a mi prilagođavamo sastav, težinu, boju i završnu obradu.",
+"Gyártási referencialistánk. Kezdje bármelyik cikkel, mi pedig igazítjuk az összetételt, a tömeget, a színt és a kikészítést.",
+"Il nostro elenco di riferimento della produzione. Partite da qualsiasi articolo: adattiamo composizione, peso, colore e finissaggio.",
+"Unsere Produktionsreferenzliste. Starten Sie mit einem beliebigen Artikel, wir passen Zusammensetzung, Gewicht, Farbe und Ausrüstung an."
+],
+"99": [
+"Pregled",
+"Pregled",
+"Áttekintés",
+"Panoramica",
+"Überblick"
+],
+"100": [
+"Poliester-bombaž z višjim deležem poliestra",
+"Poliester-pamuk s većim udjelom poliestera",
+"Poliészterben gazdag poliészter-pamut",
+"Poliestere-cotone ricco di poliestere",
+"Polyesterreicher Polycotton"
+],
+"101": [
+"Politika zasebnosti in GDPR",
+"Politika privatnosti i GDPR",
+"Adatvédelmi irányelvek és GDPR",
+"Informativa sulla privacy e GDPR",
+"Datenschutzerklärung & DSGVO"
+],
+"102": [
+"Zaščitna Proban®",
+"Zaštitna Proban®",
+"Védő Proban®",
+"Protettivo Proban®",
+"Proban®-Schutz"
+],
+"103": [
+"Izdelano po vaši specifikaciji",
+"Proizvedeno prema vašoj specifikaciji",
+"Az Ön specifikációja szerint gyártva",
+"Prodotto secondo le vostre specifiche",
+"Nach Ihrer Spezifikation hergestellt"
+],
+"104": [
+"Zaščitna",
+"Zaštitna",
+"Védő",
+"Protettivi",
+"Schutz"
+],
+"105": [
+"Zaščitna oblačila",
+"Zaštitna odjeća",
+"Védőruházat",
+"Abbigliamento protettivo",
+"Schutzkleidung"
+],
+"106": [
+"Zaščitna oblačila · 4 min",
+"Zaštitna odjeća · 4 min",
+"Védőruházat · 4 perc",
+"Abbigliamento protettivo · 4 min",
+"Schutzkleidung · 4 Min."
+],
+"107": [
+"Zaščitna oblačila · 5 min",
+"Zaštitna odjeća · 5 min",
+"Védőruházat · 5 perc",
+"Abbigliamento protettivo · 5 min",
+"Schutzkleidung · 5 Min."
+],
+"108": [
+"Kontrola kakovosti",
+"Kontrola kvalitete",
+"Minőségellenőrzés",
+"Controllo qualità",
+"Qualitätskontrolle"
+],
+"109": [
+"Vprašanja o šivanju",
+"Pitanja o šivanju",
+"Kérdések a varrásról",
+"Domande sulla confezione",
+"Fragen zum Nähen"
+],
+"110": [
+"Tkanine REPREVE®",
+"Tkanine REPREVE®",
+"REPREVE® anyagok",
+"Tessuti REPREVE®",
+"REPREVE®-Stoffe"
+],
+"111": [
+"Trajnostni REPREVE®",
+"Održivi REPREVE®",
+"Fenntartható REPREVE®",
+"REPREVE® sostenibile",
+"Nachhaltiges REPREVE®"
+],
+"112": [
+"Reciklirano in trajnostno",
+"Reciklirano i održivo",
+"Újrahasznosított és fenntartható",
+"Riciclato e sostenibile",
+"Recycelt und nachhaltig"
+],
+"113": [
+"Reciklirana elastična",
+"Reciklirana rastezljiva",
+"Újrahasznosított sztreccs",
+"Elasticizzato riciclato",
+"Recycelter Stretch"
+],
+"114": [
+"Zahtevajte <1>vzorce</1>",
+"Zatražite <1>uzorke</1>",
+"Kérjen <1>mintát</1>",
+"Richiedi <1>campioni</1>",
+"Muster <1>anfordern</1>"
+],
+"115": [
+"Zahtevajte vzorce",
+"Zatražite uzorke",
+"Kérjen mintát",
+"Richiedi campioni",
+"Muster anfordern"
+],
+"116": [
+"SORONA® z elastičnostjo",
+"SORONA® rastezljiva",
+"SORONA® rugalmas",
+"SORONA® elastico",
+"SORONA® Stretch"
+],
+"117": [
+"Prodaja +386 40 855 805",
+"Prodaja +386 40 855 805",
+"Értékesítés +386 40 855 805",
+"Vendite +386 40 855 805",
+"Verkauf +386 40 855 805"
+],
+"118": [
+"Pošljite fotografijo →",
+"Pošaljite fotografiju →",
+"Küldjön fényképet →",
+"Inviate una foto →",
+"Foto senden →"
+],
+"119": [
+"Pošljite fotografijo. Dobite ceno.",
+"Pošaljite fotografiju. Dobijte cijenu.",
+"Küldjön fényképet. Kapjon árajánlatot.",
+"Inviate una foto. Ricevete il prezzo.",
+"Foto senden. Preis erhalten."
+],
+"120": [
+"Enkrat na mesec mi pošljite novice podjetja Maximo. Kadar koli se lahko odjavim. <1>Politika zasebnosti</1>",
+"Jednom mjesečno šaljite mi Maximo newsletter. U svakom trenutku mogu se odjaviti. <1>Politika privatnosti</1>",
+"Havonta egyszer küldjék el nekem a Maximo hírlevelét. Bármikor leiratkozhatok. <1>Adatvédelmi irányelvek</1>",
+"Inviatemi la newsletter di Maximo una volta al mese. Posso annullare l'iscrizione in qualsiasi momento. <1>Informativa sulla privacy</1>",
+"Senden Sie mir einmal im Monat den Maximo-Newsletter. Ich kann mich jederzeit abmelden. <1>Datenschutzerklärung</1>"
+],
+"121": [
+"Pošljite nam fotografijo oblačila, ki ga potrebujete. Poiščemo tkanino, izračunamo ceno na kos in vam ga sešijemo.",
+"Pošaljite nam fotografiju odjevnog predmeta koji trebate. Pronalazimo tkaninu, izračunavamo cijenu po komadu i šivamo ga za vas.",
+"Küldjön egy fényképet a kívánt ruhadarabról. Mi kiválasztjuk az anyagot, kiszámoljuk a darabárat, és megvarrjuk Önnek.",
+"Inviateci la foto del capo che vi serve. Individuiamo il tessuto, calcoliamo il prezzo per pezzo e lo confezioniamo per voi.",
+"Senden Sie uns ein Foto des gewünschten Kleidungsstücks. Wir ermitteln den Stoff und den Preis pro Stück und nähen es für Sie."
+],
+"122": [
+"Šivanje",
+"Šivanje",
+"Varrás",
+"Confezione",
+"Konfektion"
+],
+"123": [
+"Storitev šivanja",
+"Usluga šivanja",
+"Varrási szolgáltatás",
+"Servizio di confezione",
+"Näh- und Konfektionsservice"
+],
+"124": [
+"Krajše krojene dolžine od 1 m po dogovoru",
+"Kraće rezane duljine od 1 m na zahtjev",
+"Rövidebb méretre vágott hosszok 1 métertől kérésre",
+"Lunghezze tagliate più corte da 1 m su richiesta",
+"Kürzere Zuschnitte ab 1 m auf Anfrage"
+],
+"125": [
+"Preskoči na vsebino",
+"Preskoči na sadržaj",
+"Ugrás a tartalomra",
+"Vai al contenuto",
+"Zum Inhalt springen"
+],
+"126": [
+"Posebne linije",
+"Posebne linije",
+"Különleges termékcsaládok",
+"Linee speciali",
+"Spezialsortimente"
+],
+"127": [
+"Elastične",
+"Rastezljive",
+"Sztreccs",
+"Elasticizzati",
+"Stretch"
+],
+"128": [
+"Elastičnost z vračanjem",
+"Rastezljivost s povratom oblika",
+"Rugalmasság visszaalakulással",
+"Elasticità con recupero",
+"Stretch mit Rückstellvermögen"
+],
+"129": [
+"Elastične<1>4</1>",
+"Rastezljive<1>4</1>",
+"Sztreccs<1>4</1>",
+"Elasticizzati<1>4</1>",
+"Stretch<1>4</1>"
+],
+"130": [
+"Naroči se",
+"Pretplatite se",
+"Feliratkozás",
+"Iscriviti",
+"Abonnieren"
+],
+"131": [
+"Trajnostne",
+"Održive",
+"Fenntartható",
+"Sostenibili",
+"Nachhaltig"
+],
+"132": [
+"Trajnostna tkanina",
+"Održiva tkanina",
+"Fenntartható anyag",
+"Tessuto sostenibile",
+"Nachhaltiger Stoff"
+],
+"133": [
+"Trajnostne tkanine",
+"Održive tkanine",
+"Fenntartható anyagok",
+"Tessuti sostenibili",
+"Nachhaltige Stoffe"
+],
+"134": [
+"Reciklirana TENCEL®",
+"Reciklirani TENCEL®",
+"Újrahasznosított TENCEL®",
+"TENCEL® riciclato",
+"Recyceltes TENCEL®"
+],
+"135": [
+"Tehnične",
+"Tehničke",
+"Műszaki",
+"Tecnici",
+"Technisch"
+],
+"136": [
+"Tehnične tkanine",
+"Tehničke tkanine",
+"Műszaki anyagok",
+"Tessuti tecnici",
+"Technische Stoffe"
+],
+"137": [
+"Tehnične tkanine · 5 min",
+"Tehničke tkanine · 5 min",
+"Műszaki anyagok · 5 perc",
+"Tessuti tecnici · 5 min",
+"Technische Stoffe · 5 Min."
+],
+"138": [
+"Tencel® in viskoza",
+"Tencel® i viskoza",
+"Tencel® és viszkóz",
+"Tencel® e viscosa",
+"Tencel® und Viskose"
+],
+"139": [
+"Splošni pogoji",
+"Opći uvjeti",
+"Általános szerződési feltételek",
+"Termini e condizioni",
+"Allgemeine Geschäftsbedingungen"
+],
+"140": [
+"Teme",
+"Teme",
+"Témák",
+"Argomenti",
+"Themen"
+],
+"141": [
+"Strokovnjake opremimo, da bodo odlični pri tem, kar delajo.",
+"Opremamo stručnjake da budu izvrsni u onome što rade.",
+"Felszereljük a szakembereket, hogy kiválóak lehessenek abban, amit csinálnak.",
+"Equipaggiamo i professionisti perché eccellano in ciò che fanno.",
+"Wir rüsten Profis aus, damit sie in ihrem Beruf Herausragendes leisten."
+],
+"142": [
+"Vrste vezav: platno, kepr, saten in drugo",
+"Vrste vezova: platno, keper, saten i drugo",
+"A szövéstípusok: vászon, twill, szatén és más kötések",
+"I tipi di armatura: tela, twill, raso e altro",
+"Bindungsarten erklärt: Leinwand, Köper, Atlas und mehr"
+],
+"143": [
+"Kaj je Sorona®",
+"Što je Sorona®",
+"Mi az a Sorona®",
+"Che cos'è Sorona®",
+"Was ist Sorona®"
+],
+"144": [
+"Kaj šivamo",
+"Što šijemo",
+"Mit varrunk",
+"Che cosa confezioniamo",
+"Was wir nähen"
+],
+"145": [
+"Katera tkanina za katero delo",
+"Koja tkanina za koji posao",
+"Melyik anyag melyik munkához",
+"Quale tessuto per quale lavoro",
+"Welcher Stoff für welche Tätigkeit"
+],
+"146": [
+"Delovne hlače in jakne",
+"Radne hlače i jakne",
+"Munkanadrágok és kabátok",
+"Pantaloni e giacche da lavoro",
+"Arbeitshosen und -jacken"
+],
+"147": [
+"Klasika delovnih oblačil",
+"Klasika radne odjeće",
+"A munkaruházat klasszikusai",
+"I classici dell'abbigliamento da lavoro",
+"Klassiker der Arbeitskleidung"
+],
+"148": [
+"Vaš službeni e-naslov",
+"Vaša poslovna e-adresa",
+"Munkahelyi e-mail-címe",
+"La vostra e-mail di lavoro",
+"Ihre geschäftliche E-Mail-Adresse"
+],
+"149": [
+"© {N} Maximo Tekstil d.o.o. · Delovne, tehnične in medicinske tkanine od leta {N}",
+"© {N} Maximo Tekstil d.o.o. · Radne, tehničke i medicinske tkanine od {N}. godine",
+"© {N} Maximo Tekstil d.o.o. · Munkaruha-, műszaki és orvosi anyagok {N} óta",
+"© {N} Maximo Tekstil d.o.o. · Tessuti da lavoro, tecnici e medicali dal {N}",
+"© {N} Maximo Tekstil d.o.o. · Arbeits-, Technik- und Medizinstoffe seit {N}"
+],
+"150": [
+"Domov",
+"Početna",
+"Főoldal",
+"Home",
+"Startseite"
+],
+"151": [
+"Drobtinice",
+"Putanja",
+"Navigációs útvonal",
+"Percorso di navigazione",
+"Brotkrumennavigation"
+],
+"152": [
+"Teža",
+"Težina",
+"Tömeg",
+"Peso",
+"Gewicht"
+],
+"153": [
+"Vezava",
+"Vez",
+"Szövés",
+"Armatura",
+"Bindung"
+],
+"154": [
+"Tipična uporaba",
+"Tipična uporaba",
+"Tipikus felhasználás",
+"Usi tipici",
+"Typische Einsatzbereiche"
+],
+"155": [
+"Barve na zalogi",
+"Boje na skladištu",
+"Raktáron lévő színek",
+"Colori in magazzino",
+"Farben auf Lager"
+],
+"156": [
+"Artikel",
+"Artikl",
+"Cikk",
+"Articolo",
+"Artikel"
+],
+"157": [
+"Barva",
+"Boja",
+"Szín",
+"Colore",
+"Farbe"
+],
+"158": [
+"Sestava",
+"Sastav",
+"Összetétel",
+"Composizione",
+"Zusammensetzung"
+],
+"159": [
+"Kopiraj vrstico naročila",
+"Kopiraj redak narudžbe",
+"Rendelési sor másolása",
+"Copia la riga d'ordine",
+"Bestellzeile kopieren"
+],
+"160": [
+"Zahtevajte vzorec",
+"Zatražite uzorak",
+"Kérjen mintát",
+"Richiedi un campione",
+"Muster anfordern"
+],
+"161": [
+"Širina",
+"Širina",
+"Szélesség",
+"Larghezza",
+"Breite"
+],
+"162": [
+"30 let v tekstilu",
+"30 godina u tekstilu",
+"30 év a textiliparban",
+"30 anni nel tessile",
+"30 Jahre in der Textilbranche"
+],
+"163": [
+"Poljubna barva po naročilu na naših kakovostih, usklajena z vašo referenco.",
+"Bilo koja nijansa po narudžbi na našim kvalitetama, usklađena s vašom referencom.",
+"Bármilyen árnyalat megrendelésre minőségeinken, az Ön referenciájához igazítva.",
+"Qualsiasi tonalità su ordinazione sulle nostre qualità, abbinata al vostro riferimento.",
+"Jeder Farbton auf Bestellung auf unseren Qualitäten, abgestimmt auf Ihre Referenz."
+],
+"164": [
+"Certifikat",
+"Certifikat",
+"Tanúsítvány",
+"Certificato",
+"Zertifikat"
+],
+"165": [
+"Izberite barvo",
+"Odaberite boju",
+"Válasszon színt",
+"Scegliete un colore",
+"Farbe wählen"
+],
+"166": [
+"Predogled barve",
+"Pregled boje",
+"Színelőnézet",
+"Anteprima del colore",
+"Farbvorschau"
+],
+"167": [
+"Barve na zaslonu so le okvirne. Pred naročilom zahtevajte fizični vzorec.",
+"Boje na zaslonu su samo orijentacijske. Prije narudžbe zatražite fizički uzorak.",
+"A képernyőn látható színek tájékoztató jellegűek. Rendelés előtt kérjen fizikai mintát.",
+"I colori sullo schermo sono indicativi. Prima di ordinare richiedete un campione fisico.",
+"Die Farben auf dem Bildschirm sind nur Richtwerte. Fordern Sie vor der Bestellung ein physisches Muster an."
+],
+"168": [
+"Lastnosti",
+"Značajke",
+"Jellemzők",
+"Caratteristiche",
+"Eigenschaften"
+],
+"169": [
+"Od tkanine do oblačila",
+"Od tkanine do odjeće",
+"Az anyagtól a ruhadarabig",
+"Dal tessuto al capo",
+"Vom Stoff zum Kleidungsstück"
+]
+}

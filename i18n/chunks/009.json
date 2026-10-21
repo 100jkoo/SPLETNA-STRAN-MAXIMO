@@ -1,0 +1,632 @@
+{
+"840": [
+"<1>{F}</1>: naš temeljni delovni kepr v 21 barvah, zasnovan za industrijsko pranje in vsakodnevno nošenje.",
+"<1>{F}</1>: naš temeljni radni keper u 21 boji, izrađen za industrijsko pranje i svakodnevno nošenje.",
+"<1>{F}</1>: alap munkaruha-twillünk 21 színben, ipari mosásra és mindennapi viseletre tervezve.",
+"<1>{F}</1>: il nostro twill da lavoro di base in 21 colori, pensato per la lavanderia industriale e l'uso quotidiano.",
+"<1>{F}</1>: unser Kern-Arbeitsköper in 21 Farben, gemacht für Industriewäsche und den täglichen Einsatz."
+],
+"841": [
+"<1>{F}</1>: naša najširša barvna paleta, 27 barv, narejena za medicinske in službene uniforme.",
+"<1>{F}</1>: naša najšira paleta boja, 27 boja, izrađena za medicinske i službene uniforme.",
+"<1>{F}</1>: legszélesebb színválasztékunk, 27 szín, orvosi és szolgálati egyenruhákhoz.",
+"<1>{F}</1>: la nostra gamma di colori più ampia, 27 colori, pensata per divise mediche e di servizio.",
+"<1>{F}</1>: unsere größte Farbpalette, 27 Farben, gemacht für medizinische und Dienstuniformen."
+],
+"842": [
+"<1>{F}</1>: težka izbira za zahtevna dela.",
+"<1>{F}</1>: teška opcija za zahtjevne poslove.",
+"<1>{F}</1>: a nehéz választás igényes munkákhoz.",
+"<1>{F}</1>: l'opzione pesante per lavori impegnativi.",
+"<1>{F}</1>: die schwere Option für anspruchsvolle Arbeit."
+],
+"843": [
+"Uravnotežena mešanica za lahke uniforme in srajce, kot je <1>{F}</1>.",
+"Uravnotežena mješavina za lagane uniforme i košulje, kao što je <1>{F}</1>.",
+"Kiegyensúlyozott keverék könnyű egyenruhákhoz és ingekhez, mint például a <1>{F}</1>.",
+"Una miscela equilibrata per divise leggere e camicie, come <1>{F}</1>.",
+"Eine ausgewogene Mischung für leichte Uniformen und Hemden, etwa <1>{F}</1>."
+],
+"844": [
+"Hitro pravilo",
+"Brzo pravilo",
+"Gyors ökölszabály",
+"Una regola pratica veloce",
+"Eine schnelle Faustregel"
+],
+"845": [
+"Vse barve na zalogi →",
+"Sve boje na skladištu →",
+"Az összes raktáron lévő szín →",
+"Tutti i colori in magazzino →",
+"Alle Farben auf Lager →"
+],
+"846": [
+"Najboljše za",
+"Najbolje za",
+"Legjobb választás",
+"Ideale per",
+"Am besten für"
+],
+"847": [
+"Bolje, bolj zračno",
+"Bolje, prozračnije",
+"Jobb, légáteresztőbb",
+"Meglio, più traspirante",
+"Besser, atmungsaktiver"
+],
+"848": [
+"Udobje v vročini",
+"Udobnost na vrućini",
+"Kényelem melegben",
+"Comfort con il caldo",
+"Komfort bei Hitze"
+],
+"849": [
+"Odlično, enostavno vzdrževanje",
+"Odlično, jednostavno održavanje",
+"Kiváló, könnyű ápolás",
+"Eccellente, facile da curare",
+"Ausgezeichnet, pflegeleicht"
+],
+"850": [
+"Občutite razliko, preden naročite.",
+"Osjetite razliku prije nego što naručite.",
+"Érezze a különbséget, mielőtt rendel.",
+"Sentite la differenza prima di ordinare.",
+"Spüren Sie den Unterschied, bevor Sie bestellen."
+],
+"851": [
+"Potrebna ognjevarna apretura: izberite tkanino z visokim deležem bombaža. Apretura Proban® se veže na bombaž, zato več bombaža pomeni boljše rezultate.",
+"Potrebna vatrootporna završna obrada: odaberite tkaninu s visokim udjelom pamuka. Završna obrada Proban® veže se na pamuk, pa što je više pamuka, to bolje.",
+"Lángálló kikészítésre van szükség: válasszon magas pamuttartalmú anyagot. A Proban® kikészítés a pamuthoz kötődik, így minél több a pamut, annál jobb.",
+"Serve un finissaggio ignifugo: scegliete un tessuto con molto cotone. Il finissaggio Proban® si lega al cotone, quindi più cotone c'è, meglio è.",
+"Flammhemmende Ausrüstung nötig: Wählen Sie einen Stoff mit hohem Baumwollanteil. Die Proban®-Ausrüstung bindet sich an Baumwolle, je mehr Baumwolle, desto besser."
+],
+"852": [
+"Dobro",
+"Dobro",
+"Jó",
+"Buono",
+"Gut"
+],
+"853": [
+"Težka uporaba, obraba, industrijsko pranje vsak teden: <1>35/65</1>.",
+"Intenzivna uporaba, habanje, industrijsko pranje svaki tjedan: <1>35/65</1>.",
+"Intenzív használat, kopás, heti ipari mosás: <1>35/65</1>.",
+"Uso intenso, abrasione, lavanderia industriale ogni settimana: <1>35/65</1>.",
+"Starke Beanspruchung, Abrieb, jede Woche Industriewäsche: <1>35/65</1>."
+],
+"854": [
+"Višja, zelo obstojna",
+"Viša, vrlo izdržljiva",
+"Magasabb, nagyon strapabíró",
+"Più alta, molto resistente all'usura",
+"Höher, sehr strapazierfähig"
+],
+"855": [
+"Vmes: 50/50",
+"Između: 50/50",
+"Köztes megoldás: 50/50",
+"Una via di mezzo: 50/50",
+"Dazwischen: 50/50"
+],
+"856": [
+"Industrijsko pranje",
+"Industrijsko pranje",
+"Ipari mosás",
+"Lavanderia industriale",
+"Industriewäsche"
+],
+"857": [
+"Dolge izmene v zaprtih prostorih, topla podnebja, stik s kožo: <1>60/40</1>.",
+"Duge smjene u zatvorenom, topla klima, doticaj s kožom: <1>60/40</1>.",
+"Hosszú beltéri műszakok, meleg éghajlat, bőrrel érintkezés: <1>60/40</1>.",
+"Turni lunghi al chiuso, climi caldi, contatto con la pelle: <1>60/40</1>.",
+"Lange Schichten in Innenräumen, warmes Klima, Hautkontakt: <1>60/40</1>."
+],
+"858": [
+"Medicinske in službene uniforme, srajce, vsakdanja delovna oblačila",
+"Medicinske i službene uniforme, košulje, svakodnevna radna odjeća",
+"Orvosi és szolgálati egyenruhák, ingek, mindennapi munkaruházat",
+"Divise mediche e di servizio, camicie, abbigliamento da lavoro quotidiano",
+"Medizin- und Dienstuniformen, Hemden, alltägliche Arbeitskleidung"
+],
+"859": [
+"Niste prepričani? Pošljite nam oblačilo, ki ga uporabljate danes. Predlagamo pravo tkanino in pošljemo vzorec, iz zaloge ali izdelan po vaši specifikaciji.",
+"Niste sigurni? Pošaljite nam odjevni predmet koji danas koristite. Predlažemo pravu tkaninu i šaljemo uzorak, s skladišta ili izrađen prema vašoj specifikaciji.",
+"Nem biztos benne? Küldje el nekünk a ma használt ruhadarabot. Javasoljuk a megfelelő anyagot, és mintát küldünk, raktárról vagy az Ön specifikációja szerint gyártva.",
+"Non siete sicuri? Inviateci il capo che usate oggi. Suggeriamo il tessuto giusto e inviamo un campione, da magazzino o realizzato secondo le vostre specifiche.",
+"Unsicher? Senden Sie uns das Kleidungsstück, das Sie heute verwenden. Wir schlagen den passenden Stoff vor und senden ein Muster, aus dem Lager oder nach Ihrer Spezifikation gefertigt."
+],
+"860": [
+"Naše tkanine na zalogi, po mešanici",
+"Naše tkanine na skladištu, prema mješavini",
+"Raktári anyagaink keverék szerint",
+"I nostri tessuti a magazzino, per miscela",
+"Unsere Lagerstoffe nach Mischung"
+],
+"861": [
+"Poliester-bombaž je najpogosteje uporabljena tkanina v delovnih oblačilih. Obe številki povesta mešanico: 35/65 pomeni 35 % bombaža in 65 % poliestra, 60/40 pomeni 60 % bombaža in 40 % poliestra. Razmerje spremeni otip oblačila, trajnost in obnašanje v pralnici.",
+"Poliester-pamuk najčešće je korištena tkanina u radnoj odjeći. Dva broja govore mješavinu: 35/65 znači 35 % pamuka i 65 % poliestera, 60/40 znači 60 % pamuka i 40 % poliestera. Omjer mijenja osjećaj odjevnog predmeta, trajnost i ponašanje u praonici.",
+"A poliészter-pamut a munkaruházat leggyakrabban használt anyaga. A két szám a keveréket mutatja: a 35/65 35% pamutot és 65% poliésztert, a 60/40 60% pamutot és 40% poliésztert jelent. Az arány megváltoztatja, milyen tapintású a ruhadarab, mennyi ideig tart, és hogyan viselkedik a mosodában.",
+"Il poliestere-cotone è il tessuto più usato nell'abbigliamento da lavoro. I due numeri indicano la miscela: 35/65 significa 35% cotone e 65% poliestere, 60/40 significa 60% cotone e 40% poliestere. Il rapporto cambia la sensazione del capo, quanto dura e come si comporta in lavanderia.",
+"Polycotton ist der meistgenutzte Stoff in der Arbeitskleidung. Die beiden Zahlen geben die Mischung an: 35/65 bedeutet 35 % Baumwolle und 65 % Polyester, 60/40 bedeutet 60 % Baumwolle und 40 % Polyester. Das Verhältnis ändert, wie sich das Kleidungsstück anfühlt, wie lange es hält und wie es sich in der Wäscherei verhält."
+],
+"862": [
+"Drug ob drugem",
+"Jedno uz drugo",
+"Egymás mellett",
+"Uno accanto all'altro",
+"Im direkten Vergleich"
+],
+"863": [
+"Gladkejši, trdnejši",
+"Glatkiji, čvršći",
+"Simább, tartásosabb",
+"Più liscio, più compatto",
+"Glatter, fester"
+],
+"864": [
+"Vprašanje je torej preprosto: ali nosilec potrebuje trdnejšo ali udobnejšo tkanino?",
+"Pitanje je dakle jednostavno: treba li nositelju tkanina koja je izdržljivija ili udobnija?",
+"A kérdés tehát egyszerű: a viselőnek strapabíróbb vagy kényelmesebb anyagra van szüksége?",
+"La domanda è quindi semplice: chi lo indossa ha bisogno di un tessuto più resistente o più comodo?",
+"Die Frage ist also einfach: Braucht der Träger einen robusteren oder einen bequemeren Stoff?"
+],
+"865": [
+"Mehkejši, bližje bombažu",
+"Mekši, bliži pamuku",
+"Puhább, közelebb áll a pamuthoz",
+"Più morbido, più vicino al cotone",
+"Weicher, näher an Baumwolle"
+],
+"866": [
+"Trdnost",
+"Čvrstoća",
+"Szilárdság",
+"Resistenza",
+"Festigkeit"
+],
+"867": [
+"Zelo dobro",
+"Vrlo dobro",
+"Nagyon jó",
+"Molto buono",
+"Sehr gut"
+],
+"868": [
+"Kaj prinese posamezno vlakno",
+"Što donosi pojedino vlakno",
+"Mit ad az egyes szál",
+"Che cosa apporta ogni fibra",
+"Was jede Faser beiträgt"
+],
+"869": [
+"Delovne hlače, jakne, kombinezoni",
+"Radne hlače, jakne, kombinezoni",
+"Munkanadrágok, kabátok, overálok",
+"Pantaloni, giacche e tute da lavoro",
+"Arbeitshosen, -jacken, Overalls"
+],
+"870": [
+"25 artiklov, 190 do 300 g/m².",
+"25 artikala, 190 do 300 g/m².",
+"25 cikk, 190–300 g/m².",
+"25 articoli, da 190 a 300 g/m².",
+"25 Artikel, 190 bis 300 g/m²."
+],
+"871": [
+"<1>Granulat.</1> Kosmiči se stalijo in iztisnejo v majhne polimerne kroglice, imenovane granulat.",
+"<1>Granulat.</1> Pahuljice se tale i ekstrudiraju u male polimerne kuglice, zvane granulat.",
+"<1>Granulátum.</1> A pelyheket megolvasztják, és kis polimergyöngyökké, úgynevezett granulátummá extrudálják.",
+"<1>Granuli.</1> Le scaglie vengono fuse ed estruse in piccoli pellet di polimero, detti granuli.",
+"<1>Chips.</1> Die Flakes werden geschmolzen und zu kleinen Polymerpellets, den sogenannten Chips, extrudiert."
+],
+"872": [
+"<1>Zbiranje.</1> Rabljene plastenke PET se zbirajo iz sistemov recikliranja po vsem svetu.",
+"<1>Prikupljanje.</1> Rabljene PET boce prikupljaju se iz sustava recikliranja diljem svijeta.",
+"<1>Gyűjtés.</1> A használt PET-palackokat a világ minden tájáról gyűjtik be az újrahasznosítási rendszerekből.",
+"<1>Raccolta.</1> Le bottiglie PET usate vengono raccolte dai sistemi di riciclaggio di tutto il mondo.",
+"<1>Sammlung.</1> Gebrauchte PET-Flaschen werden aus Recyclingsystemen weltweit gesammelt."
+],
+"873": [
+"<1>Tkanina.</1> Preja se stke z bombažem ali drugimi vlakni v končno tkanino, ki se dodela in pobarva v Evropi.",
+"<1>Tkanina.</1> Pređa se tka s pamukom ili drugim vlaknima u konačnu tkaninu, koja se završno obrađuje i boji u Europi.",
+"<1>Anyag.</1> A fonalat pamuttal vagy más szálakkal szövik végső anyaggá, amelyet Európában kikészítenek és festenek.",
+"<1>Tessuto.</1> Il filato viene tessuto con cotone o altre fibre nel tessuto finale, rifinito e tinto in Europa.",
+"<1>Stoff.</1> Das Garn wird mit Baumwolle oder anderen Fasern zum fertigen Stoff gewebt, in Europa ausgerüstet und gefärbt."
+],
+"874": [
+"<1>Kosmiči.</1> Plastenke se razvrstijo, odstranijo se pokrovčki in etikete, nato se operejo in zdrobijo v čiste plastične kosmiče.",
+"<1>Pahuljice.</1> Boce se sortiraju, uklanjaju se čepovi i etikete, zatim se peru i usitnjavaju u čiste plastične pahuljice.",
+"<1>Pelyhek.</1> A palackokat szétválogatják, eltávolítják a kupakokat és a címkéket, majd megmossák és tiszta műanyag pelyhekké aprítják őket.",
+"<1>Scaglie.</1> Le bottiglie vengono selezionate, private di tappi ed etichette, poi lavate e triturate in scaglie di plastica pulite.",
+"<1>Flakes.</1> Die Flaschen werden sortiert, Deckel und Etiketten entfernt, dann gewaschen und zu sauberen Kunststoffflocken zerkleinert."
+],
+"875": [
+"<1>REPREVE® z bombažem BCI™:</1> Better Cotton z recikliranim poliestrom, za blagovne znamke, ki izberejo to pot.",
+"<1>REPREVE® s pamukom BCI™:</1> Better Cotton s recikliranim poliesterom, za marke koje biraju taj put.",
+"<1>REPREVE® BCI™ pamuttal:</1> Better Cotton újrahasznosított poliészterrel, az ezt az utat választó márkáknak.",
+"<1>REPREVE® con cotone BCI™:</1> Better Cotton con poliestere riciclato, per i marchi che scelgono questa strada.",
+"<1>REPREVE® mit BCI™-Baumwolle:</1> Better Cotton mit recyceltem Polyester, für Marken, die diesen Weg wählen."
+],
+"876": [
+"<1>REPREVE® z liocelom TENCEL®:</1> mehka, zračna tkanina za delovna oblačila v tesnem stiku s kožo.",
+"<1>REPREVE® s lyocellom TENCEL®:</1> mekana, prozračna tkanina za radnu odjeću u bliskom doticaju s kožom.",
+"<1>REPREVE® TENCEL® lyocellel:</1> puha, légáteresztő anyag a bőrrel szorosan érintkező munkaruházathoz.",
+"<1>REPREVE® con lyocell TENCEL®:</1> tessuto morbido e traspirante per abbigliamento da lavoro a contatto con la pelle.",
+"<1>REPREVE® mit TENCEL®-Lyocell:</1> weicher, atmungsaktiver Stoff für hautnahe Arbeitskleidung."
+],
+"877": [
+"<1>REPREVE® z bombažem:</1> kepri od 190 do 300 g/m² za delovna oblačila in poslovne uniforme.",
+"<1>REPREVE® s pamukom:</1> keperi od 190 do 300 g/m² za radnu odjeću i poslovne uniforme.",
+"<1>REPREVE® pamuttal:</1> 190–300 g/m²-es twillek munkaruházathoz és céges egyenruhákhoz.",
+"<1>REPREVE® con cotone:</1> twill da 190 a 300 g/m² per abbigliamento da lavoro e divise aziendali.",
+"<1>REPREVE® mit Baumwolle:</1> Köper von 190 bis 300 g/m² für Arbeitskleidung und Firmenuniformen."
+],
+"878": [
+"<1>REPREVE® z organskim bombažem:</1> isti kepri, z bombažem s certifikatom GOTS ali OCS.",
+"<1>REPREVE® s organskim pamukom:</1> isti keperi, s pamukom s certifikatom GOTS ili OCS.",
+"<1>REPREVE® bio pamuttal:</1> ugyanazok a twillek, GOTS vagy OCS tanúsított pamuttal.",
+"<1>REPREVE® con cotone biologico:</1> gli stessi twill, con cotone certificato GOTS o OCS.",
+"<1>REPREVE® mit Bio-Baumwolle:</1> dieselben Köper, mit GOTS- oder OCS-zertifizierter Baumwolle."
+],
+"879": [
+"<1>Elastične različice:</1> z elastanom ali EOL za svobodo gibanja.",
+"<1>Rastezljive verzije:</1> s elastanom ili EOL za slobodu kretanja.",
+"<1>Sztreccs változatok:</1> elasztánnal vagy EOL-lal a mozgásszabadságért.",
+"<1>Versioni elasticizzate:</1> con elastan o EOL per la libertà di movimento.",
+"<1>Stretch-Varianten:</1> mit Elasthan oder EOL für Bewegungsfreiheit."
+],
+"880": [
+"<1>Smisel recikliranega vlakna ni, da ena srajca reši planet.</1> Če vsa podjetja, ki kupujejo delovna oblačila, preidejo z deviškega na reciklirani poliester, je skupna sprememba ogromna, oblačilo pa je enako.",
+"<1>Smisao recikliranog vlakna nije da jedna košulja spasi planet.</1> Ako sve tvrtke koje kupuju radnu odjeću prijeđu s djevičanskog na reciklirani poliester, ukupna promjena je ogromna, a odjevni predmet je jednak.",
+"<1>A recirkulált szál lényege nem az, hogy egyetlen ing megmenti a bolygót.</1> Az, hogy ha minden munkaruhát vásárló cég a friss poliészterről újrahasznosítottra vált, az összesített változás óriási, a ruhadarab pedig ugyanaz.",
+"<1>Il senso della fibra riciclata non è che una camicia salvi il pianeta.</1> È che se ogni azienda che acquista abbigliamento da lavoro passa dal poliestere vergine a quello riciclato, il cambiamento complessivo è enorme e il capo è identico.",
+"<1>Der Sinn recycelter Fasern ist nicht, dass ein Hemd den Planeten rettet.</1> Sondern dass die Gesamtwirkung riesig ist, wenn jedes Unternehmen, das Arbeitskleidung kauft, von neuem auf recyceltes Polyester umstellt, und das Kleidungsstück identisch ist."
+],
+"881": [
+"<1>Preja.</1> Granulat se ponovno stali in potisne skozi drobne odprtine (predilna šoba) v neprekinjen poliestrski filament. Zračno teksturiranje filamentu da mehak, skoraj bombažen otip.",
+"<1>Pređa.</1> Granulat se ponovno tali i potiskuje kroz sitne otvore (predionicu) u neprekidni poliesterski filament. Zračno teksturiranje filamentu daje mekan, gotovo pamučni dodir.",
+"<1>Fonal.</1> A granulátumot újra megolvasztják, és apró nyílásokon (fonófejen) át folyamatos poliészter szállá préselik. A levegős textúrázás puha, szinte pamutszerű tapintást ad a szálnak.",
+"<1>Filato.</1> I granuli vengono fusi di nuovo e spinti attraverso minuscole aperture (filiera) in un filamento continuo di poliestere. La testurizzazione ad aria dà al filamento una mano morbida, quasi da cotone.",
+"<1>Garn.</1> Die Chips werden erneut geschmolzen und durch winzige Öffnungen (eine Spinndüse) zu einem endlosen Polyesterfilament gepresst. Die Luftverwirbelung verleiht dem Filament einen weichen, fast baumwollartigen Griff."
+],
+"882": [
+"Kot pri vsakem sintetičnem vlaknu lahko pranje sprošča mikroplastiko. Vrečka ali filter za mikrovlakna v pralnem stroju to zmanjša.",
+"Kao i kod svakog sintetičkog vlakna, pranje može otpuštati mikroplastiku. Vrećica ili filter za mikrovlakna u perilici to smanjuje.",
+"Mint minden szintetikus szálnál, a mosás mikroműanyagot szabadíthat fel. A mosógépbe tett mikroszálzsák vagy -szűrő ezt csökkenti.",
+"Come per ogni fibra sintetica, il lavaggio può rilasciare microplastiche. Un sacchetto o un filtro per microfibre nel lavaggio riduce il fenomeno.",
+"Wie bei jeder Synthesefaser kann das Waschen Mikroplastik freisetzen. Ein Mikrofaserbeutel oder -filter in der Wäsche verringert das."
+],
+"883": [
+"Od plastenke do tkanine, v petih korakih",
+"Od boce do tkanine, u pet koraka",
+"A palackból az anyagig, öt lépésben",
+"Dalla bottiglia al tessuto, in cinque passaggi",
+"Von der Flasche zum Stoff in fünf Schritten"
+],
+"884": [
+"Kako nastane reciklirani poliester REPREVE® iz rabljenih plastenk PET: od zbiranja in kosmičev do granulata, filamenta in končane delovne tkanine ter kako ga sledi U TRUST®.",
+"Kako se reciklirani poliester REPREVE® proizvodi iz rabljenih PET boca: od prikupljanja i pahuljica do granulata, filamenta i gotove radne tkanine te kako ga prati U TRUST®.",
+"Hogyan készül az újrahasznosított REPREVE® poliészter használt PET-palackokból: a gyűjtéstől és a pelyhektől a granulátumon és szálon át a kész munkaruha-anyagig, és hogyan követi nyomon az U TRUST®.",
+"Come si produce il poliestere riciclato REPREVE® dalle bottiglie PET usate: dalla raccolta e dalle scaglie ai granuli, al filamento e al tessuto da lavoro finito, e come lo traccia U TRUST®.",
+"Wie recyceltes REPREVE®-Polyester aus gebrauchten PET-Flaschen entsteht: von Sammlung und Flakes über Chips und Filament bis zum fertigen Arbeitsstoff und wie U TRUST® ihn zurückverfolgt."
+],
+"885": [
+"Kako se obnese v primerjavi z deviškim poliestrom",
+"Kako se ponaša u usporedbi s djevičanskim poliesterom",
+"Hogyan teljesít a friss poliészterhez képest",
+"Come si comporta rispetto al poliestere vergine",
+"Wie er im Vergleich zu neuem Polyester abschneidet"
+],
+"886": [
+"Kako se prepričati, da tkanina res vsebuje REPREVE®",
+"Kako biti siguran da tkanina stvarno sadrži REPREVE®",
+"Hogyan győződjön meg arról, hogy egy anyag valóban REPREVE®-t tartalmaz",
+"Come essere sicuri che un tessuto contenga davvero REPREVE®",
+"So stellen Sie sicher, dass ein Stoff wirklich REPREVE® enthält"
+],
+"887": [
+"Naša celotna kolekcija REPREVE® →",
+"Naša cjelokupna kolekcija REPREVE® →",
+"Teljes REPREVE® kollekciónk →",
+"La nostra collezione REPREVE® completa →",
+"Unsere komplette REPREVE®-Kollektion →"
+],
+"888": [
+"Poliester je najpogosteje uporabljeno vlakno na svetu, večina pa ga izvira iz nafte. REPREVE® opravi isto delo, a izhaja iz rabljene plastične steklenice. Polimer je enak, zato se tkanina obnaša enako, vendar vsaka tona REPREVE® ohrani surovo nafto v zemlji in PET izven odlagališč.",
+"Poliester je najčešće korišteno vlakno na svijetu, a većina ga potječe iz nafte. REPREVE® radi isti posao, ali polazi od rabljene plastične boce. Polimer je isti, pa se tkanina ponaša isto, no svaka tona REPREVE®-a ostavlja sirovu naftu u zemlji i PET izvan odlagališta.",
+"A poliészter a világ leggyakrabban használt szála, és legnagyobb része kőolajból származik. A REPREVE® ugyanezt a munkát végzi, de használt műanyag palackból indul. A polimer ugyanaz, ezért az anyag ugyanúgy teljesít, de minden tonna REPREVE® a kőolajat a földben, a PET-et pedig a hulladéklerakón kívül tartja.",
+"Il poliestere è la fibra più usata al mondo e la maggior parte deriva dal petrolio. REPREVE® fa lo stesso lavoro partendo da una bottiglia di plastica usata. Il polimero è lo stesso, quindi il tessuto si comporta allo stesso modo, ma ogni tonnellata di REPREVE® lascia il petrolio greggio nel sottosuolo e il PET fuori dalle discariche.",
+"Polyester ist die meistgenutzte Faser der Welt, und der Großteil stammt aus Erdöl. REPREVE® leistet dieselbe Arbeit, geht aber von einer gebrauchten Plastikflasche aus. Das Polymer ist dasselbe, der Stoff leistet also dasselbe, aber jede Tonne REPREVE® lässt Rohöl im Boden und PET aus der Deponie."
+],
+"889": [
+"REPREVE® je blagovna znamka recikliranega poliestrskega vlakna podjetja <1>Unifi</1>, ameriškega proizvajalca vlaken. Prodaja se tekstilnim tovarnam po vsem svetu, ki ga stkejo ali spletejo v končno tkanino. Mi ga tkemo v tkanine za delovna oblačila in poslovne uniforme v kombinacijah z bombažem, organskim bombažem, TENCEL® in elastičnimi vlakni.",
+"REPREVE® je brendirano reciklirano poliestersko vlakno tvrtke <1>Unifi</1>, američkog proizvođača vlakana. Prodaje se tekstilnim tvornicama diljem svijeta koje ga tkaju ili pletu u gotovu tkaninu. Mi ga tkamo u tkanine za radnu odjeću i poslovne uniforme u kombinaciji s pamukom, organskim pamukom, TENCEL® i rastezljivim vlaknima.",
+"A REPREVE® az amerikai szálgyártó, az <1>Unifi</1> márkás, újrahasznosított poliészter szála. A világ textilgyárainak értékesítik, amelyek kész anyaggá szövik vagy kötik. Mi munkaruha- és céges egyenruha-anyaggá szőjük pamuttal, bio pamuttal, TENCEL®-lel és rugalmas szálakkal kombinálva.",
+"REPREVE® è una fibra di poliestere riciclato di marca di <1>Unifi</1>, un produttore statunitense di fibre. Viene venduta a tessiture di tutto il mondo che la tessono o la lavorano a maglia nel tessuto finito. Noi la tessiamo in tessuti per abbigliamento da lavoro e divise aziendali in combinazione con cotone, cotone biologico, TENCEL® e fibre elastiche.",
+"REPREVE® ist eine Markenfaser aus recyceltem Polyester von <1>Unifi</1>, einem US-amerikanischen Faserhersteller. Sie wird an Textilwerke weltweit verkauft, die sie zum fertigen Stoff weben oder stricken. Wir weben sie zu Arbeits- und Firmenuniformstoffen in Kombination mit Baumwolle, Bio-Baumwolle, TENCEL® und Elastikfasern."
+],
+"890": [
+"REPREVE®: delovna tkanina iz reciklirane plastike | Maximo Tekstil",
+"REPREVE®: radna tkanina od reciklirane plastike | Maximo Tekstil",
+"REPREVE®: munkaruha-anyag újrahasznosított műanyag palackokból | Maximo Tekstil",
+"REPREVE®: tessuto da lavoro da bottiglie di plastica riciclate | Maximo Tekstil",
+"REPREVE®: Arbeitsstoff aus recycelten Plastikflaschen | Maximo Tekstil"
+],
+"891": [
+"REPREVE®: delovna tkanina iz reciklirane plastike.",
+"REPREVE®: radna tkanina od reciklirane plastike.",
+"REPREVE®: munkaruha-anyag újrahasznosított műanyag palackokból.",
+"REPREVE®: tessuto da lavoro da bottiglie di plastica riciclate.",
+"REPREVE®: Arbeitsstoff aus recycelten Plastikflaschen."
+],
+"892": [
+"Trditve o recikliranju je težko preveriti, ko je vlakno enkrat v oblačilu. Program preverjanja <1>U TRUST®</1> podjetja Unifi uporablja kemični sledilnik in preizkuse tretjih strani na kateri koli točki dobavne verige. Oznako smejo nositi samo tkanine iz REPREVE® z verifikacijo U TRUST. Kupujemo samo vlakna s certifikatom U TRUST in certifikate predamo z vsako rolo.",
+"Tvrdnje o recikliranju teško je provjeriti kad je vlakno jednom u odjevnom predmetu. Program provjere <1>U TRUST®</1> tvrtke Unifi koristi kemijski biljeg i ispitivanja trećih strana na bilo kojoj točki opskrbnog lanca. Oznaku smiju nositi samo tkanine izrađene od REPREVE®-a s U TRUST verifikacijom. Kupujemo samo vlakna s certifikatom U TRUST i certifikate prosljeđujemo uz svaku rolu.",
+"A újrahasznosítási állításokat nehéz ellenőrizni, ha a szál már egy ruhadarabban van. Az Unifi <1>U TRUST®</1> ellenőrzési programja kémiai nyomjelzőt és harmadik fél általi vizsgálatokat használ az ellátási lánc bármely pontján. A jelzést csak az U TRUST által igazolt REPREVE®-ből készült anyagok viselhetik. Kizárólag U TRUST tanúsított szálat vásárolunk, és a tanúsítványokat minden tekercshez átadjuk.",
+"Le dichiarazioni sul riciclo sono difficili da verificare una volta che la fibra è dentro un capo. Il programma di verifica <1>U TRUST®</1> di Unifi usa un tracciante chimico e prove di terze parti in qualsiasi punto della catena di fornitura. Solo i tessuti realizzati con REPREVE® verificato U TRUST possono portare il marchio. Acquistiamo solo fibra certificata U TRUST e passiamo i certificati con ogni rotolo.",
+"Recycling-Angaben lassen sich schwer überprüfen, sobald die Faser in einem Kleidungsstück steckt. Das Verifizierungsprogramm <1>U TRUST®</1> von Unifi nutzt einen chemischen Tracer und Tests Dritter an jedem Punkt der Lieferkette. Nur Stoffe aus U-TRUST-verifiziertem REPREVE® dürfen die Marke tragen. Wir kaufen nur U-TRUST-zertifizierte Fasern und geben die Zertifikate mit jeder Rolle weiter."
+],
+"893": [
+"Oglejte si jo in otipajte, preden se odločite.",
+"Pogledajte je i opipajte prije nego što se odlučite.",
+"Nézze meg és érintse meg, mielőtt döntene.",
+"Vedetela e toccatela con mano prima di decidere.",
+"Sehen und fühlen Sie ihn, bevor Sie sich entscheiden."
+],
+"894": [
+"Polimer je enak, zato oblačilo ni šibkejše, manj barvno obstojno ali manj odporno na pranje. Pri uporabi v delovnih oblačilih je na otip in v trajnosti enako kot mešanica z deviškim poliestrom. Edina poštena razlika je na začetku življenja vlakna, ne na koncu življenja oblačila.",
+"Polimer je isti, pa odjevni predmet nije slabiji, manje postojan na boju ili manje otporan na pranje. U upotrebi kao radna odjeća na dodir i trajnošću jednak je mješavini s djevičanskim poliesterom. Jedina poštena razlika je na početku života vlakna, a ne na kraju života odjevnog predmeta.",
+"A polimer ugyanaz, így a ruhadarab nem gyengébb, nem kevésbé színtartó és nem kevésbé mosásálló. Munkaruházati használatban ugyanolyan a tapintása és élettartama, mint a friss poliészter keveréknek. Az egyetlen őszinte különbség a szál életének elején van, nem a ruhadarab életének végén.",
+"Il polimero è lo stesso, quindi il capo non è più debole, meno solido nel colore o meno resistente al lavaggio. Nell'uso da lavoro ha la stessa mano e la stessa durata di una miscela con poliestere vergine. L'unica differenza onesta è all'inizio della vita della fibra, non alla fine di quella del capo.",
+"Das Polymer ist dasselbe, das Kleidungsstück ist also nicht schwächer, weniger farbecht oder weniger waschbeständig. Im Arbeitseinsatz fühlt es sich an und hält so lange wie eine Mischung mit neuem Polyester. Der einzige ehrliche Unterschied liegt am Anfang des Faserlebens, nicht am Ende des Kleidungsstücklebens."
+],
+"895": [
+"Kje ga uporabljamo",
+"Gdje ga koristimo",
+"Hol használjuk",
+"Dove lo utilizziamo",
+"Wo wir ihn einsetzen"
+],
+"896": [
+"Kdo ga izdeluje",
+"Tko ga proizvodi",
+"Ki gyártja",
+"Chi lo produce",
+"Wer ihn herstellt"
+],
+"897": [
+"Novejše elastično vlakno iz poliolefina. Razteza se nekoliko manj kot elastan (okoli 15 do 25 %), a ohrani elastičnost po precej več vročih industrijskih pranjih, je odporno proti klorju in detergentu ter lažje. Primerno za delovna oblačila in medicinsko pranje.",
+"Novije rastezljivo vlakno od poliolefina. Rasteže se nešto manje od elastana (oko 15 do 25 %), ali zadržava elastičnost nakon puno više vrućih industrijskih pranja, otporno je na klor i deterdžent te lakše. Pogodno za radnu odjeću i medicinsko pranje.",
+"Egy újabb, poliolefinből készült rugalmas szál. Valamivel kevésbé nyúlik, mint az elasztán (kb. 15–25%), de sokkal több forró ipari mosás után is megtartja rugalmasságát, ellenáll a klórnak és a mosószernek, és könnyebb. Munkaruházathoz és orvosi mosodához alkalmas.",
+"Una fibra elastica più recente a base di poliolefina. Si allunga un po' meno dell'elastan (circa 15-25%) ma mantiene l'elasticità dopo molti più lavaggi industriali a caldo, resiste a cloro e detersivo ed è più leggera. Adatta all'abbigliamento da lavoro e alla lavanderia medicale.",
+"Eine neuere Elastikfaser aus Polyolefin. Sie dehnt sich etwas weniger als Elasthan (etwa 15 bis 25 %), behält ihre Elastizität aber nach deutlich mehr heißen Industriewäschen, ist chlor- und waschmittelbeständig und leichter. Geeignet für Arbeitskleidung und medizinische Wäsche."
+],
+"898": [
+"Vse elastične tkanine na zalogi →",
+"Sve rastezljive tkanine na skladištu →",
+"Az összes raktáron lévő sztreccs anyag →",
+"Tutti i tessuti elasticizzati in magazzino →",
+"Alle Stretchstoffe auf Lager →"
+],
+"899": [
+"Imenuje se tudi spandex ali Lycra®. Klasično elastično vlakno. 2 do 3 % v delovni tkanini daje oblačilu mehak, prožen otip in približno 20 do 30 % raztezanja v eni ali obeh smereh. Poceni, široko dostopno, dobro poznano.",
+"Zove se i spandex ili Lycra®. Klasično rastezljivo vlakno. 2 do 3 % u radnoj tkanini daje odjevnom predmetu mekan, elastičan osjećaj i oko 20 do 30 % rastezanja u jednom ili oba smjera. Jeftino, široko dostupno, dobro poznato.",
+"Spandexnek vagy Lycra®-nak is hívják. A klasszikus rugalmas szál. A munkaruha-anyagban 2–3% puha, rugalmas tapintást és kb. 20–30% nyúlást ad az egyik vagy mindkét irányban. Olcsó, széles körben elérhető, jól ismert.",
+"Chiamata anche spandex o Lycra®. La classica fibra elastica. Il 2-3% in un tessuto da lavoro dà al capo una sensazione morbida ed elastica e circa il 20-30% di allungamento in una o entrambe le direzioni. Economica, ampiamente disponibile, ben conosciuta.",
+"Auch Spandex oder Lycra® genannt. Die klassische Elastikfaser. 2 bis 3 % in einem Arbeitsstoff geben dem Kleidungsstück ein weiches, elastisches Gefühl und etwa 20 bis 30 % Dehnung in einer oder beiden Richtungen. Günstig, weit verbreitet, gut bekannt."
+],
+"900": [
+"Še ena elastična poliolefinska vlakna. Mehka, odporna proti visoki temperaturi, klorju in večini kemikalij. Uporabljena v naših elastičnih tkaninah FR Proban®, kjer ohrani elastičnost tudi po ognjevarni apreturi.",
+"Još jedno elastično poliolefinsko vlakno. Mekano, otporno na visoku temperaturu, klor i većinu kemikalija. Koristi se u našim rastezljivim FR Proban® tkaninama, gdje zadržava rastezljivost i nakon vatrootporne završne obrade.",
+"Egy másik poliolefin rugalmas szál. Puha, ellenáll a magas hőmérsékletnek, a klórnak és a legtöbb vegyszernek. Sztreccs FR Proban® anyagainkban használjuk, ahol lángálló kikészítés után is megtartja a rugalmasságot.",
+"Un'altra fibra elastica poliolefinica. Morbida, resistente alle alte temperature, al cloro e alla maggior parte dei prodotti chimici. Usata nei nostri tessuti FR Proban® elasticizzati, dove mantiene l'elasticità anche dopo un finissaggio ignifugo.",
+"Eine weitere elastische Polyolefinfaser. Weich, beständig gegen hohe Temperaturen, Chlor und die meisten Chemikalien. Verwendet in unseren Stretch-FR-Proban®-Stoffen, wo sie die Dehnbarkeit auch nach einer flammhemmenden Ausrüstung behält."
+],
+"901": [
+"Najboljše vlakno",
+"Najbolje vlakno",
+"Legjobb szál",
+"Fibra migliore",
+"Beste Faser"
+],
+"902": [
+"Najcenejša in najmehkejša za domače ali industrijsko pranje pri 40–60 °C",
+"Najjeftinija i najmekša za kućno ili industrijsko pranje na 40–60 °C",
+"A legolcsóbb és legpuhább otthoni vagy ipari mosáshoz 40–60 °C-on",
+"La più economica e morbida per lavaggio domestico o industriale a 40–60 °C",
+"Am günstigsten und weichsten für Haushalts- oder Industriewäsche bei 40–60 °C"
+],
+"903": [
+"Odporna proti kloru, mehka in lahka",
+"Otporna na klor, mekana i lagana",
+"Klórálló, puha és könnyű",
+"Resistente al cloro, morbida e leggera",
+"Chlorbeständig, weich und leicht"
+],
+"904": [
+"Klasične delovne hlače, poliester-bombaž",
+"Klasične radne hlače, poliester-pamuk",
+"Klasszikus munkanadrágok, poliészter-pamut",
+"Pantaloni da lavoro classici, poliestere-cotone",
+"Klassische Arbeitshosen, Polycotton"
+],
+"905": [
+"Odvisno od cikla pranja",
+"Ovisi o ciklusu pranja",
+"A mosási ciklustól függ",
+"Dipende dal ciclo di lavaggio",
+"Abhängig vom Waschzyklus"
+],
+"906": [
+"EOL (elastolefin, pogosto imenovan CM800)",
+"EOL (elastolefin, često zvan CM800)",
+"EOL (elasztolefin, gyakran CM800-nak nevezik)",
+"EOL (elastolefina, spesso chiamata CM800)",
+"EOL (Elastolefin, oft CM800 genannt)"
+],
+"907": [
+"EOL / elastan",
+"EOL / elastan",
+"EOL / elasztán",
+"EOL / elastan",
+"EOL / Elasthan"
+],
+"908": [
+"Elastan (EL)",
+"Elastan (EL)",
+"Elasztán (EL)",
+"Elastan (EL)",
+"Elasthan (EL)"
+],
+"909": [
+"Elastan 2 do 3 %",
+"Elastan 2 do 3 %",
+"Elasztán 2–3%",
+"Elastan 2-3%",
+"Elasthan 2 bis 3 %"
+],
+"910": [
+"FR delovna oblačila",
+"FR radna odjeća",
+"FR munkaruházat",
+"Abbigliamento da lavoro FR",
+"FR-Arbeitskleidung"
+],
+"911": [
+"Štirje artikli, 210 do 250 g/m².",
+"Četiri artikla, 210 do 250 g/m².",
+"Négy cikk, 210–250 g/m².",
+"Quattro articoli, da 210 a 250 g/m².",
+"Vier Artikel, 210 bis 250 g/m²."
+],
+"912": [
+"Štirje zalogovni artikli pokrivajo glavne uporabe: <1>{F}</1> za medicino, <2>{F}</2> za službene uniforme, <3>{F}</3> za klasična delovna oblačila in <4>{F}</4> za trši otip, podoben platnu. Naša večnormna ponudba FR Proban® pokriva elastične FR tkanine z XLA ali Nega.",
+"Četiri skladišna artikla pokrivaju glavne namjene: <1>{F}</1> za medicinu, <2>{F}</2> za službene uniforme, <3>{F}</3> za klasičnu radnu odjeću i <4>{F}</4> za čvršći dodir nalik platnu. Naš multinorm FR Proban® program pokriva rastezljive FR tkanine s XLA ili Nega.",
+"Négy raktári cikk fedi le a fő felhasználásokat: a <1>{F}</1> orvosi célra, a <2>{F}</2> szolgálati egyenruhákhoz, a <3>{F}</3> klasszikus munkaruházathoz, a <4>{F}</4> pedig keményebb, vászonszerű tapintáshoz. Többnormás FR Proban® választékunk sztreccs FR anyagokat kínál XLA-val vagy Negával.",
+"Quattro articoli a magazzino coprono gli usi principali: <1>{F}</1> per il medicale, <2>{F}</2> per le divise di servizio, <3>{F}</3> per l'abbigliamento da lavoro classico e <4>{F}</4> per una mano più dura, simile alla tela. La nostra gamma multinorma FR Proban® copre tessuti FR elasticizzati con XLA o Nega.",
+"Vier Lagerartikel decken die Hauptanwendungen ab: <1>{F}</1> für Medizin, <2>{F}</2> für Dienstuniformen, <3>{F}</3> für klassische Arbeitskleidung und <4>{F}</4> für einen festeren, segeltuchartigen Griff. Unser Multinorm-FR-Proban®-Sortiment umfasst Stretch-FR-Stoffe mit XLA oder Nega."
+],
+"913": [
+"Odsevna elastična delovna oblačila",
+"Reflektirajuća rastezljiva radna odjeća",
+"Jól láthatósági sztreccs munkaruházat",
+"Abbigliamento da lavoro ad alta visibilità elasticizzato",
+"Warnschutz-Stretch-Arbeitskleidung"
+],
+"914": [
+"Koliko raztezanja, v kateri smeri",
+"Koliko rastezanja, u kojem smjeru",
+"Mennyi nyúlás, melyik irányban",
+"Quanta elasticità, in quale direzione",
+"Wie viel Stretch, in welcher Richtung"
+],
+"915": [
+"Industrijsko pranje pri 60 °C ali več",
+"Industrijsko pranje na 60 °C ili više",
+"Ipari mosás 60 °C-on vagy afölött",
+"Lavanderia industriale a 60 °C o più",
+"Industriewäsche bei 60 °C oder mehr"
+],
+"916": [
+"Delo",
+"Posao",
+"Munka",
+"Lavoro",
+"Tätigkeit"
+],
+"917": [
+"Ohrani elastičnost za več kot 50 vročih ciklov",
+"Zadržava rastezljivost kroz više od 50 vrućih ciklusa",
+"50+ forró ciklus alatt megtartja a rugalmasságot",
+"Mantiene l'elasticità per oltre 50 cicli a caldo",
+"Behält den Stretch über 50+ Heißzyklen"
+],
+"918": [
+"Medicinske uniforme, bolnišnično pranje z belilom",
+"Medicinske uniforme, bolničko pranje s izbjeljivačem",
+"Orvosi egyenruhák, kórházi mosoda fehérítővel",
+"Divise mediche, lavanderia ospedaliera con candeggina",
+"Medizinkleidung, Krankenhauswäsche mit Bleiche"
+],
+"919": [
+"Strogo vzeto ni elastan. T400 je dvokomponentno poliestrsko vlakno: dva polimera, iztisnjena skupaj, od katerih se eden krči bolj kot drugi, zato ima končno vlakno naravno zavitost. Tkanina ima udoben »mehanski« raztezek približno 15 do 20 % brez občutka gume. Zelo trpežno pri industrijskem pranju.",
+"Strogo uzevši nije elastan. T400 je dvokomponentno poliesterno vlakno: dva polimera ekstrudirana zajedno, od kojih se jedan skuplja više od drugog, pa gotovo vlakno ima prirodnu uvijenost. Tkanina ima udobno »mehaničko« rastezanje od oko 15 do 20 % bez osjećaja gume. Vrlo izdržljivo u industrijskom pranju.",
+"Szigorúan véve nem elasztán. A T400 kétkomponensű poliészter szál: két együtt extrudált polimer, amelyek közül az egyik jobban zsugorodik, így a kész szál természetes csavarulattal rendelkezik. Az anyag kényelmes, „mechanikus” kb. 15–20%-os nyúlású, gumiérzet nélkül. Az ipari mosásban nagyon tartós.",
+"Non è propriamente un elastan. T400 è una fibra di poliestere bicomponente: due polimeri estrusi insieme, di cui uno si restringe più dell'altro, così la fibra finita ha un'arricciatura naturale. Il tessuto ha un comodo allungamento «meccanico» di circa il 15-20% senza sensazione di gomma. Molto durevole nella lavanderia industriale.",
+"Streng genommen kein Elasthan. T400 ist eine Bikomponenten-Polyesterfaser: zwei gemeinsam extrudierte Polymere, von denen eines stärker schrumpft als das andere, sodass die fertige Faser eine natürliche Kräuselung hat. Der Stoff hat eine angenehme „mechanische“ Dehnung von etwa 15 bis 20 % ohne Gummigefühl. In der Industriewäsche sehr haltbar."
+],
+"920": [
+"Naša elastična ponudba na zalogi",
+"Naš rastezljivi asortiman na skladištu",
+"Raktári sztreccs választékunk",
+"La nostra gamma elasticizzata a magazzino",
+"Unser Stretchsortiment auf Lager"
+],
+"921": [
+"Šest artiklov s Spandexom ali elastolefinom XLA.",
+"Šest artikala sa Spandexom ili elastolefinom XLA.",
+"Hat cikk Spandexszel vagy XLA elasztolefinnel.",
+"Sei articoli con Spandex o elastolefina XLA.",
+"Sechs Artikel mit Spandex oder XLA-Elastolefin."
+],
+"922": [
+"Elastične tkanine FR Proban® →",
+"Rastezljive FR Proban® tkanine →",
+"Sztreccs FR Proban® anyagok →",
+"Tessuti FR Proban® elasticizzati →",
+"Stretch-FR-Proban®-Stoffe →"
+],
+"923": [
+"Elastične delovne tkanine: elastan, EOL, T400 in XLA pojasnjeni | Maximo Tekstil",
+"Rastezljive radne tkanine: elastan, EOL, T400 i XLA objašnjeni | Maximo Tekstil",
+"Sztreccs munkaruha-anyagok: az elasztán, az EOL, a T400 és az XLA bemutatása | Maximo Tekstil",
+"Tessuti da lavoro elasticizzati: elastan, EOL, T400 e XLA spiegati | Maximo Tekstil",
+"Stretch-Arbeitsstoffe: Elasthan, EOL, T400 und XLA erklärt | Maximo Tekstil"
+],
+"924": [
+"Elastične delovne tkanine: elastan, EOL, T400 in XLA.",
+"Rastezljive radne tkanine: elastan, EOL, T400 i XLA.",
+"Sztreccs munkaruha-anyagok: elasztán, EOL, T400 és XLA.",
+"Tessuti da lavoro elasticizzati: elastan, EOL, T400 e XLA.",
+"Stretch-Arbeitsstoffe: Elasthan, EOL, T400 und XLA."
+],
+"925": [
+"Preživi postopek apretiranja Proban®",
+"Preživljava postupak završne obrade Proban®",
+"Kibírja a Proban® kikészítési eljárást",
+"Sopravvive al processo di finissaggio Proban®",
+"Übersteht das Proban®-Ausrüstungsverfahren"
+],
+"926": [
+"T400 (dvokomponentni poliester, PES podjetij Dow/INVISTA)",
+"T400 (dvokomponentni poliester, PES tvrtki Dow/INVISTA)",
+"T400 (kétkomponensű poliészter, PES a Dow/INVISTA-tól)",
+"T400 (poliestere bicomponente, PES di Dow/INVISTA)",
+"T400 (Bikomponenten-Polyester, PES von Dow/INVISTA)"
+],
+"927": [
+"Štiri vlakna, ki jih boste videli na podatkovnih listih",
+"Četiri vlakna koja ćete vidjeti na tehničkim listovima",
+"A négy szál, amellyel az adatlapokon találkozni fog",
+"Le quattro fibre che vedrete sulle schede tecniche",
+"Die vier Fasern, die Ihnen in Datenblättern begegnen"
+],
+"928": [
+"Tri odstotke je pogosto vse, kar potrebujete. Več raztezanja zveni bolje, a žrtvuje trdnost in stabilnost oblike. Preizkusite vzorec, preden se odločite za višji odstotek.",
+"Tri posto često je sve što trebate. Više rastezanja zvuči bolje, ali žrtvuje čvrstoću i stabilnost oblika. Isprobajte uzorak prije nego što se odlučite za veći postotak.",
+"A három százalék gyakran minden, amire szüksége van. A nagyobb nyúlás jobban hangzik, de a szilárdság és az alaktartás rovására megy. Próbáljon ki egy mintát, mielőtt magasabb százalék mellett dönt.",
+"Il tre per cento è spesso tutto ciò che serve. Più elasticità sembra meglio ma sacrifica resistenza e stabilità di forma. Provate un campione prima di scegliere una percentuale più alta.",
+"Drei Prozent sind oft alles, was Sie brauchen. Mehr Stretch klingt besser, geht aber auf Kosten von Festigkeit und Formstabilität. Probieren Sie ein Muster, bevor Sie sich für einen höheren Anteil entscheiden."
+],
+"929": [
+"Pred dvajsetimi leti so bila delovna oblačila toga in nihče ni dvomil o tem. Danes delavec, ki ves dan kleči, pleza in se zvija, pričakuje, da se bodo hlače gibale z njim. Majhna količina pravega vlakna, dva do pet odstotkov, tkanino preobrazi. Vprašanje je, katero vlakno.",
+"Prije dvadeset godina radna je odjeća bila kruta i nitko to nije dovodio u pitanje. Danas radnik koji kleči, penje se i uvija cijeli dan očekuje da se hlače kreću s njim. Mala količina pravog vlakna, dva do pet posto, preobražava tkaninu. Pitanje je koje vlakno.",
+"Húsz éve a munkaruha merev volt, és ezt senki sem kérdőjelezte meg. Ma az a munkavállaló, aki egész nap térdel, mászik és csavarodik, elvárja, hogy a nadrág vele mozogjon. Egy kevés megfelelő szál, kettő-öt százalék, átalakítja az anyagot. A kérdés az, hogy melyik szál.",
+"Vent'anni fa l'abbigliamento da lavoro era rigido e nessuno lo metteva in discussione. Oggi un lavoratore che si inginocchia, si arrampica e si torce tutto il giorno si aspetta che il pantalone si muova con lui. Una piccola quantità della fibra giusta, dal due al cinque per cento, trasforma il tessuto. La domanda è quale fibra.",
+"Vor zwanzig Jahren war Arbeitskleidung steif, und niemand stellte das infrage. Heute erwartet ein Arbeiter, der den ganzen Tag kniet, klettert und sich verdreht, dass sich die Hose mit ihm bewegt. Eine kleine Menge der richtigen Faser, zwei bis fünf Prozent, verwandelt den Stoff. Die Frage ist, welche Faser."
+]
+}

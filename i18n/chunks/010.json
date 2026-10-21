@@ -1,0 +1,632 @@
+{
+"930": [
+"Slabosti: po številnih vročih pranjih izgubi elastičnost, ne prenaša klorovega belila, pod UV-svetlobo propada.",
+"Nedostaci: nakon mnogo vrućih pranja gubi elastičnost, ne podnosi klorni izbjeljivač, razgrađuje se pod UV svjetlom.",
+"Gyengeségei: sok forró mosás után elveszíti a rugalmasságát, nem szereti a klóros fehérítőt, UV-fény hatására lebomlik.",
+"Punti deboli: perde elasticità dopo molti lavaggi a caldo, non ama la candeggina al cloro, si degrada con la luce UV.",
+"Schwächen: verliert nach vielen Heißwäschen an Elastizität, verträgt keine Chlorbleiche, baut sich unter UV-Licht ab."
+],
+"931": [
+"Raztezanje v votku (čez rolo) zadošča za hlače: giblje se s kolenom in kolkom. Raztezanje v osnovi (vzdolž role) doda popustljivost po dolžini. Dvosmerno raztezanje se uporablja, ko je oblačilo krojeno diagonalno ali ko je gibanje v več smereh.",
+"Rastezanje u potki (preko role) dovoljno je za hlače: kreće se s koljenom i kukom. Rastezanje u osnovi (uzduž role) dodaje popuštanje po dužini. Dvosmjerno rastezanje koristi se kad je odjevni predmet krojen dijagonalno ili kad je kretanje u više smjerova.",
+"A vetülék irányú nyúlás (a tekercsre merőlegesen) elegendő nadrághoz: mozog a térddel és a csípővel. Az láncirányú nyúlás (a tekercs mentén) hosszirányú engedést ad. A kétirányú nyúlást akkor használják, ha a ruhadarabot átlósan szabják, vagy ha a mozgás több irányú.",
+"L'elasticità in trama (attraverso il rotolo) basta per i pantaloni: si muove con il ginocchio e l'anca. L'elasticità in ordito (lungo il rotolo) aggiunge cedevolezza in lunghezza. L'elasticità bidirezionale si usa quando il capo è tagliato in diagonale o quando il movimento è in più direzioni.",
+"Schussdehnung (quer zur Rolle) reicht für Hosen: Sie bewegt sich mit Knie und Hüfte. Kettdehnung (längs der Rolle) gibt in der Länge nach. Zweiwegestretch wird verwendet, wenn das Kleidungsstück diagonal zugeschnitten wird oder die Bewegung in mehrere Richtungen geht."
+],
+"932": [
+"Zakaj je delovna tkanina elastična, kako se razlikujejo elastan, elastolefin EOL, T400 in XLA ter zakaj 3 % pravega vlakna spremeni dan na kolenih.",
+"Zašto je radna tkanina rastezljiva, kako se razlikuju elastan, elastolefin EOL, T400 i XLA te zašto 3 % pravog vlakna mijenja dan na koljenima.",
+"Mitől rugalmas a munkaruha-anyag, miben különbözik az elasztán, az EOL elasztolefin, a T400 és az XLA, és miért változtatja meg a megfelelő szál 3%-a a térden töltött napot.",
+"Che cosa rende elastico un tessuto da lavoro, in che cosa differiscono elastan, elastolefina EOL, T400 e XLA e perché il 3% della fibra giusta cambia una giornata sulle ginocchia.",
+"Was einen Arbeitsstoff dehnbar macht, wie sich Elasthan, EOL-Elastolefin, T400 und XLA unterscheiden und warum 3 % der richtigen Faser einen Tag auf den Knien verändern."
+],
+"933": [
+"Katera elastična tkanina za katero delo",
+"Koja rastezljiva tkanina za koji posao",
+"Melyik sztreccs anyag melyik munkához",
+"Quale tessuto elasticizzato per quale lavoro",
+"Welcher Stretchstoff für welche Tätigkeit"
+],
+"934": [
+"Zakaj",
+"Zašto",
+"Miért",
+"Perché",
+"Warum"
+],
+"935": [
+"1/1 + mreža",
+"1/1 + mreža",
+"1/1 + rács",
+"1/1 + griglia",
+"1/1 + Gitter"
+],
+"936": [
+"2 od 5",
+"2 od 5",
+"2 az 5-ből",
+"2 su 5",
+"2 von 5"
+],
+"937": [
+"Kepr 2/1",
+"Keper 2/1",
+"Twill 2/1",
+"Twill 2/1",
+"Köper 2/1"
+],
+"938": [
+"Košarasta vezava 2/2",
+"Košarasti vez 2/2",
+"Kosárkötés 2/2",
+"Armatura panama 2/2",
+"Panamabindung 2/2"
+],
+"939": [
+"Rebrasta vezava 2/2",
+"Rebrasti vez 2/2",
+"Bordázott szövés 2/2",
+"Armatura a coste 2/2",
+"Rippenbindung 2/2"
+],
+"940": [
+"Kepr 2/2",
+"Keper 2/2",
+"Twill 2/2",
+"Twill 2/2",
+"Köper 2/2"
+],
+"941": [
+"Oxford 2×1",
+"Oxford 2×1",
+"Oxford 2×1",
+"Oxford 2×1",
+"Oxford 2×1"
+],
+"942": [
+"3 od 5",
+"3 od 5",
+"3 az 5-ből",
+"3 su 5",
+"3 von 5"
+],
+"943": [
+"Kepr 3/1",
+"Keper 3/1",
+"Twill 3/1",
+"Twill 3/1",
+"Köper 3/1"
+],
+"944": [
+"4 od 5",
+"4 od 5",
+"4 az 5-ből",
+"4 su 5",
+"4 von 5"
+],
+"945": [
+"5 od 5",
+"5 od 5",
+"5 az 5-ből",
+"5 su 5",
+"5 von 5"
+],
+"946": [
+"Saten s 5 vezmi",
+"Saten s 5 veza",
+"5 kötéspontos szatén (sateen)",
+"Raso (sateen) a 5 fili",
+"5-bindiger Satin (Sateen)"
+],
+"947": [
+"Saten s 5 vezmi",
+"Saten s 5 veza",
+"5 kötéspontos szatén",
+"Raso a 5 fili",
+"5-bindiger Atlas"
+],
+"948": [
+"<1></1><2>Osnova</2> teče po dolžini, vzdolž role",
+"<1></1><2>Osnova</2> teče po duljini, uzduž role",
+"<1></1><2>A láncfonal</2> hosszirányban fut, a tekercs mentén",
+"<1></1><2>L'ordito</2> corre in lunghezza, lungo il rotolo",
+"<1></1><2>Die Kette</2> verläuft in Längsrichtung, entlang der Rolle"
+],
+"949": [
+"<1></1><2>Votek</2> teče počez, od roba do roba",
+"<1></1><2>Potka</2> teče poprečno, od ruba do ruba",
+"<1></1><2>A vetülékfonal</2> keresztben fut, szélétől szélig",
+"<1></1><2>La trama</2> corre in senso trasversale, da cimosa a cimosa",
+"<1></1><2>Der Schuss</2> verläuft quer, von Webkante zu Webkante"
+],
+"950": [
+"<1></1>Osnova",
+"<1></1>Osnova",
+"<1></1>Láncfonal",
+"<1></1>Ordito",
+"<1></1>Kette"
+],
+"951": [
+"<1></1>Votek",
+"<1></1>Potka",
+"<1></1>Vetülék",
+"<1></1>Trama",
+"<1></1>Schuss"
+],
+"952": [
+"<1>Pri Maximo</1>BLAZE 190 Stretch je odsevni elastični saten, SA 180 pa medicinski saten, izdelan po naročilu.",
+"<1>Kod Maxima</1>BLAZE 190 Stretch je reflektirajući rastezljivi saten, a SA 180 medicinski saten izrađen po narudžbi.",
+"<1>A Maximónál</1>a BLAZE 190 Stretch egy jól láthatósági sztreccs szatén, az SA 180 pedig megrendelésre gyártott orvosi szatén.",
+"<1>Da Maximo</1>BLAZE 190 Stretch è un raso elasticizzato ad alta visibilità, e SA 180 è un raso medicale prodotto su ordinazione.",
+"<1>Bei Maximo</1>BLAZE 190 Stretch ist ein Warnschutz-Stretchatlas, und SA 180 ist ein medizinischer Atlas auf Bestellung."
+],
+"953": [
+"<1>Pri Maximo</1>Večina naših poliester-bombažnih in bombažnih delovnih tkanin so kepri, na primer ADIDAS (100 % bombažni kepr, 200 g/m²).",
+"<1>Kod Maxima</1>Većina naših poliester-pamučnih i pamučnih radnih tkanina su keperi, na primjer ADIDAS (100 % pamučni keper, 200 g/m²).",
+"<1>A Maximónál</1>polyészter-pamut és pamut munkaruha-anyagaink többsége twill, például az ADIDAS (100% pamut twill, 200 g/m²).",
+"<1>Da Maximo</1>La maggior parte dei nostri tessuti da lavoro in poliestere-cotone e cotone sono twill, ad esempio ADIDAS (twill 100% cotone, 200 g/m²).",
+"<1>Bei Maximo</1>Die meisten unserer Polycotton- und Baumwoll-Arbeitsstoffe sind Köper, zum Beispiel ADIDAS (100 % Baumwollköper, 200 g/m²)."
+],
+"954": [
+"<1>Pri Maximo</1>Naš CORDURA® CDR 200 je konstrukcija s platneno vezavo.",
+"<1>Kod Maxima</1>Naš CORDURA® CDR 200 je konstrukcija s platnenim vezom.",
+"<1>A Maximónál</1>a CORDURA® CDR 200 vászonkötéses szerkezet.",
+"<1>Da Maximo</1>La nostra CORDURA® CDR 200 è una costruzione a tela.",
+"<1>Bei Maximo</1>Unsere CORDURA® CDR 200 ist eine Konstruktion in Leinwandbindung."
+],
+"955": [
+"<1>Pri Maximo</1>Naš CORDURA® CDR1 200 je ripstop 500D.",
+"<1>Kod Maxima</1>Naš CORDURA® CDR1 200 je ripstop 500D.",
+"<1>A Maximónál</1>a CORDURA® CDR1 200 egy 500D ripstop.",
+"<1>Da Maximo</1>La nostra CORDURA® CDR1 200 è un ripstop 500D.",
+"<1>Bei Maximo</1>Unsere CORDURA® CDR1 200 ist ein 500D-Ripstop."
+],
+"956": [
+"Različica košarastega veza: dve fini osnovni niti delujeta skupaj kot ena in prečkata debelejši posamezni votek. Pogosto je osnova barvna, votek pa bel, kar daje subtilen dvobarven videz.",
+"Varijanta košarastog veza: dvije fine osnovne niti rade zajedno kao jedna i križaju deblju pojedinačnu potku. Često je osnova obojena, a potka bijela, što daje suptilan dvobojni izgled.",
+"A kosárkötés egy változata: két vékony láncfonal egyként dolgozik, és egy vastagabb egyes vetülékfonalat keresztez. Gyakran a lánc színes, a vetülék fehér, ami finom kéttónusú megjelenést ad.",
+"Una variante dell'armatura panama: due fili d'ordito sottili lavorano insieme come uno e incrociano una trama singola più spessa. Spesso l'ordito è colorato e la trama bianca, con un sottile effetto bicolore.",
+"Eine Variante der Panamabindung: Zwei feine Kettfäden arbeiten zusammen wie einer und kreuzen einen dickeren einzelnen Schussfaden. Oft ist die Kette farbig und der Schuss weiß, was einen dezenten Zweiton-Look ergibt."
+],
+"957": [
+"Prekinjen kepr: diagonala se obrne vsakih nekaj niti in ustvari cik-cak vzorec V kot ribje kosti.",
+"Prekinuti keper: dijagonala se obrće svakih nekoliko niti stvarajući cik-cak V uzorak poput riblje kosti.",
+"Megtört twill: az átló néhány fonalanként irányt vált, cikcakk V-mintát alkotva, mint a halszálka.",
+"Un twill spezzato: la diagonale si inverte ogni pochi fili, creando un motivo a V a zig-zag come lo scheletro di un pesce.",
+"Ein gebrochener Köper: Die Diagonale kehrt sich alle paar Fäden um und erzeugt ein Zickzack-V-Muster wie Fischgräten."
+],
+"958": [
+"Vgrajena mreža, ki ustavi trganje",
+"Ugrađena mreža koja zaustavlja kidanje",
+"Beépített rács, amely megállítja a szakadást",
+"Una griglia integrata che ferma gli strappi",
+"Ein eingebautes Gitter, das Risse stoppt"
+],
+"959": [
+"Platnena (ali včasih keprasta) podlaga z močnejšimi ojačitvenimi nitmi, vtkanimi v rednih razmikih v osnovi in votku, običajno na vsakih 5 do 8 mm. Ojačitvene niti so na diagramu prikazane belo.",
+"Platnena (ili ponekad keperasta) podloga s jačim pojačanim nitima utkanim u pravilnim razmacima u osnovi i potki, obično svakih 5 do 8 mm. Pojačane niti na dijagramu su prikazane bijelo.",
+"Vászon (vagy néha twill) alap erősebb megerősítő fonalakkal, amelyeket rendszeres időközönként szőnek be láncban és vetülékben egyaránt, általában 5–8 mm-enként. A megerősítő fonalak az ábrán fehérrel láthatók.",
+"Una base a tela (o a volte twill) con fili di rinforzo più resistenti intessuti a intervalli regolari sia in ordito sia in trama, di solito ogni 5-8 mm. I fili di rinforzo sono mostrati in bianco nel diagramma.",
+"Eine Leinwand- (manchmal Köper-)Basis mit stärkeren Verstärkungsfäden, die in regelmäßigen Abständen in Kette und Schuss eingewebt sind, meist alle 5 bis 8 mm. Die Verstärkungsfäden sind im Diagramm weiß dargestellt."
+],
+"960": [
+"Praktični vodnik po vezavah tkanin: platno, rebra, košara, oxford, ripstop, kepr 2/1, 2/2, 3/1, ribja kost, saten in sateen. Kako je vsaka narejena, kako se obnese in kje se uporablja v delovnih oblačilih.",
+"Praktični vodič kroz vezove tkanina: platno, rebra, košara, oxford, ripstop, keper 2/1, 2/2, 3/1, riblja kost, saten i sateen. Kako je svaki izrađen, kako se ponaša i gdje se koristi u radnoj odjeći.",
+"Gyakorlati útmutató az anyagszövésekhez: vászon, bordázott, kosár, oxford, ripstop, twill 2/1, 2/2, 3/1, halszálka, szatén és sateen. Hogyan készül az egyes kötés, hogyan teljesít, és hol használják munkaruházatban.",
+"Una guida pratica alle armature dei tessuti: tela, costa, panama, oxford, ripstop, twill 2/1, 2/2, 3/1, spina di pesce, raso e sateen. Come si realizza ciascuna, come si comporta e dove viene usata nell'abbigliamento da lavoro.",
+"Ein praktischer Leitfaden zu Gewebebindungen: Leinwand, Rips, Panama, Oxford, Ripstop, Köper 2/1, 2/2, 3/1, Fischgrat, Atlas und Sateen. Wie jede entsteht, wie sie sich verhält und wo sie in Arbeitskleidung eingesetzt wird."
+],
+"961": [
+"Pravilo za delovna oblačila: kepr za hlače in jakne, ripstop kjer je nevarnost trganja, platnena vezava za stabilnost in premaze, saten za gladek, udoben otip.",
+"Pravilo za radnu odjeću: keper za hlače i jakne, ripstop gdje postoji opasnost od kidanja, platneni vez za stabilnost i premaze, saten za gladak, ugodan završni dojam.",
+"Ökölszabály munkaruházathoz: twill nadrágokhoz és kabátokhoz, ripstop ott, ahol a szakadás a kockázat, vászonkötés a stabilitáshoz és a bevonáshoz, szatén a sima, kényelmes tapintáshoz.",
+"Una regola pratica per l'abbigliamento da lavoro: twill per pantaloni e giacche, ripstop dove il rischio è lo strappo, tela per stabilità e rivestimento, raso per una finitura liscia e comoda.",
+"Eine Faustregel für Arbeitskleidung: Köper für Hosen und Jacken, Ripstop dort, wo Reißen das Risiko ist, Leinwandbindung für Stabilität und Beschichtung, Atlas für einen glatten, bequemen Griff."
+],
+"962": [
+"Kepr, ki spremeni smer",
+"Keper koji mijenja smjer",
+"Irányt váltó twill",
+"Un twill che cambia direzione",
+"Ein Köper, der die Richtung wechselt"
+],
+"963": [
+"Različica platnene vezave, kjer niti delujejo v skupinah. Tu vsaka osnovna nit plava čez dva votka in pod dvema, zato tkanina kaže fina vodoravna rebra (votkasta rebra delujejo enako v drugi smeri).",
+"Varijacija platnenog veza gdje niti rade u skupinama. Ovdje svaka osnovna nit pliva preko dvije potke i ispod dvije, pa tkanina pokazuje fina vodoravna rebra (rebra u potki rade isto u drugom smjeru).",
+"A vászonkötés egy változata, ahol a fonalak csoportosan dolgoznak. Itt minden láncfonal két vetülék felett és két alatt halad, így az anyagon finom vízszintes bordák látszanak (a vetülékbordás ugyanígy működik a másik irányban).",
+"Una variante dell'armatura tela in cui i fili lavorano in gruppi. Qui ogni filo d'ordito passa sopra due trame e sotto due, così il tessuto mostra sottili coste orizzontali (una costa di trama funziona allo stesso modo nell'altra direzione).",
+"Eine Variante der Leinwandbindung, bei der die Fäden in Gruppen arbeiten. Hier flottiert jeder Kettfaden über zwei Schüsse und unter zwei, sodass der Stoff feine horizontale Rippen zeigt (eine Schussrips funktioniert ebenso in der anderen Richtung)."
+],
+"964": [
+"Obraba",
+"Habanje",
+"Kopás",
+"Abrasione",
+"Abrieb"
+],
+"965": [
+"Odporno proti obrabi",
+"Otporno na habanje",
+"Kopásálló",
+"Resistente all'abrasione",
+"Abriebfest"
+],
+"966": [
+"Uravnotežen videz",
+"Uravnotežen izgled",
+"Kiegyensúlyozott megjelenés",
+"Aspetto equilibrato",
+"Ausgewogenes Aussehen"
+],
+"967": [
+"Uravnotežen kepr, enak na obeh straneh",
+"Uravnoteženi keper, jednak s obje strane",
+"Kiegyensúlyozott twill, mindkét oldalon azonos",
+"Twill bilanciato, uguale su entrambi i lati",
+"Ausgewogener Köper, beidseitig gleich"
+],
+"968": [
+"Uravnotežen, mehak a trden, z jasno diagonalo 45°. Dobro pada in se vrača v obliko, udoben za nošenje.",
+"Uravnotežen, mekan, a čvrst, s jasnom dijagonalom od 45°. Dobro pada i vraća oblik, ugodan za nošenje.",
+"Kiegyensúlyozott, puha, mégis erős, határozott 45°-os átlóval. Jól esik és jól visszaalakul, kényelmes viselni.",
+"Bilanciato, morbido ma resistente, con una chiara diagonale a 45°. Buona caduta e recupero, comodo da indossare.",
+"Ausgewogen, weich und doch stark, mit klarer 45°-Diagonale. Guter Fall und gute Erholung, bequem zu tragen."
+],
+"969": [
+"Košarasta vezava (panama)",
+"Košarasti vez (panama)",
+"Kosárkötés (panama)",
+"Armatura panama",
+"Panamabindung"
+],
+"970": [
+"Diagram košarastega veza (panama)",
+"Dijagram košarastog veza (panama)",
+"Kosárkötés (panama) szövésábrája",
+"Diagramma dell'armatura panama",
+"Diagramm der Panamabindung"
+],
+"971": [
+"Blog · Vodnik po tkaninah · 8 min branja",
+"Blog · Vodič kroz tkanine · 8 min čitanja",
+"Blog · Anyagismertető · 8 perc olvasás",
+"Blog · Guida ai tessuti · 8 min di lettura",
+"Blog · Stoffratgeber · 8 Min. Lesezeit"
+],
+"972": [
+"Oba uporabljata dolge plavajoče niti in razpršene vezne točke. Pri satenu osnova plava na licu, pri sateenu votek plava na licu. Saten je običajno bolj svetleč, sateen mehkejši in bolj mat, pogosto iz bombaža.",
+"Oba koriste duge plivajuće niti i raspršene točke vezivanja. Kod atlasa osnova pliva na licu, kod sateena potka pliva na licu. Saten je obično sjajniji, sateen mekši i mutniji, često od pamuka.",
+"Mindkettő hosszú flotírozó fonalakat és szétszórt kötéspontokat használ. A szatén (atlasz) esetében a lánc flotíroz az előoldalon, a sateennél a vetülék. A szatén általában fényesebb, a sateen puhább és matt, gyakran pamutból.",
+"Entrambi usano lunghi flottaggi e punti di legatura sparsi. Nel raso l'ordito flotta sul dritto, nel sateen la trama flotta sul dritto. Il raso è di solito più lucido, il sateen più morbido e opaco, spesso in cotone.",
+"Beide verwenden lange Flottierungen und verstreute Bindepunkte. Beim Atlas flottiert die Kette auf der Oberseite, beim Sateen der Schuss. Atlas ist meist glänzender, Sateen weicher und matter, oft aus Baumwolle."
+],
+"973": [
+"Ali lahko Maximo Tekstil izdela tkanino v določeni vezavi?",
+"Može li Maximo Tekstil proizvesti tkaninu u određenom vezu?",
+"Gyárthat-e a Maximo Tekstil anyagot meghatározott szövéssel?",
+"Maximo Tekstil può produrre un tessuto con un'armatura specifica?",
+"Kann Maximo Tekstil einen Stoff in einer bestimmten Bindung herstellen?"
+],
+"974": [
+"Jasno rebrasta površina z nekoliko več telesa kot platnena vezava. Nekoliko manj stabilna, ker niti plavajo čez dve.",
+"Jasno rebrasta površina s malo više tijela od platnenog veza. Nešto manje stabilna jer niti pliva preko dvije.",
+"Jól láthatóan bordás felület, valamivel több testtel, mint a vászonkötés. Kicsit kevésbé stabil, mert a fonalak kettő felett flotíroznak.",
+"Superficie chiaramente a coste con un po' più di corpo dell'armatura tela. Leggermente meno stabile, perché i fili flottano su due.",
+"Deutlich gerippte Oberfläche mit etwas mehr Stand als die Leinwandbindung. Etwas weniger stabil, da die Fäden über zwei flottieren."
+],
+"975": [
+"Udobno",
+"Udobno",
+"Kényelmes",
+"Comodo",
+"Bequem"
+],
+"976": [
+"Dekorativna tekstura",
+"Dekorativna tekstura",
+"Dekoratív textúra",
+"Texture decorativa",
+"Dekorative Textur"
+],
+"977": [
+"Denim, težak drill in platno za delovna oblačila, hlače in hlače z oprsnikom za gradbeništvo, rudarstvo in industrijo.",
+"Traper, teški drill i platno za radnu odjeću, hlače i hlače s tregerima za građevinarstvo, rudarstvo i industriju.",
+"Farmer, nehéz drill és vászon munkaruházat, nadrágok és kantáros nadrágok az építőiparhoz, bányászathoz és iparhoz.",
+"Denim, drill pesante e tela per abbigliamento da lavoro, pantaloni e salopette per edilizia, miniere e industria.",
+"Denim, schwerer Drell und Segeltuch-Arbeitskleidung, Hosen und Latzhosen für Bau, Bergbau und Industrie."
+],
+"978": [
+"Gosto in čvrsto",
+"Gusto i čvrsto",
+"Sűrű és tartásos",
+"Denso e compatto",
+"Dicht und fest"
+],
+"979": [
+"Diagonalna tekstura, trši lice in mehkejši hrbet. Niti se lahko pakirajo bližje kot pri platnu, zato je tkanina gosta, obstojna in lepo pada.",
+"Dijagonalna tekstura, čvršće lice i mekša naličje. Niti se mogu gušće pakirati nego kod platna, pa je tkanina gusta, izdržljiva i lijepo pada.",
+"Átlós textúra, szilárdabb színoldal és puhább fonákoldal. A fonalak sűrűbben illeszkedhetnek, mint a vászonkötésnél, így az anyag sűrű, tartós és jól esik.",
+"Texture diagonale, dritto più compatto e rovescio più morbido. I fili possono essere ravvicinati più che nella tela, quindi il tessuto è denso, durevole e cade bene.",
+"Diagonale Textur, festere Oberseite und weichere Rückseite. Die Fäden lassen sich dichter packen als bei der Leinwandbindung, der Stoff ist dicht, haltbar und fällt gut."
+],
+"980": [
+"Izrazita, teksturirana površina z vso trdnostjo kepra. Vzorec odlično skrije sledi in obrabo.",
+"Karakteristična, teksturirana površina sa svom čvrstoćom kepera. Uzorak odlično skriva tragove i habanje.",
+"Jellegzetes, textúrált felület a twill teljes szilárdságával. A minta kiválóan elrejti a foltokat és a kopást.",
+"Superficie caratteristica e con texture, con tutta la resistenza del twill. Il disegno nasconde benissimo segni e usura.",
+"Charakteristische, strukturierte Oberfläche mit der ganzen Festigkeit des Köpers. Das Muster verbirgt Flecken und Abnutzung hervorragend."
+],
+"981": [
+"Enostavno za premazovanje",
+"Jednostavno za premazivanje",
+"Könnyen bevonható",
+"Facile da rivestire",
+"Leicht zu beschichten"
+],
+"982": [
+"Enajst vezav na kratko",
+"Jedanaest vezova ukratko",
+"Tizenegy szövés dióhéjban",
+"Undici armature a colpo d'occhio",
+"Elf Bindungen auf einen Blick"
+],
+"983": [
+"Vsaka tkana tkanina je narejena iz dveh sklopov niti, ki se križata pod pravim kotom: <1>osnove</1>, ki teče po dolžini, in <2>votka</2>, ki teče počez. Kako se prekrivata, spremeni trdnost, otip, padanje in videz. Ta vodnik razlaga glavne vezave, ki se uporabljajo v delovnih, tehničnih in medicinskih tkaninah.",
+"Svaka tkana tkanina izrađena je od dva skupa niti koje se križaju pod pravim kutom: <1>osnove</1>, koja teče po duljini, i <2>potke</2>, koja teče poprečno. Način na koji prolaze jedna preko druge mijenja čvrstoću, dodir, pad i izgled. Ovaj vodič objašnjava glavne vezove koji se koriste u radnim, tehničkim i medicinskim tkaninama.",
+"Minden szőtt anyag két, derékszögben keresztezett fonalrendszerből készül: a hosszirányban futó <1>láncból</1> és a keresztirányban futó <2>vetülékből</2>. Az, hogy hogyan haladnak egymás alatt és felett, megváltoztatja a szilárdságot, a tapintást, az esést és a megjelenést. Ez az útmutató a munkaruha-, műszaki és orvosi anyagokban használt főbb szövéseket magyarázza el.",
+"Ogni tessuto è realizzato con due serie di fili che si incrociano ad angolo retto: l'<1>ordito</1>, che corre in lunghezza, e la <2>trama</2>, che corre in senso trasversale. Il modo in cui passano uno sopra e sotto l'altro cambia resistenza, mano, caduta e aspetto. Questa guida spiega le principali armature usate nei tessuti da lavoro, tecnici e medicali.",
+"Jedes Gewebe besteht aus zwei Fadensystemen, die sich im rechten Winkel kreuzen: der <1>Kette</1>, die in Längsrichtung verläuft, und dem <2>Schuss</2>, der quer verläuft. Wie sie über- und untereinander laufen, verändert Festigkeit, Griff, Fall und Aussehen. Dieser Leitfaden erklärt die wichtigsten Bindungen in Arbeits-, Technik- und Medizinstoffen."
+],
+"984": [
+"Odlična odpornost proti trganju",
+"Odlična otpornost na kidanje",
+"Kiváló szakadásállóság",
+"Eccellente resistenza allo strappo",
+"Ausgezeichnete Reißfestigkeit"
+],
+"985": [
+"Ravna površina za tisk",
+"Ravna površina za tisak",
+"Sík nyomtatási felület",
+"Superficie piana per la stampa",
+"Flache Druckoberfläche"
+],
+"986": [
+"Ravna, čvrsta in enaka na obeh straneh. Zelo stabilna in hrustljava, z največjim številom prepletov med vsemi vezavami.",
+"Ravna, čvrsta i jednaka s obje strane. Vrlo stabilna i kruta, s najvećim brojem preplitanja od svih vezova.",
+"Sík, tartásos és mindkét oldalon azonos. Nagyon stabil és ropogós, a legtöbb kötéspont van benne az összes szövés közül.",
+"Piatta, compatta e uguale su entrambi i lati. Molto stabile e croccante, con il maggior numero di intrecci tra tutte le armature.",
+"Flach, fest und beidseitig identisch. Sehr stabil und knackig, mit der höchsten Anzahl an Bindungspunkten aller Bindungen."
+],
+"987": [
+"Za večino delovnih hlač je kepr najboljša izbira. Kepr 2/1 ali 3/1 stlači več niti v tkanino, se bolje upira obrabi in trganju kot platnena vezava enake teže ter zaradi diagonalne teksture skriva umazanijo.",
+"Za većinu radnih hlača keper je najbolji izbor. Keper 2/1 ili 3/1 pakira više niti u tkaninu, bolje se opire habanju i kidanju od platnenog veza iste težine i skriva prljavštinu zahvaljujući dijagonalnoj teksturi.",
+"A legtöbb munkanadrághoz a twill a legjobb választás. A 2/1 vagy 3/1 twill több fonalat sűrít az anyagba, jobban ellenáll a kopásnak és a szakadásnak, mint az azonos tömegű vászonkötés, és az átlós textúrának köszönhetően elrejti a szennyeződést.",
+"Per la maggior parte dei pantaloni da lavoro il twill è la scelta migliore. Un twill 2/1 o 3/1 ravvicina più fili nel tessuto, resiste meglio ad abrasione e strappi di una tela dello stesso peso e nasconde lo sporco grazie alla texture diagonale.",
+"Für die meisten Arbeitshosen ist ein Köper die beste Wahl. Ein 2/1- oder 3/1-Köper packt mehr Fäden in den Stoff, widersteht Abrieb und Reißen besser als eine Leinwandbindung gleichen Gewichts und verbirgt Schmutz dank der diagonalen Textur."
+],
+"988": [
+"Gabardin, serge, uniforme in poslovna oblačila, podloge, flanela.",
+"Gabardin, serž, uniforme i poslovna odjeća, podstave, flanel.",
+"Gabardin, szerzs, egyenruhák és céges ruházat, bélések, flanel.",
+"Gabardine, serge, divise e abbigliamento aziendale, fodere, flanella.",
+"Gabardine, Serge, Uniformen und Firmenkleidung, Futterstoffe, Flanell."
+],
+"989": [
+"Dobro pada",
+"Dobro pada",
+"Jól esik",
+"Buona caduta",
+"Guter Fall"
+],
+"990": [
+"Dobra trpežnost",
+"Dobra izdržljivost",
+"Jó tartósság",
+"Buona durata",
+"Gute Haltbarkeit"
+],
+"991": [
+"Dobra odpornost proti trganju",
+"Dobra otpornost na kidanje",
+"Jó szakadásállóság",
+"Buona resistenza allo strappo",
+"Gute Reißfestigkeit"
+],
+"992": [
+"Odlično pada",
+"Odlično pada",
+"Kiválóan esik",
+"Ottima caduta",
+"Hervorragender Fall"
+],
+"993": [
+"Grosgrain, različice popelina, dekorativne in uniformne tkanine, obrobe.",
+"Grosgrain, varijante popelina, dekorativne i uniformne tkanine, ukrasne trake.",
+"Grosgrain, popelin változatok, dekoratív és egyenruha-anyagok, szegélyek.",
+"Grosgrain, varianti di popeline, tessuti decorativi e per divise, passamanerie.",
+"Ripsband, Popelinevarianten, Deko- und Uniformstoffe, Besätze."
+],
+"994": [
+"Skupina A",
+"Skupina A",
+"A csoport",
+"Gruppo A",
+"Gruppe A"
+],
+"995": [
+"Skupina B",
+"Skupina B",
+"B csoport",
+"Gruppo B",
+"Gruppe B"
+],
+"996": [
+"Skupina C",
+"Skupina C",
+"C csoport",
+"Gruppo C",
+"Gruppe C"
+],
+"997": [
+"Obstojno",
+"Izdržljivo",
+"Strapabíró",
+"Resistente all'usura",
+"Strapazierfähig"
+],
+"998": [
+"Težji in manj gladek kot popelin. Sintetični oxfordi so pogosto premazani, kar zmanjša zračnost.",
+"Teži i manje gladak od popelina. Sintetički oxfordi često su premazani, što smanjuje prozračnost.",
+"Nehezebb és kevésbé sima, mint a popelin. A szintetikus oxfordokat gyakran bevonják, ami csökkenti a légáteresztést.",
+"Più pesante e meno liscio del popeline. Gli oxford sintetici sono spesso rivestiti, il che riduce la traspirabilità.",
+"Schwerer und weniger glatt als Popeline. Synthetische Oxfords sind oft beschichtet, was die Atmungsaktivität verringert."
+],
+"999": [
+"Težji in trši; daljše plavajoče niti se lahko zataknejo na zelo grobih površinah.",
+"Teži i kruči; dulje plivajuće niti mogu se zakačiti na vrlo grubim površinama.",
+"Nehezebb és merevebb; a hosszabb flotírozó fonalak beakadhatnak nagyon durva felületeken.",
+"Più pesante e rigido; i flottaggi più lunghi possono impigliarsi su superfici molto ruvide.",
+"Schwerer und steifer; längere Flottierungen können an sehr rauen Oberflächen hängen bleiben."
+],
+"1000": [
+"Zahtevno delo in osnovno lice",
+"Za teške uvjete i s licem u osnovi",
+"Strapabíró, láncfelületű",
+"Per impieghi gravosi e con dritto in ordito",
+"Strapazierfähig und kettseitig"
+],
+"1001": [
+"Ribja kost",
+"Riblja kost",
+"Halszálka",
+"Spina di pesce",
+"Fischgrat"
+],
+"1002": [
+"Diagram vezave ribja kost",
+"Dijagram veza riblja kost",
+"A halszálka szövésábrája",
+"Diagramma dell'armatura a spina di pesce",
+"Diagramm der Fischgratbindung"
+],
+"1003": [
+"Skriva umazanijo",
+"Skriva prljavštinu",
+"Elrejti a szennyeződést",
+"Nasconde lo sporco",
+"Verbirgt Schmutz"
+],
+"1004": [
+"Skriva obrabo in umazanijo",
+"Skriva habanje i prljavštinu",
+"Elrejti a kopást és a szennyeződést",
+"Nasconde usura e sporco",
+"Verbirgt Abnutzung und Schmutz"
+],
+"1005": [
+"Visoka odpornost proti obrabi",
+"Visoka otpornost na habanje",
+"Nagy kopásállóság",
+"Elevata resistenza all'abrasione",
+"Hohe Abriebfestigkeit"
+],
+"1006": [
+"Hotelska in domača posteljnina, bombažne hlače, srajce in vrhunske uniforme.",
+"Hotelska i kućna posteljina, pamučne hlače, košulje i vrhunske uniforme.",
+"Szállodai és otthoni ágynemű, pamut nadrágok, ingek és prémium egyenruhák.",
+"Biancheria da letto per hotel e casa, pantaloni di cotone, camicie e divise di pregio.",
+"Hotel- und Haushaltsbettwäsche, Baumwollhosen, Hemden und hochwertige Uniformen."
+],
+"1007": [
+"Kako nastane",
+"Kako nastaje",
+"Hogyan készül",
+"Come si realizza",
+"Wie sie entsteht"
+],
+"1008": [
+"Kako se vezave primerjajo",
+"Kako se vezovi uspoređuju",
+"Hogyan hasonlíthatók össze a szövések",
+"Come si confrontano le armature",
+"Wie die Bindungen im Vergleich abschneiden"
+],
+"1009": [
+"Pri odpornosti proti trganju in obrabi običajno da, ker se niti kepra lahko gostejše pakirajo in se pod obremenitvijo premikajo skupaj. Platnena vezava je bolj stabilna in ravnejša, zato se uporablja za tisk, premaze in tehnične podlage.",
+"Kod otpornosti na kidanje i habanje obično da, jer se niti kepera mogu gušće pakirati i pod opterećenjem se kreću zajedno. Platneni vez stabilniji je i ravniji, zbog čega se koristi za tisak, premaze i tehničke podloge.",
+"Szakadás- és kopásállóságban általában igen, mert a twill fonalai sűrűbben illeszthetők, és terhelés alatt együtt mozognak. A vászonkötés stabilabb és laposabb, ezért használják nyomtatáshoz, bevonáshoz és műszaki alapanyagokhoz.",
+"Per resistenza a strappi e abrasione di solito sì, perché i fili del twill possono essere più ravvicinati e si muovono insieme sotto sforzo. La tela è più stabile e piatta, ed è per questo che si usa per stampa, rivestimento e tessuti tecnici di base.",
+"Bei Reiß- und Abriebfestigkeit meist ja, weil sich Köperfäden dichter packen lassen und sich unter Belastung gemeinsam bewegen. Die Leinwandbindung ist stabiler und flacher, weshalb sie für Druck, Beschichtung und technische Basisstoffe verwendet wird."
+],
+"1010": [
+"Okvirne ocene pri podobni teži tkanine. Preja, gostota in apretura lahko rezultat bistveno spremenijo.",
+"Okvirne ocjene pri sličnoj težini tkanine. Pređa, gustoća i završna obrada mogu znatno promijeniti rezultat.",
+"Tájékoztató értékek hasonló anyagtömegnél. A fonal, a sűrűség és a kikészítés jelentősen módosíthatja az eredményt.",
+"Valutazioni indicative a un peso di tessuto simile. Filato, densità e finissaggio possono cambiare notevolmente il risultato.",
+"Richtwerte bei ähnlichem Stoffgewicht. Garn, Dichte und Ausrüstung können das Ergebnis erheblich verändern."
+],
+"1011": [
+"Je kepr močnejši od platnene vezave?",
+"Je li keper jači od platnenog veza?",
+"Erősebb-e a twill a vászonkötésnél?",
+"Il twill è più resistente della tela?",
+"Ist Köper stärker als Leinwandbindung?"
+],
+"1012": [
+"Jakne in plašči, kuharska in gostinska oblačila, industrijski kombinezoni, tvid.",
+"Jakne i kaputi, kuharska i ugostiteljska odjeća, industrijski kombinezoni, tvid.",
+"Kabátok és felöltők, szakács- és vendéglátó ruházat, ipari overálok, tweed.",
+"Giacche e cappotti, abbigliamento per cuochi e ristorazione, tute industriali, tweed.",
+"Jacken und Mäntel, Koch- und Gastronomiekleidung, Industrieoveralls, Tweed."
+],
+"1013": [
+"Za upoštevanje",
+"Treba imati na umu",
+"Érdemes szem előtt tartani",
+"Da tenere presente",
+"Zu beachten"
+],
+"1014": [
+"Lahka in gladka z vidno majhno kvadratno mrežo. Če se tkanina prebode, se trganje ustavi na naslednji ojačitveni liniji, namesto da bi steče čez panel.",
+"Lagana i glatka s vidljivom malom kvadratnom mrežom. Ako se tkanina probuši, kidanje se zaustavlja na sljedećoj pojačanoj liniji umjesto da se širi preko panela.",
+"Könnyű és sima, látható apró négyzetrácsos mintával. Ha az anyag kiszakad, a szakadás a következő megerősítő vonalnál megáll, ahelyett hogy végigfutna a panelen.",
+"Leggero e liscio con una piccola griglia quadrata visibile. Se il tessuto viene forato, lo strappo si ferma alla linea di rinforzo successiva invece di correre lungo il pannello.",
+"Leicht und glatt mit einem sichtbaren kleinen Quadratgitter. Wird der Stoff durchstochen, stoppt der Riss an der nächsten Verstärkungslinie, anstatt über das Teil zu laufen."
+],
+"1015": [
+"Lahka trdnost",
+"Lagana čvrstoća",
+"Könnyű szilárdság",
+"Resistenza leggera",
+"Leichte Festigkeit"
+],
+"1016": [
+"Tako kot saten je bolj občutljiv na zatikanje in kosmatenje kot tesnejše vezave.",
+"Poput atlasa, osjetljiviji je na zakvačivanje i pilling od gušćih vezova.",
+"A szaténhoz hasonlóan érzékenyebb a beakadásra és a bolyhosodásra, mint a szorosabb szövések.",
+"Come il raso, è più sensibile a impigliamenti e pilling rispetto alle armature più serrate.",
+"Wie Atlas ist er anfälliger für Hängenbleiben und Pilling als dichtere Bindungen."
+],
+"1017": [
+"Dolge plavajoče niti se lahko zataknejo in hitreje pokažejo obrabo kot kepr, zato sta konstrukcija in izbira preje pri delovnih oblačilih pomembni.",
+"Duge plivajuće niti mogu se zakačiti i brže pokazati habanje od kepera, pa su konstrukcija i izbor pređe važni za radnu odjeću.",
+"A hosszú flotírozó fonalak beakadhatnak, és gyorsabban mutatják a kopást, mint a twill, ezért a szerkezet és a fonal megválasztása fontos munkaruházatnál.",
+"I flottaggi lunghi possono impigliarsi e mostrare l'usura più in fretta del twill, quindi costruzione e scelta del filato contano per l'abbigliamento da lavoro.",
+"Lange Flottierungen können hängen bleiben und Abnutzung schneller zeigen als Köper, daher sind Konstruktion und Garnwahl bei Arbeitskleidung wichtig."
+],
+"1018": [
+"Daljše plavajoče niti jo naredijo nekoliko manj čvrsto in bolj nagnjeno k zatikanju kot platnena vezava.",
+"Dulje plivajuće niti čine je nešto manje čvrstom i sklonijom zakačivanju od platnenog veza.",
+"A hosszabb flotírozó fonalak miatt kicsit kevésbé tartásos, és hajlamosabb a beakadásra, mint a vászonkötés.",
+"I flottaggi più lunghi la rendono un po' meno compatta e più soggetta a impigliarsi rispetto alla tela.",
+"Längere Flottierungen machen ihn etwas weniger fest und anfälliger für Hängenbleiben als Leinwandbindung."
+],
+"1019": [
+"Največja trpežnost",
+"Maksimalna izdržljivost",
+"Maximális tartósság",
+"Massima durata",
+"Maximale Haltbarkeit"
+]
+}
