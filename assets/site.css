@@ -287,3 +287,7 @@ html.mx-lock,html.mx-lock body{overflow:hidden}
 .mx-flang a[aria-current]{color:#fff;font-weight:600}
 @media (max-width:1179px){.mx-lang-b{height:38px;padding:0 10px}}
 @media (max-width:420px){.mx-lang-b span{font-size:12.5px}.mx-lang-b{padding:0 8px;gap:4px}.mx-act{gap:6px}}
+
+/* CORDURA original-fibre badge */
+.orig{display:flex;align-items:center;gap:12px;margin:14px 0 4px;padding:10px 14px;border:1px solid var(--mx-line,#e3e6ea);border-radius:14px;background:#fff;font-size:14px;line-height:1.35}
+.orig img{height:26px;width:auto;flex:none}

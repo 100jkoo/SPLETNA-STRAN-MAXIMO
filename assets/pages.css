@@ -375,3 +375,6 @@ a.cc:hover{border-color:var(--ink)}
 .c-sor .tags{display:flex;flex-wrap:wrap;gap:6px}
 .c-sor .tags span{font:400 11.5px/1 var(--mono);letter-spacing:.06em;border:1.5px solid var(--ink);border-radius:999px;padding:6px 10px}
 .c-sor .tags span:first-child{background:var(--ink);border-color:var(--ink);color:#fff}
+
+/* wordmark used until the official SORONA logo file is added */
+.ccard .wm{align-self:flex-start;display:flex;align-items:center;height:46px;font:600 27px/1 var(--sans,inherit);letter-spacing:.16em;color:var(--ink)}
