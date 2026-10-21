@@ -383,3 +383,4 @@ a.cc:hover{border-color:var(--ink)}
 .cert img[alt^="CORDURA"]{max-height:30px}
 .cert img[alt^="PROBAN"]{max-height:24px}
 .cert .lg{justify-content:center}
+body[data-mx-section="home"] .cert,body[data-mx-section="about"] .cert{align-items:center;text-align:center}
