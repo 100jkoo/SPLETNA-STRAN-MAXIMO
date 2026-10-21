@@ -46,6 +46,21 @@ var MX_NEWSLETTER_EMAIL='maximo1@siol.net';
     });
   });
   if(scrim)scrim.addEventListener('click',closeAll);
+  /* arriving from another page of the site: keep the section's dropdown open until the mouse leaves it */
+  (function(){
+    if(!hoverable.matches||!desk.matches)return;
+    var ref=document.referrer;if(!ref||ref.indexOf(location.origin)!==0)return;
+    var cur=hd.querySelector('.mx-item.mx-has>.mx-trig[aria-current="true"]');if(!cur)return;
+    var it=cur.parentNode;
+    setOpen(it,true);openItem=it;hd.classList.add('is-open');
+    function away(e){
+      if(it.contains(e.target)||!openItem)return;
+      if(hd.contains(e.target)&&e.target.closest('.mx-item.mx-has'))return;
+      document.removeEventListener('mousemove',away);
+      if(openItem===it)closeAll();
+    }
+    setTimeout(function(){document.addEventListener('mousemove',away)},400);
+  })();
   document.addEventListener('keydown',function(e){
     if(e.key==='Escape'){
       if(openItem){var b=openItem.querySelector('.mx-trig');closeAll();b.focus()}
