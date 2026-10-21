@@ -1,402 +1,358 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Maximo Tekstil | Workwear, flame retardant, hi-vis and CORDURA® fabrics by the roll</title>
-<meta name="description" content="178 roll fabrics for workwear, flame retardant, high visibility, CORDURA®, antistatic and medical garments. EU stock in Slovenia, custom colours from 300 m.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..800&display=swap" rel="stylesheet">
-<style>
-:root{
-  --ink:#1E2A44;
-  --ink-2:#2E3D5E;
-  --paper:#FBFBF9;
-  --warp:#E6E8EB;
-  --line:#CDD2D9;
-  --muted:#5B6578;
-  --signal:#F26B1D;
-  --khaki:#8C7B5A;
-  --font:"Archivo", "Helvetica Neue", Arial, sans-serif;
-  box-sizing:border-box;
-  padding-top:env(safe-area-inset-top,0px);
-  padding-bottom:env(safe-area-inset-bottom,0px);
-}
-*,*::before,*::after{box-sizing:inherit}
-html{scroll-behavior:smooth;scroll-padding-top:calc(72px + env(safe-area-inset-top,0px))}
-body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--font);font-size:17px;line-height:1.6;font-variation-settings:"wdth" 100}
-img{max-width:100%;display:block}
-a{color:inherit}
-:focus-visible{outline:3px solid var(--signal);outline-offset:3px}
-.wrap{max-width:1180px;margin:0 auto;padding:0 24px}
-
-/* header */
-header{position:sticky;top:env(safe-area-inset-top,0px);z-index:10;background:rgba(251,251,249,.96);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
-.nav{display:flex;align-items:center;justify-content:space-between;height:72px}
-.logo{font-weight:800;font-size:22px;letter-spacing:-.01em;text-decoration:none;font-variation-settings:"wdth" 112;display:inline-flex;align-items:center;height:44px}
-.logo span{font-weight:400;color:var(--muted);margin-left:4px}
-.nav ul{display:flex;gap:32px;list-style:none;margin:0;padding:0}
-.nav ul a{text-decoration:none;font-size:15px;font-weight:500;display:inline-flex;align-items:center;height:44px;position:relative;color:var(--ink)}
-.nav ul a::after{content:"";position:absolute;bottom:0;left:0;width:0;height:2px;background:var(--signal);transition:width .3s cubic-bezier(.16,1,.3,1)}
-.nav ul a:hover::after{width:100%}
-.btn{display:inline-flex;align-items:center;justify-content:center;background:var(--ink);color:var(--paper);text-decoration:none;font-weight:600;font-size:15px;padding:11px 20px;border-radius:3px;border:0;cursor:pointer;font-family:inherit;height:44px;min-height:44px;transition:all .2s cubic-bezier(.16,1,.3,1)}
-.btn:hover{background:var(--signal);transform:translateY(-1px)}
-.btn:active{transform:translateY(0)}
-.skip{position:absolute;left:-9999px;top:8px;z-index:20;background:var(--ink);color:var(--paper);padding:10px 16px}
-.skip:focus{left:16px}
-.btn.ghost{background:transparent;color:var(--ink);box-shadow:inset 0 0 0 1.5px var(--ink)}
-.btn.ghost:hover{background:var(--ink);color:var(--paper)}
-.menu-btn{display:none}
-
-/* hero - modernized */
-.hero{padding:80px 0 64px;overflow:hidden;background:linear-gradient(135deg,rgba(245,245,242,.5) 0%,rgba(255,255,255,.3) 100%)}
-.hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:56px;align-items:center}
-.hero h1{font-size:clamp(44px,6.4vw,84px);line-height:.96;font-weight:800;letter-spacing:-.02em;margin:0 0 24px;font-variation-settings:"wdth" 72}
-.hero p.lead{font-size:20px;color:var(--ink-2);max-width:34em;margin:0 0 32px;line-height:1.7}
-.hero .ctas{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:20px}
-.hero .badge{font-size:13px;color:var(--muted);font-weight:600;display:inline-flex;align-items:center;gap:6px}
-.hero .badge::before{content:"✓";color:var(--signal);font-weight:900}
-
-/* swatch fan - KEEP ORIGINAL */
-.fan{position:relative;height:440px}
-.sw{position:absolute;left:50%;bottom:10px;width:210px;height:330px;transform-origin:50% 100%;border-radius:3px;
-  box-shadow:0 2px 8px rgba(0,0,0,.12),0 20px 40px -16px rgba(30,42,68,.4);
-  opacity:0;animation:fan .9s cubic-bezier(.2,.7,.2,1) forwards}
-.sw::after{content:attr(data-name);position:absolute;left:0;right:0;top:0;background:var(--paper);color:var(--ink);
-  font-size:12px;font-weight:700;padding:8px 10px;border-bottom:1px solid var(--line);font-variation-settings:"wdth" 90}
-.twill{background-image:repeating-linear-gradient(45deg,rgba(255,255,255,.09) 0 2px,rgba(0,0,0,.08) 2px 4px)}
-.rip{background-image:repeating-linear-gradient(0deg,rgba(0,0,0,.14) 0 1px,transparent 1px 14px),repeating-linear-gradient(90deg,rgba(0,0,0,.14) 0 1px,transparent 1px 14px)}
-.plain{background-image:repeating-linear-gradient(0deg,rgba(0,0,0,.05) 0 1px,transparent 1px 3px),repeating-linear-gradient(90deg,rgba(0,0,0,.05) 0 1px,transparent 1px 3px)}
-.s5{background-color:#EEF0F2;--r:-30deg;animation-delay:.05s}
-.s4{background-color:#5E6B5A;--r:-15deg;animation-delay:.15s}
-.s3{background-color:#F26B1D;--r:0deg;animation-delay:.25s}
-.s2{background-color:#8C7B5A;--r:15deg;animation-delay:.35s}
-.s1{background-color:#26324F;--r:30deg;animation-delay:.45s}
-@keyframes fan{from{opacity:0;transform:translateX(-50%) rotate(0deg)}to{opacity:1;transform:translateX(-50%) rotate(var(--r))}}
-@media (prefers-reduced-motion:reduce){.sw{animation:none;opacity:1;transform:translateX(-50%) rotate(var(--r))}}
-
-/* facts strip - improved spacing */
-.facts{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:var(--warp)}
-.facts .wrap{display:grid;grid-template-columns:repeat(3,1fr);gap:0}
-.fact{padding:36px 32px;text-align:center;border-right:1px solid var(--line)}
-.fact:last-child{border-right:0}
-.fact b{display:block;font-size:28px;font-weight:800;font-variation-settings:"wdth" 85;color:var(--signal);margin-bottom:8px}
-.fact span{font-size:15px;color:var(--muted);font-weight:600}
-
-/* sections */
-section{padding:96px 0}
-.sec-head{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:end;margin-bottom:44px}
-h2{font-size:clamp(34px,4.2vw,54px);line-height:1;font-weight:800;letter-spacing:-.015em;margin:0;font-variation-settings:"wdth" 75}
-.sec-head p{margin:0;color:var(--ink-2);max-width:36em;font-size:16px;line-height:1.8}
-
-/* catalogue - MODERNIZED PRODUCT CARDS */
-.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:20px;margin-top:32px}
-.label{background:#fff;border:1px solid var(--line);border-radius:4px;display:flex;flex-direction:column;overflow:hidden;transition:all .3s cubic-bezier(.16,1,.3,1)}
-.label:hover{border-color:var(--ink);box-shadow:0 12px 32px rgba(30,42,68,.12);transform:translateY(-4px)}
-.label .chip{aspect-ratio:4/5;border-bottom:1px solid var(--line);overflow:hidden;background:#f5f5f5;position:relative}
-.label .chip img{width:100%;height:100%;object-fit:cover;transition:transform .4s cubic-bezier(.16,1,.3,1)}
-.label:hover .chip img{transform:scale(1.06)}
-.label .body{padding:18px;display:flex;flex-direction:column;flex:1}
-.label h3{margin:0 0 2px;font-size:24px;font-weight:800;font-variation-settings:"wdth" 80;letter-spacing:-.005em;line-height:1.2}
-.label h3 a{text-decoration:none;color:var(--ink)}
-.label h3 a:hover{color:var(--signal)}
-.label .cat{font-size:13px;color:var(--muted);margin-bottom:14px;font-weight:700;text-transform:uppercase;letter-spacing:.05em}
-.label dl{margin:0 0 12px;display:grid;grid-template-columns:auto 1fr;gap:4px 14px;font-size:14px}
-.label dt{color:var(--muted);font-weight:600}
-.label dd{margin:0;font-weight:700}
-.dots{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:12px 0;padding:12px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
-.dot{width:26px;height:26px;border-radius:50%;border:2px solid #fff;cursor:pointer;position:relative;box-shadow:0 0 0 1px var(--line);transition:all .2s}
-.dot:hover{transform:scale(1.1);box-shadow:0 0 0 2px var(--signal)}
-.dot[aria-pressed="true"]{outline:2px solid var(--signal);outline-offset:2px}
-.dots .nc{font-size:12px;color:var(--muted);margin-left:4px;font-weight:700}
-.label .acts{margin-top:auto;display:flex;gap:12px;align-items:center;flex-wrap:wrap;padding-top:12px;border-top:1px solid var(--line)}
-.label .view,.label .ask{position:relative;z-index:2;font-size:14px;font-weight:700;min-height:44px;display:inline-flex;align-items:center;text-underline-offset:3px;transition:color .2s}
-.label .view{text-decoration:none;color:var(--muted)}
-.label .view:hover{color:var(--signal)}
-.label .ask{margin:0;background:none;border:0;padding:0;cursor:pointer;font-family:inherit;text-align:left;color:var(--muted);text-decoration:underline}
-.label .ask:hover{color:var(--signal)}
-[hidden]{display:none!important}
-
-/* dyeing section */
-.dye{background:var(--ink);color:var(--paper);padding:96px 0}
-.dye .wrap{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
-.dye h2{color:var(--paper)}
-.dye p{color:#C9D0DC;max-width:32em}
-.big{font-size:clamp(90px,12vw,170px);font-weight:800;line-height:.85;letter-spacing:-.03em;font-variation-settings:"wdth" 62;margin:0}
-.big small{display:block;font-size:22px;font-weight:500;letter-spacing:0;color:#C9D0DC;margin-top:12px;font-variation-settings:"wdth" 100}
-
-/* steps */
-.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-top:2px solid var(--ink);margin-top:36px}
-.step{padding:28px 24px 0 0}
-.step + .step{padding-left:24px;border-left:1px solid var(--line)}
-.step .n{font-size:15px;font-weight:700;color:var(--signal)}
-.step h3{font-size:22px;margin:8px 0 10px;font-variation-settings:"wdth" 85;line-height:1.2}
-.step p{margin:0;color:var(--ink-2);font-size:16px;line-height:1.7}
-
-/* contact & footer */
-.about .wrap{display:grid;grid-template-columns:1fr 1fr;gap:56px}
-.about p{max-width:34em;color:var(--ink-2);line-height:1.8}
-footer{background:var(--ink);color:#C9D0DC;font-size:14px;padding:32px 0}
-footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
-
-/* responsive */
-@media (max-width:900px){
-  .hero .wrap,.sec-head,.dye .wrap,.about .wrap{grid-template-columns:1fr}
-  .fan{height:300px;max-width:420px;margin:0 auto;width:100%}
-  .sw{width:140px;height:230px}
-  .facts .wrap{grid-template-columns:repeat(3,1fr)}
-  .steps{grid-template-columns:1fr}
-  .step + .step{padding-left:0;border-left:0;border-top:1px solid var(--line);margin-top:22px}
-  .nav ul{display:none}
-  .nav ul.open{display:flex;position:absolute;top:72px;left:0;right:0;flex-direction:column;gap:0;background:var(--paper);border-bottom:1px solid var(--line)}
-  .nav ul.open a{display:block;padding:14px 24px;width:100%;height:auto}
-  .menu-btn{display:block;background:none;border:1.5px solid var(--ink);border-radius:3px;padding:8px 12px;font-family:inherit;font-weight:600;font-size:14px;color:var(--ink);height:44px;min-height:44px}
-  .nav .btn{padding:10px 12px;font-size:14px;margin-left:auto;margin-right:8px;white-space:nowrap}
-  .logo{font-size:19px}
-  section{padding:72px 0}
-  .grid{grid-template-columns:repeat(auto-fill,minmax(250px,1fr))}
-}
-@media (max-width:560px){
-  .hero{padding:44px 0 32px}
-  .sw{width:120px;height:200px}
-  .fan{height:250px}
-  .sw::after{font-size:10px;padding:5px 6px}
-  .logo span{display:none}
-  .logo{font-size:18px}
-  .fact{padding:20px}
-  .label .chip{aspect-ratio:3/4}
-  .grid{grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px}
-  .label .body{padding:12px}
-  .label h3{font-size:18px}
-}
-</style>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Maximo Tekstil | Workwear, technical and medical fabrics</title>
+<meta name="description" content="Workwear, technical and medical fabrics from Trzin, Slovenia. 26 fabrics in 73 colours on stock, 207 articles made to order, REPREVE® and Multinorm FR Proban® collections, and sewing to your sample.">
+<meta property="og:title" content="Maximo Tekstil | Workwear, technical and medical fabrics">
+<meta property="og:description" content="26 fabrics in 73 colours on stock. Made to order, sustainable and flame retardant fabrics, and sewing to your sample.">
+<link rel="stylesheet" href="assets/fonts/fonts.css">
+<link rel="stylesheet" href="assets/site.css">
+<link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+<link rel="stylesheet" href="assets/pages.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"Maximo Tekstil d.o.o.","url":"https://www.maximo-tekstil.com","email":"narocila@maximo-tekstil.com","telephone":"+386 1 562 1843","address":{"@type":"PostalAddress","streetAddress":"Hrastovec 22","postalCode":"1236","addressLocality":"Trzin","addressCountry":"SI"},"description":"Workwear, technical and medical fabrics on stock and made to order, with sewing to customer samples."}</script>
 </head>
-<body>
+<body data-mx-section="home">
+<a class="mx-skip" href="#mx-main">Skip to content</a>
+<div class="mx-hd" role="banner">
+<div class="mx-bar">
+<a class="mx-logo" href="index.html" aria-label="Maximo Tekstil home"><svg class="mx-logo-svg" viewBox="0 0 900 180" role="img" aria-label="Maximo Tekstil"><path fill="#242C4C" d="M303.1 177.8C304.6 174.8 354.8 84.1 361.5 72.2L366.8 62.9L371.2 71.1L375.7 79.3L373.5 83.4C372.2 85.6 362.1 103.9 351.0 124.0C339.9 144.1 329.4 163.0 327.7 166.0C326.1 169.0 323.6 173.4 322.3 175.8L319.8 180.0L310.9 180.0L301.9 180.0L303.1 177.8ZM336.3 173.8C338.3 170.3 345.9 156.6 353.3 143.2L366.8 118.9L371.3 127.1L375.8 135.3L373.0 140.4C371.4 143.2 365.9 153.2 360.7 162.5L351.3 179.5L342.1 179.8L332.9 180.1L336.3 173.8ZM365.0 179.1C365.0 178.6 369.3 170.4 374.6 160.9C379.9 151.3 385.6 141.0 387.2 138.0C388.9 135.0 391.0 131.2 392.0 129.5C393.0 127.8 394.7 124.8 395.8 122.7L397.8 119.0L402.4 127.1L407.0 135.2L403.1 142.4C401.0 146.3 395.5 156.2 390.9 164.5L382.5 179.5L373.7 179.8C368.8 180.0 365.0 179.7 365.0 179.1ZM380.1 110.8L375.7 102.5L386.8 82.7L397.8 63.0L402.4 71.1L406.9 79.2L403.3 85.8C401.3 89.5 399.4 93.0 399.0 93.5C398.6 94.0 396.6 97.7 394.5 101.5C389.2 111.3 384.8 119.0 384.6 119.0C384.5 119.0 382.5 115.3 380.1 110.8ZM411.1 110.8L406.7 102.5L409.7 97.5C411.3 94.8 414.6 88.9 417.0 84.5C419.4 80.1 425.5 69.1 430.5 60.0C435.6 50.9 441.3 40.6 443.3 37.0C445.3 33.4 450.4 24.2 454.7 16.5L462.5 2.5L471.4 2.2L480.2 1.9L479.6 3.7C479.2 4.7 470.3 21.0 459.8 40.0C449.3 59.0 437.4 80.3 433.5 87.5C429.5 94.7 425.0 102.8 423.5 105.5C419.9 112.0 415.9 119.0 415.6 119.0C415.5 119.0 413.5 115.3 411.1 110.8ZM0.0 51.5L0.0 0.0L9.8 0.0L19.5 0.0L43.3 30.5C56.4 47.3 67.4 61.0 67.9 61.0C68.3 61.0 79.1 47.3 92.0 30.5L115.2 0.0L124.6 0.0L134.0 0.0L134.0 51.5L134.0 103.0L122.9 103.0L111.8 103.0L112.2 66.6L112.5 30.3L110.3 34.1C109.2 36.2 99.3 49.6 88.5 63.9L68.8 90.0L66.0 90.0L63.2 90.0L43.2 63.2C32.2 48.5 22.3 34.9 21.1 33.0L19.0 29.5L19.0 66.2L19.0 103.0L9.5 103.0L0.0 103.0L0.0 51.5ZM166.0 102.0C166.0 101.3 168.6 96.3 171.9 90.7C175.1 85.1 184.4 68.8 192.5 54.5C200.6 40.2 210.9 22.1 215.3 14.3L223.4 0.0L235.1 0.0L246.7 0.0L265.8 33.3C276.3 51.5 289.4 74.4 294.9 84.0C300.5 93.6 305.0 101.8 305.0 102.3C305.0 102.7 299.0 102.9 291.8 102.8L278.5 102.5L272.5 91.5L266.4 80.5L233.7 80.5L200.9 80.5L195.1 91.5L189.3 102.5L177.6 102.8L166.0 103.1L166.0 102.0ZM507.0 51.5L507.0 0.0L519.0 0.0L531.0 0.0L531.0 51.5L531.0 103.0L519.0 103.0L507.0 103.0L507.0 51.5ZM584.7 102.3C584.3 102.0 584.0 78.8 584.0 50.8L584.0 0.0L594.0 0.0L603.9 0.0L627.7 30.5C640.7 47.3 651.8 61.0 652.2 61.0C652.6 61.0 663.4 47.3 676.2 30.5L699.5 0.0L709.2 0.0L719.0 0.0L719.0 51.5L719.0 103.0L708.0 103.0L697.0 103.0L696.8 66.8L696.5 30.5L694.5 34.1C693.4 36.1 683.7 49.5 673.0 63.8L653.5 89.9L650.5 89.9L647.5 89.9L628.0 63.9C617.3 49.6 607.4 36.0 606.0 33.6L603.5 29.3L603.8 66.2L604.1 103.0L594.7 103.0C589.6 103.0 585.0 102.7 584.7 102.3ZM779.8 101.6C773.7 100.0 770.4 97.7 768.3 93.7L766.5 90.5L766.2 53.8L765.9 17.1L767.0 12.9C767.7 10.5 769.6 7.2 771.4 5.4L774.5 2.3L779.8 1.1L785.1 0.0L829.8 0.0C856.4 0.0 876.3 0.5 878.9 1.1C884.7 2.4 888.3 5.1 890.6 9.7L892.5 13.5L892.5 51.5L892.5 89.5L890.3 93.6L888.1 97.8L883.3 100.1L878.5 102.5L831.5 102.7L784.5 102.9L779.8 101.6ZM868.8 50.8L868.5 18.5L829.2 18.2L790.0 18.0L790.0 50.5L790.0 83.0L829.5 83.0L869.0 83.0L868.8 50.8ZM380.1 54.7L375.7 46.4L383.2 33.0C387.3 25.6 392.2 16.8 394.0 13.5C395.8 10.2 398.0 6.3 398.8 4.8L400.4 2.0L409.2 2.0C414.0 2.0 418.0 2.3 418.0 2.6C418.0 3.0 415.8 7.1 413.1 11.9C410.5 16.6 406.9 23.0 405.3 26.0C400.4 35.0 384.8 63.0 384.7 63.0C384.6 63.0 382.5 59.3 380.1 54.7ZM256.0 61.5C256.0 61.3 254.7 58.7 253.2 55.8C251.6 52.9 246.8 43.9 242.6 35.7C238.3 27.6 234.5 21.0 234.1 21.0C233.7 21.0 232.2 23.4 230.7 26.2C229.3 29.1 224.4 38.0 220.0 46.0C215.6 54.0 212.0 60.8 212.0 61.2C212.0 61.7 221.9 62.0 234.0 62.0C246.1 62.0 256.0 61.8 256.0 61.5ZM411.0 54.3L406.9 46.6L409.1 42.5C411.3 38.8 416.6 29.2 427.2 9.8L431.5 2.0L440.4 2.0L449.2 2.0L448.6 3.7C448.2 4.6 444.3 11.9 439.8 19.9C428.4 40.4 425.6 45.4 420.8 54.2C418.5 58.5 416.3 62.0 415.9 62.0C415.5 62.0 413.3 58.5 411.0 54.3Z"/><path fill="#DF7840" d="M397.4 174.8C395.8 171.9 393.8 168.2 392.9 166.6L391.3 163.7L395.2 156.6C397.4 152.7 399.5 149.1 399.9 148.7C400.7 147.9 402.8 151.2 411.0 166.5C413.4 170.9 415.9 175.4 416.7 176.5C417.4 177.6 418.0 178.8 418.0 179.2C418.0 179.7 414.0 180.0 409.2 180.0L400.3 180.0L397.4 174.8ZM429.4 176.2C426.7 171.5 411.9 144.7 406.9 135.5C404.9 131.7 400.5 123.8 397.2 118.0L391.2 107.5L394.2 102.0C395.9 99.0 398.0 95.3 398.8 93.8L400.4 91.1L404.3 98.3C406.4 102.3 410.5 109.5 413.3 114.5C416.0 119.5 419.4 125.5 420.8 128.0C422.2 130.5 425.2 135.9 427.5 140.0C437.3 157.4 449.0 178.8 449.0 179.4C449.0 179.7 445.1 180.0 440.2 180.0L431.5 180.0L429.4 176.2ZM462.3 178.8C461.3 177.6 451.2 159.7 443.8 146.0C441.8 142.4 436.3 132.5 431.6 124.0C426.9 115.5 423.0 108.0 423.0 107.4C423.0 106.3 431.3 90.9 431.6 91.3C431.7 91.5 455.1 133.6 459.5 141.5C460.7 143.7 465.8 153.0 470.8 162.1C475.9 171.2 480.0 178.9 480.0 179.3C480.0 179.7 476.2 180.0 471.6 180.0L463.2 180.0L462.3 178.8ZM524.8 161.8L524.5 143.5L514.8 143.2L505.0 142.9L505.0 139.5L505.0 136.0L530.5 136.0L556.0 136.0L556.0 139.5L556.0 143.0L546.0 143.0L536.0 143.0L535.8 161.2L535.5 179.5L530.3 179.8L525.0 180.1L524.8 161.8ZM568.7 179.3C568.3 179.0 568.0 169.1 568.0 157.3L568.0 136.0L591.0 136.0L614.0 136.0L614.0 139.5L614.0 143.0L596.5 143.0L579.0 143.0L579.0 148.0L579.0 153.0L589.0 153.0L599.0 153.0L599.0 157.0L599.0 161.0L589.0 161.0L579.0 161.0L579.0 166.0L579.0 171.0L596.5 171.0L614.0 171.0L614.0 175.5L614.0 180.0L591.7 180.0C579.4 180.0 569.0 179.7 568.7 179.3ZM633.0 158.0L633.0 136.0L638.0 136.0L643.0 136.0L643.0 144.5C643.0 149.2 643.4 153.0 643.8 153.0C644.3 153.0 649.8 149.2 655.9 144.5L667.2 136.0L674.7 136.0L682.3 136.0L668.2 146.1C660.4 151.6 654.0 156.3 654.0 156.5C654.0 156.7 661.3 161.9 670.1 168.2L686.3 179.5L678.5 179.8L670.7 180.1L665.6 176.7C662.8 174.8 656.9 170.5 652.5 167.2C648.1 163.9 644.2 161.4 643.8 161.6C643.3 161.9 643.0 166.1 643.0 171.1L643.0 180.0L638.0 180.0L633.0 180.0L633.0 158.0ZM705.5 179.3C704.4 179.0 702.7 178.1 701.8 177.2L700.0 175.7L700.0 171.9L700.0 168.0L702.2 167.5C703.5 167.3 705.4 166.9 706.5 166.8L708.5 166.5L708.8 168.8L709.1 171.0L724.6 171.0L740.1 171.0L739.8 166.2L739.5 161.5L722.3 161.0L705.1 160.5L703.3 158.7L701.5 156.9L701.5 148.6L701.5 140.2L703.4 138.1L705.3 136.0L724.7 136.0L744.0 136.0L746.0 138.0C747.9 139.9 748.8 145.4 747.2 146.4C746.8 146.6 744.8 147.1 742.7 147.5L739.0 148.2L739.0 145.6L739.0 142.9L724.8 143.2L710.5 143.5L710.5 148.0L710.5 152.5L727.7 153.0L744.9 153.5L746.7 155.3L748.5 157.0L748.8 164.5C749.1 169.0 748.7 173.2 748.0 175.0L746.8 177.9L743.8 178.9C740.8 180.0 709.5 180.3 705.5 179.3ZM780.7 179.3C780.3 179.0 780.0 170.6 780.0 160.8L780.0 143.0L770.0 143.0L760.0 143.0L760.0 139.5L760.0 136.0L785.5 136.0L811.0 136.0L811.0 139.5L811.0 143.0L801.0 143.0L791.0 143.0L791.0 161.5L791.0 180.0L786.2 180.0C783.5 180.0 781.0 179.7 780.7 179.3ZM824.0 158.0L824.0 136.0L829.0 136.0L834.0 136.0L834.0 158.0L834.0 180.0L829.0 180.0L824.0 180.0L824.0 158.0ZM856.7 179.3C856.3 179.0 856.0 169.1 856.0 157.3L856.0 136.0L861.5 136.0L867.0 136.0L867.0 153.5L867.0 171.0L883.5 171.0L900.0 171.0L900.0 175.5L900.0 180.0L878.7 180.0C866.9 180.0 857.0 179.7 856.7 179.3ZM378.5 140.4C376.4 136.6 371.6 127.9 367.7 121.0C363.8 114.1 360.7 108.0 360.7 107.5C360.7 107.0 362.6 103.0 365.0 98.7L369.2 90.9L375.1 101.6C378.4 107.5 381.0 112.5 381.0 112.6C381.0 112.7 383.3 116.8 386.2 121.6L391.3 130.3L388.9 134.9C387.6 137.4 385.6 141.2 384.4 143.4L382.2 147.2L378.5 140.4ZM411.5 87.9C409.1 83.4 404.4 74.7 397.2 62.0L391.3 51.5L394.8 45.0C396.7 41.4 398.8 37.7 399.5 36.8L400.6 35.1L402.6 38.8C403.6 40.8 408.5 49.7 413.4 58.4L422.3 74.4L419.4 80.0C417.9 83.0 415.8 86.8 414.9 88.4L413.2 91.2L411.5 87.9ZM345.3 80.8C336.2 64.2 334.4 60.9 318.1 31.6C309.2 15.6 302.0 2.5 302.0 2.3C302.0 2.1 306.1 2.1 311.1 2.2L320.2 2.5L335.2 29.5C343.4 44.4 352.0 59.9 354.2 64.0C356.5 68.1 358.7 72.2 359.2 73.0L360.1 74.5L355.9 82.2C353.6 86.5 351.4 90.0 351.0 90.0C350.7 90.0 348.1 85.8 345.3 80.8ZM362.0 54.8C351.3 35.4 340.3 15.6 337.7 10.7L332.9 1.9L342.1 2.2L351.3 2.5L355.7 10.5C358.2 14.9 361.5 21.0 363.2 24.0C366.9 30.8 374.5 44.5 384.0 61.5L391.3 74.5L387.2 82.0C385.0 86.1 382.8 89.6 382.3 89.7C381.9 89.8 372.7 74.1 362.0 54.8ZM373.5 19.3C369.1 11.2 365.4 4.0 365.2 3.3L364.8 1.9L373.6 2.2L382.4 2.5L386.8 10.4L391.2 18.4L387.2 25.9C384.9 30.1 382.8 33.6 382.3 33.7C381.9 33.9 377.9 27.4 373.5 19.3Z"/></svg></a>
+<nav class="mx-nav" aria-label="Main"><ul class="mx-menu"><li class="mx-item mx-has"><button type="button" class="mx-trig" aria-expanded="false" aria-controls="mx-p-stock"><span class="mx-live" aria-hidden="true"></span>On stock<svg class="mx-chev" viewBox="0 0 10 10" aria-hidden="true"><path d="M1.5 3.5 5 7l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+<div class="mx-panel" id="mx-p-stock" role="region" aria-label="On stock"><div class="mx-pin">
+  <a class="mx-feat mx-feat--ink" href="on-stock/index.html"><span class="mx-ribbon"></span>
+    <span class="mx-eyebrow"><span class="mx-live"></span>Ready to ship · Trzin</span>
+    <span class="mx-feat-t">On stock colour card</span>
+    <span class="mx-feat-n"><span><b>26</b>fabrics</span><span><b>73</b>colours</span></span>
+    <span class="mx-feat-d">Every fabric and colour we keep in our warehouse. Minimum one roll, cut lengths on request.</span>
+    <span class="mx-go">Open colour card &rarr;</span>
+  </a>
+  <div class="mx-cols"><div class="mx-col"><div class="mx-grp"><a class="mx-gh" href="on-stock/index.html#g=cotton">100% Cotton<i>8</i></a><ul class="mx-ul"><li><a class="mx-lk mx-fab" href="on-stock/fabrics/roman-185.html"><span class="mx-fn">ROMAN 185</span><span class="mx-dots" aria-hidden="true"><i style="--c:#F1EEE4"></i><i style="--c:#3B8C72"></i><em>2</em></span></a></li><li><a class="mx-lk mx-fab" href="on-stock/fabrics/adidas-200.html"><span class="mx-fn">ADIDAS 200</span><span class="mx-dots" aria-hidden="true"><i style="--c:#F1EEE4"></i><i style="--c:#B0EAC0"></i><em>2</em></span></a></li><li><a class="mx-lk mx-fab" href="on-stock/fabrics/rene-215.html"><span class="mx-fn">RENE 215</span><span class="mx-dots" aria-hidden="true"><i style="--c:#F1EEE4"></i><i style="--c:#B0EAC0"></i><em>2</em></span></a></li><li><a class="mx-lk mx-fab" href="on-stock/fabrics/tim-245.html"><span class="mx-fn">TIM 245</span><span class="mx-dots" aria-hidden="true"><i style="--c:#F1EEE4"></i><i style="--c:#E36C09"></i><i style="--c:#B51E3E"></i><i style="--c:#324A8B"></i><em>9</em></span></a></li><li><a class="mx-lk mx-fab" href="on-stock/fabrics/martin-285.html"><span class="mx-fn">MARTIN 285</span><span class="mx-dots" aria-hidden="true"><i style="--c:#FFFFFF"></i><i style="--c:#324A8B"></i><i style="--c:#7A7E7F"></i><i style="--c:#565559"></i><em>4</em></span></a></li><li><a class="mx-lk mx-fab" href="on-stock/fabrics/florjan-285.html"><span class="mx-fn">FLORJAN 285</span><span class="mx-dots" aria-hidden="true"><i style="--c:#324A8B"></i><i style="--c:#32313B"></i><i style="--c:#7A7E7F"></i><em>3</em></span></a></li><li><a class="mx-lk mx-fab" href="on-stock/fabrics/krpan-310.html"><span class="mx-fn">KRPAN 310</span><span class="mx-dots" aria-hidden="true"><i style="--c:#E35427"></i><i style="--c:#B51E3E"></i><i style="--c:#324A8B"></i><i style="--c:#32313B"></i><em>5</em></span></a></li><li><a class="mx-lk mx-fab" href="on-stock/fabrics/fr-10-360.html"><span class="mx-fn">FR-10 360</span><span class="mx-dots" aria-hidden="true"><i style="--c:#324A8B"></i><em>1</em></span></a></li></ul></div></div><div class="mx-col"><div class="mx-grp"><a class="mx-gh" href="on-stock/index.html#g=6040">60/40 Polycotton<i>5</i></a><ul class="mx-ul"><li><a class="mx-lk mx-fab" href="on-stock/fabrics/bravo-210.html"><span class="mx-fn">BRAVO 210</span><span class="mx-dots" aria-hidden="true"><i style="--c:#FFFFFF"></i><i style="--c:#F1EEE4"></i><i style="--c:#FFE0AB"></i><i style="--c:#FCCD5E"></i><em>27</em></span></a></li><li><a class="mx-lk mx-fab" href="on-stock/fabrics/diva-215.html"><span class="mx-fn">DIVA 215</span><span class="mx-dots" aria-hidden="true"><i style="--c:#FFFFFF"></i><i style="--c:#F1EEE4"></i><i style="--c:#8BA7C9"></i><i style="--c:#2E447E"></i><em>5</em></span></a></li><li><a class="mx-lk mx-fab" href="on-stock/fabrics/verona-215.html"><span class="mx-fn">VERONA 215</span><span class="mx-dots" aria-hidden="true"><i style="--c:#B52B3D"></i><i style="--c:#284C8C"></i><i style="--c:#2F3443"></i><i style="--c:#6E6F75"></i><em>5</em></span></a></li><li><a class="mx-lk mx-fab" href="on-stock/fabrics/split-260.html"><span class="mx-fn">SPLIT 260</span><span class="mx-dots" aria-hidden="true"><i style="--c:#F1EEE4"></i><i style="--c:#305086"></i><i style="--c:#32354E"></i><i style="--c:#2F3543"></i><em>11</em></span></a></li><li><a class="mx-lk mx-fab" href="on-stock/fabrics/atlantis-315.html"><span class="mx-fn">ATLANTIS 315</span><span class="mx-dots" aria-hidden="true"><i style="--c:#2D4C8A"></i><i style="--c:#30374E"></i><i style="--c:#2F3442"></i><i style="--c:#00787E"></i><em>4</em></span></a></li></ul></div><div class="mx-grp"><a class="mx-gh" href="on-stock/index.html#g=5050">50/50 Polycotton<i>3</i></a><ul class="mx-ul"><li><a class="mx-lk mx-fab" href="on-stock/fabrics/dablin-170.html"><span class="mx-fn">DABLIN 170</span><span class="mx-dots" aria-hidden="true"><i style="--c:#FFFFFF"></i><i style="--c:#B51E3E"></i><i style="--c:#8E3F64"></i><i style="--c:#9977A3"></i><em>11</em></span></a></li><li><a class="mx-lk mx-fab" href="on-stock/fabrics/esad-285.html"><span class="mx-fn">ESAD 285</span><span class="mx-dots" aria-hidden="true"><i style="--c:#002060"></i><i style="--c:#0F243E"></i><i style="--c:#A5A5A5"></i><i style="--c:#7F7F7F"></i><em>4</em></span></a></li><li><a class="mx-lk mx-fab" href="on-stock/fabrics/molat-300.html"><span class="mx-fn">MOLAT 300</span><span class="mx-dots" aria-hidden="true"><i style="--c:#39461F"></i><em>1</em></span></a></li></ul></div></div><div class="mx-col"><div class="mx-grp"><a class="mx-gh" href="on-stock/index.html#g=3565">35/65 Polycotton<i>3</i></a><ul class="mx-ul"><li><a class="mx-lk mx-fab" href="on-stock/fabrics/sparta-240.html"><span class="mx-fn">SPARTA 240</span><span class="mx-dots" aria-hidden="true"><i style="--c:#F1EEE4"></i><i style="--c:#B52B3D"></i><i style="--c:#284C8C"></i><i style="--c:#2F3443"></i><em>9</em></span></a></li><li><a class="mx-lk mx-fab" href="on-stock/fabrics/pacifik-250.html"><span class="mx-fn">PACIFIK 250</span><span class="mx-dots" aria-hidden="true"><i style="--c:#F1EEE4"></i><i style="--c:#F5B131"></i><i style="--c:#E8CD00"></i><i style="--c:#E35427"></i><em>21</em></span></a></li><li><a class="mx-lk mx-fab" href="on-stock/fabrics/dynamax-315.html"><span class="mx-fn">DYNAMAX 315</span><span class="mx-dots" aria-hidden="true"><i style="--c:#F1EEE4"></i><i style="--c:#284C8C"></i><i style="--c:#333C55"></i><i style="--c:#B7B8BB"></i><em>6</em></span></a></li></ul></div><div class="mx-grp"><a class="mx-gh" href="on-stock/index.html#g=stretch">Stretch<i>4</i></a><ul class="mx-ul"><li><a class="mx-lk mx-fab" href="on-stock/fabrics/medico-stretch-210.html"><span class="mx-fn">MEDICO STRETCH 210</span><span class="mx-dots" aria-hidden="true"><i style="--c:#FFFFFF"></i><em>1</em></span></a></li><li><a class="mx-lk mx-fab" href="on-stock/fabrics/bravo-stretch-250.html"><span class="mx-fn">BRAVO STRETCH 250</span><span class="mx-dots" aria-hidden="true"><i style="--c:#FFFFFF"></i><i style="--c:#8BA7C9"></i><i style="--c:#C4E3CD"></i><em>3</em></span></a></li><li><a class="mx-lk mx-fab" href="on-stock/fabrics/pacific-stretch-250.html"><span class="mx-fn">PACIFIC STRETCH 250</span><span class="mx-dots" aria-hidden="true"><i style="--c:#2F3443"></i><i style="--c:#6E6F75"></i><i style="--c:#484A4E"></i><i style="--c:#111111"></i><em>4</em></span></a></li><li><a class="mx-lk mx-fab" href="on-stock/fabrics/kanvas-stretch-250.html"><span class="mx-fn">KANVAS STRETCH 250</span><span class="mx-dots" aria-hidden="true"><i style="--c:#0F243E"></i><i style="--c:#3F3F3F"></i><i style="--c:#111111"></i><em>3</em></span></a></li></ul></div></div><div class="mx-col"><div class="mx-grp"><a class="mx-gh" href="on-stock/index.html#g=cordura">CORDURA®<i>2</i></a><ul class="mx-ul"><li><a class="mx-lk mx-fab" href="on-stock/fabrics/cordura-200.html"><span class="mx-fn">CORDURA 200</span><span class="mx-dots" aria-hidden="true"><i style="--c:#3F3F3F"></i><i style="--c:#111111"></i><em>2</em></span></a></li><li><a class="mx-lk mx-fab" href="on-stock/fabrics/cdr-blend-260.html"><span class="mx-fn">CDR BLEND 260</span><span class="mx-dots" aria-hidden="true"><i style="--c:#273C4F"></i><em>1</em></span></a></li></ul></div><div class="mx-grp"><a class="mx-gh" href="on-stock/index.html#g=lining">Lining<i>1</i></a><ul class="mx-ul"><li><a class="mx-lk mx-fab" href="on-stock/fabrics/quilted-lining.html"><span class="mx-fn">QUILTED LINING</span><span class="mx-dots" aria-hidden="true"><i style="--c:#0F243E"></i><i style="--c:#111111"></i><em>2</em></span></a></li></ul></div></div>
+    <div class="mx-strip"><span>Minimum order one roll (30 to 110 m)</span><span>Shorter cut lengths from 1 m on request</span><span>Any colour dyed to order from 300 m</span><span>OEKO-TEX® Standard 100</span></div>
+  </div>
+</div></div></li><li class="mx-item mx-has"><button type="button" class="mx-trig" aria-expanded="false" aria-controls="mx-p-mto">Made to order<svg class="mx-chev" viewBox="0 0 10 10" aria-hidden="true"><path d="M1.5 3.5 5 7l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+<div class="mx-panel" id="mx-p-mto" role="region" aria-label="Made to order"><div class="mx-pin">
+  <a class="mx-feat" href="manufacturing.html"><span class="mx-ribbon"></span>
+    <span class="mx-eyebrow">Manufacturing solutions</span>
+    <span class="mx-feat-t">Fabrics we have made for our customers</span>
+    <span class="mx-feat-n"><span><b>207</b>articles</span><span><b>19</b>groups</span></span>
+    <span class="mx-feat-d">Our production reference list. Start from any article and we adapt composition, weight, colour and finish.</span>
+    <span class="mx-go">Browse all articles &rarr;</span>
+  </a>
+  <div class="mx-cols"><div class="mx-grp"><span class="mx-gh">Workwear classics</span><ul class="mx-ul"><li><a class="mx-lk" href="manufacturing.html#g-cotton"><span>100% cotton</span><small>13</small></a></li><li><a class="mx-lk" href="manufacturing.html#g-cotrich"><span>Cotton-rich polycotton</span><small>33</small></a></li><li><a class="mx-lk" href="manufacturing.html#g-polrich"><span>Polyester-rich polycotton</span><small>20</small></a></li><li><a class="mx-lk" href="manufacturing.html#g-stretch"><span>Stretch</span><small>4</small></a></li><li><a class="mx-lk" href="manufacturing.html#g-nylon"><span>Cotton / nylon</span><small>3</small></a></li></ul></div><div class="mx-grp"><span class="mx-gh">Protective</span><ul class="mx-ul"><li><a class="mx-lk" href="manufacturing.html#g-fr"><span>Flame retardant</span><small>19</small></a></li><li><a class="mx-lk" href="manufacturing.html#g-mnst"><span>Multinorm FR stretch</span><small>6</small></a></li><li><a class="mx-lk" href="manufacturing.html#g-mnfr"><span>Multinorm FR Proban®</span><small>8</small></a></li><li><a class="mx-lk" href="manufacturing.html#g-hivis"><span>High visibility</span><small>15</small></a></li><li><a class="mx-lk" href="manufacturing.html#g-anti"><span>Antistatic</span><small>10</small></a></li></ul></div><div class="mx-grp"><span class="mx-gh">Technical</span><ul class="mx-ul"><li><a class="mx-lk" href="manufacturing.html#g-cordura"><span>CORDURA®</span><small>38</small></a></li><li><a class="mx-lk" href="manufacturing.html#g-camo"><span>Military camouflage</span><small>6</small></a></li><li><a class="mx-lk" href="manufacturing.html#g-tencel"><span>Tencel® and viscose</span><small>7</small></a></li></ul></div><div class="mx-grp"><span class="mx-gh">Sustainable</span><ul class="mx-ul"><li><a class="mx-lk" href="manufacturing.html#g-rep"><span>REPREVE® fabrics</span><small>3</small></a></li><li><a class="mx-lk" href="manufacturing.html#g-org"><span>Organic cotton</span><small>5</small></a></li><li><a class="mx-lk" href="manufacturing.html#g-bci"><span>BCI™ cotton</span><small>5</small></a></li><li><a class="mx-lk" href="manufacturing.html#g-ten"><span>TENCEL® recycled</span><small>2</small></a></li><li><a class="mx-lk" href="manufacturing.html#g-rstr"><span>Recycled stretch</span><small>6</small></a></li><li><a class="mx-lk" href="manufacturing.html#g-grs"><span>GRS recycled</span><small>4</small></a></li></ul></div>
+    <div class="mx-strip"><span>Produced to your specification</span><span>Custom colours from 300 m</span><span>Licensed CORDURA® manufacturer</span><span>Not sure which weave? <a href="blog/weave-types-explained.html">Read the weave guide</a></span></div>
+  </div>
+</div></div></li><li class="mx-item mx-has"><button type="button" class="mx-trig" aria-expanded="false" aria-controls="mx-p-repreve">REPREVE®<svg class="mx-chev" viewBox="0 0 10 10" aria-hidden="true"><path d="M1.5 3.5 5 7l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+<div class="mx-panel mx-green" id="mx-p-repreve" role="region" aria-label="REPREVE®"><div class="mx-pin mx-pin--sm">
+  <a class="mx-feat" href="repreve.html"><span class="mx-ribbon"></span>
+    <img src="assets/img/repreve-logo.png" alt="REPREVE®" width="114" height="44">
+    <span class="mx-feat-t">Workwear fabric, woven from recycled bottles.</span>
+    <span class="mx-feat-n"><span><b>25</b>articles</span><span><b>300</b>m custom colour</span></span>
+    <span class="mx-go">Sustainable fabrics &rarr;</span>
+  </a>
+  <div class="mx-cols mx-cols--3">
+    <div class="mx-grp"><span class="mx-gh">Collections</span><ul class="mx-ul"><li><a class="mx-lk" href="repreve.html#grp-repreve"><span>REPREVE® fabrics</span><small>3</small></a></li><li><a class="mx-lk" href="repreve.html#grp-organic"><span>Organic cotton</span><small>5</small></a></li><li><a class="mx-lk" href="repreve.html#grp-bci"><span>BCI™ cotton</span><small>5</small></a></li><li><a class="mx-lk" href="repreve.html#grp-tencel"><span>TENCEL®</span><small>2</small></a></li><li><a class="mx-lk" href="repreve.html#grp-stretch"><span>Stretch</span><small>6</small></a></li><li><a class="mx-lk" href="repreve.html#grp-grs"><span>GRS recycled</span><small>4</small></a></li></ul></div>
+    <div class="mx-grp"><span class="mx-gh">Explore</span><ul class="mx-ul">
+      <li><a class="mx-lk" href="repreve.html#collection"><span>All sustainable articles</span><span class="mx-arrow" aria-hidden="true">&rarr;</span></a></li>
+      <li><a class="mx-lk" href="repreve.html#process"><span>From bottle to fabric</span><span class="mx-arrow" aria-hidden="true">&rarr;</span></a></li>
+      <li><a class="mx-lk" href="repreve.html#certificates"><span>Certified fibres</span><span class="mx-arrow" aria-hidden="true">&rarr;</span></a></li>
+    </ul></div>
+    <div class="mx-grp"><span class="mx-gh">Certified fibres</span><ul class="mx-ul">
+      <li><a class="mx-lk" href="repreve.html#certificates"><span>REPREVE® recycled fibre</span><span class="mx-arrow" aria-hidden="true">&rarr;</span></a></li>
+      <li><a class="mx-lk" href="repreve.html#certificates"><span>GRS, Global Recycled Standard</span><span class="mx-arrow" aria-hidden="true">&rarr;</span></a></li>
+      <li><a class="mx-lk" href="repreve.html#certificates"><span>BCI™ Better Cotton</span><span class="mx-arrow" aria-hidden="true">&rarr;</span></a></li>
+      <li><a class="mx-lk" href="repreve.html#certificates"><span>TENCEL® lyocell</span><span class="mx-arrow" aria-hidden="true">&rarr;</span></a></li>
+      <li><a class="mx-lk" href="repreve.html#certificates"><span>OEKO-TEX® STANDARD 100</span><span class="mx-arrow" aria-hidden="true">&rarr;</span></a></li>
+    </ul></div>
+    <div class="mx-strip"><span>190 to 300 g/m²</span><span>152 cm wide</span><span>Fibre certificates supplied with every delivery</span></div>
+  </div>
+</div></div></li><li class="mx-item mx-has"><button type="button" class="mx-trig" aria-expanded="false" aria-controls="mx-p-sorona">SORONA®<svg class="mx-chev" viewBox="0 0 10 10" aria-hidden="true"><path d="M1.5 3.5 5 7l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+<div class="mx-panel" id="mx-p-sorona" role="region" aria-label="SORONA®"><div class="mx-pin mx-pin--sm">
+  <a class="mx-feat" href="sorona.html"><span class="mx-ribbon"></span>
+    <span class="mx-eyebrow">SORONA®</span>
+    <span class="mx-feat-t">Workwear fabric with stretch that comes back.</span>
+    <span class="mx-feat-n"><span><b>10</b>articles</span><span><b>37%</b>plant-based</span></span>
+    <span class="mx-feat-d">Cotton and polyester blends with Sorona® fibre. Natural stretch and recovery, no elastane needed.</span>
+    <span class="mx-go">Sorona® fabrics &rarr;</span>
+  </a>
+  <div class="mx-cols mx-cols--3">
+    <div class="mx-grp"><span class="mx-gh">By garment</span><ul class="mx-ul"><li><a class="mx-lk" href="sorona.html#range"><span>Shirts</span><small>3</small></a></li><li><a class="mx-lk" href="sorona.html#range"><span>Trousers</span><small>2</small></a></li><li><a class="mx-lk" href="sorona.html#range"><span>Uniforms</span><small>4</small></a></li><li><a class="mx-lk" href="sorona.html#range"><span>Outerwear</span><small>4</small></a></li><li><a class="mx-lk" href="sorona.html#range"><span>Safety &amp; FR</span><small>1</small></a></li><li><a class="mx-lk" href="sorona.html#range"><span>Aprons &amp; bags</span><small>1</small></a></li></ul></div>
+    <div class="mx-grp"><span class="mx-gh">Explore</span><ul class="mx-ul">
+      <li><a class="mx-lk" href="sorona.html#range"><span>All 10 articles</span><span class="mx-arrow" aria-hidden="true">&rarr;</span></a></li>
+      <li><a class="mx-lk" href="sorona.html#about"><span>What is Sorona®</span><span class="mx-arrow" aria-hidden="true">&rarr;</span></a></li>
+      <li><a class="mx-lk" href="sorona.html#rpscene"><span>From plant to fabric</span><span class="mx-arrow" aria-hidden="true">&rarr;</span></a></li>
+      <li><a class="mx-lk" href="sorona.html#faq"><span>Questions</span><span class="mx-arrow" aria-hidden="true">&rarr;</span></a></li>
+    </ul></div>
+    <div class="mx-grp"><span class="mx-gh">Properties</span><ul class="mx-ul">
+      <li><a class="mx-lk" href="sorona.html#coil"><span>Stretch &amp; recovery</span><span class="mx-arrow" aria-hidden="true">&rarr;</span></a></li>
+      <li><a class="mx-lk" href="sorona.html#about"><span>Soft handle</span><span class="mx-arrow" aria-hidden="true">&rarr;</span></a></li>
+      <li><a class="mx-lk" href="sorona.html#about"><span>Shape retention</span><span class="mx-arrow" aria-hidden="true">&rarr;</span></a></li>
+      <li><a class="mx-lk" href="sorona.html#about"><span>Colour that lasts</span><span class="mx-arrow" aria-hidden="true">&rarr;</span></a></li>
+      <li><a class="mx-lk" href="sorona.html#about"><span>Partly plant-based</span><span class="mx-arrow" aria-hidden="true">&rarr;</span></a></li>
+    </ul></div>
+    <div class="mx-strip"><span>160 to 300 g/m²</span><span>Woven to order</span><span>Custom colours from 300 m</span></div>
+  </div>
+</div></div></li><li class="mx-item mx-has"><button type="button" class="mx-trig" aria-expanded="false" aria-controls="mx-p-fr">Multinorm &amp; FR<svg class="mx-chev" viewBox="0 0 10 10" aria-hidden="true"><path d="M1.5 3.5 5 7l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+<div class="mx-panel" id="mx-p-fr" role="region" aria-label="Multinorm & FR"><div class="mx-pin mx-pin--sm">
+  <a class="mx-feat" href="multinorm-fr-proban.html"><span class="mx-ribbon"></span>
+    <img src="assets/img/proban-logo.png" alt="PROBAN®" width="176" height="44">
+    <span class="mx-feat-t">Multinorm fabrics. One garment, several protections.</span>
+    <span class="mx-feat-n"><span><b>14</b>articles</span><span><b>210&ndash;380</b>g/m²</span></span>
+    <span class="mx-go">Multinorm &amp; FR Proban® &rarr;</span>
+  </a>
+  <div class="mx-cols mx-cols--3">
+    <div class="mx-grp"><span class="mx-gh">Collection</span><ul class="mx-ul">
+      <li><a class="mx-lk" href="multinorm-fr-proban.html#collection"><span>Stretch fabrics</span><small>6</small></a></li>
+      <li><a class="mx-lk" href="multinorm-fr-proban.html#collection"><span>Non-stretch fabrics</span><small>8</small></a></li>
+      <li><a class="mx-lk" href="multinorm-fr-proban.html#certificates"><span>Certified &amp; licensed</span><span class="mx-arrow" aria-hidden="true">&rarr;</span></a></li>
+      <li><a class="mx-lk" href="assets/docs/maximo-multinorm-fr-proban.pdf" download><span>All articles (PDF)</span><small>PDF</small></a></li>
+    </ul></div>
+    <div class="mx-grp"><span class="mx-gh">Which fabric for which job</span><ul class="mx-ul"><li><a class="mx-lk" href="multinorm-fr-proban.html#process"><span>Welding</span><span class="mx-arrow" aria-hidden="true">&rarr;</span></a></li><li><a class="mx-lk" href="multinorm-fr-proban.html#process"><span>Chemical industry</span><span class="mx-arrow" aria-hidden="true">&rarr;</span></a></li><li><a class="mx-lk" href="multinorm-fr-proban.html#process"><span>Oil &amp; gas</span><span class="mx-arrow" aria-hidden="true">&rarr;</span></a></li><li><a class="mx-lk" href="multinorm-fr-proban.html#process"><span>Road works &amp; utilities</span><span class="mx-arrow" aria-hidden="true">&rarr;</span></a></li><li><a class="mx-lk" href="multinorm-fr-proban.html#process"><span>Electrical &amp; energy</span><span class="mx-arrow" aria-hidden="true">&rarr;</span></a></li><li><a class="mx-lk" href="multinorm-fr-proban.html#process"><span>Industry &amp; maintenance</span><span class="mx-arrow" aria-hidden="true">&rarr;</span></a></li></ul></div>
+    <div class="mx-grp"><span class="mx-gh">Protection</span><ul class="mx-ul">
+      <li><a class="mx-lk" href="multinorm-fr-proban.html#collection"><span>Flame &amp; heat</span><span class="mx-arrow" aria-hidden="true">&rarr;</span></a></li>
+      <li><a class="mx-lk" href="multinorm-fr-proban.html#collection"><span>Welding spatter</span><span class="mx-arrow" aria-hidden="true">&rarr;</span></a></li>
+      <li><a class="mx-lk" href="multinorm-fr-proban.html#collection"><span>Antistatic</span><span class="mx-arrow" aria-hidden="true">&rarr;</span></a></li>
+      <li><a class="mx-lk" href="multinorm-fr-proban.html#collection"><span>Chemical splash</span><span class="mx-arrow" aria-hidden="true">&rarr;</span></a></li>
+      <li><a class="mx-lk" href="multinorm-fr-proban.html#collection"><span>High visibility</span><span class="mx-arrow" aria-hidden="true">&rarr;</span></a></li>
+    </ul></div>
+    <div class="mx-strip"><span>FR finish lasts the life of the garment</span><span>Test reports and data sheets on request</span></div>
+  </div>
+</div></div></li><li class="mx-item mx-has"><button type="button" class="mx-trig" aria-expanded="false" aria-controls="mx-p-sewing">Sewing<svg class="mx-chev" viewBox="0 0 10 10" aria-hidden="true"><path d="M1.5 3.5 5 7l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+<div class="mx-panel" id="mx-p-sewing" role="region" aria-label="Sewing"><div class="mx-pin mx-pin--sm">
+  <a class="mx-feat mx-feat--ink" href="sewing.html#quote"><span class="mx-ribbon"></span>
+    <span class="mx-eyebrow">Sewing service</span>
+    <span class="mx-feat-t">Send a photo. Get a price.</span>
+    <span class="mx-feat-d">Send us a photo of the garment you need. We work out the fabric and the price per piece, and sew it for you.</span>
+    <span class="mx-go">Send a photo &rarr;</span>
+  </a>
+  <div class="mx-cols mx-cols--3">
+    <div class="mx-grp"><span class="mx-gh">What we sew</span><ul class="mx-ul"><li><a class="mx-lk" href="sewing.html#what"><span>Work trousers &amp; jackets</span><span class="mx-arrow" aria-hidden="true">&rarr;</span></a></li><li><a class="mx-lk" href="sewing.html#what"><span>Coveralls &amp; bib pants</span><span class="mx-arrow" aria-hidden="true">&rarr;</span></a></li><li><a class="mx-lk" href="sewing.html#what"><span>Hi-vis garments</span><span class="mx-arrow" aria-hidden="true">&rarr;</span></a></li><li><a class="mx-lk" href="sewing.html#what"><span>Flame retardant garments</span><span class="mx-arrow" aria-hidden="true">&rarr;</span></a></li><li><a class="mx-lk" href="sewing.html#what"><span>Medical &amp; care wear</span><span class="mx-arrow" aria-hidden="true">&rarr;</span></a></li><li><a class="mx-lk" href="sewing.html#what"><span>Hotel &amp; bed linen</span><span class="mx-arrow" aria-hidden="true">&rarr;</span></a></li></ul></div>
+    <div class="mx-grp"><span class="mx-gh">How it works</span><ul class="mx-ul"><li><a class="mx-lk" href="sewing.html#quote"><span>Get a price from a photo</span><span class="mx-arrow" aria-hidden="true">&rarr;</span></a></li><li><a class="mx-lk" href="sewing.html#process"><span>How it works</span><span class="mx-arrow" aria-hidden="true">&rarr;</span></a></li><li><a class="mx-lk" href="sewing.html#quality"><span>Quality control</span><span class="mx-arrow" aria-hidden="true">&rarr;</span></a></li><li><a class="mx-lk" href="sewing.html#faq"><span>Questions about sewing</span><span class="mx-arrow" aria-hidden="true">&rarr;</span></a></li></ul></div>
+    <div class="mx-grp"><span class="mx-gh">Fabric for your garment</span><ul class="mx-ul">
+      <li><a class="mx-lk" href="on-stock/index.html"><span>From our stock</span><span class="mx-arrow" aria-hidden="true">&rarr;</span></a></li>
+      <li><a class="mx-lk" href="manufacturing.html"><span>Made to your specification</span><span class="mx-arrow" aria-hidden="true">&rarr;</span></a></li>
+      <li><a class="mx-lk" href="multinorm-fr-proban.html"><span>FR &amp; Multinorm</span><span class="mx-arrow" aria-hidden="true">&rarr;</span></a></li>
+      <li><a class="mx-lk" href="repreve.html"><span>Sustainable fabrics</span><span class="mx-arrow" aria-hidden="true">&rarr;</span></a></li>
+    </ul></div>
+  </div>
+</div></div></li><li class="mx-item mx-has"><button type="button" class="mx-trig" aria-expanded="false" aria-controls="mx-p-blog">Blog<svg class="mx-chev" viewBox="0 0 10 10" aria-hidden="true"><path d="M1.5 3.5 5 7l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+<div class="mx-panel" id="mx-p-blog" role="region" aria-label="Blog"><div class="mx-pin mx-pin--sm">
+  <a class="mx-feat" href="blog/index.html"><span class="mx-ribbon"></span>
+    <span class="mx-eyebrow">Maximo blog</span>
+    <svg class="mx-weave" viewBox="0 0 72 72" aria-hidden="true"><rect width="72" height="72" fill="#eef0f3"/><rect x="1.4" y="0.3" width="6.1" height="8.5" rx="2.5" fill="#df7841"/><rect x="10.4" y="0.3" width="6.1" height="8.5" rx="2.5" fill="#df7841"/><rect x="18.3" y="1.4" width="8.5" height="6.1" rx="2.5" fill="#252b4b"/><rect x="28.4" y="0.3" width="6.1" height="8.5" rx="2.5" fill="#df7841"/><rect x="37.4" y="0.3" width="6.1" height="8.5" rx="2.5" fill="#df7841"/><rect x="45.3" y="1.4" width="8.5" height="6.1" rx="2.5" fill="#252b4b"/><rect x="55.4" y="0.3" width="6.1" height="8.5" rx="2.5" fill="#df7841"/><rect x="64.4" y="0.3" width="6.1" height="8.5" rx="2.5" fill="#df7841"/><rect x="0.3" y="10.4" width="8.5" height="6.1" rx="2.5" fill="#252b4b"/><rect x="10.4" y="9.3" width="6.1" height="8.5" rx="2.5" fill="#df7841"/><rect x="19.4" y="9.3" width="6.1" height="8.5" rx="2.5" fill="#df7841"/><rect x="27.3" y="10.4" width="8.5" height="6.1" rx="2.5" fill="#252b4b"/><rect x="37.4" y="9.3" width="6.1" height="8.5" rx="2.5" fill="#df7841"/><rect x="46.4" y="9.3" width="6.1" height="8.5" rx="2.5" fill="#df7841"/><rect x="54.3" y="10.4" width="8.5" height="6.1" rx="2.5" fill="#252b4b"/><rect x="64.4" y="9.3" width="6.1" height="8.5" rx="2.5" fill="#df7841"/><rect x="1.4" y="18.3" width="6.1" height="8.5" rx="2.5" fill="#df7841"/><rect x="9.3" y="19.4" width="8.5" height="6.1" rx="2.5" fill="#252b4b"/><rect x="19.4" y="18.3" width="6.1" height="8.5" rx="2.5" fill="#df7841"/><rect x="28.4" y="18.3" width="6.1" height="8.5" rx="2.5" fill="#df7841"/><rect x="36.3" y="19.4" width="8.5" height="6.1" rx="2.5" fill="#252b4b"/><rect x="46.4" y="18.3" width="6.1" height="8.5" rx="2.5" fill="#df7841"/><rect x="55.4" y="18.3" width="6.1" height="8.5" rx="2.5" fill="#df7841"/><rect x="63.3" y="19.4" width="8.5" height="6.1" rx="2.5" fill="#252b4b"/><rect x="1.4" y="27.3" width="6.1" height="8.5" rx="2.5" fill="#df7841"/><rect x="10.4" y="27.3" width="6.1" height="8.5" rx="2.5" fill="#df7841"/><rect x="18.3" y="28.4" width="8.5" height="6.1" rx="2.5" fill="#252b4b"/><rect x="28.4" y="27.3" width="6.1" height="8.5" rx="2.5" fill="#df7841"/><rect x="37.4" y="27.3" width="6.1" height="8.5" rx="2.5" fill="#df7841"/><rect x="45.3" y="28.4" width="8.5" height="6.1" rx="2.5" fill="#252b4b"/><rect x="55.4" y="27.3" width="6.1" height="8.5" rx="2.5" fill="#df7841"/><rect x="64.4" y="27.3" width="6.1" height="8.5" rx="2.5" fill="#df7841"/><rect x="0.3" y="37.4" width="8.5" height="6.1" rx="2.5" fill="#252b4b"/><rect x="10.4" y="36.3" width="6.1" height="8.5" rx="2.5" fill="#df7841"/><rect x="19.4" y="36.3" width="6.1" height="8.5" rx="2.5" fill="#df7841"/><rect x="27.3" y="37.4" width="8.5" height="6.1" rx="2.5" fill="#252b4b"/><rect x="37.4" y="36.3" width="6.1" height="8.5" rx="2.5" fill="#df7841"/><rect x="46.4" y="36.3" width="6.1" height="8.5" rx="2.5" fill="#df7841"/><rect x="54.3" y="37.4" width="8.5" height="6.1" rx="2.5" fill="#252b4b"/><rect x="64.4" y="36.3" width="6.1" height="8.5" rx="2.5" fill="#df7841"/><rect x="1.4" y="45.3" width="6.1" height="8.5" rx="2.5" fill="#df7841"/><rect x="9.3" y="46.4" width="8.5" height="6.1" rx="2.5" fill="#252b4b"/><rect x="19.4" y="45.3" width="6.1" height="8.5" rx="2.5" fill="#df7841"/><rect x="28.4" y="45.3" width="6.1" height="8.5" rx="2.5" fill="#df7841"/><rect x="36.3" y="46.4" width="8.5" height="6.1" rx="2.5" fill="#252b4b"/><rect x="46.4" y="45.3" width="6.1" height="8.5" rx="2.5" fill="#df7841"/><rect x="55.4" y="45.3" width="6.1" height="8.5" rx="2.5" fill="#df7841"/><rect x="63.3" y="46.4" width="8.5" height="6.1" rx="2.5" fill="#252b4b"/><rect x="1.4" y="54.3" width="6.1" height="8.5" rx="2.5" fill="#df7841"/><rect x="10.4" y="54.3" width="6.1" height="8.5" rx="2.5" fill="#df7841"/><rect x="18.3" y="55.4" width="8.5" height="6.1" rx="2.5" fill="#252b4b"/><rect x="28.4" y="54.3" width="6.1" height="8.5" rx="2.5" fill="#df7841"/><rect x="37.4" y="54.3" width="6.1" height="8.5" rx="2.5" fill="#df7841"/><rect x="45.3" y="55.4" width="8.5" height="6.1" rx="2.5" fill="#252b4b"/><rect x="55.4" y="54.3" width="6.1" height="8.5" rx="2.5" fill="#df7841"/><rect x="64.4" y="54.3" width="6.1" height="8.5" rx="2.5" fill="#df7841"/><rect x="0.3" y="64.4" width="8.5" height="6.1" rx="2.5" fill="#252b4b"/><rect x="10.4" y="63.3" width="6.1" height="8.5" rx="2.5" fill="#df7841"/><rect x="19.4" y="63.3" width="6.1" height="8.5" rx="2.5" fill="#df7841"/><rect x="27.3" y="64.4" width="8.5" height="6.1" rx="2.5" fill="#252b4b"/><rect x="37.4" y="63.3" width="6.1" height="8.5" rx="2.5" fill="#df7841"/><rect x="46.4" y="63.3" width="6.1" height="8.5" rx="2.5" fill="#df7841"/><rect x="54.3" y="64.4" width="8.5" height="6.1" rx="2.5" fill="#252b4b"/><rect x="64.4" y="63.3" width="6.1" height="8.5" rx="2.5" fill="#df7841"/></svg>
+    <span class="mx-feat-t">Know your fabric.</span>
+    <span class="mx-feat-n"><span><b>14</b>articles</span><span><b>1</b>a month</span></span>
+    <span class="mx-feat-d">Guides on weaves, blends and standards, from people who make workwear fabric.</span>
+    <span class="mx-go">All articles &rarr;</span>
+  </a>
+  <div class="mx-cols mx-cols--blog3">
+    <div class="mx-grp"><span class="mx-gh">Latest articles</span><ul class="mx-ul mx-posts"><li><a class="mx-post" href="blog/weave-types-explained.html"><span class="mx-post-c">Fabric guide · 8 min</span><span class="mx-post-t">Weave types explained: plain, twill, satin and more</span></a></li><li><a class="mx-post" href="blog/multinorm-standards-by-job.html"><span class="mx-post-c">Protective wear · 5 min</span><span class="mx-post-t">Multinorm workwear: which standards does your job need?</span></a></li><li><a class="mx-post" href="blog/polycotton-35-65-vs-60-40.html"><span class="mx-post-c">Choosing fabric · 4 min</span><span class="mx-post-t">35/65 or 60/40 polycotton: which workwear fabric to choose?</span></a></li><li><a class="mx-post" href="blog/cordura-explained.html"><span class="mx-post-c">Technical fabrics · 5 min</span><span class="mx-post-t">CORDURA® explained: why it is the toughest workwear fabric</span></a></li><li><a class="mx-post" href="blog/hi-vis-standards-explained.html"><span class="mx-post-c">Protective wear · 4 min</span><span class="mx-post-t">Hi-vis workwear: EN ISO 20471 classes 1, 2 and 3</span></a></li></ul></div>
+    <div class="mx-grp"><span class="mx-gh">Topics</span><ul class="mx-ul"><li><a class="mx-lk" href="blog/index.html#fabric-guide"><span>Fabric guide</span><small>4</small></a></li><li><a class="mx-lk" href="blog/index.html#protective-wear"><span>Protective wear</span><small>3</small></a></li><li><a class="mx-lk" href="blog/index.html#choosing-fabric"><span>Choosing fabric</span><small>2</small></a></li><li><a class="mx-lk" href="blog/index.html#technical-fabrics"><span>Technical fabrics</span><small>1</small></a></li><li><a class="mx-lk" href="blog/index.html#certificates"><span>Certificates</span><small>1</small></a></li><li><a class="mx-lk" href="blog/index.html#sustainable-fabric"><span>Sustainable fabric</span><small>1</small></a></li><li><a class="mx-lk" href="blog/index.html#care-durability"><span>Care & durability</span><small>1</small></a></li><li><a class="mx-lk" href="blog/index.html#medical-care-wear"><span>Medical & care wear</span><small>1</small></a></li></ul></div>
+    <div class="mx-grp mx-nlbox"><span class="mx-gh">Newsletter</span>
+      <p>New fabrics, stock updates and offers. Once a month.</p>
+      <form class="mx-nl" data-where="menu" novalidate>
+  <div class="mx-nl-row"><input type="email" name="email" placeholder="Your work email" autocomplete="email" aria-label="Your work email" required><button type="submit">Subscribe</button></div>
+  <label class="mx-nl-ok"><input type="checkbox" name="consent" required> <span>Send me the Maximo newsletter once a month. I can unsubscribe at any time. <a href="privacy.html#newsletter">Privacy policy</a></span></label>
+  <p class="mx-nl-msg" role="status"></p>
+</form>
+    </div>
+  </div>
+</div></div></li><li class="mx-item"><a class="mx-trig" href="about.html">About us</a></li></ul></nav>
+<div class="mx-act"><a class="mx-cta" href="contact.html#samples"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="m4 7 8 6 8-6"/></svg><span>Request <span class="mx-cta-long">samples</span></span></a>
+<button type="button" class="mx-burger" aria-expanded="false" aria-controls="mx-drawer" aria-label="Open menu"><i></i></button></div>
+</div>
+</div>
+<div class="mx-scrim" aria-hidden="true"></div>
+<div class="mx-drawer" id="mx-drawer" aria-label="Menu"><div class="mx-acc"><button type="button" aria-expanded="true">On stock<svg class="mx-chev" viewBox="0 0 10 10" aria-hidden="true"><path d="M1.5 3.5 5 7l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></button><div class="mx-acc-b"><a class="mx-gh" href="on-stock/index.html#g=cotton">100% Cotton<i>8</i></a><div class="mx-chips"><a href="on-stock/fabrics/roman-185.html"><i style="--c:#F1EEE4"></i>ROMAN 185</a><a href="on-stock/fabrics/adidas-200.html"><i style="--c:#F1EEE4"></i>ADIDAS 200</a><a href="on-stock/fabrics/rene-215.html"><i style="--c:#F1EEE4"></i>RENE 215</a><a href="on-stock/fabrics/tim-245.html"><i style="--c:#F1EEE4"></i>TIM 245</a><a href="on-stock/fabrics/martin-285.html"><i style="--c:#FFFFFF"></i>MARTIN 285</a><a href="on-stock/fabrics/florjan-285.html"><i style="--c:#324A8B"></i>FLORJAN 285</a><a href="on-stock/fabrics/krpan-310.html"><i style="--c:#E35427"></i>KRPAN 310</a><a href="on-stock/fabrics/fr-10-360.html"><i style="--c:#324A8B"></i>FR-10 360</a></div><a class="mx-gh" href="on-stock/index.html#g=6040">60/40 Polycotton<i>5</i></a><div class="mx-chips"><a href="on-stock/fabrics/bravo-210.html"><i style="--c:#FFFFFF"></i>BRAVO 210</a><a href="on-stock/fabrics/diva-215.html"><i style="--c:#FFFFFF"></i>DIVA 215</a><a href="on-stock/fabrics/verona-215.html"><i style="--c:#B52B3D"></i>VERONA 215</a><a href="on-stock/fabrics/split-260.html"><i style="--c:#F1EEE4"></i>SPLIT 260</a><a href="on-stock/fabrics/atlantis-315.html"><i style="--c:#2D4C8A"></i>ATLANTIS 315</a></div><a class="mx-gh" href="on-stock/index.html#g=5050">50/50 Polycotton<i>3</i></a><div class="mx-chips"><a href="on-stock/fabrics/dablin-170.html"><i style="--c:#FFFFFF"></i>DABLIN 170</a><a href="on-stock/fabrics/esad-285.html"><i style="--c:#002060"></i>ESAD 285</a><a href="on-stock/fabrics/molat-300.html"><i style="--c:#39461F"></i>MOLAT 300</a></div><a class="mx-gh" href="on-stock/index.html#g=3565">35/65 Polycotton<i>3</i></a><div class="mx-chips"><a href="on-stock/fabrics/sparta-240.html"><i style="--c:#F1EEE4"></i>SPARTA 240</a><a href="on-stock/fabrics/pacifik-250.html"><i style="--c:#F1EEE4"></i>PACIFIK 250</a><a href="on-stock/fabrics/dynamax-315.html"><i style="--c:#F1EEE4"></i>DYNAMAX 315</a></div><a class="mx-gh" href="on-stock/index.html#g=stretch">Stretch<i>4</i></a><div class="mx-chips"><a href="on-stock/fabrics/medico-stretch-210.html"><i style="--c:#FFFFFF"></i>MEDICO STRETCH 210</a><a href="on-stock/fabrics/bravo-stretch-250.html"><i style="--c:#FFFFFF"></i>BRAVO STRETCH 250</a><a href="on-stock/fabrics/pacific-stretch-250.html"><i style="--c:#2F3443"></i>PACIFIC STRETCH 250</a><a href="on-stock/fabrics/kanvas-stretch-250.html"><i style="--c:#0F243E"></i>KANVAS STRETCH 250</a></div><a class="mx-gh" href="on-stock/index.html#g=cordura">CORDURA®<i>2</i></a><div class="mx-chips"><a href="on-stock/fabrics/cordura-200.html"><i style="--c:#3F3F3F"></i>CORDURA 200</a><a href="on-stock/fabrics/cdr-blend-260.html"><i style="--c:#273C4F"></i>CDR BLEND 260</a></div><a class="mx-gh" href="on-stock/index.html#g=lining">Lining<i>1</i></a><div class="mx-chips"><a href="on-stock/fabrics/quilted-lining.html"><i style="--c:#0F243E"></i>QUILTED LINING</a></div><a class="mx-all" href="on-stock/index.html">Open the colour card &rarr;</a></div></div><div class="mx-acc"><button type="button" aria-expanded="false">Made to order<svg class="mx-chev" viewBox="0 0 10 10" aria-hidden="true"><path d="M1.5 3.5 5 7l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></button><div class="mx-acc-b"><a class="mx-lk" href="manufacturing.html"><span>All 207 articles</span><span class="mx-arrow" aria-hidden="true">&rarr;</span></a><span class="mx-gh">Workwear classics</span><a class="mx-lk" href="manufacturing.html#g-cotton"><span>100% cotton</span><small>13</small></a><a class="mx-lk" href="manufacturing.html#g-cotrich"><span>Cotton-rich polycotton</span><small>33</small></a><a class="mx-lk" href="manufacturing.html#g-polrich"><span>Polyester-rich polycotton</span><small>20</small></a><a class="mx-lk" href="manufacturing.html#g-stretch"><span>Stretch</span><small>4</small></a><a class="mx-lk" href="manufacturing.html#g-nylon"><span>Cotton / nylon</span><small>3</small></a><span class="mx-gh">Protective</span><a class="mx-lk" href="manufacturing.html#g-fr"><span>Flame retardant</span><small>19</small></a><a class="mx-lk" href="manufacturing.html#g-mnst"><span>Multinorm FR stretch</span><small>6</small></a><a class="mx-lk" href="manufacturing.html#g-mnfr"><span>Multinorm FR Proban®</span><small>8</small></a><a class="mx-lk" href="manufacturing.html#g-hivis"><span>High visibility</span><small>15</small></a><a class="mx-lk" href="manufacturing.html#g-anti"><span>Antistatic</span><small>10</small></a><span class="mx-gh">Technical</span><a class="mx-lk" href="manufacturing.html#g-cordura"><span>CORDURA®</span><small>38</small></a><a class="mx-lk" href="manufacturing.html#g-camo"><span>Military camouflage</span><small>6</small></a><a class="mx-lk" href="manufacturing.html#g-tencel"><span>Tencel® and viscose</span><small>7</small></a><span class="mx-gh">Sustainable</span><a class="mx-lk" href="manufacturing.html#g-rep"><span>REPREVE® fabrics</span><small>3</small></a><a class="mx-lk" href="manufacturing.html#g-org"><span>Organic cotton</span><small>5</small></a><a class="mx-lk" href="manufacturing.html#g-bci"><span>BCI™ cotton</span><small>5</small></a><a class="mx-lk" href="manufacturing.html#g-ten"><span>TENCEL® recycled</span><small>2</small></a><a class="mx-lk" href="manufacturing.html#g-rstr"><span>Recycled stretch</span><small>6</small></a><a class="mx-lk" href="manufacturing.html#g-grs"><span>GRS recycled</span><small>4</small></a></div></div><div class="mx-green"><div class="mx-acc"><button type="button" aria-expanded="false">REPREVE®<svg class="mx-chev" viewBox="0 0 10 10" aria-hidden="true"><path d="M1.5 3.5 5 7l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></button><div class="mx-acc-b"><a class="mx-lk" href="repreve.html"><span>Overview</span><span class="mx-arrow" aria-hidden="true">&rarr;</span></a><a class="mx-lk" href="repreve.html#grp-repreve"><span>REPREVE® fabrics</span><small>3</small></a><a class="mx-lk" href="repreve.html#grp-organic"><span>Organic cotton</span><small>5</small></a><a class="mx-lk" href="repreve.html#grp-bci"><span>BCI™ cotton</span><small>5</small></a><a class="mx-lk" href="repreve.html#grp-tencel"><span>TENCEL®</span><small>2</small></a><a class="mx-lk" href="repreve.html#grp-stretch"><span>Stretch</span><small>6</small></a><a class="mx-lk" href="repreve.html#grp-grs"><span>GRS recycled</span><small>4</small></a><a class="mx-lk" href="repreve.html#process"><span>From bottle to fabric</span><span class="mx-arrow" aria-hidden="true">&rarr;</span></a></div></div></div><div class="mx-acc"><button type="button" aria-expanded="false">SORONA®<svg class="mx-chev" viewBox="0 0 10 10" aria-hidden="true"><path d="M1.5 3.5 5 7l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></button><div class="mx-acc-b"><a class="mx-lk" href="sorona.html"><span>Overview</span><span class="mx-arrow" aria-hidden="true">&rarr;</span></a><a class="mx-lk" href="sorona.html#range"><span>All 10 articles</span><span class="mx-arrow" aria-hidden="true">&rarr;</span></a><a class="mx-lk" href="sorona.html#about"><span>What is Sorona®</span><span class="mx-arrow" aria-hidden="true">&rarr;</span></a><a class="mx-lk" href="sorona.html#rpscene"><span>From plant to fabric</span><span class="mx-arrow" aria-hidden="true">&rarr;</span></a></div></div><div class="mx-acc"><button type="button" aria-expanded="false">Multinorm &amp; FR Proban®<svg class="mx-chev" viewBox="0 0 10 10" aria-hidden="true"><path d="M1.5 3.5 5 7l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></button><div class="mx-acc-b"><a class="mx-lk" href="multinorm-fr-proban.html"><span>Overview</span><span class="mx-arrow" aria-hidden="true">&rarr;</span></a><a class="mx-lk" href="multinorm-fr-proban.html#collection"><span>All 14 articles</span><span class="mx-arrow" aria-hidden="true">&rarr;</span></a><a class="mx-lk" href="multinorm-fr-proban.html#process"><span>Which fabric for which job</span><span class="mx-arrow" aria-hidden="true">&rarr;</span></a><a class="mx-lk" href="assets/docs/maximo-multinorm-fr-proban.pdf" download><span>All articles (PDF)</span><small>PDF</small></a></div></div><div class="mx-acc"><button type="button" aria-expanded="false">Sewing<svg class="mx-chev" viewBox="0 0 10 10" aria-hidden="true"><path d="M1.5 3.5 5 7l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></button><div class="mx-acc-b"><a class="mx-lk" href="sewing.html"><span>Overview</span><span class="mx-arrow" aria-hidden="true">&rarr;</span></a><a class="mx-lk" href="sewing.html#what"><span>What we sew</span><span class="mx-arrow" aria-hidden="true">&rarr;</span></a><a class="mx-lk" href="sewing.html#quote"><span>Get a price from a photo</span><span class="mx-arrow" aria-hidden="true">&rarr;</span></a><a class="mx-lk" href="sewing.html#process"><span>How it works</span><span class="mx-arrow" aria-hidden="true">&rarr;</span></a><a class="mx-lk" href="sewing.html#quality"><span>Quality control</span><span class="mx-arrow" aria-hidden="true">&rarr;</span></a><a class="mx-lk" href="sewing.html#faq"><span>Questions about sewing</span><span class="mx-arrow" aria-hidden="true">&rarr;</span></a></div></div><div class="mx-acc"><button type="button" aria-expanded="false">Blog<svg class="mx-chev" viewBox="0 0 10 10" aria-hidden="true"><path d="M1.5 3.5 5 7l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></button><div class="mx-acc-b"><a class="mx-lk" href="blog/index.html"><span>All 14 articles</span><span class="mx-arrow" aria-hidden="true">&rarr;</span></a><a class="mx-lk" href="blog/index.html#fabric-guide"><span>Fabric guide</span><small>4</small></a><a class="mx-lk" href="blog/index.html#protective-wear"><span>Protective wear</span><small>3</small></a><a class="mx-lk" href="blog/index.html#choosing-fabric"><span>Choosing fabric</span><small>2</small></a><a class="mx-lk" href="blog/index.html#technical-fabrics"><span>Technical fabrics</span><small>1</small></a><a class="mx-lk" href="blog/index.html#certificates"><span>Certificates</span><small>1</small></a><a class="mx-lk" href="blog/index.html#sustainable-fabric"><span>Sustainable fabric</span><small>1</small></a><a class="mx-lk" href="blog/index.html#care-durability"><span>Care & durability</span><small>1</small></a><a class="mx-lk" href="blog/index.html#medical-care-wear"><span>Medical & care wear</span><small>1</small></a><span class="mx-gh">Latest</span><a class="mx-lk" href="blog/weave-types-explained.html"><span>Weave types explained: plain, twill, satin and more</span><span class="mx-arrow" aria-hidden="true">&rarr;</span></a><a class="mx-lk" href="blog/multinorm-standards-by-job.html"><span>Multinorm workwear: which standards does your job need?</span><span class="mx-arrow" aria-hidden="true">&rarr;</span></a><a class="mx-lk" href="blog/polycotton-35-65-vs-60-40.html"><span>35/65 or 60/40 polycotton: which workwear fabric to choose?</span><span class="mx-arrow" aria-hidden="true">&rarr;</span></a><a class="mx-lk" href="blog/cordura-explained.html"><span>CORDURA® explained: why it is the toughest workwear fabric</span><span class="mx-arrow" aria-hidden="true">&rarr;</span></a><span class="mx-gh">Newsletter</span><form class="mx-nl" data-where="drawer" novalidate>
+  <div class="mx-nl-row"><input type="email" name="email" placeholder="Your work email" autocomplete="email" aria-label="Your work email" required><button type="submit">Subscribe</button></div>
+  <label class="mx-nl-ok"><input type="checkbox" name="consent" required> <span>Send me the Maximo newsletter once a month. I can unsubscribe at any time. <a href="privacy.html#newsletter">Privacy policy</a></span></label>
+  <p class="mx-nl-msg" role="status"></p>
+</form></div></div><div class="mx-acc"><a href="about.html">About us</a></div><div class="mx-acc"><a href="contact.html">Contact</a></div>
+<div class="mx-dfoot"><a class="mx-cta" href="contact.html#samples"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="m4 7 8 6 8-6"/></svg><span>Request samples</span></a>
+<a href="tel:+38640855805">Sales +386 40 855 805</a><a href="mailto:narocila@maximo-tekstil.com">narocila@maximo-tekstil.com</a></div>
+</div>
+<main id="mx-main">
 
-<a href="#main" class="skip">Skip to content</a>
-
-<!-- Header -->
-<header>
-  <nav class="nav wrap">
-    <a href="/" class="logo">Maximo<span>Tekstil</span></a>
-    <ul>
-      <li><a href="#fabrics">Fabrics</a></li>
-      <li><a href="#features">Features</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-    <button class="menu-btn" onclick="document.querySelector('.nav ul').classList.toggle('open')">Menu</button>
-    <a href="#catalog" class="btn">Catalog</a>
-  </nav>
-</header>
-
-<!-- Hero -->
 <section class="hero">
   <div class="wrap">
-    <div>
-      <h1>Premium Technical Fabrics</h1>
-      <p class="lead">178+ roll fabrics for workwear, flame retardant, high visibility, CORDURA®, antistatic and medical garments. EU stock in Slovenia. Custom colours from 300m.</p>
-      <div class="ctas">
-        <a href="#catalog" class="btn">Browse Catalog</a>
-        <a href="#contact" class="btn ghost">Request Quote</a>
+    <div class="hero-g">
+      <div>
+        <p class="eyebrow g">On stock in Trzin · ready to ship</p>
+        <h1>Workwear fabrics, <span class="o">on stock</span> and made to order.</h1>
+        <p class="lead">We produce workwear, technical and medical fabrics, keep 26 of them in 73 colours in our warehouse in Slovenia, and sew finished garments to your sample.</p>
+        <div class="btns">
+          <a class="btn" href="on-stock/index.html">Open the colour card &rarr;</a>
+          <a class="btn ghost" href="mailto:narocila@maximo-tekstil.com?subject=Sample%20request">Request samples</a>
+        </div>
       </div>
-      <p class="badge">EU Warehouse • Next-day shipping • ISO 9001 & OEKO-TEX certified</p>
+      <div class="hero-wall">
+        <div class="wall" id="wall" aria-label="Colours on stock"><a href="on-stock/fabrics/sparta-240.html" style="--c:#111111" data-n="Negro" data-f="SPARTA 240 · 60475" aria-label="Negro 60475, SPARTA 240"></a><a href="on-stock/fabrics/bravo-210.html" style="--c:#111111" data-n="Black" data-f="BRAVO 210 · 9001" aria-label="Black 9001, BRAVO 210"></a><a href="on-stock/fabrics/florjan-285.html" style="--c:#32313B" data-n="Rich Navy" data-f="FLORJAN 285 · 5010" aria-label="Rich Navy 5010, FLORJAN 285"></a><a href="on-stock/fabrics/kanvas-stretch-250.html" style="--c:#3F3F3F" data-n="Dark Grey" data-f="KANVAS STRETCH 250 · 69887" aria-label="Dark Grey 69887, KANVAS STRETCH 250"></a><a href="on-stock/fabrics/cordura-200.html" style="--c:#3F3F3F" data-n="Grey" data-f="CORDURA 200 · 8000" aria-label="Grey 8000, CORDURA 200"></a><a href="on-stock/fabrics/sparta-240.html" style="--c:#484A4E" data-n="Charcoal" data-f="SPARTA 240 · 60380" aria-label="Charcoal 60380, SPARTA 240"></a><a href="on-stock/fabrics/pacifik-250.html" style="--c:#464954" data-n="Fireman Grey FC" data-f="PACIFIK 250 · 9030" aria-label="Fireman Grey FC 9030, PACIFIK 250"></a><a href="on-stock/fabrics/pacifik-250.html" style="--c:#4F5745" data-n="Olive Green FC" data-f="PACIFIK 250 · 68452" aria-label="Olive Green FC 68452, PACIFIK 250"></a><a href="on-stock/fabrics/tim-245.html" style="--c:#565559" data-n="Dark Moon Grey" data-f="TIM 245 · 35293" aria-label="Dark Moon Grey 35293, TIM 245"></a><a href="on-stock/fabrics/sparta-240.html" style="--c:#5E5E62" data-n="Deep Grey" data-f="SPARTA 240 · 66862" aria-label="Deep Grey 66862, SPARTA 240"></a><a href="on-stock/fabrics/bravo-210.html" style="--c:#64646D" data-n="Tornado Grey" data-f="BRAVO 210 · 8114" aria-label="Tornado Grey 8114, BRAVO 210"></a><a href="on-stock/fabrics/sparta-240.html" style="--c:#6E6F75" data-n="Mole Grey" data-f="SPARTA 240 · 61094" aria-label="Mole Grey 61094, SPARTA 240"></a><a href="on-stock/fabrics/tim-245.html" style="--c:#7A7E7F" data-n="Titanium Grey" data-f="TIM 245 · 8061" aria-label="Titanium Grey 8061, TIM 245"></a><a href="on-stock/fabrics/bravo-210.html" style="--c:#787E86" data-n="Moggy Grey" data-f="BRAVO 210 · 8125" aria-label="Moggy Grey 8125, BRAVO 210"></a><a href="on-stock/fabrics/bravo-210.html" style="--c:#808184" data-n="Battleship Grey" data-f="BRAVO 210 · 8066" aria-label="Battleship Grey 8066, BRAVO 210"></a><a href="on-stock/fabrics/tim-245.html" style="--c:#8F9B9E" data-n="Silver Grey" data-f="TIM 245 · 952" aria-label="Silver Grey 952, TIM 245"></a><a href="on-stock/fabrics/dablin-170.html" style="--c:#9D9998" data-n="Granite Grey" data-f="DABLIN 170 · 8166" aria-label="Granite Grey 8166, DABLIN 170"></a><a href="on-stock/fabrics/pacifik-250.html" style="--c:#B7B8BB" data-n="Winter Grey" data-f="PACIFIK 250 · 60944" aria-label="Winter Grey 60944, PACIFIK 250"></a><a href="on-stock/fabrics/bravo-210.html" style="--c:#FFFFFF" data-n="Super White" data-f="BRAVO 210 · 0001" aria-label="Super White 0001, BRAVO 210"></a><a href="on-stock/fabrics/bravo-210.html" style="--c:#FFB199" data-n="Apricot" data-f="BRAVO 210 · 2020" aria-label="Apricot 2020, BRAVO 210"></a><a href="on-stock/fabrics/pacifik-250.html" style="--c:#E35427" data-n="Marmelade" data-f="PACIFIK 250 · 66777" aria-label="Marmelade 66777, PACIFIK 250"></a><a href="on-stock/fabrics/pacifik-250.html" style="--c:#4B3B31" data-n="Sepia" data-f="PACIFIK 250 · 62685" aria-label="Sepia 62685, PACIFIK 250"></a><a href="on-stock/fabrics/tim-245.html" style="--c:#E36C09" data-n="Tangerine" data-f="TIM 245 · 6666" aria-label="Tangerine 6666, TIM 245"></a><a href="on-stock/fabrics/pacifik-250.html" style="--c:#9B8669" data-n="Beige" data-f="PACIFIK 250 · 7277" aria-label="Beige 7277, PACIFIK 250"></a><a href="on-stock/fabrics/pacifik-250.html" style="--c:#B1A490" data-n="Sand" data-f="PACIFIK 250 · 60441" aria-label="Sand 60441, PACIFIK 250"></a><a href="on-stock/fabrics/bravo-210.html" style="--c:#FFE0AB" data-n="Golden" data-f="BRAVO 210 · 1054" aria-label="Golden 1054, BRAVO 210"></a><a href="on-stock/fabrics/pacifik-250.html" style="--c:#F5B131" data-n="Buttercup" data-f="PACIFIK 250 · 60366" aria-label="Buttercup 60366, PACIFIK 250"></a><a href="on-stock/fabrics/bravo-210.html" style="--c:#FCCD5E" data-n="Yellow" data-f="BRAVO 210 · 1052" aria-label="Yellow 1052, BRAVO 210"></a><a href="on-stock/fabrics/bravo-210.html" style="--c:#FFC000" data-n="Primrose" data-f="BRAVO 210 · 1052" aria-label="Primrose 1052, BRAVO 210"></a><a href="on-stock/fabrics/sparta-240.html" style="--c:#F1EEE4" data-n="Bianco" data-f="SPARTA 240 · 00001" aria-label="Bianco 00001, SPARTA 240"></a><a href="on-stock/fabrics/pacifik-250.html" style="--c:#E8CD00" data-n="Citrone" data-f="PACIFIK 250 · 10480" aria-label="Citrone 10480, PACIFIK 250"></a><a href="on-stock/fabrics/bravo-210.html" style="--c:#4F6128" data-n="Olive Green" data-f="BRAVO 210 · " aria-label="Olive Green , BRAVO 210"></a><a href="on-stock/fabrics/adidas-200.html" style="--c:#B0EAC0" data-n="Aqua Green" data-f="ADIDAS 200 · 344C" aria-label="Aqua Green 344C, ADIDAS 200"></a><a href="on-stock/fabrics/bravo-210.html" style="--c:#C4E3CD" data-n="Menthe" data-f="BRAVO 210 · 713001" aria-label="Menthe 713001, BRAVO 210"></a><a href="on-stock/fabrics/sparta-240.html" style="--c:#284F40" data-n="Bottle Green" data-f="SPARTA 240 · 61090" aria-label="Bottle Green 61090, SPARTA 240"></a><a href="on-stock/fabrics/split-260.html" style="--c:#2C4F42" data-n="Pine Green" data-f="SPLIT 260 · 6208" aria-label="Pine Green 6208, SPLIT 260"></a><a href="on-stock/fabrics/tim-245.html" style="--c:#335A4C" data-n="Capital Green" data-f="TIM 245 · 6216" aria-label="Capital Green 6216, TIM 245"></a><a href="on-stock/fabrics/pacifik-250.html" style="--c:#007756" data-n="Dublin" data-f="PACIFIK 250 · 66907" aria-label="Dublin 66907, PACIFIK 250"></a><a href="on-stock/fabrics/bravo-210.html" style="--c:#005441" data-n="Forest Green" data-f="BRAVO 210 · 6227" aria-label="Forest Green 6227, BRAVO 210"></a><a href="on-stock/fabrics/bravo-210.html" style="--c:#4DA89B" data-n="Hospital Green" data-f="BRAVO 210 · 6196" aria-label="Hospital Green 6196, BRAVO 210"></a><a href="on-stock/fabrics/diva-215.html" style="--c:#007063" data-n="Emerald Green" data-f="DIVA 215 · 6123" aria-label="Emerald Green 6123, DIVA 215"></a><a href="on-stock/fabrics/bravo-210.html" style="--c:#6CC8C6" data-n="Mint" data-f="BRAVO 210 · 6190" aria-label="Mint 6190, BRAVO 210"></a><a href="on-stock/fabrics/atlantis-315.html" style="--c:#00787E" data-n="Jade Green" data-f="ATLANTIS 315 · 62557" aria-label="Jade Green 62557, ATLANTIS 315"></a><a href="on-stock/fabrics/pacifik-250.html" style="--c:#135A89" data-n="Laguna" data-f="PACIFIK 250 · 65992" aria-label="Laguna 65992, PACIFIK 250"></a><a href="on-stock/fabrics/bravo-210.html" style="--c:#2B689D" data-n="Azure Blue" data-f="BRAVO 210 · 5205" aria-label="Azure Blue 5205, BRAVO 210"></a><a href="on-stock/fabrics/cdr-blend-260.html" style="--c:#273C4F" data-n="Pebble Grey" data-f="CDR BLEND 260 · 8478" aria-label="Pebble Grey 8478, CDR BLEND 260"></a><a href="on-stock/fabrics/bravo-210.html" style="--c:#8BA7C9" data-n="R.C. Blue" data-f="BRAVO 210 · 49303" aria-label="R.C. Blue 49303, BRAVO 210"></a><a href="on-stock/fabrics/split-260.html" style="--c:#305086" data-n="Royal Blue" data-f="SPLIT 260 · 5179" aria-label="Royal Blue 5179, SPLIT 260"></a><a href="on-stock/fabrics/bravo-210.html" style="--c:#819FD3" data-n="Sky Blue" data-f="BRAVO 210 · 5167" aria-label="Sky Blue 5167, BRAVO 210"></a><a href="on-stock/fabrics/sparta-240.html" style="--c:#284C8C" data-n="Royal Box" data-f="SPARTA 240 · 60624" aria-label="Royal Box 60624, SPARTA 240"></a><a href="on-stock/fabrics/atlantis-315.html" style="--c:#2D4C8A" data-n="Sapphire Blue" data-f="ATLANTIS 315 · 60055" aria-label="Sapphire Blue 60055, ATLANTIS 315"></a><a href="on-stock/fabrics/bravo-210.html" style="--c:#2F3543" data-n="Indigo Blue" data-f="BRAVO 210 · 5002" aria-label="Indigo Blue 5002, BRAVO 210"></a><a href="on-stock/fabrics/diva-215.html" style="--c:#2E447E" data-n="Imperial Blue" data-f="DIVA 215 · 5142" aria-label="Imperial Blue 5142, DIVA 215"></a><a href="on-stock/fabrics/tim-245.html" style="--c:#324A8B" data-n="Basic Blue" data-f="TIM 245 · 5144" aria-label="Basic Blue 5144, TIM 245"></a><a href="on-stock/fabrics/dynamax-315.html" style="--c:#333C55" data-n="Sailor Blue" data-f="DYNAMAX 315 · 61088" aria-label="Sailor Blue 61088, DYNAMAX 315"></a><a href="on-stock/fabrics/tim-245.html" style="--c:#343E5B" data-n="Dark Blue" data-f="TIM 245 · 576" aria-label="Dark Blue 576, TIM 245"></a><a href="on-stock/fabrics/bravo-210.html" style="--c:#2E4484" data-n="Pure Blue" data-f="BRAVO 210 · 5165" aria-label="Pure Blue 5165, BRAVO 210"></a><a href="on-stock/fabrics/sparta-240.html" style="--c:#2F3443" data-n="Navy Blue" data-f="SPARTA 240 · 61082" aria-label="Navy Blue 61082, SPARTA 240"></a><a href="on-stock/fabrics/atlantis-315.html" style="--c:#30374E" data-n="Victory Blue" data-f="ATLANTIS 315 · 60788" aria-label="Victory Blue 60788, ATLANTIS 315"></a><a href="on-stock/fabrics/bravo-210.html" style="--c:#32384D" data-n="Jet Blue" data-f="BRAVO 210 · 5187" aria-label="Jet Blue 5187, BRAVO 210"></a><a href="on-stock/fabrics/split-260.html" style="--c:#4F566F" data-n="Pilot Grey" data-f="SPLIT 260 · 8109" aria-label="Pilot Grey 8109, SPLIT 260"></a><a href="on-stock/fabrics/dablin-170.html" style="--c:#2F3345" data-n="Yankie Blue" data-f="DABLIN 170 · 5186" aria-label="Yankie Blue 5186, DABLIN 170"></a><a href="on-stock/fabrics/split-260.html" style="--c:#32354E" data-n="Bold Blue" data-f="SPLIT 260 · 5208" aria-label="Bold Blue 5208, SPLIT 260"></a><a href="on-stock/fabrics/bravo-210.html" style="--c:#9376B1" data-n="Lila" data-f="BRAVO 210 · 4052" aria-label="Lila 4052, BRAVO 210"></a><a href="on-stock/fabrics/bravo-210.html" style="--c:#B5A0C2" data-n="Iride" data-f="BRAVO 210 · 424001" aria-label="Iride 424001, BRAVO 210"></a><a href="on-stock/fabrics/dablin-170.html" style="--c:#9977A3" data-n="Purple" data-f="DABLIN 170 · 4039" aria-label="Purple 4039, DABLIN 170"></a><a href="on-stock/fabrics/dablin-170.html" style="--c:#8E3F64" data-n="Raspberry" data-f="DABLIN 170 · 3068" aria-label="Raspberry 3068, DABLIN 170"></a><a href="on-stock/fabrics/bravo-210.html" style="--c:#E3608F" data-n="Cherry" data-f="BRAVO 210 · 3095" aria-label="Cherry 3095, BRAVO 210"></a><a href="on-stock/fabrics/dablin-170.html" style="--c:#B51E3E" data-n="Ruby Red" data-f="DABLIN 170 · 4016" aria-label="Ruby Red 4016, DABLIN 170"></a><a href="on-stock/fabrics/tim-245.html" style="--c:#B51E3E" data-n="Tomato Red" data-f="TIM 245 · 4012" aria-label="Tomato Red 4012, TIM 245"></a><a href="on-stock/fabrics/pacifik-250.html" style="--c:#852D3F" data-n="F.E. Red" data-f="PACIFIK 250 · 61086" aria-label="F.E. Red 61086, PACIFIK 250"></a><a href="on-stock/fabrics/bravo-210.html" style="--c:#FFBFCC" data-n="Pinky" data-f="BRAVO 210 · 364001" aria-label="Pinky 364001, BRAVO 210"></a></div>
+        <div class="wall-tip" id="wallTip" aria-live="polite"><i id="tipDot"></i><b id="tipName">73 colours</b><span id="tipCode">on stock today</span></div>
+      </div>
     </div>
-    <div class="fan">
-      <div class="sw s1 twill" data-name="Navy Canvas"></div>
-      <div class="sw s2 plain" data-name="Khaki Twill"></div>
-      <div class="sw s3 twill" data-name="Orange Signal"></div>
-      <div class="sw s4 rip" data-name="Sage Green"></div>
-      <div class="sw s5 plain" data-name="Light Grey"></div>
+    <div class="stats">
+      <div><b>1991</b><span>Making fabric since</span></div>
+      <div><b>26</b><span>Fabrics on stock</span></div>
+      <div><b>73</b><span>Colours on stock</span></div>
+      <div><b>207</b><span>Articles produced to order</span></div>
+      <div><b>300<small>m</small></b><span>Minimum for a custom colour</span></div>
     </div>
   </div>
 </section>
 
-<!-- Facts -->
-<section class="facts">
+<section class="sec stock" id="on-stock">
   <div class="wrap">
-    <div class="fact">
-      <b>178+</b>
-      <span>Premium Fabrics</span>
+    <div class="sec-h reveal">
+      <div><p class="eyebrow g">On stock</p><h2>Ready to ship.<br>Cut from one roll.</h2></div>
+      <p>Our best selling workwear fabrics, on the shelf in Trzin. Pick a fabric to see every colour, the technical data and to request a sample.</p>
     </div>
-    <div class="fact">
-      <b>EU</b>
-      <span>Warehouse in Slovenia</span>
+    <div class="best reveal"><a class="bcard" href="on-stock/fabrics/pacifik-250.html"><span class="bstrip"><i style="--c:#F1EEE4"></i><i style="--c:#F5B131"></i><i style="--c:#E8CD00"></i><i style="--c:#E35427"></i><i style="--c:#B52B3D"></i><i style="--c:#852D3F"></i><i style="--c:#135A89"></i><i style="--c:#284C8C"></i><i style="--c:#2F3443"></i><i style="--c:#007756"></i><i style="--c:#284F40"></i><i style="--c:#4F5745"></i><i style="--c:#B1A490"></i><i style="--c:#9B8669"></i><i style="--c:#4B3B31"></i><i style="--c:#B7B8BB"></i><i style="--c:#6E6F75"></i><i style="--c:#5E5E62"></i><i style="--c:#464954"></i><i style="--c:#484A4E"></i><i style="--c:#111111"></i></span><span class="bbody"><span class="tag">Our core fabric</span><h3>PACIFIK 250</h3><p>35% cotton / 65% polyester · 250 g/m² · Twill 2/1</p><span class="cnt"><b>21 colours on stock</b><span>&rarr;</span></span></span></a><a class="bcard" href="on-stock/fabrics/bravo-210.html"><span class="bstrip"><i style="--c:#FFFFFF"></i><i style="--c:#F1EEE4"></i><i style="--c:#FFE0AB"></i><i style="--c:#FCCD5E"></i><i style="--c:#FFC000"></i><i style="--c:#FFB199"></i><i style="--c:#FFBFCC"></i><i style="--c:#E3608F"></i><i style="--c:#C72E45"></i><i style="--c:#B5A0C2"></i><i style="--c:#9376B1"></i><i style="--c:#8BA7C9"></i><i style="--c:#819FD3"></i><i style="--c:#2B689D"></i><i style="--c:#2E4484"></i><i style="--c:#32384D"></i><i style="--c:#2F3543"></i><i style="--c:#C4E3CD"></i><i style="--c:#6CC8C6"></i><i style="--c:#4DA89B"></i><i style="--c:#005441"></i><i style="--c:#4F6128"></i><i style="--c:#B7B8BB"></i><i style="--c:#808184"></i></span><span class="bbody"><span class="tag">Most colours</span><h3>BRAVO 210</h3><p>60% cotton / 40% polyester · 210 g/m² · Twill 2/1</p><span class="cnt"><b>27 colours on stock</b><span>&rarr;</span></span></span></a><a class="bcard" href="on-stock/fabrics/split-260.html"><span class="bstrip"><i style="--c:#F1EEE4"></i><i style="--c:#305086"></i><i style="--c:#32354E"></i><i style="--c:#2F3543"></i><i style="--c:#005441"></i><i style="--c:#2C4F42"></i><i style="--c:#9B8669"></i><i style="--c:#787E86"></i><i style="--c:#64646D"></i><i style="--c:#4F566F"></i><i style="--c:#111111"></i></span><span class="bbody"><span class="tag">Best seller</span><h3>SPLIT 260</h3><p>60% cotton / 40% polyester · 260 g/m² · Twill 2/2</p><span class="cnt"><b>11 colours on stock</b><span>&rarr;</span></span></span></a><a class="bcard" href="on-stock/fabrics/diva-215.html"><span class="bstrip"><i style="--c:#FFFFFF"></i><i style="--c:#F1EEE4"></i><i style="--c:#8BA7C9"></i><i style="--c:#2E447E"></i><i style="--c:#007063"></i></span><span class="bbody"><span class="tag">Medical & service</span><h3>DIVA 215</h3><p>60% cotton / 40% polyester · 215 g/m² · Satin 4/1</p><span class="cnt"><b>5 colours on stock</b><span>&rarr;</span></span></span></a></div>
+    <div class="qual reveal"><div class="qrow"><h3>100% Cotton<small>8 fabrics · 28 colours</small></h3><div class="chips"><a href="on-stock/fabrics/roman-185.html"><span class="sd"><i style="--c:#F1EEE4"></i><i style="--c:#3B8C72"></i></span>ROMAN 185</a><a href="on-stock/fabrics/adidas-200.html"><span class="sd"><i style="--c:#F1EEE4"></i><i style="--c:#B0EAC0"></i></span>ADIDAS 200</a><a href="on-stock/fabrics/rene-215.html"><span class="sd"><i style="--c:#F1EEE4"></i><i style="--c:#B0EAC0"></i></span>RENE 215</a><a href="on-stock/fabrics/tim-245.html"><span class="sd"><i style="--c:#F1EEE4"></i><i style="--c:#E36C09"></i><i style="--c:#B51E3E"></i></span>TIM 245</a><a href="on-stock/fabrics/martin-285.html"><span class="sd"><i style="--c:#FFFFFF"></i><i style="--c:#324A8B"></i><i style="--c:#7A7E7F"></i></span>MARTIN 285</a><a href="on-stock/fabrics/florjan-285.html"><span class="sd"><i style="--c:#324A8B"></i><i style="--c:#32313B"></i><i style="--c:#7A7E7F"></i></span>FLORJAN 285</a><a href="on-stock/fabrics/krpan-310.html"><span class="sd"><i style="--c:#E35427"></i><i style="--c:#B51E3E"></i><i style="--c:#324A8B"></i></span>KRPAN 310</a><a href="on-stock/fabrics/fr-10-360.html"><span class="sd"><i style="--c:#324A8B"></i></span>FR-10 360</a></div><a class="go" href="on-stock/index.html#g=cotton">Colours &rarr;</a></div><div class="qrow"><h3>60/40 Polycotton<small>5 fabrics · 52 colours</small></h3><div class="chips"><a href="on-stock/fabrics/bravo-210.html"><span class="sd"><i style="--c:#FFFFFF"></i><i style="--c:#F1EEE4"></i><i style="--c:#FFE0AB"></i></span>BRAVO 210</a><a href="on-stock/fabrics/diva-215.html"><span class="sd"><i style="--c:#FFFFFF"></i><i style="--c:#F1EEE4"></i><i style="--c:#8BA7C9"></i></span>DIVA 215</a><a href="on-stock/fabrics/verona-215.html"><span class="sd"><i style="--c:#B52B3D"></i><i style="--c:#284C8C"></i><i style="--c:#2F3443"></i></span>VERONA 215</a><a href="on-stock/fabrics/split-260.html"><span class="sd"><i style="--c:#F1EEE4"></i><i style="--c:#305086"></i><i style="--c:#32354E"></i></span>SPLIT 260</a><a href="on-stock/fabrics/atlantis-315.html"><span class="sd"><i style="--c:#2D4C8A"></i><i style="--c:#30374E"></i><i style="--c:#2F3442"></i></span>ATLANTIS 315</a></div><a class="go" href="on-stock/index.html#g=6040">Colours &rarr;</a></div><div class="qrow"><h3>50/50 Polycotton<small>3 fabrics · 16 colours</small></h3><div class="chips"><a href="on-stock/fabrics/dablin-170.html"><span class="sd"><i style="--c:#FFFFFF"></i><i style="--c:#B51E3E"></i><i style="--c:#8E3F64"></i></span>DABLIN 170</a><a href="on-stock/fabrics/esad-285.html"><span class="sd"><i style="--c:#002060"></i><i style="--c:#0F243E"></i><i style="--c:#A5A5A5"></i></span>ESAD 285</a><a href="on-stock/fabrics/molat-300.html"><span class="sd"><i style="--c:#39461F"></i></span>MOLAT 300</a></div><a class="go" href="on-stock/index.html#g=5050">Colours &rarr;</a></div><div class="qrow"><h3>35/65 Polycotton<small>3 fabrics · 36 colours</small></h3><div class="chips"><a href="on-stock/fabrics/sparta-240.html"><span class="sd"><i style="--c:#F1EEE4"></i><i style="--c:#B52B3D"></i><i style="--c:#284C8C"></i></span>SPARTA 240</a><a href="on-stock/fabrics/pacifik-250.html"><span class="sd"><i style="--c:#F1EEE4"></i><i style="--c:#F5B131"></i><i style="--c:#E8CD00"></i></span>PACIFIK 250</a><a href="on-stock/fabrics/dynamax-315.html"><span class="sd"><i style="--c:#F1EEE4"></i><i style="--c:#284C8C"></i><i style="--c:#333C55"></i></span>DYNAMAX 315</a></div><a class="go" href="on-stock/index.html#g=3565">Colours &rarr;</a></div><div class="qrow"><h3>Stretch<small>4 fabrics · 11 colours</small></h3><div class="chips"><a href="on-stock/fabrics/medico-stretch-210.html"><span class="sd"><i style="--c:#FFFFFF"></i></span>MEDICO STRETCH 210</a><a href="on-stock/fabrics/bravo-stretch-250.html"><span class="sd"><i style="--c:#FFFFFF"></i><i style="--c:#8BA7C9"></i><i style="--c:#C4E3CD"></i></span>BRAVO STRETCH 250</a><a href="on-stock/fabrics/pacific-stretch-250.html"><span class="sd"><i style="--c:#2F3443"></i><i style="--c:#6E6F75"></i><i style="--c:#484A4E"></i></span>PACIFIC STRETCH 250</a><a href="on-stock/fabrics/kanvas-stretch-250.html"><span class="sd"><i style="--c:#0F243E"></i><i style="--c:#3F3F3F"></i><i style="--c:#111111"></i></span>KANVAS STRETCH 250</a></div><a class="go" href="on-stock/index.html#g=stretch">Colours &rarr;</a></div><div class="qrow"><h3>CORDURA®<small>2 fabrics · 3 colours</small></h3><div class="chips"><a href="on-stock/fabrics/cordura-200.html"><span class="sd"><i style="--c:#3F3F3F"></i><i style="--c:#111111"></i></span>CORDURA 200</a><a href="on-stock/fabrics/cdr-blend-260.html"><span class="sd"><i style="--c:#273C4F"></i></span>CDR BLEND 260</a></div><a class="go" href="on-stock/index.html#g=cordura">Colours &rarr;</a></div><div class="qrow"><h3>Lining<small>1 fabric · 2 colours</small></h3><div class="chips"><a href="on-stock/fabrics/quilted-lining.html"><span class="sd"><i style="--c:#0F243E"></i><i style="--c:#111111"></i></span>QUILTED LINING</a></div><a class="go" href="on-stock/index.html#g=lining">Colours &rarr;</a></div></div>
+    <div class="facts reveal">
+      <div><b>Minimum one roll</b>30 to 110 m. Shorter cut lengths from 1 m on request.</div>
+      <div><b>Same day dispatch</b>Domestic orders placed by 14:00 leave the same day.</div>
+      <div><b>Any colour to order</b>Every quality can be dyed in your colour from 300 m.</div>
+      <div><b>OEKO-TEX® Standard 100</b>Tested for harmful substances.</div>
     </div>
-    <div class="fact">
-      <b>30+</b>
-      <span>Years Experience</span>
-    </div>
+    <p style="margin:36px 0 0"><a class="more" href="on-stock/index.html">See all 73 colours in the colour card &rarr;</a></p>
   </div>
 </section>
 
-<!-- Featured Products -->
-<section class="wrap" id="fabrics">
-  <div class="sec-head">
-    <h2>Featured Collections</h2>
-    <p>Browse our most popular fabrics. Click "View details" for full specifications, available colors, and ordering information.</p>
-  </div>
-  <div class="grid" id="grid">
-    <!-- Products will be loaded here from data -->
-  </div>
-</section>
-
-<!-- Why Us Section -->
-<section id="features">
+<section class="sec" id="collections">
   <div class="wrap">
-    <div class="sec-head">
-      <h2>Why Choose Maximo</h2>
-      <p>We partner with Europe's leading brands to deliver premium technical textiles with the support and expertise to scale your production.</p>
+    <div class="sec-h reveal">
+      <div><p class="eyebrow">Collections</p><h2>Beyond the stock list.</h2></div>
+      <p>Most of what we weave is produced to order. Start from an article we have made before, or from one of our collections.</p>
+    </div>
+    <div class="cols4 reveal">
+      <a class="ccard c-mto" href="manufacturing.html"><span class="tex"></span><span class="arrow">&rarr;</span>
+        <p class="eyebrow">Made to order</p>
+        <h3>Fabrics we have made for our customers.</h3>
+        <p style="color:rgba(255,255,255,.78)">Polycotton, 100% cotton, stretch, flame retardant, hi-vis, antistatic, CORDURA® and camouflage. We adapt composition, weight, colour and finish to your garment.</p>
+        <div class="kpis"><span><b>207</b>articles</span><span><b>19</b>groups</span></div>
+      </a>
+      <a class="ccard c-rep" href="repreve.html"><span class="arrow">&rarr;</span>
+        <img src="assets/img/repreve-logo.png" alt="REPREVE®" width="119" height="46">
+        <h3>Workwear fabric, woven from recycled bottles.</h3>
+        <p>Recycled polyester with organic, BCI™ or conventional cotton, TENCEL® and stretch fibres.</p>
+        <div class="kpis"><span><b>25</b>articles</span><span><b>190&ndash;300</b>g/m²</span></div>
+      </a>
+      <a class="ccard c-sor" href="sorona.html"><span class="arrow">&rarr;</span>
+        <div class="tags"><span>SORONA®</span><span>STRETCH</span></div>
+        <h3>Stretch that comes back.</h3>
+        <p style="color:var(--muted)">Cotton and polyester blends with Sorona® fibre. Natural stretch and recovery, no elastane needed. 37% plant-based.</p>
+        <div class="kpis"><span><b>10</b>articles</span><span><b>160&ndash;300</b>g/m²</span></div>
+      </a>
+      <a class="ccard c-fr" href="multinorm-fr-proban.html"><span class="arrow">&rarr;</span>
+        <div class="tags"><span>FR PROBAN®</span><span>MULTINORM</span></div>
+        <h3>One garment, several protections.</h3>
+        <p style="color:var(--muted)">Flame, welding spatter, static electricity and chemical splash, in one fabric. The FR Proban® finish lasts the life of the garment.</p>
+        <div class="kpis"><span><b>14</b>articles</span><span><b>6</b>stretch</span></div>
+      </a>
     </div>
   </div>
 </section>
 
-<!-- Custom Dyeing -->
-<section class="dye">
+<section class="sec" style="padding-top:0" id="sewing">
   <div class="wrap">
-    <div>
-      <h2>Custom Dyeing Services</h2>
-      <p>Looking for custom colours? We dye fabrics to specification with a minimum order of 300 metres. Our in-house dyeing facility ensures fast turnaround and colour matching.</p>
-      <a href="#contact" class="btn" style="margin-top:24px">Get Custom Color Quote</a>
-    </div>
-    <div>
-      <div class="big">300m<small>minimum order</small></div>
-    </div>
-  </div>
-</section>
-
-<!-- How It Works -->
-<section class="wrap">
-  <h2 style="margin-bottom:44px">How to Order</h2>
-  <div class="steps">
-    <div class="step">
-      <div class="n">1</div>
-      <h3>Browse & Select</h3>
-      <p>Explore our fabric catalog. Request samples to evaluate quality and colour match.</p>
-    </div>
-    <div class="step">
-      <div class="n">2</div>
-      <h3>Get Quote</h3>
-      <p>Submit your requirements. We provide pricing for stock fabrics within 24 hours.</p>
-    </div>
-    <div class="step">
-      <div class="n">3</div>
-      <h3>Ship & Scale</h3>
-      <p>Order from stock for immediate shipping, or arrange custom dyeing for larger runs.</p>
+    <div class="band reveal">
+      <div>
+        <p class="eyebrow">Sewing service</p>
+        <h2>From fabric to finished garment.</h2>
+        <p class="lead">We produce the fabric and sew it into finished workwear to your sample or specification. One supplier, one contact, full control.</p>
+        <div class="btns"><a class="btn light" href="sewing.html">How sewing works &rarr;</a><a class="btn line-w" href="sewing.html#quote">Send a photo for a price</a></div>
+      </div>
+      <ol class="steps">
+        <li><b>Send your sample</b><span>A garment, a sketch or a technical specification.</span></li>
+        <li><b>Choose the fabric</b><span>From our stock, our production list or developed new.</span></li>
+        <li><b>Approve the prototype</b><span>We sew a sample for fit and finish.</span></li>
+        <li><b>Series &amp; inspection</b><span>Our own QC team checks every order before shipment.</span></li>
+      </ol>
     </div>
   </div>
 </section>
 
-<!-- Contact -->
-<section class="about wrap" id="contact">
-  <div>
-    <h2>Get in Touch</h2>
-    <p>Have questions? Our team is ready to help with sample requests, technical specifications, and custom requirements.</p>
-    <p><strong>Maximo Tekstil d.o.o.</strong><br>
-    Slovenska cesta 99<br>
-    1000 Ljubljana, Slovenia<br><br>
-    <a href="tel:+38614123456">+386 1 412 3456</a><br>
-    <a href="mailto:info@maximo.si">info@maximo.si</a></p>
-  </div>
-  <form style="display:grid;gap:12px">
-    <div>
-      <label style="display:block;font-size:14px;font-weight:600;margin-bottom:6px">Name</label>
-      <input type="text" required style="width:100%;padding:12px;border:1.5px solid var(--line);border-radius:3px;font-family:inherit;font-size:16px;color:var(--ink)">
-    </div>
-    <div>
-      <label style="display:block;font-size:14px;font-weight:600;margin-bottom:6px">Email</label>
-      <input type="email" required style="width:100%;padding:12px;border:1.5px solid var(--line);border-radius:3px;font-family:inherit;font-size:16px;color:var(--ink)">
-    </div>
-    <div>
-      <label style="display:block;font-size:14px;font-weight:600;margin-bottom:6px">Message</label>
-      <textarea required style="width:100%;padding:12px;border:1.5px solid var(--line);border-radius:3px;font-family:inherit;font-size:16px;color:var(--ink);min-height:120px;resize:vertical"></textarea>
-    </div>
-    <button type="submit" class="btn" style="margin-top:8px">Send</button>
-  </form>
-</section>
-
-<!-- Footer -->
-<footer>
+<section class="sec" style="padding-top:0" id="about">
   <div class="wrap">
-    <div>© 2024 Maximo Tekstil d.o.o.</div>
-    <div>
-      <a href="#privacy" style="margin:0 16px">Privacy</a>
-      <a href="#terms">Terms</a>
+    <div class="duo reveal">
+      <a class="guide" href="blog/index.html"><svg  viewBox="0 0 150 150" aria-hidden="true"><rect width="150" height="150" fill="#eef0f3"/><rect x="3.0" y="0.6" width="12.8" height="17.6" rx="2.5" fill="#df7841"/><rect x="21.8" y="0.6" width="12.8" height="17.6" rx="2.5" fill="#df7841"/><rect x="38.1" y="3.0" width="17.6" height="12.8" rx="2.5" fill="#252b4b"/><rect x="59.2" y="0.6" width="12.8" height="17.6" rx="2.5" fill="#df7841"/><rect x="78.0" y="0.6" width="12.8" height="17.6" rx="2.5" fill="#df7841"/><rect x="94.3" y="3.0" width="17.6" height="12.8" rx="2.5" fill="#252b4b"/><rect x="115.5" y="0.6" width="12.8" height="17.6" rx="2.5" fill="#df7841"/><rect x="134.2" y="0.6" width="12.8" height="17.6" rx="2.5" fill="#df7841"/><rect x="0.6" y="21.8" width="17.6" height="12.8" rx="2.5" fill="#252b4b"/><rect x="21.8" y="19.3" width="12.8" height="17.6" rx="2.5" fill="#df7841"/><rect x="40.5" y="19.3" width="12.8" height="17.6" rx="2.5" fill="#df7841"/><rect x="56.8" y="21.8" width="17.6" height="12.8" rx="2.5" fill="#252b4b"/><rect x="78.0" y="19.3" width="12.8" height="17.6" rx="2.5" fill="#df7841"/><rect x="96.8" y="19.3" width="12.8" height="17.6" rx="2.5" fill="#df7841"/><rect x="113.1" y="21.8" width="17.6" height="12.8" rx="2.5" fill="#252b4b"/><rect x="134.2" y="19.3" width="12.8" height="17.6" rx="2.5" fill="#df7841"/><rect x="3.0" y="38.1" width="12.8" height="17.6" rx="2.5" fill="#df7841"/><rect x="19.3" y="40.5" width="17.6" height="12.8" rx="2.5" fill="#252b4b"/><rect x="40.5" y="38.1" width="12.8" height="17.6" rx="2.5" fill="#df7841"/><rect x="59.2" y="38.1" width="12.8" height="17.6" rx="2.5" fill="#df7841"/><rect x="75.6" y="40.5" width="17.6" height="12.8" rx="2.5" fill="#252b4b"/><rect x="96.8" y="38.1" width="12.8" height="17.6" rx="2.5" fill="#df7841"/><rect x="115.5" y="38.1" width="12.8" height="17.6" rx="2.5" fill="#df7841"/><rect x="131.8" y="40.5" width="17.6" height="12.8" rx="2.5" fill="#252b4b"/><rect x="3.0" y="56.8" width="12.8" height="17.6" rx="2.5" fill="#df7841"/><rect x="21.8" y="56.8" width="12.8" height="17.6" rx="2.5" fill="#df7841"/><rect x="38.1" y="59.2" width="17.6" height="12.8" rx="2.5" fill="#252b4b"/><rect x="59.2" y="56.8" width="12.8" height="17.6" rx="2.5" fill="#df7841"/><rect x="78.0" y="56.8" width="12.8" height="17.6" rx="2.5" fill="#df7841"/><rect x="94.3" y="59.2" width="17.6" height="12.8" rx="2.5" fill="#252b4b"/><rect x="115.5" y="56.8" width="12.8" height="17.6" rx="2.5" fill="#df7841"/><rect x="134.2" y="56.8" width="12.8" height="17.6" rx="2.5" fill="#df7841"/><rect x="0.6" y="78.0" width="17.6" height="12.8" rx="2.5" fill="#252b4b"/><rect x="21.8" y="75.6" width="12.8" height="17.6" rx="2.5" fill="#df7841"/><rect x="40.5" y="75.6" width="12.8" height="17.6" rx="2.5" fill="#df7841"/><rect x="56.8" y="78.0" width="17.6" height="12.8" rx="2.5" fill="#252b4b"/><rect x="78.0" y="75.6" width="12.8" height="17.6" rx="2.5" fill="#df7841"/><rect x="96.8" y="75.6" width="12.8" height="17.6" rx="2.5" fill="#df7841"/><rect x="113.1" y="78.0" width="17.6" height="12.8" rx="2.5" fill="#252b4b"/><rect x="134.2" y="75.6" width="12.8" height="17.6" rx="2.5" fill="#df7841"/><rect x="3.0" y="94.3" width="12.8" height="17.6" rx="2.5" fill="#df7841"/><rect x="19.3" y="96.8" width="17.6" height="12.8" rx="2.5" fill="#252b4b"/><rect x="40.5" y="94.3" width="12.8" height="17.6" rx="2.5" fill="#df7841"/><rect x="59.2" y="94.3" width="12.8" height="17.6" rx="2.5" fill="#df7841"/><rect x="75.6" y="96.8" width="17.6" height="12.8" rx="2.5" fill="#252b4b"/><rect x="96.8" y="94.3" width="12.8" height="17.6" rx="2.5" fill="#df7841"/><rect x="115.5" y="94.3" width="12.8" height="17.6" rx="2.5" fill="#df7841"/><rect x="131.8" y="96.8" width="17.6" height="12.8" rx="2.5" fill="#252b4b"/><rect x="3.0" y="113.1" width="12.8" height="17.6" rx="2.5" fill="#df7841"/><rect x="21.8" y="113.1" width="12.8" height="17.6" rx="2.5" fill="#df7841"/><rect x="38.1" y="115.5" width="17.6" height="12.8" rx="2.5" fill="#252b4b"/><rect x="59.2" y="113.1" width="12.8" height="17.6" rx="2.5" fill="#df7841"/><rect x="78.0" y="113.1" width="12.8" height="17.6" rx="2.5" fill="#df7841"/><rect x="94.3" y="115.5" width="17.6" height="12.8" rx="2.5" fill="#252b4b"/><rect x="115.5" y="113.1" width="12.8" height="17.6" rx="2.5" fill="#df7841"/><rect x="134.2" y="113.1" width="12.8" height="17.6" rx="2.5" fill="#df7841"/><rect x="0.6" y="134.2" width="17.6" height="12.8" rx="2.5" fill="#252b4b"/><rect x="21.8" y="131.8" width="12.8" height="17.6" rx="2.5" fill="#df7841"/><rect x="40.5" y="131.8" width="12.8" height="17.6" rx="2.5" fill="#df7841"/><rect x="56.8" y="134.2" width="17.6" height="12.8" rx="2.5" fill="#252b4b"/><rect x="78.0" y="131.8" width="12.8" height="17.6" rx="2.5" fill="#df7841"/><rect x="96.8" y="131.8" width="12.8" height="17.6" rx="2.5" fill="#df7841"/><rect x="113.1" y="134.2" width="17.6" height="12.8" rx="2.5" fill="#252b4b"/><rect x="134.2" y="131.8" width="12.8" height="17.6" rx="2.5" fill="#df7841"/></svg>
+        <div><p class="eyebrow" style="margin:0">From the blog</p><h3 style="font-size:30px;margin-top:10px">Know your fabric.</h3>
+        <p>Weave types, polycotton blends, Multinorm standards: practical guides, with a new article every month.</p><span class="more">Read the blog &rarr;</span></div>
+      </a>
+      <div class="about">
+        <p class="eyebrow" style="margin:0">About us</p>
+        <h3 style="font-size:30px">Making fabric for people who work, since 1991.</h3>
+        <p>Maximo Tekstil supplies workwear, technical and medical fabrics to garment manufacturers, laundries and brands. From our office and warehouse in Trzin, Slovenia, we keep the most used qualities on stock, produce new articles to order and sew finished garments.</p>
+        <p>We are a licensed CORDURA® manufacturer and our fabrics are certified to OEKO-TEX® Standard 100.</p>
+        <p style="margin-top:auto"><a class="more" href="about.html">More about us &rarr;</a></p>
+      </div>
+    </div>
+    <div id="certificates" class="certs reveal">
+      <div class="cert"><span class="lg"><img src="assets/img/oeko-tex.png" alt="OEKO-TEX®"></span><div><b>OEKO-TEX® STANDARD 100</b><br><span>Tested for harmful substances</span></div></div>
+      <div class="cert"><span class="lg"><img src="assets/img/cordura.png" alt="CORDURA®"></span><div><b>CORDURA®</b><br><span>Licensed manufacturer</span></div></div>
+      <div class="cert"><span class="lg"><img src="assets/img/proban-logo.png" alt="PROBAN®"></span><div><b>PROBAN®</b><br><span>Durable flame retardant finish</span></div></div>
+      <div class="cert"><span class="lg"><img src="assets/img/repreve-logo.png" alt="REPREVE®"></span><div><b>REPREVE®</b><br><span>Recycled polyester fibre</span></div></div>
+      <div class="cert"><span class="lg"><img src="assets/img/grs.png" alt="Global Recycled Standard"></span><div><b>GRS</b><br><span>Global Recycled Standard</span></div></div>
+      <div class="cert"><span class="lg"><img src="assets/img/tencel.png" alt="TENCEL®"></span><div><b>TENCEL®</b><br><span>Lyocell fibre</span></div></div>
     </div>
   </div>
-</footer>
+</section>
 
+<section class="sec contact" id="contact">
+  <div class="wrap cgrid">
+    <div class="reveal">
+      <p class="eyebrow">Contact sales</p>
+      <h2>Send us your sample or specification.</h2>
+      <p class="lead">Tell us the fabric, colour and quantity you need. We reply with availability, a price and samples.</p>
+    </div>
+    <div class="ccards reveal">
+      <a class="cc" href="mailto:narocila@maximo-tekstil.com"><span>Sales email</span><b>narocila@maximo-tekstil.com</b></a>
+      <a class="cc" href="tel:+38640855805"><span>Sales phone</span><b>+386 40 855 805</b></a>
+      <a class="cc" href="tel:+38615621843"><span>Office</span><b>+386 1 562 1843</b></a>
+      <a class="cc" href="mailto:maximo3@siol.net"><span>Office email</span><b>maximo3@siol.net</b></a>
+      <div class="cc wide"><span>Office and warehouse</span><b>Maximo Tekstil d.o.o., Hrastovec 22, 1236 Trzin, Slovenia</b></div>
+    </div>
+  </div>
+</section>
+
+</main>
+<div class="mx-ft" role="contentinfo"><div class="mx-ft-in">
+<div class="mx-ft-nl">
+  <div><span class="mx-fh">Monthly newsletter</span><p class="mx-ft-nlt">New fabrics, stock updates and offers.<br>Once a month, straight to your inbox.</p></div>
+  <form class="mx-nl" data-where="footer" novalidate>
+  <div class="mx-nl-row"><input type="email" name="email" placeholder="Your work email" autocomplete="email" aria-label="Your work email" required><button type="submit">Subscribe</button></div>
+  <label class="mx-nl-ok"><input type="checkbox" name="consent" required> <span>Send me the Maximo newsletter once a month. I can unsubscribe at any time. <a href="privacy.html#newsletter">Privacy policy</a></span></label>
+  <p class="mx-nl-msg" role="status"></p>
+</form>
+</div>
+<div class="mx-ft-top">
+  <div class="mx-ft-brand"><svg class="mx-ft-logo" viewBox="0 0 900 180" role="img" aria-label="Maximo Tekstil"><path fill="#242C4C" d="M303.1 177.8C304.6 174.8 354.8 84.1 361.5 72.2L366.8 62.9L371.2 71.1L375.7 79.3L373.5 83.4C372.2 85.6 362.1 103.9 351.0 124.0C339.9 144.1 329.4 163.0 327.7 166.0C326.1 169.0 323.6 173.4 322.3 175.8L319.8 180.0L310.9 180.0L301.9 180.0L303.1 177.8ZM336.3 173.8C338.3 170.3 345.9 156.6 353.3 143.2L366.8 118.9L371.3 127.1L375.8 135.3L373.0 140.4C371.4 143.2 365.9 153.2 360.7 162.5L351.3 179.5L342.1 179.8L332.9 180.1L336.3 173.8ZM365.0 179.1C365.0 178.6 369.3 170.4 374.6 160.9C379.9 151.3 385.6 141.0 387.2 138.0C388.9 135.0 391.0 131.2 392.0 129.5C393.0 127.8 394.7 124.8 395.8 122.7L397.8 119.0L402.4 127.1L407.0 135.2L403.1 142.4C401.0 146.3 395.5 156.2 390.9 164.5L382.5 179.5L373.7 179.8C368.8 180.0 365.0 179.7 365.0 179.1ZM380.1 110.8L375.7 102.5L386.8 82.7L397.8 63.0L402.4 71.1L406.9 79.2L403.3 85.8C401.3 89.5 399.4 93.0 399.0 93.5C398.6 94.0 396.6 97.7 394.5 101.5C389.2 111.3 384.8 119.0 384.6 119.0C384.5 119.0 382.5 115.3 380.1 110.8ZM411.1 110.8L406.7 102.5L409.7 97.5C411.3 94.8 414.6 88.9 417.0 84.5C419.4 80.1 425.5 69.1 430.5 60.0C435.6 50.9 441.3 40.6 443.3 37.0C445.3 33.4 450.4 24.2 454.7 16.5L462.5 2.5L471.4 2.2L480.2 1.9L479.6 3.7C479.2 4.7 470.3 21.0 459.8 40.0C449.3 59.0 437.4 80.3 433.5 87.5C429.5 94.7 425.0 102.8 423.5 105.5C419.9 112.0 415.9 119.0 415.6 119.0C415.5 119.0 413.5 115.3 411.1 110.8ZM0.0 51.5L0.0 0.0L9.8 0.0L19.5 0.0L43.3 30.5C56.4 47.3 67.4 61.0 67.9 61.0C68.3 61.0 79.1 47.3 92.0 30.5L115.2 0.0L124.6 0.0L134.0 0.0L134.0 51.5L134.0 103.0L122.9 103.0L111.8 103.0L112.2 66.6L112.5 30.3L110.3 34.1C109.2 36.2 99.3 49.6 88.5 63.9L68.8 90.0L66.0 90.0L63.2 90.0L43.2 63.2C32.2 48.5 22.3 34.9 21.1 33.0L19.0 29.5L19.0 66.2L19.0 103.0L9.5 103.0L0.0 103.0L0.0 51.5ZM166.0 102.0C166.0 101.3 168.6 96.3 171.9 90.7C175.1 85.1 184.4 68.8 192.5 54.5C200.6 40.2 210.9 22.1 215.3 14.3L223.4 0.0L235.1 0.0L246.7 0.0L265.8 33.3C276.3 51.5 289.4 74.4 294.9 84.0C300.5 93.6 305.0 101.8 305.0 102.3C305.0 102.7 299.0 102.9 291.8 102.8L278.5 102.5L272.5 91.5L266.4 80.5L233.7 80.5L200.9 80.5L195.1 91.5L189.3 102.5L177.6 102.8L166.0 103.1L166.0 102.0ZM507.0 51.5L507.0 0.0L519.0 0.0L531.0 0.0L531.0 51.5L531.0 103.0L519.0 103.0L507.0 103.0L507.0 51.5ZM584.7 102.3C584.3 102.0 584.0 78.8 584.0 50.8L584.0 0.0L594.0 0.0L603.9 0.0L627.7 30.5C640.7 47.3 651.8 61.0 652.2 61.0C652.6 61.0 663.4 47.3 676.2 30.5L699.5 0.0L709.2 0.0L719.0 0.0L719.0 51.5L719.0 103.0L708.0 103.0L697.0 103.0L696.8 66.8L696.5 30.5L694.5 34.1C693.4 36.1 683.7 49.5 673.0 63.8L653.5 89.9L650.5 89.9L647.5 89.9L628.0 63.9C617.3 49.6 607.4 36.0 606.0 33.6L603.5 29.3L603.8 66.2L604.1 103.0L594.7 103.0C589.6 103.0 585.0 102.7 584.7 102.3ZM779.8 101.6C773.7 100.0 770.4 97.7 768.3 93.7L766.5 90.5L766.2 53.8L765.9 17.1L767.0 12.9C767.7 10.5 769.6 7.2 771.4 5.4L774.5 2.3L779.8 1.1L785.1 0.0L829.8 0.0C856.4 0.0 876.3 0.5 878.9 1.1C884.7 2.4 888.3 5.1 890.6 9.7L892.5 13.5L892.5 51.5L892.5 89.5L890.3 93.6L888.1 97.8L883.3 100.1L878.5 102.5L831.5 102.7L784.5 102.9L779.8 101.6ZM868.8 50.8L868.5 18.5L829.2 18.2L790.0 18.0L790.0 50.5L790.0 83.0L829.5 83.0L869.0 83.0L868.8 50.8ZM380.1 54.7L375.7 46.4L383.2 33.0C387.3 25.6 392.2 16.8 394.0 13.5C395.8 10.2 398.0 6.3 398.8 4.8L400.4 2.0L409.2 2.0C414.0 2.0 418.0 2.3 418.0 2.6C418.0 3.0 415.8 7.1 413.1 11.9C410.5 16.6 406.9 23.0 405.3 26.0C400.4 35.0 384.8 63.0 384.7 63.0C384.6 63.0 382.5 59.3 380.1 54.7ZM256.0 61.5C256.0 61.3 254.7 58.7 253.2 55.8C251.6 52.9 246.8 43.9 242.6 35.7C238.3 27.6 234.5 21.0 234.1 21.0C233.7 21.0 232.2 23.4 230.7 26.2C229.3 29.1 224.4 38.0 220.0 46.0C215.6 54.0 212.0 60.8 212.0 61.2C212.0 61.7 221.9 62.0 234.0 62.0C246.1 62.0 256.0 61.8 256.0 61.5ZM411.0 54.3L406.9 46.6L409.1 42.5C411.3 38.8 416.6 29.2 427.2 9.8L431.5 2.0L440.4 2.0L449.2 2.0L448.6 3.7C448.2 4.6 444.3 11.9 439.8 19.9C428.4 40.4 425.6 45.4 420.8 54.2C418.5 58.5 416.3 62.0 415.9 62.0C415.5 62.0 413.3 58.5 411.0 54.3Z"/><path fill="#DF7840" d="M397.4 174.8C395.8 171.9 393.8 168.2 392.9 166.6L391.3 163.7L395.2 156.6C397.4 152.7 399.5 149.1 399.9 148.7C400.7 147.9 402.8 151.2 411.0 166.5C413.4 170.9 415.9 175.4 416.7 176.5C417.4 177.6 418.0 178.8 418.0 179.2C418.0 179.7 414.0 180.0 409.2 180.0L400.3 180.0L397.4 174.8ZM429.4 176.2C426.7 171.5 411.9 144.7 406.9 135.5C404.9 131.7 400.5 123.8 397.2 118.0L391.2 107.5L394.2 102.0C395.9 99.0 398.0 95.3 398.8 93.8L400.4 91.1L404.3 98.3C406.4 102.3 410.5 109.5 413.3 114.5C416.0 119.5 419.4 125.5 420.8 128.0C422.2 130.5 425.2 135.9 427.5 140.0C437.3 157.4 449.0 178.8 449.0 179.4C449.0 179.7 445.1 180.0 440.2 180.0L431.5 180.0L429.4 176.2ZM462.3 178.8C461.3 177.6 451.2 159.7 443.8 146.0C441.8 142.4 436.3 132.5 431.6 124.0C426.9 115.5 423.0 108.0 423.0 107.4C423.0 106.3 431.3 90.9 431.6 91.3C431.7 91.5 455.1 133.6 459.5 141.5C460.7 143.7 465.8 153.0 470.8 162.1C475.9 171.2 480.0 178.9 480.0 179.3C480.0 179.7 476.2 180.0 471.6 180.0L463.2 180.0L462.3 178.8ZM524.8 161.8L524.5 143.5L514.8 143.2L505.0 142.9L505.0 139.5L505.0 136.0L530.5 136.0L556.0 136.0L556.0 139.5L556.0 143.0L546.0 143.0L536.0 143.0L535.8 161.2L535.5 179.5L530.3 179.8L525.0 180.1L524.8 161.8ZM568.7 179.3C568.3 179.0 568.0 169.1 568.0 157.3L568.0 136.0L591.0 136.0L614.0 136.0L614.0 139.5L614.0 143.0L596.5 143.0L579.0 143.0L579.0 148.0L579.0 153.0L589.0 153.0L599.0 153.0L599.0 157.0L599.0 161.0L589.0 161.0L579.0 161.0L579.0 166.0L579.0 171.0L596.5 171.0L614.0 171.0L614.0 175.5L614.0 180.0L591.7 180.0C579.4 180.0 569.0 179.7 568.7 179.3ZM633.0 158.0L633.0 136.0L638.0 136.0L643.0 136.0L643.0 144.5C643.0 149.2 643.4 153.0 643.8 153.0C644.3 153.0 649.8 149.2 655.9 144.5L667.2 136.0L674.7 136.0L682.3 136.0L668.2 146.1C660.4 151.6 654.0 156.3 654.0 156.5C654.0 156.7 661.3 161.9 670.1 168.2L686.3 179.5L678.5 179.8L670.7 180.1L665.6 176.7C662.8 174.8 656.9 170.5 652.5 167.2C648.1 163.9 644.2 161.4 643.8 161.6C643.3 161.9 643.0 166.1 643.0 171.1L643.0 180.0L638.0 180.0L633.0 180.0L633.0 158.0ZM705.5 179.3C704.4 179.0 702.7 178.1 701.8 177.2L700.0 175.7L700.0 171.9L700.0 168.0L702.2 167.5C703.5 167.3 705.4 166.9 706.5 166.8L708.5 166.5L708.8 168.8L709.1 171.0L724.6 171.0L740.1 171.0L739.8 166.2L739.5 161.5L722.3 161.0L705.1 160.5L703.3 158.7L701.5 156.9L701.5 148.6L701.5 140.2L703.4 138.1L705.3 136.0L724.7 136.0L744.0 136.0L746.0 138.0C747.9 139.9 748.8 145.4 747.2 146.4C746.8 146.6 744.8 147.1 742.7 147.5L739.0 148.2L739.0 145.6L739.0 142.9L724.8 143.2L710.5 143.5L710.5 148.0L710.5 152.5L727.7 153.0L744.9 153.5L746.7 155.3L748.5 157.0L748.8 164.5C749.1 169.0 748.7 173.2 748.0 175.0L746.8 177.9L743.8 178.9C740.8 180.0 709.5 180.3 705.5 179.3ZM780.7 179.3C780.3 179.0 780.0 170.6 780.0 160.8L780.0 143.0L770.0 143.0L760.0 143.0L760.0 139.5L760.0 136.0L785.5 136.0L811.0 136.0L811.0 139.5L811.0 143.0L801.0 143.0L791.0 143.0L791.0 161.5L791.0 180.0L786.2 180.0C783.5 180.0 781.0 179.7 780.7 179.3ZM824.0 158.0L824.0 136.0L829.0 136.0L834.0 136.0L834.0 158.0L834.0 180.0L829.0 180.0L824.0 180.0L824.0 158.0ZM856.7 179.3C856.3 179.0 856.0 169.1 856.0 157.3L856.0 136.0L861.5 136.0L867.0 136.0L867.0 153.5L867.0 171.0L883.5 171.0L900.0 171.0L900.0 175.5L900.0 180.0L878.7 180.0C866.9 180.0 857.0 179.7 856.7 179.3ZM378.5 140.4C376.4 136.6 371.6 127.9 367.7 121.0C363.8 114.1 360.7 108.0 360.7 107.5C360.7 107.0 362.6 103.0 365.0 98.7L369.2 90.9L375.1 101.6C378.4 107.5 381.0 112.5 381.0 112.6C381.0 112.7 383.3 116.8 386.2 121.6L391.3 130.3L388.9 134.9C387.6 137.4 385.6 141.2 384.4 143.4L382.2 147.2L378.5 140.4ZM411.5 87.9C409.1 83.4 404.4 74.7 397.2 62.0L391.3 51.5L394.8 45.0C396.7 41.4 398.8 37.7 399.5 36.8L400.6 35.1L402.6 38.8C403.6 40.8 408.5 49.7 413.4 58.4L422.3 74.4L419.4 80.0C417.9 83.0 415.8 86.8 414.9 88.4L413.2 91.2L411.5 87.9ZM345.3 80.8C336.2 64.2 334.4 60.9 318.1 31.6C309.2 15.6 302.0 2.5 302.0 2.3C302.0 2.1 306.1 2.1 311.1 2.2L320.2 2.5L335.2 29.5C343.4 44.4 352.0 59.9 354.2 64.0C356.5 68.1 358.7 72.2 359.2 73.0L360.1 74.5L355.9 82.2C353.6 86.5 351.4 90.0 351.0 90.0C350.7 90.0 348.1 85.8 345.3 80.8ZM362.0 54.8C351.3 35.4 340.3 15.6 337.7 10.7L332.9 1.9L342.1 2.2L351.3 2.5L355.7 10.5C358.2 14.9 361.5 21.0 363.2 24.0C366.9 30.8 374.5 44.5 384.0 61.5L391.3 74.5L387.2 82.0C385.0 86.1 382.8 89.6 382.3 89.7C381.9 89.8 372.7 74.1 362.0 54.8ZM373.5 19.3C369.1 11.2 365.4 4.0 365.2 3.3L364.8 1.9L373.6 2.2L382.4 2.5L386.8 10.4L391.2 18.4L387.2 25.9C384.9 30.1 382.8 33.6 382.3 33.7C381.9 33.9 377.9 27.4 373.5 19.3Z"/></svg>
+    <p class="mx-ft-claim">We equip professionals to be excellent at what they do.</p>
+    <div class="mx-ft-btns"><a href="contact.html#samples">Request samples</a><a href="tel:+38615621843">+386 1 562 1843</a></div>
+  </div>
+  <nav class="mx-fcol" aria-label="On stock"><span class="mx-fh">On stock</span><a href="on-stock/index.html">Colour card</a><a href="on-stock/index.html#g=cotton">100% Cotton</a><a href="on-stock/index.html#g=6040">60/40 Polycotton</a><a href="on-stock/index.html#g=5050">50/50 Polycotton</a><a href="on-stock/index.html#g=3565">35/65 Polycotton</a><a href="on-stock/index.html#g=stretch">Stretch</a><a href="on-stock/index.html#g=cordura">CORDURA®</a><a href="on-stock/index.html#g=lining">Lining</a></nav>
+  <nav class="mx-fcol" aria-label="Fabrics"><span class="mx-fh">Fabrics</span><a href="manufacturing.html">Made to order</a><a href="repreve.html">REPREVE® sustainable</a><a href="sorona.html">SORONA® stretch</a><a href="multinorm-fr-proban.html">Multinorm &amp; FR Proban®</a><a href="manufacturing.html#g-cordura">CORDURA®</a><a href="sewing.html">Sewing</a></nav>
+  <nav class="mx-fcol" aria-label="Company"><span class="mx-fh">Company</span><a href="about.html">About us</a><a href="blog/index.html">Blog</a><a href="about.html#certificates">Certificates</a><a href="manufacturing.html#faq">FAQ</a><a href="contact.html">Contact</a></nav>
+  <div class="mx-fcol"><span class="mx-fh">Contact</span><span>MAXIMO TEKSTIL d.o.o.<br>Hrastovec 22, 1236 Trzin<br>Slovenia, EU</span>
+    <a href="tel:+38640855805">Sales +386 40 855 805</a><a href="mailto:narocila@maximo-tekstil.com">narocila@maximo-tekstil.com</a><a href="tel:+38615621843">Office +386 1 562 1843</a><a href="mailto:maximo3@siol.net">maximo3@siol.net</a></div>
+</div>
+<div class="mx-ft-bot"><span>&copy; 2026 Maximo Tekstil d.o.o. · Workwear, technical and medical fabrics since 1991</span>
+<nav aria-label="Legal"><a href="terms.html">Terms &amp; conditions</a><a href="privacy.html">Privacy policy &amp; GDPR</a><a href="terms.html#legal-notice">Legal notice</a></nav></div>
+</div></div>
 <script>
-// Sample featured products (normally would come from backend)
-const featuredProducts = [
-  {
-    slug: 'roman',
-    name: 'ROMAN',
-    category: 'MaxTek, 1/1 plain',
-    composition: '100% cotton',
-    weight: '180 g/m²',
-    width: '160 cm',
-    image: 'img/roman.webp',
-    colors: [
-      {hex: '#F4F4F1', name: 'White'},
-      {hex: '#A9C6E0', name: 'Light blue'},
-      {hex: '#A8D5BA', name: 'Light green'},
-      {hex: '#C9CDD2', name: 'Light grey'},
-      {hex: '#E8B4C4', name: 'Pink'}
-    ]
-  },
-  {
-    slug: 'adidas',
-    name: 'ADIDAS',
-    category: 'MaxTek, 3/1 twill',
-    composition: '100% cotton',
-    weight: '200 g/m²',
-    width: '150 cm',
-    image: 'img/adidas.webp',
-    colors: [
-      {hex: '#C9CDD2', name: 'Light grey'},
-      {hex: '#E8B4C4', name: 'Pink'},
-      {hex: '#1F2A44', name: 'Navy'},
-      {hex: '#F4F4F1', name: 'White'},
-      {hex: '#A9C6E0', name: 'Light blue'},
-      {hex: '#1F4FA3', name: 'Royal blue'}
-    ]
-  }
-];
-
-function renderProduct(p) {
-  const colorDots = p.colors.map((c, i) =>
-    `<button class="dot" style="background-color:${c.hex}" title="${c.name}" aria-label="${c.name}" aria-pressed="${i === 0 ? 'true' : 'false'}"></button>`
-  ).join('');
-
-  return `
-    <article class="label">
-      <div class="chip">
-        <img src="${p.image}" alt="${p.name} fabric" loading="lazy">
-      </div>
-      <div class="body">
-        <h3><a href="${p.slug}.html">${p.name}</a></h3>
-        <div class="cat">${p.category}</div>
-        <dl>
-          <dt>Composition</dt><dd>${p.composition}</dd>
-          <dt>Weight</dt><dd>${p.weight}</dd>
-          <dt>Width</dt><dd>${p.width}</dd>
-        </dl>
-        <div class="dots">
-          ${colorDots}
-          <span class="nc">${p.colors.length} colours</span>
-        </div>
-        <div class="acts">
-          <a class="view" href="${p.slug}.html">View details</a>
-          <button class="ask" onclick="alert('Sample request: ${p.name}')">Request sample</button>
-        </div>
-      </div>
-    </article>
-  `;
-}
-
-document.getElementById('grid').innerHTML = featuredProducts.map(renderProduct).join('');
+(function(){
+  var tip=document.getElementById('wallTip'),dot=document.getElementById('tipDot'),nm=document.getElementById('tipName'),cd=document.getElementById('tipCode');
+  var d0=[nm.textContent,cd.textContent];
+  document.querySelectorAll('#wall a').forEach(function(a){
+    function on(){dot.style.setProperty('--c',a.style.getPropertyValue('--c'));nm.textContent=a.dataset.n;cd.textContent=a.dataset.f}
+    a.addEventListener('mouseenter',on);a.addEventListener('focus',on);
+  });
+  document.getElementById('wall').addEventListener('mouseleave',function(){dot.style.removeProperty('--c');nm.textContent=d0[0];cd.textContent=d0[1]});
+  var els=document.querySelectorAll('.reveal');
+  if('IntersectionObserver' in window){var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{rootMargin:'0px 0px -8% 0px'});els.forEach(function(e){io.observe(e)})}
+  else els.forEach(function(e){e.classList.add('in')});
+})();
 </script>
-
+<script src="assets/site.js" defer></script>
 </body>
 </html>
