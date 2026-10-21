@@ -4340,7 +4340,6 @@
 "contact.html"
 ],
 "Contact sales": [
-"index.html",
 "manufacturing.html"
 ],
 "Contact us →": [
@@ -8600,7 +8599,6 @@
 "about.html"
 ],
 "Maximo Tekstil d.o.o., Hrastovec 22, {N} Trzin, Slovenia": [
-"index.html",
 "manufacturing.html"
 ],
 "Maximo Tekstil from Trzin, Slovenia, has developed and supplied fabrics for workwear, protective clothing and medical wear since {N}, and sews finished garments to customer samples.": [
@@ -10092,8 +10090,7 @@
 ],
 "Office": [
 "about.html",
-"contact.html",
-"index.html"
+"contact.html"
 ],
 "Office +386 1 562 {N}": [
 "404.html",
@@ -10151,7 +10148,6 @@
 "terms.html"
 ],
 "Office and warehouse": [
-"index.html",
 "manufacturing.html"
 ],
 "Office and warehouse · open in Google Maps": [
@@ -10159,8 +10155,7 @@
 ],
 "Office email": [
 "about.html",
-"contact.html",
-"index.html"
+"contact.html"
 ],
 "Oil & gas": [
 "multinorm-fr-proban.html"
@@ -12641,12 +12636,10 @@
 "Sales email": [
 "about.html",
 "contact.html",
-"index.html",
 "manufacturing.html"
 ],
 "Sales phone": [
 "contact.html",
-"index.html",
 "manufacturing.html"
 ],
 "Same both sides": [
@@ -13025,9 +13018,6 @@
 ],
 "Send us a photo of the workwear you need. We work out the fabric and the price per piece, and sew it for you.": [
 "sewing.html"
-],
-"Send us your sample or specification.": [
-"index.html"
 ],
 "Send us your sample or specification. We will tell you how we can make it.": [
 "manufacturing.html"
@@ -14560,8 +14550,7 @@
 "multinorm-fr-proban.html"
 ],
 "Tell us the fabric, colour and quantity you need. We reply with availability, a price and samples.": [
-"contact.html",
-"index.html"
+"contact.html"
 ],
 "Tell us the garment. We build the fabric.": [
 "sorona.html"
