@@ -5021,7 +5021,7 @@
 "Durable canvas structure": [
 "on-stock/fabrics/kanvas-stretch-250.html"
 ],
-"Durable flame retardant finish": [
+"Durable flame retardant finish that lasts the life of the garment.": [
 "about.html",
 "index.html"
 ],
@@ -6459,6 +6459,10 @@
 ],
 "Global Recycled Standard. Recycled content traced with transaction certificates.": [
 "repreve.html"
+],
+"Global Recycled Standard: verified recycled content.": [
+"about.html",
+"index.html"
 ],
 "Golden": [
 "index.html",
@@ -8143,7 +8147,7 @@
 "Low shrinkage for fit retention": [
 "on-stock/fabrics/kanvas-stretch-250.html"
 ],
-"Lyocell fibre": [
+"Lyocell fibre from responsibly sourced wood pulp.": [
 "about.html",
 "index.html"
 ],
@@ -10679,7 +10683,7 @@
 "sorona.html",
 "terms.html"
 ],
-"Original fibre · licensed manufacturer": [
+"Original fibre · licensed manufacturer. Built for abrasion and tear resistance.": [
 "about.html",
 "index.html"
 ],
@@ -12087,7 +12091,7 @@
 "Recycled polyester blended with organic, BCI™ or conventional cotton, TENCEL® and stretch fibres. Twill and ripstop for workwear and corporate uniforms.": [
 "repreve.html"
 ],
-"Recycled polyester fibre": [
+"Recycled polyester fibre made from used plastic bottles.": [
 "about.html",
 "index.html"
 ],
@@ -14684,9 +14688,11 @@
 "sorona.html"
 ],
 "Tested for harmful substances": [
-"about.html",
-"index.html",
 "multinorm-fr-proban.html"
+],
+"Tested for harmful substances, safe for skin contact.": [
+"about.html",
+"index.html"
 ],
 "Textile laboratories compare a tested sample against a <1>grey scale</1> after the test. The scale has five grades, with half steps:": [
 "blog/colour-fastness-explained.html"
