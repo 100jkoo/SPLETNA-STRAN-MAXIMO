@@ -40,6 +40,10 @@ Mape `sl/ hr/ hu/ it/ de/` in datoteke `assets/site.<jezik>.js` ter `sitemap.xml
 
 Neprevedeno besedilo ostane v angleščini. Pravni besedili (`terms.html`, `privacy.html`) naj pregleda odvetnik.
 
+### Zip za Wix (omejitev 20 MB)
+
+`python3 i18n/slim.py` iz zgrajene strani naredi mapo `dist/` in `maximo-tekstil-site.zip`. Ponavljajoči se meni in noga sta shranjena enkrat na jezik (`assets/inc/`), zato je stran velika okoli 14 MB namesto 33 MB. Videz in delovanje sta enaka. Mapa `dist/` ni v Gitu, ker se ustvari sama.
+
 ## Ogled lokalno
 
 ```bash

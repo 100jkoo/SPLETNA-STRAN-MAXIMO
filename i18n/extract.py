@@ -11,7 +11,7 @@ TITLE_RE = re.compile(r'(<title>)(.*?)(</title>)', re.S)
 def source_pages():
     for f in sorted(glob.glob(os.path.join(ROOT, '**/*.html'), recursive=True)):
         rel = os.path.relpath(f, ROOT)
-        if rel.split('/')[0] in LANGS or rel in SKIP: continue
+        if rel.split('/')[0] in LANGS + ['dist', 'i18n'] or rel in SKIP: continue
         yield rel, f
 
 def collect(s):
