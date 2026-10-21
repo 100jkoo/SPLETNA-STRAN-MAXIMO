@@ -377,5 +377,6 @@ a.cc:hover{border-color:var(--ink)}
 .c-sor .tags span:first-child{background:var(--ink);border-color:var(--ink);color:#fff}
 
 /* wordmark used until the official SORONA logo file is added */
-.ccard .wm{align-self:flex-start;display:flex;align-items:center;height:46px;font:600 27px/1 var(--sans,inherit);letter-spacing:.16em;color:var(--ink)}
+
 .ccard img.pb{height:28px;margin:9px 0}
+.ccard img.sr{height:28px;margin:9px 0}
