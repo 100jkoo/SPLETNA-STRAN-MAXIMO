@@ -118,252 +118,182 @@
 <main id="mx-main">
 <div lang="sl" class="pk-page" data-until="2026-11-30T23:59:59+01:00">
 <style>
-.pk-page{--pk-ink:#1d2340;--pk-navy:#242c4c;--pk-org:#df7841;--pk-org-ink:#a9501c;--pk-mut:#5c6277;--pk-line:#e3e1da;--pk-bg:#f7f6f2;background:var(--pk-bg);color:var(--pk-ink)}
+.pk-page{--pk-ink:#1d2340;--pk-navy:#242c4c;--pk-org:#df7841;--pk-org-ink:#a9501c;--pk-red:#c2531b;--pk-mut:#5c6277;--pk-line:#e3e1da;--pk-bg:#f7f6f2;background:var(--pk-bg);color:var(--pk-ink)}
 .pk-page *{box-sizing:border-box}
-.pk-wrap{max-width:1200px;margin:0 auto;padding:0 24px}
+.pk-wrap{max-width:1320px;margin:0 auto;padding:0 24px}
 @media (max-width:560px){.pk-wrap{padding:0 16px}}
-.pk-hero{background:var(--pk-navy);color:#fff;position:relative;overflow:hidden}
-.pk-hero::after{content:"";position:absolute;right:-120px;top:-120px;width:520px;height:520px;border-radius:50%;background:repeating-linear-gradient(135deg,rgba(255,255,255,.06) 0 2px,transparent 2px 12px);pointer-events:none}
-.pk-hero .pk-wrap{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,.75fr);gap:48px;align-items:end;padding-top:clamp(48px,7vw,88px);padding-bottom:clamp(40px,6vw,72px);position:relative;z-index:1}
 .pk-eye{font:500 12px/1.2 "JetBrains Mono",ui-monospace,monospace;letter-spacing:.1em;text-transform:uppercase;color:#f3a676;margin:0}
-.pk-hero h1{font-size:clamp(40px,6.4vw,84px);line-height:.98;letter-spacing:-.03em;font-weight:300;margin:18px 0 0}
-.pk-hero h1 b{font-weight:600;color:var(--pk-org)}
-.pk-hero .pk-lead{font-size:clamp(17px,1.6vw,20px);line-height:1.5;color:#c9cde0;max-width:34em;margin:22px 0 0}
-.pk-cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
-.pk-btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:48px;padding:0 24px;border-radius:999px;font:600 15px/1 Inter,system-ui,sans-serif;text-decoration:none;border:1.5px solid transparent;cursor:pointer;transition:background .2s,color .2s,border-color .2s,transform .15s}
-.pk-btn:active{transform:translateY(1px)}
-.pk-btn-o{background:var(--pk-org);color:#1d2340}
-.pk-btn-o:hover{background:#ef8a52}
-.pk-btn-g{border-color:rgba(255,255,255,.55);color:#fff;background:transparent}
-.pk-btn-g:hover{background:#fff;color:var(--pk-navy)}
-.pk-btn-n{background:var(--pk-navy);color:#fff}
-.pk-btn-n:hover{background:#161b33}
-.pk-btn-l{border-color:var(--pk-navy);color:var(--pk-navy);background:transparent}
-.pk-btn-l:hover{background:var(--pk-navy);color:#fff}
-.pk-btn:focus-visible,.pk-chip:focus-visible,.pk-qty input:focus-visible,.pk-form input:focus-visible,.pk-form select:focus-visible,.pk-form textarea:focus-visible{outline:3px solid var(--pk-org);outline-offset:3px}
-.pk-clock{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);border-radius:22px;padding:26px 26px 22px}
+.pk-hero{background:var(--pk-navy);color:#fff;position:relative;overflow:hidden}
+.pk-hero::after{content:"";position:absolute;right:-140px;top:-140px;width:560px;height:560px;border-radius:50%;background:repeating-linear-gradient(135deg,rgba(255,255,255,.06) 0 2px,transparent 2px 12px);pointer-events:none}
+.pk-hero .pk-wrap{position:relative;z-index:1;display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:20px 48px;align-items:center;padding-top:clamp(40px,5vw,64px);padding-bottom:clamp(36px,5vw,56px)}
+.pk-big{margin:0;display:flex;flex-direction:column;align-items:flex-start;gap:6px}
+.pk-big span{font:500 12px/1 "JetBrains Mono",ui-monospace,monospace;letter-spacing:.12em;text-transform:uppercase;color:#aab0c8}
+.pk-big b{font:800 clamp(84px,10.5vw,148px)/.84 Inter,system-ui,sans-serif;letter-spacing:-.055em;color:var(--pk-org);white-space:nowrap}
+.pk-big b small{font-size:.44em;letter-spacing:-.02em;margin-left:.06em}
+.pk-hero h1{font-size:clamp(30px,3.3vw,46px);line-height:1.06;letter-spacing:-.02em;font-weight:300;margin:12px 0 0;max-width:15em}
+.pk-hero .pk-lead{font-size:16.5px;line-height:1.5;color:#c9cde0;max-width:36em;margin:14px 0 0}
+.pk-cta{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+.pk-btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;min-height:46px;padding:0 22px;border-radius:999px;font:600 15px/1 Inter,system-ui,sans-serif;text-decoration:none;border:1.5px solid transparent;cursor:pointer;transition:background .2s,color .2s,border-color .2s;white-space:nowrap}
+.pk-btn svg{width:17px;height:17px;flex:none}
+.pk-btn-o{background:var(--pk-org);color:#1d2340}.pk-btn-o:hover{background:#ef8a52}
+.pk-btn-g{border-color:rgba(255,255,255,.55);color:#fff}.pk-btn-g:hover{background:#fff;color:var(--pk-navy)}
+.pk-btn-n{background:var(--pk-navy);color:#fff}.pk-btn-n:hover{background:var(--pk-org);color:#1d2340}
+.pk-btn:focus-visible,.pk-f:focus-visible,.pk-lnk:focus-visible{outline:3px solid var(--pk-org);outline-offset:3px}
+.pk-clock{border:1px solid rgba(255,255,255,.16);background:rgba(255,255,255,.05);border-radius:20px;padding:20px 22px}
 .pk-clock .pk-eye{color:#aab0c8}
-.pk-units{display:flex;gap:22px;margin-top:12px}
+.pk-units{display:flex;gap:18px;margin-top:10px}
 .pk-units div{display:flex;flex-direction:column}
-.pk-units b{font:300 54px/1 Inter,system-ui,sans-serif;letter-spacing:-.03em;font-variant-numeric:tabular-nums}
-.pk-units span{font:500 11px/1 "JetBrains Mono",ui-monospace,monospace;letter-spacing:.08em;text-transform:uppercase;color:#aab0c8;margin-top:8px}
-.pk-clock p{margin:18px 0 0;font-size:14px;line-height:1.5;color:#c9cde0}
-.pk-facts{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid rgba(255,255,255,.14);margin-top:22px;padding-top:16px}
-.pk-facts{gap:12px}.pk-facts div{font-size:12.5px;line-height:1.35;color:#aab0c8}.pk-facts b{display:block;font:500 20px/1.2 Inter,system-ui,sans-serif;color:#fff}
-@media (max-width:900px){.pk-hero .pk-wrap{grid-template-columns:1fr;gap:32px;align-items:start}}
-.pk-sec{padding:clamp(56px,7vw,96px) 0}
-.pk-head{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;flex-wrap:wrap;margin-bottom:32px}
-.pk-head h2{font-size:clamp(30px,3.6vw,46px);line-height:1.05;letter-spacing:-.02em;font-weight:300;margin:10px 0 0}
-.pk-head p{max-width:30em;color:var(--pk-mut);margin:0;font-size:15.5px;line-height:1.55}
-.pk-eye.dk{color:var(--pk-org-ink)}
-.pk-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
-@media (max-width:1020px){.pk-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
-@media (max-width:640px){.pk-grid{grid-template-columns:1fr}}
-.pk{background:#fff;border:1px solid var(--pk-line);border-radius:22px;overflow:hidden;display:flex;flex-direction:column;scroll-margin-top:calc(var(--mx-h,68px) + 20px);transition:box-shadow .2s,border-color .2s}
-.pk:hover{border-color:#cfccc2;box-shadow:0 14px 40px -24px rgba(29,35,64,.35)}
-.pk.has-qty{border-color:var(--pk-org);box-shadow:0 0 0 1px var(--pk-org)}
-.pk-vis{position:relative;height:170px;background-color:var(--c);background-image:repeating-linear-gradient(135deg,rgba(255,255,255,.09) 0 2px,transparent 2px 7px),repeating-linear-gradient(45deg,rgba(0,0,0,.10) 0 1px,transparent 1px 7px);transition:background-color .35s ease}
-.pk-n{position:absolute;left:18px;top:16px;font:500 12px/1 "JetBrains Mono",ui-monospace,monospace;letter-spacing:.08em;color:#fff;background:rgba(0,0,0,.35);padding:7px 9px;border-radius:999px}
-.pk-off{position:absolute;right:16px;top:14px;background:var(--pk-org);color:#1d2340;font:700 15px/1 Inter,system-ui,sans-serif;padding:9px 12px;border-radius:999px}
-.pk-chips{position:absolute;left:14px;bottom:14px;display:flex;gap:8px;background:rgba(255,255,255,.9);padding:6px;border-radius:999px}
-.pk-chip{width:32px;height:32px;border-radius:50%;background:var(--c);border:2px solid #fff;box-shadow:0 0 0 1px rgba(0,0,0,.18);cursor:pointer;padding:0}
-.pk-chip.is-light{box-shadow:0 0 0 1px rgba(0,0,0,.3)}
-.pk-chip[aria-pressed="true"]{box-shadow:0 0 0 2px var(--pk-navy)}
-.pk-body{padding:20px 22px 22px;display:flex;flex-direction:column;gap:14px;flex:1}
-.pk h3{margin:0;font:600 21px/1.2 Inter,system-ui,sans-serif;letter-spacing:-.01em;display:flex;align-items:center;gap:10px;flex-wrap:wrap}
-.pk-tag{font:600 10.5px/1 "JetBrains Mono",ui-monospace,monospace;letter-spacing:.08em;text-transform:uppercase;background:#eef0f6;color:var(--pk-navy);padding:6px 8px;border-radius:999px}
-.pk-spec{margin:-6px 0 0;color:var(--pk-mut);font-size:14.5px;line-height:1.5}
-.pk-price{display:grid;grid-template-columns:auto 1fr;align-items:baseline;column-gap:12px;padding:14px 0;border-top:1px solid var(--pk-line);border-bottom:1px solid var(--pk-line)}
-.pk-old{grid-column:1/-1;font-size:14px;color:var(--pk-mut);text-decoration:line-through}
-.pk-old.pk-lbl{text-decoration:none;font:500 11px/1.4 "JetBrains Mono",ui-monospace,monospace;letter-spacing:.08em;text-transform:uppercase}
-.pk-new{font:600 36px/1.05 Inter,system-ui,sans-serif;letter-spacing:-.02em;font-variant-numeric:tabular-nums}
-.pk-unit{font-size:13px;color:var(--pk-mut)}
-.pk-h{margin:0 0 4px;font:500 11px/1 "JetBrains Mono",ui-monospace,monospace;letter-spacing:.08em;text-transform:uppercase;color:var(--pk-mut)}
-.pk-rows{display:flex;flex-direction:column;gap:8px}
-.pk-row{display:grid;grid-template-columns:22px 1fr auto;align-items:center;gap:10px;min-height:48px}
-.pk-dot{width:22px;height:22px;border-radius:50%;background:var(--c);box-shadow:inset 0 0 0 1px rgba(0,0,0,.15)}
-.pk-dot.is-light{box-shadow:inset 0 0 0 1px rgba(0,0,0,.3)}
-.pk-cn{font-size:15px;font-weight:500;display:flex;flex-direction:column;line-height:1.25}
-.pk-cn small{font:400 12px/1.3 "JetBrains Mono",ui-monospace,monospace;color:var(--pk-mut)}
-.pk-qty{display:flex;align-items:center;gap:6px;color:var(--pk-mut);font-size:14px}
-.pk-qty input{width:92px;height:44px;border:1.5px solid #d6d3ca;border-radius:12px;padding:0 10px;font:500 16px/1 Inter,system-ui,sans-serif;text-align:right;color:var(--pk-ink);background:#fff}
-.pk-qty input:hover{border-color:#b9b6ac}
-.pk-more{margin-top:auto;font-size:14px;font-weight:600;color:var(--pk-org-ink);text-decoration:none;padding-top:6px}
-.pk-more:hover{text-decoration:underline}
-.pk-muted{color:var(--pk-mut);font-weight:500}
-.pk-order{background:#fff;border-top:1px solid var(--pk-line)}
-.pk-og{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:40px;align-items:start}
-@media (max-width:900px){.pk-og{grid-template-columns:1fr}}
-.pk-sum{background:var(--pk-bg);border:1px solid var(--pk-line);border-radius:22px;padding:24px}
-.pk-sum h3,.pk-form h3{margin:0 0 14px;font:600 18px/1.2 Inter,system-ui,sans-serif}
-.pk-lines{list-style:none;margin:0;padding:0}
-.pk-lines li{display:grid;grid-template-columns:1fr auto;gap:12px;padding:12px 0;border-bottom:1px solid var(--pk-line);font-size:15px}
-.pk-lines li small{display:block;color:var(--pk-mut);font-size:13px;margin-top:2px}
-.pk-lines .pk-empty{display:block;color:var(--pk-mut);border:0}
-.pk-tot{display:flex;justify-content:space-between;align-items:baseline;margin-top:16px;font-size:15px}
-.pk-tot b{font:600 28px/1 Inter,system-ui,sans-serif;font-variant-numeric:tabular-nums}
-.pk-tot2{display:flex;justify-content:space-between;color:var(--pk-mut);font-size:13.5px;margin-top:6px}
-.pk-form{display:grid;grid-template-columns:1fr 1fr;gap:14px}
-.pk-form h3{grid-column:1/-1}
-.pk-form label{display:flex;flex-direction:column;gap:6px;font-size:13.5px;font-weight:500}
-.pk-form label.full{grid-column:1/-1}
-.pk-form input,.pk-form select,.pk-form textarea{height:48px;border:1.5px solid #d6d3ca;border-radius:12px;padding:0 14px;font:400 16px/1.3 Inter,system-ui,sans-serif;color:var(--pk-ink);background:#fff}
-.pk-form textarea{height:92px;padding:12px 14px;resize:vertical}
-.pk-form .req{color:var(--pk-org-ink)}
-.pk-err{grid-column:1/-1;margin:0;color:#b42318;font-size:14px;min-height:1px}
-.pk-act{grid-column:1/-1;display:flex;flex-wrap:wrap;gap:12px;align-items:center}
-.pk-note{grid-column:1/-1;margin:0;font-size:13px;color:var(--pk-mut);line-height:1.5}
-@media (max-width:560px){.pk-form{grid-template-columns:1fr}}
-.pk-terms{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px;margin:0;padding:0;list-style:none}
-.pk-terms li{border-top:2px solid var(--pk-navy);padding-top:14px;font-size:14.5px;line-height:1.5;color:var(--pk-mut)}
-.pk-terms b{display:block;color:var(--pk-ink);font-size:16px;margin-bottom:4px}
-@media (max-width:900px){.pk-terms{grid-template-columns:1fr 1fr}}
-@media (max-width:520px){.pk-terms{grid-template-columns:1fr}}
-.pk-bar{position:fixed;left:50%;bottom:16px;transform:translate(-50%,140%);z-index:950;display:flex;align-items:center;gap:16px;background:var(--pk-navy);color:#fff;border-radius:999px;padding:8px 8px 8px 22px;box-shadow:0 18px 40px -16px rgba(0,0,0,.5);transition:transform .3s ease;max-width:calc(100% - 24px)}
-.pk-bar{visibility:hidden}.pk-bar.on{transform:translate(-50%,0);visibility:visible}
-.pk-bar span{font-size:14px;white-space:nowrap}.pk-bar b{font-variant-numeric:tabular-nums}
-.pk-bar .pk-btn{min-height:44px;padding:0 18px}
-@media (max-width:420px){.pk-bar span small{display:none}}
+.pk-units b{font:300 44px/1 Inter,system-ui,sans-serif;letter-spacing:-.03em;font-variant-numeric:tabular-nums}
+.pk-units span{font:500 10.5px/1 "JetBrains Mono",ui-monospace,monospace;letter-spacing:.08em;text-transform:uppercase;color:#aab0c8;margin-top:7px}
+.pk-clock p{margin:14px 0 0;font-size:13px;color:#c9cde0}
+@media (max-width:1100px){.pk-hero .pk-wrap{grid-template-columns:auto minmax(0,1fr)}.pk-clock{grid-column:1/-1;justify-self:start}}
+@media (max-width:700px){.pk-hero .pk-wrap{grid-template-columns:1fr}.pk-clock{justify-self:stretch}.pk-cta .pk-btn{flex:1 1 100%}}
+
+.pk-sec{padding:clamp(36px,5vw,60px) 0}
+.pk-bar{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:14px;margin-bottom:16px}
+.pk-bar h2{margin:0;font:300 clamp(26px,2.6vw,34px)/1.1 Inter,system-ui,sans-serif;letter-spacing:-.02em}
+.pk-bar h2 span{font:500 12px/1 "JetBrains Mono",ui-monospace,monospace;letter-spacing:.08em;color:var(--pk-mut);margin-left:10px;vertical-align:middle}
+.pk-fs{display:flex;flex-wrap:wrap;gap:8px}
+.pk-f{height:38px;padding:0 15px;border-radius:999px;border:1.5px solid var(--pk-line);background:#fff;color:var(--pk-ink);font:500 14px/1 Inter,system-ui,sans-serif;cursor:pointer}
+.pk-f i{font:400 12px/1 "JetBrains Mono",ui-monospace,monospace;font-style:normal;color:var(--pk-mut);margin-left:4px}
+.pk-f:hover{border-color:var(--pk-navy)}
+.pk-f[aria-pressed="true"]{background:var(--pk-navy);border-color:var(--pk-navy);color:#fff}.pk-f[aria-pressed="true"] i{color:#aab0c8}
+
+.pk-list{background:#fff;border:1px solid var(--pk-line);border-radius:22px;overflow:hidden}
+.pk-head,.pk-r{display:grid;grid-template-columns:64px minmax(190px,1.1fr) minmax(220px,1.3fr) 290px 140px;gap:24px;align-items:center}
+.pk-head{padding:13px 24px;background:#f1f0ea;border-bottom:1px solid var(--pk-line);font:500 11px/1.2 "JetBrains Mono",ui-monospace,monospace;letter-spacing:.1em;text-transform:uppercase;color:var(--pk-mut)}
+.pk-r{padding:20px 24px;border-bottom:1px solid var(--pk-line);scroll-margin-top:calc(var(--mx-h,68px) + 20px);transition:background .15s}
+.pk-r:last-child{border-bottom:0}
+.pk-r:hover{background:#fbfaf7}
+.pk-r[hidden]{display:none}
+.pk-r.is-hl{box-shadow:inset 4px 0 0 var(--pk-org);background:#fdf6f0}
+.pk-ic .gi{display:block;width:64px;height:64px;padding:10px;border-radius:16px;background:#eef0f6;color:#252b4b}
+.pk-gl{font:500 11px/1.2 "JetBrains Mono",ui-monospace,monospace;letter-spacing:.1em;text-transform:uppercase;color:var(--pk-org-ink)}
+.pk-main h3{margin:5px 0 0;font:600 21px/1.15 Inter,system-ui,sans-serif;letter-spacing:-.01em}
+.pk-sp{margin:6px 0 0;font-size:14px;line-height:1.45;color:var(--pk-mut)}
+.pk-cols{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:10px 20px}
+.pk-cols li{display:flex;align-items:center;gap:9px;font-size:14.5px;font-weight:500;line-height:1.2}
+.pk-cols small{display:block;font:400 11.5px/1.3 "JetBrains Mono",ui-monospace,monospace;color:var(--pk-mut)}
+.pk-dot{width:30px;height:30px;border-radius:50%;flex:none;background-color:var(--c);background-image:repeating-linear-gradient(135deg,rgba(255,255,255,.12) 0 1.5px,transparent 1.5px 5px);box-shadow:inset 0 0 0 1px rgba(0,0,0,.14)}
+.pk-dot.is-light{box-shadow:inset 0 0 0 1px rgba(0,0,0,.28)}
+.pk-pr{display:flex;align-items:center;gap:16px}
+.pk-off{display:flex;align-items:center;justify-content:center;flex:none;width:100px;height:74px;border-radius:16px;background:var(--pk-org);color:#1d2340;font:800 28px/1 Inter,system-ui,sans-serif;letter-spacing:-.03em;transform:rotate(-3deg);box-shadow:0 8px 18px -10px rgba(194,83,27,.8)}
+.pk-off--lbl{transform:none;box-shadow:none;background:#fcecdf;color:var(--pk-org-ink);font:600 12px/1.3 "JetBrains Mono",ui-monospace,monospace;letter-spacing:.06em;text-transform:uppercase;text-align:center}
+.pk-pv{display:flex;flex-direction:column;gap:3px}
+.pk-was{font-size:14px;color:var(--pk-mut)}
+.pk-was s{font-size:17px;font-weight:600;color:#7a7f92;text-decoration-color:#d2402a;text-decoration-thickness:2px}
+.pk-now{font:700 34px/1 Inter,system-ui,sans-serif;letter-spacing:-.025em;font-variant-numeric:tabular-nums;color:var(--pk-ink)}
+.has-off .pk-now{color:var(--pk-red)}
+.pk-unit{font-size:12.5px;color:var(--pk-mut)}
+.pk-go{display:flex;flex-direction:column;align-items:stretch;gap:8px}
+.pk-lnk{font-size:13.5px;font-weight:500;color:var(--pk-mut);text-decoration:none;text-align:center}
+.pk-lnk:hover{color:var(--pk-org-ink);text-decoration:underline}
+@media (max-width:1240px){
+  .pk-head{display:none}
+  .pk-r{grid-template-columns:64px minmax(0,1fr) auto;grid-template-areas:"ic main pr" "ic cols go";gap:14px 24px}
+  .pk-ic{grid-area:ic;align-self:start}.pk-main{grid-area:main}.pk-cols{grid-area:cols}.pk-pr{grid-area:pr}.pk-go{grid-area:go;align-self:end}
+}
+@media (max-width:760px){
+  .pk-r{grid-template-columns:52px minmax(0,1fr);grid-template-areas:"ic main" "cols cols" "pr pr" "go go";padding:18px 16px;gap:14px}
+  .pk-ic .gi{width:52px;height:52px;padding:8px;border-radius:13px}
+  .pk-go{flex-direction:row;align-items:center;justify-content:space-between;gap:14px}
+  .pk-go .pk-btn{flex:1}
+  .pk-off{width:86px;height:64px}.pk-off:not(.pk-off--lbl){font-size:24px}
+}
+
+.pk-how{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-top:22px}
+.pk-how div{background:#fff;border:1px solid var(--pk-line);border-radius:18px;padding:20px 22px;font-size:14.5px;line-height:1.5;color:var(--pk-mut)}
+.pk-how b{display:block;color:var(--pk-ink);font-size:16px;margin-bottom:4px}
+.pk-how em{font:500 12px/1 "JetBrains Mono",ui-monospace,monospace;font-style:normal;color:var(--pk-org-ink);display:block;margin-bottom:10px}
+.pk-how a{color:var(--pk-ink);font-weight:600}
+@media (max-width:800px){.pk-how{grid-template-columns:1fr}}
+.pk-fine{margin:16px 0 0;font-size:13.5px;color:var(--pk-mut);line-height:1.5}
 .pk-ended{display:none}
 .pk-page.is-ended .pk-ended{display:block}
 .pk-page.is-ended .pk-live{display:none}
-.pk-endbox{background:#fff;border:1px solid var(--pk-line);border-radius:22px;padding:28px;margin-top:8px}
-@media (prefers-reduced-motion:reduce){.pk,.pk-vis,.pk-bar,.pk-btn{transition:none}}
+.pk-endbox{background:#fff;border:1px solid var(--pk-line);border-radius:22px;padding:28px}
+@media (prefers-reduced-motion:reduce){.pk-r,.pk-btn{transition:none}}
 </style>
 
 <section class="pk-hero">
   <div class="pk-wrap">
+    <p class="pk-big pk-live"><span>Popust do</span><b>&minus;32<small>%</small></b></p>
     <div>
-      <p class="pk-eye">Novembrska akcija · tkanine z zaloge</p>
-      <h1 class="pk-live">Do <b>−32 %</b><br>na tkanine za delovna oblačila.</h1>
+      <p class="pk-eye">Novembrska akcija &middot; tkanine z zaloge</p>
+      <h1 class="pk-live">Tkanine za delovna oblačila po akcijskih cenah.</h1>
       <h1 class="pk-ended">Novembrska akcija je zaključena.</h1>
-      <p class="pk-lead pk-live">6 tkanin z naše zaloge v Trzinu, že od 1,99 € na tekoči meter. Vpišite metre, mi potrdimo zalogo in pošljemo predračun.</p>
-      <p class="pk-lead pk-ended">Hvala za zanimanje. Vse tkanine in barve na zalogi najdete v barvni karti.</p>
+      <p class="pk-lead pk-live">6 tkanin iz skladišča v Trzinu, že od 1,99 € na tekoči meter. Pokličite ali pišite, kaj potrebujete. Potrdimo zalogo in pošljemo predračun.</p>
       <div class="pk-cta">
-        <a class="pk-btn pk-btn-o pk-live" href="#tkanine">Izberi tkanine &darr;</a>
-        <a class="pk-btn pk-btn-g" href="on-stock/index.html">Barvna karta</a>
+        <a class="pk-btn pk-btn-o" href="tel:+38615621843"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg>+386 1 562 1843</a>
+        <a class="pk-btn pk-btn-g" href="mailto:narocila@maximo-tekstil.com?subject=Novembrska%20akcija"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>narocila@maximo-tekstil.com</a>
       </div>
     </div>
-    <div class="pk-clock pk-live" aria-live="off">
+    <div class="pk-clock pk-live">
       <p class="pk-eye">Akcija se izteče čez</p>
-      <div class="pk-units"><div><b id="pk-d">–</b><span>dni</span></div><div><b id="pk-h">–</b><span>ur</span></div><div><b id="pk-m">–</b><span>minut</span></div></div>
-      <p>Velja do <strong>30. 11. 2026</strong> oziroma do razprodaje zalog. Cene so brez DDV.</p>
-      <div class="pk-facts"><div><b>6</b>tkanin</div><div><b>1,99 €</b>najnižja cena/tm</div><div><b>Trzin</b>takoj z zaloge</div></div>
+      <div class="pk-units"><div><b id="pk-d">&ndash;</b><span>dni</span></div><div><b id="pk-h">&ndash;</b><span>ur</span></div><div><b id="pk-m">&ndash;</b><span>minut</span></div></div>
+      <p>Velja do <strong>30. 11. 2026</strong> oziroma do razprodaje.</p>
     </div>
   </div>
 </section>
 
 <section class="pk-sec pk-live" id="tkanine">
   <div class="pk-wrap">
-    <div class="pk-head">
-      <div><p class="pk-eye dk">Akcijske tkanine</p><h2>Izberite barvo in vpišite metre.</h2></div>
-      <p>Akcijske cene veljajo samo za prikazane barve. Barve na zaslonu so informativne, na željo vam pošljemo vzorec.</p>
+    <div class="pk-bar">
+      <h2>Akcijske tkanine<span>6 ARTIKLOV</span></h2>
+      <div class="pk-fs" role="group" aria-label="Filter"><button type="button" class="pk-f" aria-pressed="true" data-f="">Vse <i>6</i></button><button type="button" class="pk-f" aria-pressed="false" data-f="str">Elastične <i>2</i></button><button type="button" class="pk-f" aria-pressed="false" data-f="pc">Polycotton <i>3</i></button><button type="button" class="pk-f" aria-pressed="false" data-f="cdr">CORDURA® <i>1</i></button></div>
     </div>
-    <div class="pk-grid">
-<article class="pk" id="pacifik-xla" data-cols='[&quot;#111111&quot;]'>
-  <div class="pk-vis" style="--c:#111111"><span class="pk-off">−32 %</span><span class="pk-n">01</span><div class="pk-chips" role="group" aria-label="Barve v akciji"><button type="button" class="pk-chip" data-i="0" aria-pressed="true" aria-label="Negro 60475" style="--c:#111111"></button></div></div>
-  <div class="pk-body">
-    <h3>PACIFIK XLA <span class="pk-tag">Elastična</span></h3>
-    <p class="pk-spec">62 % poliester, 34 % bombaž, 4 % XLA<br>250 g/m²</p>
-    <div class="pk-price"><span class="pk-old">4,24 €</span><span class="pk-new">2,87 €</span><span class="pk-unit">na tekoči meter, brez DDV</span></div>
-    <div class="pk-rows"><p class="pk-h">Vpišite metre</p><label class="pk-row"><span class="pk-dot" style="--c:#111111" aria-hidden="true"></span><span class="pk-cn">Negro<small>60475</small></span><span class="pk-qty"><input type="number" inputmode="numeric" min="0" step="1" placeholder="0" data-item="pacifik-xla" data-colour="Negro" data-code="60475" data-price="2.87" data-name="PACIFIK XLA" aria-label="Metri, PACIFIK XLA Negro"><span>m</span></span></label></div>
-    <a class="pk-more" href="on-stock/fabrics/pacific-stretch-250.html#negro">Podrobnosti tkanine &rarr;</a>
-  </div>
+    <div class="pk-list">
+      <div class="pk-head" aria-hidden="true"><span></span><span>Tkanina</span><span>Barve v akciji</span><span>Cena</span><span></span></div>
+<article class="pk-r" id="pacifik-xla" data-g="str">
+  <div class="pk-ic"><svg class="gi" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 8c2 1.4 4.6 1.4 7 0s5-1.4 7 0v16c-2-1.4-4.6-1.4-7 0s-5 1.4-7 0z" fill="currentColor" fill-opacity=".13"/><path d="M12.5 13h7M12.5 16h7M12.5 19h7" stroke-opacity=".55"/><path d="M2.5 16h4M3.8 13.5 1.6 16l2.2 2.5M29.5 16h-4M28.2 13.5l2.2 2.5-2.2 2.5" stroke="#df7841"/></svg></div>
+  <div class="pk-main"><span class="pk-gl">Elastična</span><h3>PACIFIK XLA</h3><p class="pk-sp">62 % poliester, 34 % bombaž, 4 % XLA &middot; 250 g/m²</p></div>
+  <ul class="pk-cols" aria-label="Barve v akciji"><li><span class="pk-dot" style="--c:#111111"></span><span>Negro<small>60475</small></span></li></ul>
+  <div class="pk-pr has-off"><span class="pk-off">&minus;32&nbsp;%</span><div class="pk-pv"><span class="pk-was">prej <s>4,24 €</s></span><span class="pk-now">2,87 €</span><span class="pk-unit">na tm, brez DDV</span></div></div>
+  <div class="pk-go"><a class="pk-btn pk-btn-n" href="mailto:narocila@maximo-tekstil.com?subject=Povpra%C5%A1evanje%2C%20novembrska%20akcija%3A%20PACIFIK%20XLA&amp;body=Pozdravljeni%2C%0D%0A%0D%0Azanima%20nas%20akcijska%20tkanina%20PACIFIK%20XLA.%0D%0A%0D%0ABarva%3A%20Negro%0D%0AKoli%C4%8Dina%3A%20...%20m%0D%0A%0D%0AProsimo%20za%20potrditev%20zaloge%20in%20predra%C4%8Dun.%0D%0A%0D%0ALep%20pozdrav%2C%0D%0A">Povpraši</a><a class="pk-lnk" href="on-stock/fabrics/pacific-stretch-250.html">Barvna karta &rarr;</a></div>
 </article>
-<article class="pk" id="canvas-xla" data-cols='[&quot;#333C55&quot;]'>
-  <div class="pk-vis" style="--c:#333C55"><span class="pk-off">−32 %</span><span class="pk-n">02</span><div class="pk-chips" role="group" aria-label="Barve v akciji"><button type="button" class="pk-chip" data-i="0" aria-pressed="true" aria-label="Sailor Blue" style="--c:#333C55"></button></div></div>
-  <div class="pk-body">
-    <h3>CANVAS XLA <span class="pk-tag">Elastična</span></h3>
-    <p class="pk-spec">63 % poliester, 34 % bombaž, 3 % XLA<br>285 g/m²</p>
-    <div class="pk-price"><span class="pk-old">4,24 €</span><span class="pk-new">2,87 €</span><span class="pk-unit">na tekoči meter, brez DDV</span></div>
-    <div class="pk-rows"><p class="pk-h">Vpišite metre</p><label class="pk-row"><span class="pk-dot" style="--c:#333C55" aria-hidden="true"></span><span class="pk-cn">Sailor Blue<small>&nbsp;</small></span><span class="pk-qty"><input type="number" inputmode="numeric" min="0" step="1" placeholder="0" data-item="canvas-xla" data-colour="Sailor Blue" data-code="" data-price="2.87" data-name="CANVAS XLA" aria-label="Metri, CANVAS XLA Sailor Blue"><span>m</span></span></label></div>
-    <span class="pk-more pk-muted">Vzorec na željo</span>
-  </div>
+<article class="pk-r" id="canvas-xla" data-g="str">
+  <div class="pk-ic"><svg class="gi" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 8c2 1.4 4.6 1.4 7 0s5-1.4 7 0v16c-2-1.4-4.6-1.4-7 0s-5 1.4-7 0z" fill="currentColor" fill-opacity=".13"/><path d="M12.5 13h7M12.5 16h7M12.5 19h7" stroke-opacity=".55"/><path d="M2.5 16h4M3.8 13.5 1.6 16l2.2 2.5M29.5 16h-4M28.2 13.5l2.2 2.5-2.2 2.5" stroke="#df7841"/></svg></div>
+  <div class="pk-main"><span class="pk-gl">Elastična</span><h3>CANVAS XLA</h3><p class="pk-sp">63 % poliester, 34 % bombaž, 3 % XLA &middot; 285 g/m²</p></div>
+  <ul class="pk-cols" aria-label="Barve v akciji"><li><span class="pk-dot" style="--c:#333C55"></span><span>Sailor Blue<small>&nbsp;</small></span></li></ul>
+  <div class="pk-pr has-off"><span class="pk-off">&minus;32&nbsp;%</span><div class="pk-pv"><span class="pk-was">prej <s>4,24 €</s></span><span class="pk-now">2,87 €</span><span class="pk-unit">na tm, brez DDV</span></div></div>
+  <div class="pk-go"><a class="pk-btn pk-btn-n" href="mailto:narocila@maximo-tekstil.com?subject=Povpra%C5%A1evanje%2C%20novembrska%20akcija%3A%20CANVAS%20XLA&amp;body=Pozdravljeni%2C%0D%0A%0D%0Azanima%20nas%20akcijska%20tkanina%20CANVAS%20XLA.%0D%0A%0D%0ABarva%3A%20Sailor%20Blue%0D%0AKoli%C4%8Dina%3A%20...%20m%0D%0A%0D%0AProsimo%20za%20potrditev%20zaloge%20in%20predra%C4%8Dun.%0D%0A%0D%0ALep%20pozdrav%2C%0D%0A">Povpraši</a></div>
 </article>
-<article class="pk" id="verona" data-cols='[&quot;#284C8C&quot;, &quot;#5E5E62&quot;, &quot;#6E6F75&quot;]'>
-  <div class="pk-vis" style="--c:#284C8C"><span class="pk-n">03</span><div class="pk-chips" role="group" aria-label="Barve v akciji"><button type="button" class="pk-chip" data-i="0" aria-pressed="true" aria-label="Royal Blue 60624" style="--c:#284C8C"></button><button type="button" class="pk-chip" data-i="1" aria-pressed="false" aria-label="Deep Grey 66862" style="--c:#5E5E62"></button><button type="button" class="pk-chip" data-i="2" aria-pressed="false" aria-label="Mole Grey 61094" style="--c:#6E6F75"></button></div></div>
-  <div class="pk-body">
-    <h3>VERONA</h3>
-    <p class="pk-spec">60 % bombaž, 40 % poliester<br>240 g/m²</p>
-    <div class="pk-price"><span class="pk-old pk-lbl">akcijska cena</span><span class="pk-new">1,99 €</span><span class="pk-unit">na tekoči meter, brez DDV</span></div>
-    <div class="pk-rows"><p class="pk-h">Vpišite metre</p><label class="pk-row"><span class="pk-dot" style="--c:#284C8C" aria-hidden="true"></span><span class="pk-cn">Royal Blue<small>60624</small></span><span class="pk-qty"><input type="number" inputmode="numeric" min="0" step="1" placeholder="0" data-item="verona" data-colour="Royal Blue" data-code="60624" data-price="1.99" data-name="VERONA" aria-label="Metri, VERONA Royal Blue"><span>m</span></span></label><label class="pk-row"><span class="pk-dot" style="--c:#5E5E62" aria-hidden="true"></span><span class="pk-cn">Deep Grey<small>66862</small></span><span class="pk-qty"><input type="number" inputmode="numeric" min="0" step="1" placeholder="0" data-item="verona" data-colour="Deep Grey" data-code="66862" data-price="1.99" data-name="VERONA" aria-label="Metri, VERONA Deep Grey"><span>m</span></span></label><label class="pk-row"><span class="pk-dot" style="--c:#6E6F75" aria-hidden="true"></span><span class="pk-cn">Mole Grey<small>61094</small></span><span class="pk-qty"><input type="number" inputmode="numeric" min="0" step="1" placeholder="0" data-item="verona" data-colour="Mole Grey" data-code="61094" data-price="1.99" data-name="VERONA" aria-label="Metri, VERONA Mole Grey"><span>m</span></span></label></div>
-    <a class="pk-more" href="on-stock/fabrics/verona-215.html#royal-blue">Podrobnosti tkanine &rarr;</a>
-  </div>
+<article class="pk-r" id="verona" data-g="pc">
+  <div class="pk-ic"><svg class="gi" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22.55 13.50 L22.65 14.01 L22.69 14.52 L22.67 15.03 L22.60 15.54 L22.48 16.04 L22.30 16.52 L22.07 16.98 L21.79 17.42 L21.47 17.82 L21.11 18.18 L20.70 18.50 L20.27 18.78 L19.80 19.01 L19.32 19.19 L18.81 19.31 L18.29 19.38 L17.77 19.39 L17.24 19.34 L17.09 19.79 L16.89 20.24 L16.65 20.66 L16.36 21.05 L16.03 21.40 L15.67 21.71 L15.27 21.98 L14.85 22.21 L14.41 22.39 L13.95 22.52 L13.48 22.59 L13.00 22.62 L12.52 22.59 L12.05 22.52 L11.59 22.39 L11.15 22.21 L10.73 21.98 L10.33 21.71 L9.97 21.40 L9.64 21.05 L9.35 20.66 L9.11 20.24 L8.91 19.79 L8.76 19.34 L8.23 19.39 L7.71 19.38 L7.19 19.31 L6.68 19.19 L6.20 19.01 L5.73 18.78 L5.30 18.50 L4.89 18.18 L4.53 17.82 L4.21 17.42 L3.93 16.98 L3.70 16.52 L3.52 16.04 L3.40 15.54 L3.33 15.03 L3.31 14.52 L3.35 14.01 L3.45 13.50 L3.60 13.01 L3.80 12.53 L4.06 12.08 L4.36 11.66 L4.71 11.28 L5.09 10.93 L5.52 10.63 L5.97 10.37 L6.46 10.17 L6.97 10.02 L7.49 9.92 L8.03 9.89 L8.13 9.55 L8.07 9.06 L8.06 8.56 L8.11 8.07 L8.20 7.57 L8.35 7.09 L8.54 6.63 L8.78 6.19 L9.06 5.77 L9.39 5.38 L9.75 5.03 L10.15 4.72 L10.57 4.45 L11.03 4.22 L11.50 4.04 L11.99 3.91 L12.49 3.84 L13.00 3.81 L13.51 3.84 L14.01 3.91 L14.50 4.04 L14.97 4.22 L15.43 4.45 L15.85 4.72 L16.25 5.03 L16.61 5.38 L16.94 5.77 L17.22 6.19 L17.46 6.63 L17.65 7.09 L17.80 7.57 L17.89 8.07 L17.94 8.56 L17.93 9.06 L17.87 9.55 L17.97 9.89 L18.51 9.92 L19.03 10.02 L19.54 10.17 L20.03 10.37 L20.48 10.63 L20.91 10.93 L21.29 11.28 L21.64 11.66 L21.94 12.08 L22.20 12.53 L22.40 13.01Z" fill="#fff" stroke="none"/><path d="M22.55 13.50 L22.65 14.01 L22.69 14.52 L22.67 15.03 L22.60 15.54 L22.48 16.04 L22.30 16.52 L22.07 16.98 L21.79 17.42 L21.47 17.82 L21.11 18.18 L20.70 18.50 L20.27 18.78 L19.80 19.01 L19.32 19.19 L18.81 19.31 L18.29 19.38 L17.77 19.39 L17.24 19.34 L17.09 19.79 L16.89 20.24 L16.65 20.66 L16.36 21.05 L16.03 21.40 L15.67 21.71 L15.27 21.98 L14.85 22.21 L14.41 22.39 L13.95 22.52 L13.48 22.59 L13.00 22.62 L12.52 22.59 L12.05 22.52 L11.59 22.39 L11.15 22.21 L10.73 21.98 L10.33 21.71 L9.97 21.40 L9.64 21.05 L9.35 20.66 L9.11 20.24 L8.91 19.79 L8.76 19.34 L8.23 19.39 L7.71 19.38 L7.19 19.31 L6.68 19.19 L6.20 19.01 L5.73 18.78 L5.30 18.50 L4.89 18.18 L4.53 17.82 L4.21 17.42 L3.93 16.98 L3.70 16.52 L3.52 16.04 L3.40 15.54 L3.33 15.03 L3.31 14.52 L3.35 14.01 L3.45 13.50 L3.60 13.01 L3.80 12.53 L4.06 12.08 L4.36 11.66 L4.71 11.28 L5.09 10.93 L5.52 10.63 L5.97 10.37 L6.46 10.17 L6.97 10.02 L7.49 9.92 L8.03 9.89 L8.13 9.55 L8.07 9.06 L8.06 8.56 L8.11 8.07 L8.20 7.57 L8.35 7.09 L8.54 6.63 L8.78 6.19 L9.06 5.77 L9.39 5.38 L9.75 5.03 L10.15 4.72 L10.57 4.45 L11.03 4.22 L11.50 4.04 L11.99 3.91 L12.49 3.84 L13.00 3.81 L13.51 3.84 L14.01 3.91 L14.50 4.04 L14.97 4.22 L15.43 4.45 L15.85 4.72 L16.25 5.03 L16.61 5.38 L16.94 5.77 L17.22 6.19 L17.46 6.63 L17.65 7.09 L17.80 7.57 L17.89 8.07 L17.94 8.56 L17.93 9.06 L17.87 9.55 L17.97 9.89 L18.51 9.92 L19.03 10.02 L19.54 10.17 L20.03 10.37 L20.48 10.63 L20.91 10.93 L21.29 11.28 L21.64 11.66 L21.94 12.08 L22.20 12.53 L22.40 13.01Z" fill="currentColor" fill-opacity=".13"/><path d="M10.15 12.55 q0.95 2.85 0.19 5.23 M15.85 12.55 q-0.95 2.85 -0.19 5.23" stroke-opacity=".5" stroke-width="1.3"/><path d="M24 15c-2.9 3.6-4.4 6.2-4.4 8.2a4.4 4.4 0 0 0 8.8 0c0-2-1.5-4.6-4.4-8.2z" fill="#df7841" stroke="#df7841"/></svg></div>
+  <div class="pk-main"><span class="pk-gl">Polycotton 60/40</span><h3>VERONA</h3><p class="pk-sp">60 % bombaž, 40 % poliester &middot; 240 g/m²</p></div>
+  <ul class="pk-cols" aria-label="Barve v akciji"><li><span class="pk-dot" style="--c:#284C8C"></span><span>Royal Blue<small>60624</small></span></li><li><span class="pk-dot" style="--c:#5E5E62"></span><span>Deep Grey<small>66862</small></span></li><li><span class="pk-dot" style="--c:#6E6F75"></span><span>Mole Grey<small>61094</small></span></li></ul>
+  <div class="pk-pr"><span class="pk-off pk-off--lbl">Akcijska<br>cena</span><div class="pk-pv"><span class="pk-now">1,99 €</span><span class="pk-unit">na tm, brez DDV</span></div></div>
+  <div class="pk-go"><a class="pk-btn pk-btn-n" href="mailto:narocila@maximo-tekstil.com?subject=Povpra%C5%A1evanje%2C%20novembrska%20akcija%3A%20VERONA&amp;body=Pozdravljeni%2C%0D%0A%0D%0Azanima%20nas%20akcijska%20tkanina%20VERONA.%0D%0A%0D%0ABarva%3A%20Royal%20Blue%20/%20Deep%20Grey%20/%20Mole%20Grey%0D%0AKoli%C4%8Dina%3A%20...%20m%0D%0A%0D%0AProsimo%20za%20potrditev%20zaloge%20in%20predra%C4%8Dun.%0D%0A%0D%0ALep%20pozdrav%2C%0D%0A">Povpraši</a><a class="pk-lnk" href="on-stock/fabrics/verona-215.html">Barvna karta &rarr;</a></div>
 </article>
-<article class="pk" id="dablin" data-cols='[&quot;#B1A490&quot;, &quot;#2F3345&quot;, &quot;#2C333F&quot;]'>
-  <div class="pk-vis" style="--c:#B1A490"><span class="pk-n">04</span><div class="pk-chips" role="group" aria-label="Barve v akciji"><button type="button" class="pk-chip" data-i="0" aria-pressed="true" aria-label="Sand 60441" style="--c:#B1A490"></button><button type="button" class="pk-chip" data-i="1" aria-pressed="false" aria-label="Yankee Blue 5186" style="--c:#2F3345"></button><button type="button" class="pk-chip" data-i="2" aria-pressed="false" aria-label="Indigo Blue 5002" style="--c:#2C333F"></button></div></div>
-  <div class="pk-body">
-    <h3>DABLIN</h3>
-    <p class="pk-spec">50 % bombaž, 50 % poliester<br>170 g/m²</p>
-    <div class="pk-price"><span class="pk-old pk-lbl">akcijska cena</span><span class="pk-new">1,99 €</span><span class="pk-unit">na tekoči meter, brez DDV</span></div>
-    <div class="pk-rows"><p class="pk-h">Vpišite metre</p><label class="pk-row"><span class="pk-dot" style="--c:#B1A490" aria-hidden="true"></span><span class="pk-cn">Sand<small>60441</small></span><span class="pk-qty"><input type="number" inputmode="numeric" min="0" step="1" placeholder="0" data-item="dablin" data-colour="Sand" data-code="60441" data-price="1.99" data-name="DABLIN" aria-label="Metri, DABLIN Sand"><span>m</span></span></label><label class="pk-row"><span class="pk-dot" style="--c:#2F3345" aria-hidden="true"></span><span class="pk-cn">Yankee Blue<small>5186</small></span><span class="pk-qty"><input type="number" inputmode="numeric" min="0" step="1" placeholder="0" data-item="dablin" data-colour="Yankee Blue" data-code="5186" data-price="1.99" data-name="DABLIN" aria-label="Metri, DABLIN Yankee Blue"><span>m</span></span></label><label class="pk-row"><span class="pk-dot" style="--c:#2C333F" aria-hidden="true"></span><span class="pk-cn">Indigo Blue<small>5002</small></span><span class="pk-qty"><input type="number" inputmode="numeric" min="0" step="1" placeholder="0" data-item="dablin" data-colour="Indigo Blue" data-code="5002" data-price="1.99" data-name="DABLIN" aria-label="Metri, DABLIN Indigo Blue"><span>m</span></span></label></div>
-    <a class="pk-more" href="on-stock/fabrics/dablin-170.html#sand">Podrobnosti tkanine &rarr;</a>
-  </div>
+<article class="pk-r" id="dablin" data-g="pc">
+  <div class="pk-ic"><svg class="gi" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22.55 13.50 L22.65 14.01 L22.69 14.52 L22.67 15.03 L22.60 15.54 L22.48 16.04 L22.30 16.52 L22.07 16.98 L21.79 17.42 L21.47 17.82 L21.11 18.18 L20.70 18.50 L20.27 18.78 L19.80 19.01 L19.32 19.19 L18.81 19.31 L18.29 19.38 L17.77 19.39 L17.24 19.34 L17.09 19.79 L16.89 20.24 L16.65 20.66 L16.36 21.05 L16.03 21.40 L15.67 21.71 L15.27 21.98 L14.85 22.21 L14.41 22.39 L13.95 22.52 L13.48 22.59 L13.00 22.62 L12.52 22.59 L12.05 22.52 L11.59 22.39 L11.15 22.21 L10.73 21.98 L10.33 21.71 L9.97 21.40 L9.64 21.05 L9.35 20.66 L9.11 20.24 L8.91 19.79 L8.76 19.34 L8.23 19.39 L7.71 19.38 L7.19 19.31 L6.68 19.19 L6.20 19.01 L5.73 18.78 L5.30 18.50 L4.89 18.18 L4.53 17.82 L4.21 17.42 L3.93 16.98 L3.70 16.52 L3.52 16.04 L3.40 15.54 L3.33 15.03 L3.31 14.52 L3.35 14.01 L3.45 13.50 L3.60 13.01 L3.80 12.53 L4.06 12.08 L4.36 11.66 L4.71 11.28 L5.09 10.93 L5.52 10.63 L5.97 10.37 L6.46 10.17 L6.97 10.02 L7.49 9.92 L8.03 9.89 L8.13 9.55 L8.07 9.06 L8.06 8.56 L8.11 8.07 L8.20 7.57 L8.35 7.09 L8.54 6.63 L8.78 6.19 L9.06 5.77 L9.39 5.38 L9.75 5.03 L10.15 4.72 L10.57 4.45 L11.03 4.22 L11.50 4.04 L11.99 3.91 L12.49 3.84 L13.00 3.81 L13.51 3.84 L14.01 3.91 L14.50 4.04 L14.97 4.22 L15.43 4.45 L15.85 4.72 L16.25 5.03 L16.61 5.38 L16.94 5.77 L17.22 6.19 L17.46 6.63 L17.65 7.09 L17.80 7.57 L17.89 8.07 L17.94 8.56 L17.93 9.06 L17.87 9.55 L17.97 9.89 L18.51 9.92 L19.03 10.02 L19.54 10.17 L20.03 10.37 L20.48 10.63 L20.91 10.93 L21.29 11.28 L21.64 11.66 L21.94 12.08 L22.20 12.53 L22.40 13.01Z" fill="#fff" stroke="none"/><path d="M22.55 13.50 L22.65 14.01 L22.69 14.52 L22.67 15.03 L22.60 15.54 L22.48 16.04 L22.30 16.52 L22.07 16.98 L21.79 17.42 L21.47 17.82 L21.11 18.18 L20.70 18.50 L20.27 18.78 L19.80 19.01 L19.32 19.19 L18.81 19.31 L18.29 19.38 L17.77 19.39 L17.24 19.34 L17.09 19.79 L16.89 20.24 L16.65 20.66 L16.36 21.05 L16.03 21.40 L15.67 21.71 L15.27 21.98 L14.85 22.21 L14.41 22.39 L13.95 22.52 L13.48 22.59 L13.00 22.62 L12.52 22.59 L12.05 22.52 L11.59 22.39 L11.15 22.21 L10.73 21.98 L10.33 21.71 L9.97 21.40 L9.64 21.05 L9.35 20.66 L9.11 20.24 L8.91 19.79 L8.76 19.34 L8.23 19.39 L7.71 19.38 L7.19 19.31 L6.68 19.19 L6.20 19.01 L5.73 18.78 L5.30 18.50 L4.89 18.18 L4.53 17.82 L4.21 17.42 L3.93 16.98 L3.70 16.52 L3.52 16.04 L3.40 15.54 L3.33 15.03 L3.31 14.52 L3.35 14.01 L3.45 13.50 L3.60 13.01 L3.80 12.53 L4.06 12.08 L4.36 11.66 L4.71 11.28 L5.09 10.93 L5.52 10.63 L5.97 10.37 L6.46 10.17 L6.97 10.02 L7.49 9.92 L8.03 9.89 L8.13 9.55 L8.07 9.06 L8.06 8.56 L8.11 8.07 L8.20 7.57 L8.35 7.09 L8.54 6.63 L8.78 6.19 L9.06 5.77 L9.39 5.38 L9.75 5.03 L10.15 4.72 L10.57 4.45 L11.03 4.22 L11.50 4.04 L11.99 3.91 L12.49 3.84 L13.00 3.81 L13.51 3.84 L14.01 3.91 L14.50 4.04 L14.97 4.22 L15.43 4.45 L15.85 4.72 L16.25 5.03 L16.61 5.38 L16.94 5.77 L17.22 6.19 L17.46 6.63 L17.65 7.09 L17.80 7.57 L17.89 8.07 L17.94 8.56 L17.93 9.06 L17.87 9.55 L17.97 9.89 L18.51 9.92 L19.03 10.02 L19.54 10.17 L20.03 10.37 L20.48 10.63 L20.91 10.93 L21.29 11.28 L21.64 11.66 L21.94 12.08 L22.20 12.53 L22.40 13.01Z" fill="currentColor" fill-opacity=".13"/><path d="M10.15 12.55 q0.95 2.85 0.19 5.23 M15.85 12.55 q-0.95 2.85 -0.19 5.23" stroke-opacity=".5" stroke-width="1.3"/><path d="M24 15c-2.9 3.6-4.4 6.2-4.4 8.2a4.4 4.4 0 0 0 8.8 0c0-2-1.5-4.6-4.4-8.2z" fill="#df7841" stroke="#df7841"/></svg></div>
+  <div class="pk-main"><span class="pk-gl">Polycotton 50/50</span><h3>DABLIN</h3><p class="pk-sp">50 % bombaž, 50 % poliester &middot; 170 g/m²</p></div>
+  <ul class="pk-cols" aria-label="Barve v akciji"><li><span class="pk-dot" style="--c:#B1A490"></span><span>Sand<small>60441</small></span></li><li><span class="pk-dot" style="--c:#2F3345"></span><span>Yankee Blue<small>5186</small></span></li><li><span class="pk-dot" style="--c:#2C333F"></span><span>Indigo Blue<small>5002</small></span></li></ul>
+  <div class="pk-pr"><span class="pk-off pk-off--lbl">Akcijska<br>cena</span><div class="pk-pv"><span class="pk-now">1,99 €</span><span class="pk-unit">na tm, brez DDV</span></div></div>
+  <div class="pk-go"><a class="pk-btn pk-btn-n" href="mailto:narocila@maximo-tekstil.com?subject=Povpra%C5%A1evanje%2C%20novembrska%20akcija%3A%20DABLIN&amp;body=Pozdravljeni%2C%0D%0A%0D%0Azanima%20nas%20akcijska%20tkanina%20DABLIN.%0D%0A%0D%0ABarva%3A%20Sand%20/%20Yankee%20Blue%20/%20Indigo%20Blue%0D%0AKoli%C4%8Dina%3A%20...%20m%0D%0A%0D%0AProsimo%20za%20potrditev%20zaloge%20in%20predra%C4%8Dun.%0D%0A%0D%0ALep%20pozdrav%2C%0D%0A">Povpraši</a><a class="pk-lnk" href="on-stock/fabrics/dablin-170.html">Barvna karta &rarr;</a></div>
 </article>
-<article class="pk" id="dynamax" data-cols='[&quot;#F1EEE4&quot;]'>
-  <div class="pk-vis" style="--c:#F1EEE4"><span class="pk-n">05</span><div class="pk-chips" role="group" aria-label="Barve v akciji"><button type="button" class="pk-chip is-light" data-i="0" aria-pressed="true" aria-label="Bianco 00001" style="--c:#F1EEE4"></button></div></div>
-  <div class="pk-body">
-    <h3>DYNAMAX</h3>
-    <p class="pk-spec">65 % poliester, 35 % bombaž<br>300 g/m²</p>
-    <div class="pk-price"><span class="pk-old pk-lbl">akcijska cena</span><span class="pk-new">2,20 €</span><span class="pk-unit">na tekoči meter, brez DDV</span></div>
-    <div class="pk-rows"><p class="pk-h">Vpišite metre</p><label class="pk-row"><span class="pk-dot is-light" style="--c:#F1EEE4" aria-hidden="true"></span><span class="pk-cn">Bianco<small>00001</small></span><span class="pk-qty"><input type="number" inputmode="numeric" min="0" step="1" placeholder="0" data-item="dynamax" data-colour="Bianco" data-code="00001" data-price="2.20" data-name="DYNAMAX" aria-label="Metri, DYNAMAX Bianco"><span>m</span></span></label></div>
-    <a class="pk-more" href="on-stock/fabrics/dynamax-315.html#bianco">Podrobnosti tkanine &rarr;</a>
-  </div>
+<article class="pk-r" id="dynamax" data-g="pc">
+  <div class="pk-ic"><svg class="gi" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18.5 4.5c-5 6-7.6 10.4-7.6 13.8a7.6 7.6 0 0 0 15.2 0c0-3.4-2.6-7.8-7.6-13.8z" fill="currentColor" fill-opacity=".13"/><path d="M14.53 23.00 L14.59 23.32 L14.62 23.64 L14.61 23.97 L14.57 24.29 L14.49 24.60 L14.37 24.91 L14.23 25.20 L14.05 25.47 L13.85 25.73 L13.62 25.96 L13.37 26.16 L13.09 26.34 L12.80 26.48 L12.49 26.59 L12.17 26.67 L11.84 26.71 L11.51 26.72 L11.18 26.69 L11.08 26.98 L10.96 27.26 L10.80 27.52 L10.62 27.77 L10.41 27.99 L10.19 28.19 L9.94 28.36 L9.67 28.50 L9.39 28.61 L9.10 28.69 L8.80 28.74 L8.50 28.76 L8.20 28.74 L7.90 28.69 L7.61 28.61 L7.33 28.50 L7.06 28.36 L6.81 28.19 L6.59 27.99 L6.38 27.77 L6.20 27.52 L6.04 27.26 L5.92 26.98 L5.82 26.69 L5.49 26.72 L5.16 26.71 L4.83 26.67 L4.51 26.59 L4.20 26.48 L3.91 26.34 L3.63 26.16 L3.38 25.96 L3.15 25.73 L2.95 25.47 L2.77 25.20 L2.63 24.91 L2.51 24.60 L2.43 24.29 L2.39 23.97 L2.38 23.64 L2.41 23.32 L2.47 23.00 L2.56 22.69 L2.69 22.39 L2.85 22.11 L3.04 21.84 L3.26 21.60 L3.51 21.38 L3.77 21.19 L4.06 21.02 L4.37 20.90 L4.69 20.80 L5.02 20.74 L5.36 20.72 L5.42 20.51 L5.39 20.20 L5.38 19.88 L5.41 19.57 L5.47 19.26 L5.56 18.95 L5.68 18.66 L5.83 18.38 L6.01 18.12 L6.22 17.87 L6.45 17.65 L6.70 17.45 L6.97 17.28 L7.25 17.14 L7.55 17.03 L7.86 16.95 L8.18 16.90 L8.50 16.88 L8.82 16.90 L9.14 16.95 L9.45 17.03 L9.75 17.14 L10.03 17.28 L10.30 17.45 L10.55 17.65 L10.78 17.87 L10.99 18.12 L11.17 18.38 L11.32 18.66 L11.44 18.95 L11.53 19.26 L11.59 19.57 L11.62 19.88 L11.61 20.20 L11.58 20.51 L11.64 20.72 L11.98 20.74 L12.31 20.80 L12.63 20.90 L12.94 21.02 L13.23 21.19 L13.49 21.38 L13.74 21.60 L13.96 21.84 L14.15 22.11 L14.31 22.39 L14.44 22.69Z" fill="#fff" stroke="none"/><path d="M14.53 23.00 L14.59 23.32 L14.62 23.64 L14.61 23.97 L14.57 24.29 L14.49 24.60 L14.37 24.91 L14.23 25.20 L14.05 25.47 L13.85 25.73 L13.62 25.96 L13.37 26.16 L13.09 26.34 L12.80 26.48 L12.49 26.59 L12.17 26.67 L11.84 26.71 L11.51 26.72 L11.18 26.69 L11.08 26.98 L10.96 27.26 L10.80 27.52 L10.62 27.77 L10.41 27.99 L10.19 28.19 L9.94 28.36 L9.67 28.50 L9.39 28.61 L9.10 28.69 L8.80 28.74 L8.50 28.76 L8.20 28.74 L7.90 28.69 L7.61 28.61 L7.33 28.50 L7.06 28.36 L6.81 28.19 L6.59 27.99 L6.38 27.77 L6.20 27.52 L6.04 27.26 L5.92 26.98 L5.82 26.69 L5.49 26.72 L5.16 26.71 L4.83 26.67 L4.51 26.59 L4.20 26.48 L3.91 26.34 L3.63 26.16 L3.38 25.96 L3.15 25.73 L2.95 25.47 L2.77 25.20 L2.63 24.91 L2.51 24.60 L2.43 24.29 L2.39 23.97 L2.38 23.64 L2.41 23.32 L2.47 23.00 L2.56 22.69 L2.69 22.39 L2.85 22.11 L3.04 21.84 L3.26 21.60 L3.51 21.38 L3.77 21.19 L4.06 21.02 L4.37 20.90 L4.69 20.80 L5.02 20.74 L5.36 20.72 L5.42 20.51 L5.39 20.20 L5.38 19.88 L5.41 19.57 L5.47 19.26 L5.56 18.95 L5.68 18.66 L5.83 18.38 L6.01 18.12 L6.22 17.87 L6.45 17.65 L6.70 17.45 L6.97 17.28 L7.25 17.14 L7.55 17.03 L7.86 16.95 L8.18 16.90 L8.50 16.88 L8.82 16.90 L9.14 16.95 L9.45 17.03 L9.75 17.14 L10.03 17.28 L10.30 17.45 L10.55 17.65 L10.78 17.87 L10.99 18.12 L11.17 18.38 L11.32 18.66 L11.44 18.95 L11.53 19.26 L11.59 19.57 L11.62 19.88 L11.61 20.20 L11.58 20.51 L11.64 20.72 L11.98 20.74 L12.31 20.80 L12.63 20.90 L12.94 21.02 L13.23 21.19 L13.49 21.38 L13.74 21.60 L13.96 21.84 L14.15 22.11 L14.31 22.39 L14.44 22.69Z" fill="#df7841" fill-opacity=".85" stroke="#df7841"/><path d="M6.70 22.40 q0.60 1.80 0.12 3.30 M10.30 22.40 q-0.60 1.80 -0.12 3.30" stroke-opacity=".5" stroke-width="1.3"/></svg></div>
+  <div class="pk-main"><span class="pk-gl">Polycotton 35/65</span><h3>DYNAMAX</h3><p class="pk-sp">65 % poliester, 35 % bombaž &middot; 300 g/m²</p></div>
+  <ul class="pk-cols" aria-label="Barve v akciji"><li><span class="pk-dot is-light" style="--c:#F1EEE4"></span><span>Bianco<small>00001</small></span></li></ul>
+  <div class="pk-pr"><span class="pk-off pk-off--lbl">Akcijska<br>cena</span><div class="pk-pv"><span class="pk-now">2,20 €</span><span class="pk-unit">na tm, brez DDV</span></div></div>
+  <div class="pk-go"><a class="pk-btn pk-btn-n" href="mailto:narocila@maximo-tekstil.com?subject=Povpra%C5%A1evanje%2C%20novembrska%20akcija%3A%20DYNAMAX&amp;body=Pozdravljeni%2C%0D%0A%0D%0Azanima%20nas%20akcijska%20tkanina%20DYNAMAX.%0D%0A%0D%0ABarva%3A%20Bianco%0D%0AKoli%C4%8Dina%3A%20...%20m%0D%0A%0D%0AProsimo%20za%20potrditev%20zaloge%20in%20predra%C4%8Dun.%0D%0A%0D%0ALep%20pozdrav%2C%0D%0A">Povpraši</a><a class="pk-lnk" href="on-stock/fabrics/dynamax-315.html">Barvna karta &rarr;</a></div>
 </article>
-<article class="pk" id="cordura-blend" data-cols='[&quot;#273C4F&quot;]'>
-  <div class="pk-vis" style="--c:#273C4F"><span class="pk-n">06</span><div class="pk-chips" role="group" aria-label="Barve v akciji"><button type="button" class="pk-chip" data-i="0" aria-pressed="true" aria-label="Pebble Grey 8478" style="--c:#273C4F"></button></div></div>
-  <div class="pk-body">
-    <h3>CORDURA® BLEND</h3>
-    <p class="pk-spec">50 % CORDURA®, 50 % bombaž<br>260 g/m²</p>
-    <div class="pk-price"><span class="pk-old pk-lbl">akcijska cena</span><span class="pk-new">4,50 €</span><span class="pk-unit">na tekoči meter, brez DDV</span></div>
-    <div class="pk-rows"><p class="pk-h">Vpišite metre</p><label class="pk-row"><span class="pk-dot" style="--c:#273C4F" aria-hidden="true"></span><span class="pk-cn">Pebble Grey<small>8478</small></span><span class="pk-qty"><input type="number" inputmode="numeric" min="0" step="1" placeholder="0" data-item="cordura-blend" data-colour="Pebble Grey" data-code="8478" data-price="4.50" data-name="CORDURA® BLEND" aria-label="Metri, CORDURA® BLEND Pebble Grey"><span>m</span></span></label></div>
-    <a class="pk-more" href="on-stock/fabrics/cdr-blend-260.html#pebble-grey">Podrobnosti tkanine &rarr;</a>
-  </div>
+<article class="pk-r" id="cordura-blend" data-g="cdr">
+  <div class="pk-ic"><svg class="gi" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 5h22v15.5L20.5 27H5z" fill="currentColor" fill-opacity=".13"/><path d="M27 20.5h-6.5V27" fill="#fff"/><path d="M5 11.5h22M5 18h22M11.5 5v22M18 5v22" stroke="#df7841"/></svg></div>
+  <div class="pk-main"><span class="pk-gl">CORDURA®</span><h3>CORDURA® BLEND</h3><p class="pk-sp">50 % CORDURA®, 50 % bombaž &middot; 260 g/m²</p></div>
+  <ul class="pk-cols" aria-label="Barve v akciji"><li><span class="pk-dot" style="--c:#273C4F"></span><span>Pebble Grey<small>8478</small></span></li></ul>
+  <div class="pk-pr"><span class="pk-off pk-off--lbl">Akcijska<br>cena</span><div class="pk-pv"><span class="pk-now">4,50 €</span><span class="pk-unit">na tm, brez DDV</span></div></div>
+  <div class="pk-go"><a class="pk-btn pk-btn-n" href="mailto:narocila@maximo-tekstil.com?subject=Povpra%C5%A1evanje%2C%20novembrska%20akcija%3A%20CORDURA%C2%AE%20BLEND&amp;body=Pozdravljeni%2C%0D%0A%0D%0Azanima%20nas%20akcijska%20tkanina%20CORDURA%C2%AE%20BLEND.%0D%0A%0D%0ABarva%3A%20Pebble%20Grey%0D%0AKoli%C4%8Dina%3A%20...%20m%0D%0A%0D%0AProsimo%20za%20potrditev%20zaloge%20in%20predra%C4%8Dun.%0D%0A%0D%0ALep%20pozdrav%2C%0D%0A">Povpraši</a><a class="pk-lnk" href="on-stock/fabrics/cdr-blend-260.html">Barvna karta &rarr;</a></div>
 </article>
 
     </div>
-  </div>
-</section>
-
-<section class="pk-sec pk-order pk-live" id="narocilo">
-  <div class="pk-wrap">
-    <div class="pk-head"><div><p class="pk-eye dk">Naročilo</p><h2>Pregled in pošiljanje.</h2></div>
-      <p>Naročilo se odpre v vašem e-poštnem programu, vse je že izpolnjeno. Na spletni strani se nič ne shrani.</p></div>
-    <div class="pk-og">
-      <div class="pk-sum" aria-live="polite">
-        <h3>Vaše naročilo</h3>
-        <ul class="pk-lines" id="pk-lines"><li class="pk-empty">Še niste vpisali nobene količine. Vpišite metre pri tkaninah zgoraj.</li></ul>
-        <div class="pk-tot"><span>Skupaj brez DDV</span><b id="pk-tot">0,00 €</b></div>
-        <div class="pk-tot2"><span>Z DDV (22 %)</span><span id="pk-tot2">0,00 €</span></div>
-      </div>
-      <form class="pk-form" id="pk-form" novalidate>
-        <h3>Podatki za predračun</h3>
-        <label>Podjetje <span class="req">(obvezno)</span><input name="company" autocomplete="organization" required></label>
-        <label>Kontaktna oseba<input name="name" autocomplete="name"></label>
-        <label>E-pošta<input name="email" type="email" autocomplete="email"></label>
-        <label>Telefon<input name="phone" type="tel" autocomplete="tel"></label>
-        <label class="full">Dostava<select name="delivery"><option>Dostava na naš naslov</option><option>Prevzem v Trzinu</option></select></label>
-        <label class="full">Opomba<textarea name="note" placeholder="Npr. želen rok dobave, naslov dostave"></textarea></label>
-        <p class="pk-err" id="pk-err" role="alert"></p>
-        <div class="pk-act">
-          <button class="pk-btn pk-btn-o" type="submit">Pošlji naročilo</button>
-          <button class="pk-btn pk-btn-l" type="button" id="pk-copy">Kopiraj naročilo</button>
-          <span id="pk-copied" role="status" style="font-size:14px;color:var(--pk-mut)"></span>
-        </div>
-        <p class="pk-note">Naročilo pošljete na <a href="mailto:narocila@maximo-tekstil.com">narocila@maximo-tekstil.com</a>. Zalogo potrdimo in pošljemo predračun praviloma isti ali naslednji delovni dan.</p>
-      </form>
+    <p class="pk-fine">Akcijske cene veljajo samo za navedene barve, v EUR na tekoči meter, brez DDV. Barve na zaslonu so informativne, na željo pošljemo vzorec.</p>
+    <div class="pk-how">
+      <div><em>01</em><b>Pokličite ali pišite</b>Na <a href="tel:+38615621843">+386 1 562 1843</a> ali <a href="mailto:narocila@maximo-tekstil.com">narocila@maximo-tekstil.com</a>. Povejte tkanino, barvo in količino.</div>
+      <div><em>02</em><b>Potrdimo zalogo</b>Pošljemo predračun, praviloma isti ali naslednji delovni dan.</div>
+      <div><em>03</em><b>Odpremo z zaloge</b>Prevzem v Trzinu ali pošiljka z GLS ali DPD.</div>
     </div>
-  </div>
-</section>
-
-<section class="pk-sec pk-live" style="padding-top:0;background:#fff">
-  <div class="pk-wrap">
-    <ul class="pk-terms">
-      <li><b>Do 30. 11. 2026</b>Oziroma do razprodaje zalog akcijskih barv.</li>
-      <li><b>Cene brez DDV</b>V EUR na tekoči meter, za navedene barve.</li>
-      <li><b>Z zaloge v Trzinu</b>Razpoložljivost potrdimo ob naročilu.</li>
-      <li><b>Vzorec na željo</b>Pošljemo ga pred naročilom, da preverite odtenek.</li>
-    </ul>
   </div>
 </section>
 
@@ -371,66 +301,17 @@
   <div class="pk-wrap"><div class="pk-endbox"><p style="margin:0 0 16px;font-size:17px">Akcija je veljala do 30. 11. 2026. Za aktualne cene in zalogo nam pišite.</p>
     <a class="pk-btn pk-btn-n" href="mailto:narocila@maximo-tekstil.com">narocila@maximo-tekstil.com</a></div></div>
 </section>
-
-<div class="pk-bar pk-live" id="pk-bar" aria-hidden="true"><span><b id="pk-bn">0</b> <small>postavk ·</small> <b id="pk-bt">0,00 €</b> <small>brez DDV</small></span><a class="pk-btn pk-btn-o" href="#narocilo" tabindex="-1">Na naročilo</a></div>
 </div>
 <script>
 (function(){
   var page=document.querySelector('.pk-page');if(!page)return;
   var until=new Date(page.getAttribute('data-until')).getTime();
-  var fmt=function(v){try{return new Intl.NumberFormat('sl-SI',{style:'currency',currency:'EUR'}).format(v)}catch(e){return v.toFixed(2).replace('.',',')+' €'}};
-  /* countdown and end of promotion */
-  function tick(){
-    var left=until-Date.now();
-    if(left<=0){page.classList.add('is-ended');return false}
-    var d=Math.floor(left/864e5),h=Math.floor(left%864e5/36e5),m=Math.floor(left%36e5/6e4);
-    document.getElementById('pk-d').textContent=d;document.getElementById('pk-h').textContent=h;document.getElementById('pk-m').textContent=m;return true;
-  }
+  function tick(){var left=until-Date.now();if(left<=0){page.classList.add('is-ended');return false}
+    document.getElementById('pk-d').textContent=Math.floor(left/864e5);document.getElementById('pk-h').textContent=Math.floor(left%864e5/36e5);document.getElementById('pk-m').textContent=Math.floor(left%36e5/6e4);return true}
   if(tick())setInterval(tick,30000);
-  /* colour chips change the swatch */
-  [].slice.call(page.querySelectorAll('.pk')).forEach(function(card){
-    var cols=JSON.parse(card.getAttribute('data-cols')),vis=card.querySelector('.pk-vis'),chips=[].slice.call(card.querySelectorAll('.pk-chip')),inputs=card.querySelectorAll('.pk-qty input');
-    chips.forEach(function(ch,i){ch.addEventListener('click',function(){chips.forEach(function(c){c.setAttribute('aria-pressed',c===ch?'true':'false')});vis.style.setProperty('--c',cols[i]);if(inputs[i])inputs[i].focus()})});
-    [].slice.call(inputs).forEach(function(inp,i){inp.addEventListener('focus',function(){vis.style.setProperty('--c',cols[i]);chips.forEach(function(c,k){c.setAttribute('aria-pressed',k===i?'true':'false')})})});
-  });
-  /* order */
-  var inputs=[].slice.call(page.querySelectorAll('.pk-qty input')),lines=document.getElementById('pk-lines'),bar=document.getElementById('pk-bar'),orderSec=document.getElementById('narocilo'),inView=false;
-  function items(){return inputs.map(function(i){var q=Math.max(0,Math.round(parseFloat((i.value||'').replace(',','.'))||0));return {q:q,name:i.getAttribute('data-name'),col:i.getAttribute('data-colour'),code:i.getAttribute('data-code'),p:parseFloat(i.getAttribute('data-price')),el:i}}).filter(function(x){return x.q>0})}
-  function render(){
-    var it=items(),tot=0;lines.innerHTML='';
-    if(!it.length){lines.innerHTML='<li class="pk-empty">Še niste vpisali nobene količine. Vpišite metre pri tkaninah zgoraj.</li>'}
-    it.forEach(function(x){var s=x.q*x.p;tot+=s;var li=document.createElement('li');li.innerHTML='<span></span><b></b>';li.firstChild.textContent=x.name+', '+x.col+(x.code?' '+x.code:'');var sm=document.createElement('small');sm.textContent=x.q+' m × '+fmt(x.p);li.firstChild.appendChild(sm);li.lastChild.textContent=fmt(s);lines.appendChild(li)});
-    document.getElementById('pk-tot').textContent=fmt(tot);document.getElementById('pk-tot2').textContent=fmt(tot*1.22);
-    document.getElementById('pk-bn').textContent=it.length;document.getElementById('pk-bt').textContent=fmt(tot);
-    [].slice.call(page.querySelectorAll('.pk')).forEach(function(c){c.classList.toggle('has-qty',!!c.querySelector('.pk-qty input:not([value=""])')&&[].slice.call(c.querySelectorAll('.pk-qty input')).some(function(i){return parseFloat(i.value)>0}))});
-    var show=it.length>0&&!inView;bar.classList.toggle('on',show);bar.setAttribute('aria-hidden',show?'false':'true');bar.querySelector('a').tabIndex=show?0:-1;
-    return {it:it,tot:tot};
-  }
-  inputs.forEach(function(i){i.addEventListener('input',render)});
-  if(window.IntersectionObserver){new IntersectionObserver(function(e){inView=e[0].isIntersecting;render()},{threshold:.15}).observe(orderSec)}
-  var form=document.getElementById('pk-form'),err=document.getElementById('pk-err');
-  function text(){
-    var r=render(),d=new FormData(form),g=function(k){return (d.get(k)||'').toString().trim()};
-    var L=['Pozdravljeni,','','naročamo iz novembrske akcije:',''];
-    r.it.forEach(function(x){L.push('- '+x.name+', '+x.col+(x.code?' '+x.code:'')+': '+x.q+' m × '+fmt(x.p)+' = '+fmt(x.q*x.p))});
-    L.push('','Skupaj brez DDV: '+fmt(r.tot),'Dostava: '+g('delivery'));
-    if(g('note'))L.push('Opomba: '+g('note'));
-    L.push('','Prosimo za potrditev zaloge in predračun.','','Lep pozdrav,',g('name')||'',g('company'),[g('email'),g('phone')].filter(Boolean).join(', '));
-    return {r:r,body:L.join('\r\n'),company:g('company')};
-  }
-  function check(t){
-    if(!t.r.it.length){err.textContent='Vpišite vsaj eno količino pri tkaninah zgoraj.';return false}
-    if(!t.company){err.textContent='Vpišite ime podjetja.';form.company.focus();return false}
-    err.textContent='';return true;
-  }
-  form.addEventListener('submit',function(e){e.preventDefault();var t=text();if(!check(t))return;
-    location.href='mailto:narocila@maximo-tekstil.com?subject='+encodeURIComponent('Naročilo novembrska akcija, '+t.company)+'&body='+encodeURIComponent(t.body)});
-  document.getElementById('pk-copy').addEventListener('click',function(){var t=text();if(!check(t))return;var s=document.getElementById('pk-copied');
-    try{navigator.clipboard.writeText(t.body).then(function(){s.textContent='Kopirano. Prilepite v e-pošto za narocila@maximo-tekstil.com.'},function(){s.textContent='Kopiranje ni uspelo.'})}catch(x){s.textContent='Kopiranje ni uspelo.'}});
-  /* deep link from the email: highlight the fabric */
-  var h=(location.hash||'').slice(1),c=h&&document.getElementById(h);
-  if(c&&c.classList.contains('pk')){c.style.boxShadow='0 0 0 3px #df7841'}
-  render();
+  var fs=[].slice.call(page.querySelectorAll('.pk-f')),rows=[].slice.call(page.querySelectorAll('.pk-r'));
+  fs.forEach(function(b){b.addEventListener('click',function(){var f=b.getAttribute('data-f');fs.forEach(function(x){x.setAttribute('aria-pressed',x===b?'true':'false')});rows.forEach(function(r){r.hidden=!!f&&r.getAttribute('data-g')!==f})})});
+  var h=(location.hash||'').slice(1),c=h&&document.getElementById(h);if(c&&c.classList.contains('pk-r'))c.classList.add('is-hl');
 })();
 </script>
 
