@@ -394,3 +394,15 @@ a.cc:hover{border-color:var(--ink)}
 .cut-fig img{width:min(46%,220px);height:auto;transform:rotate(-4deg)}
 .cut-fig figcaption{font-size:15px;line-height:1.5;color:var(--ink,#252b4b);font-weight:500}
 @media (max-width:520px){.cut-fig{flex-direction:column;align-items:flex-start}.cut-fig img{width:70%}}
+
+/* ===== Specialty fabrics overview ===== */
+.sp-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.sp-grid .ccard{min-height:380px}
+@media (max-width:720px){.sp-grid{grid-template-columns:1fr}.sp-grid .ccard{min-height:320px}}
+.sp-cmp-w{overflow-x:auto;border:1px solid var(--line);border-radius:20px;background:#fff}
+.sp-cmp{width:100%;border-collapse:collapse;font-size:15px;min-width:720px}
+.sp-cmp th,.sp-cmp td{text-align:left;vertical-align:top;padding:16px 18px;border-bottom:1px solid var(--line)}
+.sp-cmp thead th{font:500 11px/1.2 var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--muted);background:var(--soft)}
+.sp-cmp tbody tr:last-child>*{border-bottom:0}
+.sp-cmp tbody th a{color:var(--ink);font-weight:600;text-decoration:none;border-bottom:2px solid var(--acc)}
+.sp-cmp td:nth-child(3),.sp-cmp td:nth-child(4){font-family:var(--mono);font-size:13.5px;white-space:nowrap}
