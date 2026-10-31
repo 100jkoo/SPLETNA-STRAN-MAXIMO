@@ -324,6 +324,20 @@ footer a{text-decoration:none}footer a:hover{color:var(--ink)}
   .cat-views button{padding:0 9px;font-size:12.5px}
   .cr{grid-template-columns:56px minmax(0,1fr);gap:4px 12px}.cr .sw{width:56px;height:56px;grid-row:1/4}.cr .mid,.cr .avl,.cr .cbtn{grid-column:2}.cr .cbtn{grid-row:auto;justify-self:start}
 }
+
+/* compact table: full width on desktop, no horizontal scrolling */
+.cat-in{max-width:1720px}
+@media (min-width:1101px){
+  .cat-in{grid-template-columns:230px minmax(0,1fr);gap:28px}
+  .ct{min-width:0;table-layout:auto}
+  .ct th,.ct td{padding:9px 10px}
+  .ct td.cat2{max-width:160px}
+  .ct td.cp{max-width:none;white-space:normal;min-width:180px}
+  .ct td.sd{max-width:none;white-space:normal;min-width:110px;color:var(--c-mut)}
+}
+@media (min-width:1140px){.ct-wrap{overflow:visible}.ct th{top:var(--mx-h);z-index:2}}
+@media (min-width:1101px) and (max-width:1260px){.ct th:nth-child(2),.ct td:nth-child(2){display:none}}
+@media (min-width:1101px) and (max-width:1400px){.ct th:nth-child(6),.ct td:nth-child(6){display:none}.ct td.cat2{max-width:120px}.ct td.cp{min-width:150px}.ct td.nm .dot{margin-right:6px}}
 @media (prefers-reduced-motion:reduce){.cc,.cat-side{transition:none}}
 .bar{top:var(--mx-h)!important}.group{scroll-margin-top:calc(var(--mx-h) + 96px)}a.stock{text-decoration:none}a.stock:hover{filter:brightness(1.1)}</style>
 </head>
