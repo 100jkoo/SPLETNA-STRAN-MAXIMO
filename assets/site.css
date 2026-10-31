@@ -265,3 +265,16 @@ html.mx-lock,html.mx-lock body{overflow:hidden}
 .mx-nl-row{flex-wrap:wrap}
 .mx-nl-row input{min-width:140px}
 @media (max-width:420px){.mx-more{padding:48px 0 60px}.mx-more-nl{padding:22px}.mx-more-in{padding:0 16px}}
+
+/* ===== promotion banner (hidden automatically after data-until) ===== */
+.mx-promo{display:flex;align-items:center;justify-content:center;gap:14px;min-height:40px;padding:8px 16px;background:#df7841;color:#1d2340;font:400 14px/1.35 var(--mx-sans,Inter,system-ui,sans-serif);text-decoration:none;text-align:center;position:relative;z-index:1001}
+.mx-promo b{font-weight:600}
+.mx-promo-go{font-weight:600;white-space:nowrap;text-decoration:underline;text-underline-offset:3px}
+.mx-promo:hover .mx-promo-go{text-decoration-thickness:2px}
+.mx-promo:focus-visible{outline:3px solid #1d2340;outline-offset:-3px}
+.mx-promo[hidden],.mx-promo-note[hidden]{display:none!important}
+@media (max-width:640px){.mx-promo{font-size:13px;gap:8px;flex-wrap:wrap}}
+.mx-scrim,.mx-drawer{top:calc(var(--mx-h) + var(--mx-off,0px))!important}
+.mx-promo-note{display:block;margin:0 0 16px;padding:12px 14px;border-radius:12px;background:#fdf0e6;border:1px solid #f3c9a8;color:#1d2340;font:400 14px/1.45 Inter,system-ui,sans-serif;text-decoration:none}
+.mx-promo-note span{font-weight:600;color:#a9501c;white-space:nowrap}
+.mx-promo-note:hover span{text-decoration:underline}

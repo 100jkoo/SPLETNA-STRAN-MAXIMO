@@ -110,3 +110,14 @@ var MX_NEWSLETTER_EMAIL='narocila@maximo-tekstil.com';
     });
   });
 })();
+
+/* promotion banner: hide after its end date, keep the mobile menu below the header while the banner is visible */
+(function(){
+  var now=Date.now();
+  [].slice.call(document.querySelectorAll('.mx-promo,.mx-promo-note')).forEach(function(el){var u=Date.parse(el.getAttribute('data-until'));if(u&&now>u)el.hidden=true});
+  var bar=document.querySelector('.mx-promo');if(!bar||bar.hidden)return;
+  var root=document.documentElement,raf=0;
+  function upd(){raf=0;var b=bar.getBoundingClientRect().bottom;root.style.setProperty('--mx-off',Math.max(0,Math.round(b))+'px')}
+  window.addEventListener('scroll',function(){if(!raf)raf=requestAnimationFrame(upd)},{passive:true});
+  window.addEventListener('resize',upd);upd();
+})();
