@@ -2,7 +2,7 @@
 /* SETTINGS: paste the sign-up address of your newsletter service here (Wix Email Marketing / Brevo / Mailchimp form action).
    While it is empty, a sign-up opens an email to sales so no subscriber is lost. */
 var MX_NEWSLETTER_ENDPOINT='';
-var MX_NEWSLETTER_EMAIL='maximo1@siol.net';
+var MX_NEWSLETTER_EMAIL='narocila@maximo-tekstil.com';
 (function(){
   var hd=document.querySelector('.mx-hd');if(!hd)return;
   var items=[].slice.call(hd.querySelectorAll('.mx-item.mx-has'));
