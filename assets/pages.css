@@ -406,3 +406,7 @@ a.cc:hover{border-color:var(--ink)}
 .sp-cmp tbody tr:last-child>*{border-bottom:0}
 .sp-cmp tbody th a{color:var(--ink);font-weight:600;text-decoration:none;border-bottom:2px solid var(--acc)}
 .sp-cmp td:nth-child(3),.sp-cmp td:nth-child(4){font-family:var(--mono);font-size:13.5px;white-space:nowrap}
+.ccard img.lg-sor{height:58px}
+.ccard .lg-row{display:flex;align-items:center;gap:14px;flex-wrap:wrap;padding-right:56px}
+.ccard .lg-row img{height:34px}
+.ccard .lg-pill{font:400 11.5px/1 var(--mono);letter-spacing:.06em;border:1.5px solid var(--ink);border-radius:999px;padding:6px 10px}

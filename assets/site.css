@@ -318,3 +318,7 @@ html.mx-lock,html.mx-lock body{overflow:hidden}
 .mx-pr{display:flex;align-items:baseline;gap:8px;white-space:nowrap}
 .mx-pr s{font:400 12px/1 var(--mx-mono);color:var(--mx-muted)}
 .mx-pr b{font:600 15px/1 var(--mx-sans);color:var(--mx-acc-ink)}
+.mx-sp img.mx-sp-sor{height:44px}
+.mx-sp-row{display:flex;align-items:center;gap:10px;flex-wrap:wrap;padding-right:40px}
+.mx-sp-row img{display:block;height:24px;width:auto}
+.mx-sp-pill{font:400 10.5px/1 var(--mx-mono);letter-spacing:.06em;border:1.5px solid currentColor;border-radius:999px;padding:5px 8px}
