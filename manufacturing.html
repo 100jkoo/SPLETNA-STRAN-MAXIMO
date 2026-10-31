@@ -339,6 +339,34 @@ footer a{text-decoration:none}footer a:hover{color:var(--ink)}
 @media (min-width:1101px) and (max-width:1260px){.ct th:nth-child(2),.ct td:nth-child(2){display:none}}
 @media (min-width:1101px) and (max-width:1400px){.ct th:nth-child(6),.ct td:nth-child(6){display:none}.ct td.cat2{max-width:120px}.ct td.cp{min-width:150px}.ct td.nm .dot{margin-right:6px}}
 @media (prefers-reduced-motion:reduce){.cc,.cat-side{transition:none}}
+
+.mh{background:#fbfaf6;padding:clamp(28px,4vw,56px) 0 clamp(32px,4vw,56px)}
+.mh *{box-sizing:border-box}
+.mh-in{max-width:1720px;margin:0 auto;padding:0 24px;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.05fr);gap:clamp(28px,4vw,64px);align-items:center}
+.mh-eye{margin:0;font:600 13px/1 Inter,system-ui,sans-serif;letter-spacing:.08em;text-transform:uppercase;color:#a9501c}
+.mh h1{margin:16px 0 0;font:300 clamp(38px,4.6vw,66px)/1.03 Inter,system-ui,sans-serif;letter-spacing:-.03em;color:#252b4b}
+.mh h1 span{color:#df7841}
+.mh-lede{margin:20px 0 0;max-width:36em;font:400 clamp(16px,1.3vw,19px)/1.55 Inter,system-ui,sans-serif;color:#4f5468}
+.mh-facts{display:flex;flex-wrap:wrap;gap:12px 40px;margin:28px 0 0;padding:0}
+.mh-facts div{margin:0}
+.mh-facts dt{font:300 clamp(30px,2.8vw,42px)/1 Inter,system-ui,sans-serif;letter-spacing:-.02em;color:#252b4b;font-variant-numeric:tabular-nums}
+.mh-facts dd{margin:6px 0 0;font:500 13.5px Inter,system-ui,sans-serif;color:#5c6277}
+.mh-cta{display:flex;flex-wrap:wrap;gap:10px;margin-top:30px}
+.mh-btn{display:inline-flex;align-items:center;justify-content:center;height:48px;padding:0 22px;border-radius:999px;background:#df7841;color:#1d2340;font:600 15px Inter,system-ui,sans-serif;text-decoration:none;transition:background .2s,color .2s}
+.mh-btn:hover{background:#ef8a52}
+.mh-btn.gh{background:transparent;border:1.5px solid #252b4b;color:#252b4b}
+.mh-btn.gh:hover{background:#252b4b;color:#fff}
+.mh-note{margin:22px 0 0;font:400 14.5px/1.5 Inter,system-ui,sans-serif;color:#5c6277}
+.mh-note .stock{vertical-align:1px;margin-right:4px}
+.mh-fig{margin:0;position:relative;border-radius:22px;overflow:hidden;background:#1d2340;aspect-ratio:16/10;box-shadow:0 30px 60px -36px rgba(29,35,64,.55)}
+.mh-fig img{width:100%;height:100%;object-fit:cover;display:block;transform:scale(1.02);transition:transform 6s ease}
+.mh-fig:hover img{transform:scale(1.07)}
+.mh-fig figcaption{position:absolute;left:16px;right:16px;bottom:16px;display:flex;flex-direction:column;gap:3px;max-width:380px;padding:14px 16px;border-radius:14px;background:rgba(255,255,255,.94);color:#252b4b}
+.mh-fig figcaption b{font:600 15px Inter,system-ui,sans-serif}
+.mh-fig figcaption span{font:400 13.5px/1.4 Inter,system-ui,sans-serif;color:#5c6277}
+@media (max-width:960px){.mh-in{grid-template-columns:1fr}.mh-fig{order:-1;aspect-ratio:16/9}}
+@media (max-width:560px){.mh-in{padding:0 16px}.mh-facts{gap:12px 26px}.mh-fig{border-radius:16px}.mh-fig figcaption{left:10px;right:10px;bottom:10px;padding:10px 12px}.mh-fig figcaption span{display:none}}
+@media (prefers-reduced-motion:reduce){.mh-fig img{transition:none}}
 .bar{top:var(--mx-h)!important}.group{scroll-margin-top:calc(var(--mx-h) + 96px)}a.stock{text-decoration:none}a.stock:hover{filter:brightness(1.1)}</style>
 </head>
 <body data-mx-section="mto">
@@ -529,12 +557,27 @@ footer a{text-decoration:none}footer a:hover{color:var(--ink)}
 
 
 
-<header class="head">
-  <div class="wrap">
-    <p class="eyebrow rise">Manufacturing solutions</p>
-    <h1 class="rise d1">Fabrics we have made <span>for our customers.</span></h1>
-    <p class="lede rise d2">This is a reference list of our production, not a stock list. Most of these articles are not held in stock: we developed and produced them for our customers, to their own specifications. Browse what we have made and which constructions are possible, then use any article as the starting point for your order. We can produce it again or adapt the composition, weight, colour and finish.</p><p class="lede rise d2" style="margin-top:10px"><span class="stock" style="vertical-align:2px">On stock</span>&nbsp; articles are available from our warehouse in Trzin. Filter by category, fibre, weave, weight or standard, or search by name.</p>
-    
+<header class="mh">
+  <div class="mh-in">
+    <div class="mh-tx">
+      <p class="mh-eye">Made to order</p>
+      <h1>Fabrics we have made <span>for our customers.</span></h1>
+      <p class="mh-lede">A reference list of 207 fabrics we have developed and produced for workwear makers. Pick any article as your starting point: we produce it again, or adapt the composition, weight, colour and finish to your garment.</p>
+      <dl class="mh-facts">
+        <div><dt>207</dt><dd>articles produced</dd></div>
+        <div><dt>19</dt><dd>fabric groups</dd></div>
+        <div><dt>300 m</dt><dd>minimum for your colour</dd></div>
+      </dl>
+      <div class="mh-cta">
+        <a class="mh-btn" href="#catalogue">Browse the fabrics</a>
+        <a class="mh-btn gh" href="#contact">Send your specification</a>
+      </div>
+      <p class="mh-note"><span class="stock">On stock</span> articles ship from our warehouse in Trzin. All others are produced to order.</p>
+    </div>
+    <figure class="mh-fig">
+      <img src="https://d8j0ntlcm91z4.cloudfront.net/user_3KEkWWBAhkHsH7T5ZPqBpwplYRV/hf_20261006_181935_989defad-07d5-48aa-a668-84dfa929bc64.png" width="1344" height="752" alt="Weaving line producing navy twill workwear fabric" fetchpriority="high" onerror="this.onerror=null;this.src='assets/img/home/roll-shelf.webp'">
+      <figcaption><b>From yarn to finished fabric</b><span>Composition, weight, weave, colour and finish to your specification.</span></figcaption>
+    </figure>
   </div>
 </header>
 
