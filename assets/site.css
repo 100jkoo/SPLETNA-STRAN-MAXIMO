@@ -347,3 +347,4 @@ html.mx-lock,html.mx-lock body{overflow:hidden}
 @keyframes mxBlink{0%,100%{opacity:1}50%{opacity:.25}}
 @media (max-width:640px){.mx-promo{height:36px;font-size:13px}.mx-pr-go{font-size:0;gap:0;padding:0 10px 0 18px}.mx-pr-go svg{width:16px;height:16px}.mx-pr-pp{width:34px}.mx-pr-track{animation-duration:30s}.mx-pr-pill{height:22px;font-size:10.5px;padding:0 9px}}
 @media (prefers-reduced-motion:reduce){.mx-pr-track{animation:none}.mx-pr-set+.mx-pr-set{display:none}.mx-pr-live{animation:none}.mx-pr-pp{display:none}}
+@media (max-width:1179px){.mx-act>.mx-cta{display:none}}
