@@ -266,13 +266,7 @@ html.mx-lock,html.mx-lock body{overflow:hidden}
 @media (max-width:420px){.mx-more{padding:48px 0 60px}.mx-more-nl{padding:22px}.mx-more-in{padding:0 16px}}
 
 /* ===== promotion banner (hidden automatically after data-until) ===== */
-.mx-promo{display:flex;align-items:center;justify-content:center;gap:14px;min-height:40px;padding:8px 16px;background:#df7841;color:#1d2340;font:400 14px/1.35 var(--mx-sans,Inter,system-ui,sans-serif);text-decoration:none;text-align:center;position:relative;z-index:1001}
-.mx-promo b{font-weight:600}
-.mx-promo-go{font-weight:600;white-space:nowrap;text-decoration:underline;text-underline-offset:3px}
-.mx-promo:hover .mx-promo-go{text-decoration-thickness:2px}
-.mx-promo:focus-visible{outline:3px solid #1d2340;outline-offset:-3px}
 .mx-promo[hidden],.mx-promo-note[hidden]{display:none!important}
-@media (max-width:640px){.mx-promo{font-size:13px;gap:8px;flex-wrap:wrap}}
 .mx-scrim,.mx-drawer{top:calc(var(--mx-h) + var(--mx-off,0px))!important}
 .mx-promo-note{display:block;margin:0 0 16px;padding:12px 14px;border-radius:12px;background:#fdf0e6;border:1px solid #f3c9a8;color:#1d2340;font:400 14px/1.45 Inter,system-ui,sans-serif;text-decoration:none}
 .mx-promo-note span{font-weight:600;color:#a9501c;white-space:nowrap}
@@ -328,3 +322,28 @@ html.mx-lock,html.mx-lock body{overflow:hidden}
 .mx-flist .mx-lk:last-child{border-bottom:0}
 .mx-flist .mx-fn{font-size:15px;font-weight:500;letter-spacing:.01em}
 .mx-flist .mx-dots i{width:14px;height:14px}
+
+/* ===== promo bar: one line, slow ticker ===== */
+.mx-promo{position:relative;z-index:1001;display:flex;align-items:stretch;height:40px;background:#1d2340;color:#e9ebf4;font:400 14px/1 var(--mx-sans,Inter,system-ui,sans-serif);overflow:hidden;border-bottom:2px solid #df7841}
+.mx-pr-a{flex:1;min-width:0;display:flex;align-items:stretch;color:inherit;text-decoration:none}
+.mx-pr-vp{flex:1;min-width:0;overflow:hidden;height:100%;display:flex;align-items:center;-webkit-mask-image:linear-gradient(90deg,transparent 0,#000 28px,#000 calc(100% - 28px),transparent 100%);mask-image:linear-gradient(90deg,transparent 0,#000 28px,#000 calc(100% - 28px),transparent 100%)}
+.mx-pr-track{display:flex;width:max-content;animation:mxTicker 38s linear infinite}
+.mx-pr-set{display:flex;align-items:center;gap:18px;padding-right:18px;white-space:nowrap}
+.mx-pr-set b{font-weight:700;color:#fff}
+.mx-pr-set span:nth-child(2) b{color:#f3a676}
+.mx-pr-pill{display:inline-flex;align-items:center;gap:7px;height:24px;padding:0 11px;border-radius:999px;background:#df7841;color:#1d2340;font:700 11.5px/1 var(--mx-mono,ui-monospace,monospace);letter-spacing:.08em;text-transform:uppercase}
+.mx-pr-live{width:7px;height:7px;border-radius:50%;background:#1d2340;animation:mxBlink 1.6s ease-in-out infinite}
+.mx-pr-sep{width:5px;height:5px;border-radius:50%;background:#df7841;flex:none}
+.mx-pr-go{flex:none;display:flex;align-items:center;gap:6px;padding:0 18px 0 22px;background:#df7841;color:#1d2340;font-weight:700;font-size:13.5px;white-space:nowrap;clip-path:polygon(12px 0,100% 0,100% 100%,0 100%)}
+.mx-pr-go svg{width:15px;height:15px;transition:transform .2s ease}
+.mx-pr-a:hover .mx-pr-go svg{transform:translateX(3px)}
+.mx-pr-a:hover .mx-pr-track,.mx-pr-a:focus-visible .mx-pr-track,.mx-promo.is-paused .mx-pr-track{animation-play-state:paused}
+.mx-pr-a:focus-visible{outline:3px solid #f3a676;outline-offset:-3px}
+.mx-pr-pp{flex:none;width:40px;border:0;border-left:1px solid rgba(29,35,64,.25);background:#df7841;color:#1d2340;cursor:pointer;display:flex;align-items:center;justify-content:center;padding:0}
+.mx-pr-pp svg{width:14px;height:14px;fill:currentColor}
+.mx-pr-pp .i-pl{display:none}.mx-promo.is-paused .mx-pr-pp .i-pl{display:block}.mx-promo.is-paused .mx-pr-pp .i-pa{display:none}
+.mx-pr-pp:focus-visible{outline:3px solid #fff;outline-offset:-4px}
+@keyframes mxTicker{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@keyframes mxBlink{0%,100%{opacity:1}50%{opacity:.25}}
+@media (max-width:640px){.mx-promo{height:36px;font-size:13px}.mx-pr-go{font-size:0;gap:0;padding:0 10px 0 18px}.mx-pr-go svg{width:16px;height:16px}.mx-pr-pp{width:34px}.mx-pr-track{animation-duration:30s}.mx-pr-pill{height:22px;font-size:10.5px;padding:0 9px}}
+@media (prefers-reduced-motion:reduce){.mx-pr-track{animation:none}.mx-pr-set+.mx-pr-set{display:none}.mx-pr-live{animation:none}.mx-pr-pp{display:none}}

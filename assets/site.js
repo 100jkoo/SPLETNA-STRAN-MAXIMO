@@ -125,3 +125,7 @@ var MX_NEWSLETTER_EMAIL='narocila@maximo-tekstil.com';
 (function(){var f=document.querySelector('.mx-feat--offer');if(!f)return;var u=Date.parse(f.getAttribute('data-until'));if(!u||Date.now()<=u)return;
   var li=f.closest('.mx-item');if(li)li.style.display='none';
   [].slice.call(document.querySelectorAll('.mx-drawer .mx-acc')).forEach(function(a){if(a.querySelector('.mx-hot'))a.style.display='none'});})();
+
+/* promo ticker pause button */
+(function(){var p=document.querySelector('.mx-promo');if(!p)return;var b=p.querySelector('.mx-pr-pp');if(!b)return;
+  b.addEventListener('click',function(){var on=p.classList.toggle('is-paused');b.setAttribute('aria-pressed',on?'true':'false');b.setAttribute('aria-label',on?'Nadaljuj premikanje':'Ustavi premikanje')})})();
