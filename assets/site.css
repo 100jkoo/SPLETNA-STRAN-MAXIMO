@@ -322,3 +322,9 @@ html.mx-lock,html.mx-lock body{overflow:hidden}
 .mx-sp-row{display:flex;align-items:center;gap:10px;flex-wrap:wrap;padding-right:40px}
 .mx-sp-row img{display:block;height:24px;width:auto}
 .mx-sp-pill{font:400 10.5px/1 var(--mx-mono);letter-spacing:.06em;border:1.5px solid currentColor;border-radius:999px;padding:5px 8px}
+/* drawer: on-stock fabrics as a list */
+.mx-flist{display:flex;flex-direction:column;margin:2px 0 4px}
+.mx-flist .mx-lk{min-height:46px;border-bottom:1px solid var(--mx-line);border-radius:0}
+.mx-flist .mx-lk:last-child{border-bottom:0}
+.mx-flist .mx-fn{font-size:15px;font-weight:500;letter-spacing:.01em}
+.mx-flist .mx-dots i{width:14px;height:14px}
