@@ -361,7 +361,18 @@ html.mx-lock,html.mx-lock body{overflow:hidden}
 @keyframes lgThreadA{from{opacity:0;transform:translate(-60%,60%)}to{opacity:1;transform:none}}
 @keyframes lgThreadB{from{opacity:0;transform:translate(-60%,-60%)}to{opacity:1;transform:none}}
 @keyframes lgSlide{from{opacity:0;transform:translateX(-60%)}to{opacity:1;transform:none}}
-.mx-logo .lg-x{transition:transform .35s cubic-bezier(.2,.8,.2,1)}
-.mx-logo:hover .lg-x.lg-o{transform:translateY(-4%)}
-.mx-logo:hover .lg-x.lg-n{transform:translateY(4%)}
-@media (prefers-reduced-motion:reduce){.mx-logo.is-anim path{animation:none!important}.mx-logo:hover .lg-x{transform:none}}
+
+
+/* logo hover: letters ripple, the X threads pass over and under like a shuttle going through, a light sheen runs across */
+.mx-logo{position:relative;overflow:hidden;padding:8px 6px;margin:-8px -6px}
+.mx-logo::after{content:"";position:absolute;top:-20%;bottom:-20%;left:0;width:38%;transform:translateX(-160%) skewX(-18deg);background:linear-gradient(90deg,rgba(255,255,255,0),rgba(255,255,255,.75),rgba(255,255,255,0));pointer-events:none}
+.mx-logo:hover:not(.is-anim)::after{animation:lgSheen .9s cubic-bezier(.4,0,.2,1) .15s}
+.mx-logo:hover:not(.is-anim) .lg-l{animation:lgWave .6s cubic-bezier(.3,0,.2,1);animation-delay:calc(var(--i) * 55ms)}
+.mx-logo:hover:not(.is-anim) .lg-x.lg-n{animation:lgOverA .7s cubic-bezier(.3,0,.2,1);animation-delay:calc(var(--i) * 35ms)}
+.mx-logo:hover:not(.is-anim) .lg-x.lg-o{animation:lgOverB .7s cubic-bezier(.3,0,.2,1);animation-delay:calc(120ms + var(--i) * 35ms)}
+.mx-logo:hover:not(.is-anim) .lg-t{animation:lgWave .5s cubic-bezier(.3,0,.2,1);animation-delay:calc(260ms + var(--i) * 45ms)}
+@keyframes lgWave{0%,100%{transform:none}40%{transform:translateY(-14%)}70%{transform:translateY(4%)}}
+@keyframes lgOverA{0%,100%{transform:none}45%{transform:translate(14%,-14%)}}
+@keyframes lgOverB{0%,100%{transform:none}45%{transform:translate(14%,14%)}}
+@keyframes lgSheen{from{transform:translateX(-160%) skewX(-18deg)}to{transform:translateX(330%) skewX(-18deg)}}
+@media (prefers-reduced-motion:reduce){.mx-logo.is-anim path,.mx-logo:hover path{animation:none!important}.mx-logo::after{display:none}}
