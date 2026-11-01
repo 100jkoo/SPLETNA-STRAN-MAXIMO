@@ -129,3 +129,13 @@ var MX_NEWSLETTER_EMAIL='narocila@maximo-tekstil.com';
 /* promo ticker pause button */
 (function(){var p=document.querySelector('.mx-promo');if(!p)return;var b=p.querySelector('.mx-pr-pp');if(!b)return;
   b.addEventListener('click',function(){var on=p.classList.toggle('is-paused');b.setAttribute('aria-pressed',on?'true':'false');b.setAttribute('aria-label',on?'Nadaljuj premikanje':'Ustavi premikanje')})})();
+
+/* logo: woven intro on the first visit of the session (home page), replay when the logo is clicked on the home page */
+(function(){var a=document.querySelector('.mx-logo');if(!a)return;
+  if(window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches)return;
+  function play(){a.classList.remove('is-anim');void a.offsetWidth;a.classList.add('is-anim');clearTimeout(a._t);a._t=setTimeout(function(){a.classList.remove('is-anim')},1600)}
+  var home=document.body.getAttribute('data-mx-section')==='home'||/(^|\/)(index\.html)?$/.test(location.pathname)&&!/\/(blog|on-stock)\//.test(location.pathname);
+  var seen=false;try{seen=sessionStorage.getItem('mx-logo-intro')==='1';sessionStorage.setItem('mx-logo-intro','1')}catch(e){}
+  if(!seen)play();
+  a.addEventListener('click',function(e){if(home){e.preventDefault();play();window.scrollTo({top:0,behavior:'smooth'})}});
+})();
