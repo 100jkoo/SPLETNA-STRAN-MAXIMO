@@ -111,6 +111,7 @@
 .pd-g{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:clamp(28px,4vw,60px);align-items:start}
 .pd-gal{position:sticky;top:calc(var(--mx-h) + 18px);display:grid;grid-template-columns:76px minmax(0,1fr);gap:12px}
 .pd-th{display:flex;flex-direction:column;gap:10px}
+.pd-th button img[style]{background:#d9d9d9}
 .pd-th button{padding:0;border:2px solid transparent;border-radius:12px;overflow:hidden;cursor:pointer;aspect-ratio:1/1;background:none}
 .pd-th button[aria-pressed="true"]{border-color:var(--ink)}
 .pd-th img{width:100%;height:100%;object-fit:cover;display:block}
@@ -182,7 +183,7 @@
 .pd-faq summary{cursor:pointer;padding:14px 0;font-size:16px;font-weight:500;list-style:none;display:flex;justify-content:space-between;gap:12px}
 .pd-faq summary::after{content:"+";font-size:20px;color:var(--acc-ink)}.pd-faq details[open] summary::after{content:"−"}
 .pd-faq p{margin:0 0 14px;font-size:15px;line-height:1.6;color:var(--ink2);max-width:760px}
-@media (max-width:980px){.pd-g{grid-template-columns:1fr}.pd-gal{position:static;grid-template-columns:1fr}.pd-th{flex-direction:row;order:2}.pd-th button{width:72px}.pd-two{grid-template-columns:1fr}.pd-care{grid-template-columns:1fr 1fr}.pd-sim{grid-template-columns:1fr}}
+@media (max-width:980px){.pd-g{grid-template-columns:1fr}.pd-gal{position:static;grid-template-columns:1fr}.pd-th{flex-direction:row;order:2}.pd-th{overflow-x:auto;scrollbar-width:none}.pd-th button{width:64px;flex:none}.pd-two{grid-template-columns:1fr}.pd-care{grid-template-columns:1fr 1fr}.pd-sim{grid-template-columns:1fr}}
 @media (max-width:420px){.pd-spec div{grid-template-columns:104px minmax(0,1fr)}.pd-qty{grid-template-columns:1fr}.pd-care{grid-template-columns:1fr}}
 </style>
 
@@ -194,6 +195,8 @@
         <button type="button" aria-pressed="true" data-src="../assets/img/mto/ms-125-flat.webp" data-l="Face" aria-label="Photo 1, face"><img src="../assets/img/mto/ms-125-flat.webp" alt=""></button>
         <button type="button" aria-pressed="false" data-src="../assets/img/mto/ms-125-fold.webp" data-l="Face and back" aria-label="Photo 2, face and back"><img src="../assets/img/mto/ms-125-fold.webp" alt="" loading="lazy"></button>
         <button type="button" aria-pressed="false" data-src="../assets/img/mto/ms-125-drape.webp" data-l="Drape" aria-label="Photo 3, drape"><img src="../assets/img/mto/ms-125-drape.webp" alt="" loading="lazy"></button>
+        <button type="button" aria-pressed="false" data-src="../assets/img/mto/ms-125-shirt.webp" data-l="Sewn as a shirt" data-fit="contain" aria-label="Photo 4, shirt"><img src="../assets/img/mto/ms-125-shirt.webp" alt="" loading="lazy" style="object-fit:contain;background:#d9d9d9"></button>
+        <button type="button" aria-pressed="false" data-src="../assets/img/mto/ms-125-waiter.webp" data-l="In use, restaurant" aria-label="Photo 5, in use"><img src="../assets/img/mto/ms-125-waiter.webp" alt="" loading="lazy"></button>
       </div>
       <div class="pd-main"><img id="pdImg" src="../assets/img/mto/ms-125-flat.webp" width="1000" height="1000" alt="MS BAY 125 mini check fabric, burgundy and white"><span id="pdLbl">Face</span></div>
     </div>
@@ -292,7 +295,7 @@
 </div></section>
 <script>
 (function(){var m=document.getElementById('pdImg'),l=document.getElementById('pdLbl'),b=[].slice.call(document.querySelectorAll('.pd-th button'));
-b.forEach(function(x){x.addEventListener('click',function(){m.src=x.getAttribute('data-src');l.textContent=x.getAttribute('data-l');b.forEach(function(y){y.setAttribute('aria-pressed',y===x?'true':'false')})})});
+b.forEach(function(x){x.addEventListener('click',function(){m.src=x.getAttribute('data-src');m.style.objectFit=x.getAttribute('data-fit')||'cover';m.parentNode.style.background=x.getAttribute('data-fit')?'#d9d9d9':'';l.textContent=x.getAttribute('data-l');b.forEach(function(y){y.setAttribute('aria-pressed',y===x?'true':'false')})})});
 var q=document.getElementById('qv'),o=document.getElementById('pdOrder');
 function n(){return Math.max(1,parseInt(q.value,10)||0)}
 function upd(){var m=n();o.href='mailto:narocila@maximo-tekstil.com?subject='+encodeURIComponent('Order request: MS BAY 125, '+m+' m')+'&body='+encodeURIComponent('Hello,\r\n\r\nwe would like to order MS BAY 125 (65% polyester / 35% cotton, 125 g/m², 152 cm), burgundy / white mini check.\r\n\r\nQuantity: '+m+' m\r\nWanted delivery date: \r\n\r\nCompany: \r\nContact person: \r\nPhone: \r\nDelivery address: \r\nEU VAT number: \r\n\r\nPlease confirm the delivery time and send a pro forma invoice.\r\n\r\nBest regards,')}
