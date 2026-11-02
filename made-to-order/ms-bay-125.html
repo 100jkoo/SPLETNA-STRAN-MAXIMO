@@ -155,12 +155,14 @@
 .pd-spec div:last-child{border-bottom:0}
 .pd-spec dt{color:var(--muted)}.pd-spec dd{margin:0;font-weight:500}
 .pd-docs{margin-top:22px}
-.pd-docs h2{margin:0 0 4px;font:600 12px/1 var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
-.pd-doc{display:flex;align-items:center;gap:18px;padding:14px 18px;margin-top:10px;border:1px solid var(--line);border-radius:12px;background:#fff;text-decoration:none;color:var(--ink);transition:border-color .15s}
+.pd-docs h2{margin:0 0 6px;font-size:13px!important;font:600 12px/1 var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.pd-doc{display:flex;align-items:center;gap:26px;padding:20px 26px;margin-top:14px;border-radius:18px!important;border:1px solid var(--line);border-radius:12px;background:#fff;text-decoration:none;color:var(--ink);transition:border-color .15s}
 .pd-doc:hover{border-color:var(--ink)}
-.pd-doc img{width:68px;height:88px;object-fit:cover;object-position:top;border-radius:4px;border:1px solid var(--line);flex:none}
-.pd-doc span{flex:1;min-width:0;font-size:17px;font-weight:600;line-height:1.3}.pd-doc small{display:block;margin-top:4px;font-size:13.5px;font-weight:400;color:var(--muted)}
-.pd-doc svg{width:26px;height:26px;flex:none;color:var(--acc-ink)}
+.pd-doc em{display:inline-block;margin-top:10px;font-style:normal;font-size:15px;font-weight:600;color:var(--acc-ink)}
+@media (max-width:560px){.pd-doc{gap:16px;padding:16px}.pd-doc img{width:84px;height:109px}.pd-doc span{font-size:19px}.pd-doc small{font-size:14px}.pd-doc svg{display:none}}
+.pd-doc img{width:109px;height:141px;border-radius:6px!important;box-shadow:0 8px 18px -10px rgba(26,31,54,.4);object-fit:cover;object-position:top;border-radius:4px;border:1px solid var(--line);flex:none}
+.pd-doc span{flex:1;min-width:0;font-size:24px;font-weight:600;line-height:1.25;letter-spacing:-.01em}.pd-doc small{display:block;margin-top:8px;font-size:16px;font-weight:400;color:var(--muted)}
+.pd-doc svg{width:40px;height:40px;flex:none;color:var(--acc-ink)}
 .pd-sec{margin-top:clamp(48px,6vw,72px)}
 .pd-sec>h2{margin:0 0 18px;font-size:clamp(24px,2.4vw,32px);font-weight:400;letter-spacing:-.015em}
 .pd-two{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:clamp(24px,4vw,56px)}
@@ -245,8 +247,8 @@
 
       <div class="pd-docs">
         <h2>Documents</h2>
-        <a class="pd-doc" href="../assets/docs/MS_BAY_125_TDS_Maximo.pdf" download><img src="../assets/img/mto/MS_BAY_125_TDS_preview.webp" alt=""><span>Technical data sheet<small>PDF, 1 page · all test results</small></span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></svg></a>
-        <a class="pd-doc" href="../assets/docs/Maximo-Tekstil-OEKO-TEX-Standard-100.pdf" download><img src="../assets/img/mto/OEKO-TEX-certificate-preview.webp" alt=""><span>OEKO-TEX® Standard 100 certificate<small>No. 26.HSI.93642 · valid until 31.&nbsp;8.&nbsp;2027</small></span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></svg></a>
+        <a class="pd-doc" href="../assets/docs/MS_BAY_125_TDS_Maximo.pdf" target="_blank" rel="noopener"><img src="../assets/img/mto/MS_BAY_125_TDS_preview.webp" alt=""><span>Technical data sheet<small>PDF, 1 page · all test results</small><em>Open PDF</em></span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg></a>
+        <a class="pd-doc" href="../assets/docs/Maximo-Tekstil-OEKO-TEX-Standard-100.pdf" target="_blank" rel="noopener"><img src="../assets/img/mto/OEKO-TEX-certificate-preview.webp" alt=""><span>OEKO-TEX® certificate<small>Standard 100 · No. 26.HSI.93642 · valid until 31.&nbsp;8.&nbsp;2027</small><em>Open PDF</em></span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg></a>
       </div>
     </div>
   </div>
