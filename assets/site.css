@@ -376,3 +376,145 @@ html.mx-lock,html.mx-lock body{overflow:hidden}
 @keyframes lgOverB{0%,100%{transform:none}45%{transform:translate(14%,14%)}}
 @keyframes lgSheen{from{transform:translateX(-160%) skewX(-18deg)}to{transform:translateX(330%) skewX(-18deg)}}
 @media (prefers-reduced-motion:reduce){.mx-logo.is-anim path,.mx-logo:hover path{animation:none!important}.mx-logo::after{display:none}}
+
+
+/* ============================================================
+   MAXIMO TEKSTIL · send sheet, WhatsApp button, small animations
+   ============================================================ */
+
+/* ---------- send sheet (opens from every form and prepared email link) ---------- */
+.mx-send{--s-ink:#252b4b;--s-acc:#df7841;--s-acc-ink:#b0511c;--s-line:#e2ded3;--s-muted:#62667c;
+  border:0;padding:0;border-radius:22px;width:calc(100% - 32px);max-width:560px;max-height:calc(100dvh - 32px);overflow:hidden;
+  background:#fbfaf6;color:var(--s-ink);font:400 16px/1.5 Inter,system-ui,-apple-system,"Segoe UI",sans-serif;-webkit-font-smoothing:antialiased;
+  box-shadow:0 30px 80px -20px rgba(20,24,45,.5)}
+.mx-send::backdrop{background:rgba(20,24,45,.55)}
+.mx-send *{box-sizing:border-box}
+.mx-send [hidden]{display:none!important}
+.mx-send-in{display:flex;flex-direction:column;max-height:calc(100dvh - 32px)}
+.mx-send-h{display:flex;justify-content:space-between;align-items:flex-start;gap:16px;padding:22px 24px 14px;border-bottom:1px solid var(--s-line)}
+.mx-send-e{margin:0;font:500 11px/1.3 "JetBrains Mono",ui-monospace,monospace;letter-spacing:.1em;text-transform:uppercase;color:var(--s-acc-ink);overflow-wrap:anywhere}
+.mx-send-h h2{margin:6px 0 0;font-size:26px;font-weight:400;letter-spacing:-.01em;line-height:1.15;color:var(--s-ink)}
+.mx-send-x{flex:none;width:40px;height:40px;border-radius:50%;border:1px solid var(--s-line);background:#fff;font-size:24px;line-height:1;cursor:pointer;color:var(--s-ink)}
+.mx-send-b{overflow:auto;padding:16px 24px 20px}
+.mx-send-l{display:flex;flex-direction:column;gap:6px;margin:0 0 12px;font-size:13.5px;font-weight:500}
+.mx-send textarea,.mx-send input{width:100%;border:1.5px solid #d6d3ca;border-radius:12px;padding:11px 12px;font:400 15px/1.45 Inter,system-ui,sans-serif;color:var(--s-ink);background:#fff}
+.mx-send textarea{resize:vertical;min-height:150px;max-height:42dvh}
+.mx-send input{height:46px;padding:0 12px;font-size:16px}
+.mx-send-note{margin:0 0 12px;padding:10px 12px;border-radius:12px;background:#fcecdf;font-size:14px;line-height:1.45}
+.mx-send-main{display:flex;align-items:center;justify-content:center;width:100%;height:52px;margin:4px 0 0;border:0;border-radius:999px;background:var(--s-acc);color:#1d2340;font:600 16px/1 Inter,system-ui,sans-serif;cursor:pointer}
+.mx-send-main:hover{background:#ef8a52}
+.mx-send-main:disabled{opacity:.6;cursor:default}
+.mx-send:not(.has-ep) .mx-send-main,.mx-send:not(.has-ep) .mx-send-em{display:none}
+.mx-send-err{margin:8px 0 0;color:#b42318;font-size:14px}
+.mx-send-err:empty{display:none}
+.mx-send-how{margin:4px 0 10px;font:500 11px/1.3 "JetBrains Mono",ui-monospace,monospace;letter-spacing:.1em;text-transform:uppercase;color:var(--s-muted)}
+.mx-send.has-ep .mx-send-how{margin-top:18px}
+.mx-send-ch{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+.mx-ch{display:flex;align-items:center;gap:10px;min-width:0;height:50px;padding:0 14px;border-radius:14px;border:1.5px solid #d6d3ca;background:#fff;
+  font:600 15px/1.1 Inter,system-ui,sans-serif;color:var(--s-ink);text-decoration:none;cursor:pointer;transition:border-color .15s ease,transform .15s ease}
+.mx-ch:hover{border-color:var(--s-ink);color:var(--s-ink);transform:translateY(-1px)}
+.mx-ch svg{flex:none;width:20px;height:20px;color:var(--s-acc-ink)}
+.mx-ch-wa svg{color:#1f9d55}
+.mx-ch span{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.mx-send.has-ep .mx-ch{height:44px;font-weight:500;font-size:14.5px}
+.mx-send.is-touch [data-ch=app]{order:-2}
+.mx-send.is-touch [data-ch=wa]{order:-1}
+.mx-send-f{margin:14px 0 0;font-size:13px;line-height:1.45;color:var(--s-muted)}
+.mx-send-done{padding:30px 24px 26px}
+.mx-send-ok{display:grid;place-items:center;width:46px;height:46px;border-radius:50%;background:#e3f3e9;color:#1f7a45;margin-bottom:14px}
+.mx-send-ok svg{width:24px;height:24px}
+.mx-send-done h3{margin:0;font-size:24px;font-weight:400;letter-spacing:-.01em;color:var(--s-ink)}
+.mx-send-done p{margin:8px 0 0;font-size:15.5px;line-height:1.55;color:#3e4558;overflow-wrap:anywhere}
+.mx-send-da{display:flex;flex-wrap:wrap;align-items:center;gap:8px 18px;margin-top:20px}
+.mx-send-close{height:48px;padding:0 26px;border-radius:999px;border:1.5px solid var(--s-ink);background:var(--s-ink);color:#fff;font:600 15px/1 Inter,system-ui,sans-serif;cursor:pointer}
+.mx-send-back{border:0;background:none;padding:6px 0;font:500 14.5px/1.3 Inter,system-ui,sans-serif;color:var(--s-acc-ink);text-decoration:underline;text-underline-offset:3px;cursor:pointer;text-align:left}
+.mx-send :focus-visible{outline:3px solid #df7841;outline-offset:2px}
+@media (max-width:560px){
+  .mx-send{width:100%;max-width:none;max-height:100dvh;margin:auto 0 0;border-radius:22px 22px 0 0}
+  .mx-send-in{max-height:92dvh}
+  .mx-send-h{padding:18px 16px 12px}.mx-send-h h2{font-size:22px}
+  .mx-send-b{padding:14px 16px calc(18px + env(safe-area-inset-bottom,0px))}
+  .mx-send-ch{grid-template-columns:1fr 1fr}
+  .mx-send textarea{min-height:120px;max-height:30dvh}
+  .mx-send-done{padding:24px 16px calc(22px + env(safe-area-inset-bottom,0px))}
+}
+
+/* ---------- WhatsApp button ---------- */
+.mx-wa{position:fixed;right:max(18px,env(safe-area-inset-right,0px));bottom:calc(18px + env(safe-area-inset-bottom,0px));z-index:880;
+  display:inline-flex;align-items:center;gap:9px;height:48px;padding:0 18px 0 13px;border-radius:999px;background:#252b4b;color:#fff;
+  font:500 14.5px/1 Inter,system-ui,sans-serif;text-decoration:none;box-shadow:0 14px 30px -12px rgba(20,24,45,.6);transition:transform .15s ease,background-color .15s ease}
+.mx-wa svg{width:24px;height:24px;color:#5ad98a;flex:none}
+.mx-wa:hover{transform:translateY(-2px);color:#fff;background:#1d2340}
+.mx-wa:focus-visible{outline:3px solid #df7841;outline-offset:3px}
+@media (max-width:700px){
+  .mx-wa{width:50px;height:50px;padding:0;justify-content:center}
+  .mx-wa span{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+}
+@media (max-width:980px){.mx-wa.has-mbar{bottom:calc(86px + env(safe-area-inset-bottom,0px))}}
+html.mx-lock .mx-wa{display:none}
+@media print{.mx-wa,.mx-ck{display:none}}
+
+/* ---------- analytics notice (only appears when an analytics ID is set) ---------- */
+.mx-ck{position:fixed;left:16px;right:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:1200;max-width:720px;margin:0 auto;display:flex;flex-wrap:wrap;align-items:center;gap:12px 20px;
+  padding:16px 18px;border-radius:18px;background:#1d2340;color:#e9ebf4;font:400 14px/1.45 Inter,system-ui,sans-serif;box-shadow:0 20px 50px -20px rgba(20,24,45,.7)}
+.mx-ck p{margin:0;flex:1 1 320px}
+.mx-ck a{color:#f3a676}
+.mx-ck div{display:flex;gap:8px}
+.mx-ck button{height:40px;padding:0 18px;border-radius:999px;border:1.5px solid rgba(255,255,255,.5);background:transparent;color:#fff;font:500 14px/1 Inter,system-ui,sans-serif;cursor:pointer}
+.mx-ck button[data-v=yes]{background:#df7841;border-color:#df7841;color:#1d2340;font-weight:600}
+
+/* ---------- promo ticker: days left ---------- */
+.mx-pr-left b{color:#f3a676!important}
+
+/* ---------- home: colour wall ---------- */
+#wall a{transition:transform .3s ease,box-shadow .3s ease}
+#wall a.is-lit{transform:scale(1.2);z-index:2;box-shadow:0 10px 20px -8px rgba(0,0,0,.4)}
+.wall-tip b,.wall-tip span,.wall-tip i{transition:opacity .25s ease,background-color .25s ease}
+@media (prefers-reduced-motion:no-preference){
+  #wall a{animation:mxWallIn .6s cubic-bezier(.2,.8,.2,1) backwards;animation-delay:calc(var(--d,0)*1ms)}
+  .wall-tip{animation:mxTipIn .5s ease 1.1s backwards}
+}
+@keyframes mxWallIn{from{opacity:0;transform:scale(.35) rotate(-10deg)}}
+@keyframes mxTipIn{from{opacity:0;transform:translateX(-50%) translateY(10px)}}
+
+/* ---------- home: assurance line under the main buttons, trust band ---------- */
+.mx-assure{list-style:none;display:flex;flex-wrap:wrap;gap:8px 22px;margin:22px 0 0;padding:0;font-size:14.5px;color:#3e4558}
+.mx-assure li{display:inline-flex;align-items:center;gap:8px}
+.mx-assure li::before{content:"";flex:none;width:16px;height:16px;border-radius:50%;background:#2e9e5b url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%23fff' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m4.4 8.3 2.3 2.3 4.9-5'/%3E%3C/svg%3E") center/16px no-repeat}
+.mx-trust{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.3fr);gap:clamp(28px,4vw,64px);align-items:start;padding:clamp(28px,4vw,52px);border-radius:32px;background:#fff;border:1px solid #e4e4df}
+.mx-trust h2{font-size:clamp(28px,3.2vw,42px)}
+.mx-trust-h>p:last-child{margin:18px 0 0;color:#62667c;font-size:16.5px;line-height:1.55;max-width:34em}
+.mx-trust-l{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:0 32px}
+.mx-trust-l li{padding:16px 0 18px;border-top:1.5px solid #252b4b;font-size:15px;line-height:1.5;color:#3e4558}
+.mx-trust-l b{display:block;margin-bottom:4px;font-weight:500;font-size:17px;letter-spacing:-.01em;color:#252b4b}
+@media (max-width:900px){.mx-trust{grid-template-columns:1fr;border-radius:24px}}
+@media (max-width:560px){.mx-trust-l{grid-template-columns:1fr}}
+
+/* ---------- colour strips ripple on hover, like a fan of swatches ---------- */
+.bstrip i,.scard .strip i{transform-origin:50% 0}
+@media (hover:hover) and (prefers-reduced-motion:no-preference){
+  .bcard:hover .bstrip i,.scard:hover .strip i{animation:mxRipple .75s cubic-bezier(.3,.6,.3,1) both;animation-delay:calc(var(--i,0)*24ms)}
+}
+@keyframes mxRipple{0%,100%{transform:none}45%{transform:scaleY(.78)}}
+
+/* ---------- fabric page: the colour preview behaves like cloth ---------- */
+#stage.stage::before{content:"";position:absolute;inset:-14%;pointer-events:none;background:
+  radial-gradient(90% 70% at 20% 8%,rgba(255,255,255,.2),transparent 60%),
+  linear-gradient(104deg,transparent 0 16%,rgba(0,0,0,.1) 26%,transparent 37%,rgba(255,255,255,.09) 49%,transparent 58%,rgba(0,0,0,.12) 71%,transparent 85%)}
+#stage.stage.is-light::before{background:
+  radial-gradient(90% 70% at 20% 8%,rgba(255,255,255,.75),transparent 60%),
+  linear-gradient(104deg,transparent 0 16%,rgba(74,62,40,.1) 26%,transparent 37%,rgba(255,255,255,.55) 49%,transparent 58%,rgba(74,62,40,.12) 71%,transparent 85%)}
+#stage.stage.is-light.tex-twill,#stage.stage.is-light.tex-plain,#stage.stage.is-light.tex-satin{background-image:repeating-linear-gradient(135deg,rgba(74,62,40,.085) 0 1.5px,transparent 1.5px 3.5px)}
+#stage.stage{transition:background-color .45s ease}
+#stage .stage-note,#stage .stage-tag{z-index:2}
+#stage.stage::after{content:"";position:absolute;inset:0;z-index:1;pointer-events:none;opacity:0;background:linear-gradient(100deg,transparent 30%,rgba(255,255,255,.4) 50%,transparent 70%)}
+@media (prefers-reduced-motion:no-preference){
+  #stage.stage::before{animation:mxDrape 12s ease-in-out infinite alternate}
+  #stage.stage.is-chg::after{animation:mxSweep .7s ease-out both}
+}
+@keyframes mxDrape{from{transform:translate3d(-5%,0,0)}to{transform:translate3d(5%,-2%,0)}}
+@keyframes mxSweep{from{opacity:1;transform:translateX(-100%)}to{opacity:1;transform:translateX(100%)}}
+.cta-note{margin:12px 0 0;font-size:13.5px;line-height:1.5;color:#62677a}
+/* sample request reuses the order window, without quantities */
+.od.od-sample .od-q{display:none}
+.od.od-sample .od-l{grid-template-columns:22px minmax(0,1fr) 36px}
